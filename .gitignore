@@ -1,0 +1,9 @@
+# ignored directories and files
+*.out
+*.pdf
+*.png
+results
+script
+benchmark
+test
+__pycache__/

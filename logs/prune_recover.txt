@@ -1,0 +1,2434 @@
+Namespace(batch_size=128, dataset='cifar10', epochs=60, gpu='2', lr=0.01, model='resnet56', num_workers=8, pretrained_model='pretrained_model/model_best.pth.tar', prune_alpha=0.5, prune_order=1, savedir='results/prune_recover', seed=10, soft=None, structured=None, weight_decay=0.0003)
+Files already downloaded and verified
+initialize CrossEntropy
+cosine structured pruning testing
+model sum:  -1111.3250433802605
+before pruning, train loss: 0.0031, train acc: 99.9780, test accuracy: 94.2900
+start pruning module.conv1, num of channels: 16
+tensor([ 7,  1,  9, 15, 12, 13,  3,  8])
+time: 0.0077s
+start pruning module.layer1.0.conv1, num of channels: 16
+tensor([ 7,  6, 15,  2,  3, 12,  1,  9])
+time: 0.0019s
+start pruning module.layer1.0.conv2, num of channels: 16
+tensor([ 1,  3,  7, 10, 13,  0, 15,  2])
+time: 0.0014s
+start pruning module.layer1.0.conv3, num of channels: 64
+tensor([21, 30, 61, 26, 50, 63, 19, 27,  2, 45, 10, 58, 12, 46, 11, 56,  5, 14,
+        24, 28,  3, 41, 37, 13, 55, 43, 38, 34, 44, 18, 29,  8])
+time: 0.0012s
+start pruning module.layer1.0.downsample.0, num of channels: 64
+tensor([20, 37, 55, 16, 57, 46, 39,  4, 27, 41, 18, 40, 63, 13, 35, 54, 30, 26,
+        47, 24, 34, 29, 36, 22, 56, 31, 38, 14, 52, 53,  8, 15])
+time: 0.0011s
+start pruning module.layer1.1.conv1, num of channels: 16
+tensor([12, 14, 13,  4,  1,  9,  7,  0])
+time: 0.0010s
+start pruning module.layer1.1.conv2, num of channels: 16
+tensor([14,  7,  1, 11,  9,  2,  5,  8])
+time: 0.0010s
+start pruning module.layer1.1.conv3, num of channels: 64
+tensor([44, 60, 48, 38, 54, 36, 12, 15, 55, 59, 50, 32, 13, 29, 23,  7, 22, 18,
+        45,  5,  2, 24, 20, 51, 27, 16, 31,  9, 57, 49, 26, 62])
+time: 0.0011s
+start pruning module.layer1.2.conv1, num of channels: 16
+tensor([10,  0,  2, 11,  9, 13,  5,  3])
+time: 0.0010s
+start pruning module.layer1.2.conv2, num of channels: 16
+tensor([ 1, 12,  6, 10,  8, 15,  5,  4])
+time: 0.0010s
+start pruning module.layer1.2.conv3, num of channels: 64
+tensor([43, 52, 56, 63, 26, 31, 60,  8, 49, 38, 51,  5, 28, 15,  9, 13,  7, 53,
+        22, 14, 35, 24, 46, 12, 62, 30,  0, 54, 40, 41, 55, 58])
+time: 0.0011s
+start pruning module.layer1.3.conv1, num of channels: 16
+tensor([ 6, 12,  0,  5,  2,  8, 10,  9])
+time: 0.0010s
+start pruning module.layer1.3.conv2, num of channels: 16
+tensor([14, 13,  4, 11, 12,  1,  3,  7])
+time: 0.0010s
+start pruning module.layer1.3.conv3, num of channels: 64
+tensor([18, 54, 22, 59, 15, 45, 55, 57, 12,  0, 23, 62, 56,  4, 16, 49,  9, 14,
+        48, 46, 24, 36,  1, 29, 47, 35, 31, 20, 37, 58, 51, 42])
+time: 0.0011s
+start pruning module.layer1.4.conv1, num of channels: 16
+tensor([ 7, 14,  2, 13, 15,  5, 11,  6])
+time: 0.0010s
+start pruning module.layer1.4.conv2, num of channels: 16
+tensor([ 5,  1,  8,  0,  6, 15, 10,  4])
+time: 0.0010s
+start pruning module.layer1.4.conv3, num of channels: 64
+tensor([43, 18, 20,  1,  9, 33, 11, 42, 50, 40, 19, 22, 45, 49, 16, 39, 41, 34,
+        56, 31, 47, 37, 54,  3, 27, 14, 53, 13, 57, 63,  5, 52])
+time: 0.0012s
+start pruning module.layer1.5.conv1, num of channels: 16
+tensor([ 7,  4,  5,  8, 13,  0,  9, 12])
+time: 0.0010s
+start pruning module.layer1.5.conv2, num of channels: 16
+tensor([ 4,  7, 12, 13,  3,  8,  2, 15])
+time: 0.0010s
+start pruning module.layer1.5.conv3, num of channels: 64
+tensor([ 7, 57, 34, 22, 11, 52, 61, 13, 63, 41,  4, 43,  1, 50,  0, 55, 62, 51,
+        49, 20, 32,  6, 30, 28,  3,  2, 38, 17, 42, 27, 58, 29])
+time: 0.0012s
+start pruning module.layer1.6.conv1, num of channels: 16
+tensor([15,  5,  2, 14,  4,  6,  8,  1])
+time: 0.0010s
+start pruning module.layer1.6.conv2, num of channels: 16
+tensor([11,  9, 15,  5,  2,  8, 12,  4])
+time: 0.0010s
+start pruning module.layer1.6.conv3, num of channels: 64
+tensor([ 6, 55, 13, 37, 50, 54, 15, 56, 32, 39, 38, 29, 63, 23, 45, 51,  9, 52,
+        24, 53, 44,  8,  1, 33, 58,  2,  3, 47, 14, 28, 49,  4])
+time: 0.0011s
+start pruning module.layer1.7.conv1, num of channels: 16
+tensor([ 7,  6, 15,  2,  4,  5, 14,  3])
+time: 0.0010s
+start pruning module.layer1.7.conv2, num of channels: 16
+tensor([10,  8,  6,  1,  5, 14,  0, 12])
+time: 0.0010s
+start pruning module.layer1.7.conv3, num of channels: 64
+tensor([30, 16, 46, 48, 47, 10,  4, 13, 57,  7,  8, 26, 24, 60, 44, 35, 19, 59,
+         5, 52, 21, 63, 62, 17, 61, 55, 28, 51, 23, 38, 53, 54])
+time: 0.0011s
+start pruning module.layer1.8.conv1, num of channels: 16
+tensor([10,  9,  3, 12,  5, 13,  1,  7])
+time: 0.0010s
+start pruning module.layer1.8.conv2, num of channels: 16
+tensor([10,  0,  3, 13,  9,  1,  6, 15])
+time: 0.0011s
+start pruning module.layer1.8.conv3, num of channels: 64
+tensor([25, 27, 50, 24, 26,  2, 56, 32, 34, 20, 55,  6, 13, 38, 33, 53, 22, 52,
+        49, 41, 58, 17,  5, 59, 62,  4, 19, 12, 28, 18,  7, 63])
+time: 0.0012s
+start pruning module.layer2.0.conv1, num of channels: 32
+tensor([ 8, 31,  5, 24, 23, 30, 28, 21, 12, 26,  0,  3,  1,  7, 16, 25])
+time: 0.0011s
+start pruning module.layer2.0.conv2, num of channels: 32
+tensor([ 1, 30, 28, 22, 20,  6,  2, 11, 24,  8, 18, 16, 10, 26, 21,  0])
+time: 0.0012s
+start pruning module.layer2.0.conv3, num of channels: 128
+tensor([  9,  58, 112,  94, 107,  17,  30,  82,  64,  13, 117,  72,  24,  65,
+        105, 125,  15,  56,  48,  93,  71,  35,   6, 116,  86,   0,  84, 121,
+         16,  25,  34,  53,  69,  27, 124,  39,  21, 106,  31,  46,  62,  89,
+        115, 113,  88, 111, 114, 119,  92,  66,  95,  87,  80,  45,  98,  77,
+         59,  40,  63,  50,  57,  78,  61, 103])
+time: 0.0014s
+start pruning module.layer2.0.downsample.0, num of channels: 128
+tensor([ 44,  79,  71,  62, 124, 109,  35, 110, 120, 102,   4, 118,  14,   0,
+          2,  42,  97,  28, 104,  95, 108,  54,  37,  20, 127, 123,  59,  96,
+         38,  81, 101, 116,  67,  83,  61,  10,  33,  60,  29,  30,  86,  65,
+         18,  87,  17,  34, 125, 111, 112,  45,  40,  92,  82,  48,  69,  75,
+         26,  90,  19,  72,  32, 117,  99,  68])
+time: 0.0015s
+start pruning module.layer2.1.conv1, num of channels: 32
+tensor([ 5,  6,  4, 19, 25, 23, 31, 18, 16,  3, 13,  7, 24, 15,  0,  2])
+time: 0.0011s
+start pruning module.layer2.1.conv2, num of channels: 32
+tensor([10, 20, 23, 11, 22,  7,  6, 19, 17,  8, 27,  3, 21, 13, 29,  4])
+time: 0.0011s
+start pruning module.layer2.1.conv3, num of channels: 128
+tensor([ 67,  19, 123,  89,  88,  43, 114,  99,  22,  47,  50,  15,  91, 102,
+        115,  90,  38, 117,  16, 107,  29,  98,  81,  36,  58, 112,  76,  37,
+         53, 103,  94,  56, 101, 105,  33,  97,  10,  74,  30, 113,  12,  82,
+         48,  70,   7, 122,  85,  51,  13,  63, 106,  93,  83,  65,  11,  41,
+        110,  60,  92,   9,  25,  79,  21, 119])
+time: 0.0014s
+start pruning module.layer2.2.conv1, num of channels: 32
+tensor([ 5, 12, 26, 31, 24, 27, 25,  7,  2, 20, 18,  1, 21,  0, 23, 11])
+time: 0.0011s
+start pruning module.layer2.2.conv2, num of channels: 32
+tensor([16,  8,  2, 14,  6, 31, 27, 12,  3,  5,  4,  7, 29, 13,  1, 19])
+time: 0.0011s
+start pruning module.layer2.2.conv3, num of channels: 128
+tensor([ 82,  83,  58,  78,   2,  62,   4,   1,  70,  67,  24,  22,  66,  90,
+         17, 122,  98, 101,  68,  47,   6,  36, 107, 108,  14,  79, 111, 114,
+         91,  77,  43, 117, 113, 119,  30,  99,   5,  84, 126,  16,  10,  44,
+         85, 118, 105,  18,  89, 123,  49,  33,  39,  19,  97,  37,  54,  38,
+         94,  50,   8,  59,  71, 120,  40,  57])
+time: 0.0014s
+start pruning module.layer2.3.conv1, num of channels: 32
+tensor([22,  9, 26,  6, 24, 27,  7, 31, 18, 13,  5, 19, 21,  1,  0, 17])
+time: 0.0011s
+start pruning module.layer2.3.conv2, num of channels: 32
+tensor([ 2, 26,  5,  3,  1, 28, 11, 13, 23,  8, 22, 30, 25, 14, 20, 17])
+time: 0.0011s
+start pruning module.layer2.3.conv3, num of channels: 128
+tensor([ 19,  39, 110,  17,  29,  10, 118,  90,   6, 111,  57, 104,  71, 117,
+         70,  61,  48,  62,  14, 123,  33, 102,  73, 107,  11,  26,  54,  96,
+          2,  49,  46,  31, 112,  79,  80,  82, 116,  13,  30,  93,   3,  67,
+         44,  43, 103,  59, 127, 115,  52, 121,  95, 124,  22,  36,  47,  12,
+         74, 113,  15,   8, 122, 108,  89,  55])
+time: 0.0014s
+start pruning module.layer2.4.conv1, num of channels: 32
+tensor([ 8, 29, 12, 14,  0,  3, 21, 31, 27,  6, 17, 24, 10, 11,  4, 18])
+time: 0.0011s
+start pruning module.layer2.4.conv2, num of channels: 32
+tensor([16, 12, 11, 27, 13, 23, 15, 14,  7, 31,  9, 30, 22, 29, 21,  2])
+time: 0.0011s
+start pruning module.layer2.4.conv3, num of channels: 128
+tensor([ 50,  67, 112,  21,  63, 106,   9, 101,  65,  45,  79,  98,   6,  86,
+         47,  40, 125,  72,  61,   4,  64,  57, 124,  16,  52,  49,  25,  68,
+        121,  75, 122,   1, 103,  38,   8,  77,  36,  80, 105,  17, 113,  24,
+         31,  99,  29, 115, 119, 123,  85,  73, 120, 116,  51,  76, 107,  43,
+        114,  56,  88,  74,   2, 102,  87,   0])
+time: 0.0014s
+start pruning module.layer2.5.conv1, num of channels: 32
+tensor([ 3, 24,  9, 23,  2, 26, 14, 11, 13, 28, 17,  5, 27, 10, 18,  1])
+time: 0.0011s
+start pruning module.layer2.5.conv2, num of channels: 32
+tensor([ 1, 30, 22, 13, 18, 27, 25, 21,  3, 19, 12,  7,  2, 14, 28, 23])
+time: 0.0011s
+start pruning module.layer2.5.conv3, num of channels: 128
+tensor([ 18,   0,  72, 102,  48,   9,  37,  56,  28,  67,  42, 109,  21,  75,
+         85,  41,  91,  50, 116, 119, 123,  86,  15,  47,  77,  63,   7,   6,
+         40,  84,  16, 113, 125, 124,  32, 105, 114,  34,  89,  43,  73,  76,
+         87,  90,  61,  10,  26, 115,  27,  78,  99,  36,  74,  14, 117,  30,
+        127, 122, 103,  24,   2,  20,  96,  11])
+time: 0.0014s
+start pruning module.layer2.6.conv1, num of channels: 32
+tensor([28, 16, 12,  1, 21, 11,  7,  9,  3, 10, 13, 29,  0,  6, 17,  2])
+time: 0.0011s
+start pruning module.layer2.6.conv2, num of channels: 32
+tensor([24,  4, 13, 12,  9, 31,  3, 28,  5, 17, 25, 26, 23, 27, 29,  0])
+time: 0.0011s
+start pruning module.layer2.6.conv3, num of channels: 128
+tensor([ 29,   0,  58, 118,  59,  22,  45,  83,   1,  82,  95,  64, 112,  41,
+         17,  80,   6,  71, 116,  74,  21,  86, 123,  73,  38,   8, 104,  42,
+         13,  14,  31,  44, 108, 107,  96,  47,  61, 119, 100,  55,  20,  15,
+         91,  23,  87,  65, 124,  98, 114,  99, 122,  81, 127,   5, 125,  50,
+         51,  46,  12,  90,  30,   2, 105, 113])
+time: 0.0014s
+start pruning module.layer2.7.conv1, num of channels: 32
+tensor([14, 19,  6, 12,  9, 27,  7, 31, 24, 15,  1, 16,  4,  5,  2, 26])
+time: 0.0011s
+start pruning module.layer2.7.conv2, num of channels: 32
+tensor([23, 31, 18, 22, 27, 30, 17,  4,  0, 29, 19, 28, 10, 21, 13, 14])
+time: 0.0011s
+start pruning module.layer2.7.conv3, num of channels: 128
+tensor([103, 114,  18,  86,  38,  83,  66,  21,  42, 117,  11,  35, 124,  26,
+         61, 127,  22,  79,  48,  69,  20, 111,  15, 118,  10,  57, 126, 105,
+         29,  53,   9,  98,  13, 101, 120, 102,   6, 112, 108,  33,  14,  94,
+         41,  68,  74,  55,  39, 104,  67,  28,  34,  52, 110,  76,  44,  99,
+         12,  90,  91,  43,  85,  95, 107,  75])
+time: 0.0014s
+start pruning module.layer2.8.conv1, num of channels: 32
+tensor([15, 17,  9, 14, 28, 25,  7, 30, 26, 21, 31, 11,  1, 24, 16, 29])
+time: 0.0010s
+start pruning module.layer2.8.conv2, num of channels: 32
+tensor([ 2,  0,  6,  7, 18, 19, 13, 10, 21, 28, 26,  8,  5,  9, 17, 27])
+time: 0.0011s
+start pruning module.layer2.8.conv3, num of channels: 128
+tensor([ 70,  79,  56,   5,  34, 105,  97,  59, 116,   4,  93,  29,  53,  46,
+         22,  89, 114,  40,  57,   0, 126,  23,  77,  30,  31,  66,   7,  32,
+          6, 125,  60,  28,  16,  74,  67,  14,   8,  84, 107,  45,  55, 103,
+         86,  24, 122, 113,  12,  36, 100,  39,  85,  21,  26,  81,  43,  87,
+         65,  50, 123,  68,  33, 118,  78, 120])
+time: 0.0014s
+start pruning module.layer3.0.conv1, num of channels: 64
+tensor([39, 41, 16,  5, 23, 26, 31, 56, 46, 50, 61,  1, 54, 10, 30, 49, 15, 36,
+        22,  3,  4, 13, 62, 25, 48, 63, 11, 60, 28, 38, 44,  7])
+time: 0.0012s
+start pruning module.layer3.0.conv2, num of channels: 64
+tensor([57, 35, 58, 48, 38, 14, 26, 63, 33, 31, 21, 42, 13, 34,  7, 56, 22, 62,
+        41, 45, 32,  9, 10,  1, 44, 19, 50, 17, 16, 54,  0, 43])
+time: 0.0016s
+start pruning module.layer3.0.conv3, num of channels: 256
+tensor([141, 225,  59, 236, 244,  90, 129,   9,  73,  36, 196,  85,  61,  22,
+        233,  35, 130, 227, 123,  30, 152,  62, 160, 132,   4, 239, 133,  75,
+         14, 111,   8,  89, 237,  29, 223, 184,  50,  97, 247, 149, 231, 162,
+         74, 101,  25, 164,  16, 159, 150,  23, 252, 114,  48, 222, 221, 215,
+        177, 250,  12, 212,  53, 209,  95,  42,  27, 249, 163, 210, 116, 176,
+        134, 109, 199, 220,  86, 167, 218,  99, 219,  71, 214, 168,   7,  63,
+         49, 189, 255, 125, 205,  13, 186,   2, 174, 170,  52, 180, 172, 203,
+        140,  96, 238,  69,  46, 224,  18, 102,  47, 173,  11, 139,  77, 171,
+        253,  81, 185, 251, 242,  20, 142, 117, 230, 194, 254,  78, 126, 136,
+        178, 124])
+time: 0.0023s
+start pruning module.layer3.0.downsample.0, num of channels: 256
+tensor([141, 225, 139, 244, 227, 109,  59,  29, 249, 133, 252, 230, 181, 140,
+        185,  46,  52,  60,  75, 129, 130,  51, 237, 182, 170, 145,  54,  37,
+         64,  38, 102, 114, 137, 214, 105,   4, 176,   1, 248,  90,  42, 165,
+        149,  61, 229, 122, 242,  96,  57, 212, 151, 166, 192,  14, 255, 159,
+         23, 254, 125, 157, 239, 118, 209, 246,  73,  43,  69, 124, 117,  28,
+         39, 219,  68,  44, 191, 206,  63, 134, 245, 123, 217,  48,  22, 132,
+         35,  25, 234,  80, 236, 136, 180,  36,  85, 205, 110, 224,  97, 178,
+        147, 100, 220, 126, 177,  41,   8,  47, 187, 116, 199, 221,  11, 189,
+        112,  32, 210, 223, 150,  53, 115, 215, 168, 148, 161,  50,  76,  40,
+        153,  17])
+time: 0.0024s
+start pruning module.layer3.1.conv1, num of channels: 64
+tensor([55, 60,  2, 38, 49, 21, 48, 41, 24, 29, 23, 62, 52, 33,  9,  1,  7, 39,
+        58, 26, 43, 61, 47, 13, 63, 20, 27, 53, 35, 15,  4, 28])
+time: 0.0012s
+start pruning module.layer3.1.conv2, num of channels: 64
+tensor([ 2, 51, 26, 27, 19, 44, 50, 60, 21, 33, 34, 11, 22, 41,  3,  0, 35, 38,
+         7, 25, 52,  1, 36, 17,  8, 48, 13, 43, 14, 49, 55, 24])
+time: 0.0014s
+start pruning module.layer3.1.conv3, num of channels: 256
+tensor([ 68, 140, 239,  51, 249,  65, 144,  92, 243,  56, 147, 101, 190,  81,
+         82, 152, 137, 159, 214, 228,  32,  23, 102, 130, 172,  90,  47, 177,
+        189,  26,  35, 205, 198, 252,   7, 188, 230, 185, 180, 221, 182,  57,
+        235, 193, 248,   2,  50, 207, 124,  88,  72,  58,  85, 134,  78,  48,
+        153,  20, 116, 162, 132, 254, 133, 240, 173, 174, 135, 250,  77, 176,
+         62, 157,  10, 105, 233,  40, 161, 218, 168,  84, 115, 155, 106, 131,
+         75, 118, 222, 165, 151, 112, 200, 138,  55, 141,  45, 114, 120, 122,
+         95, 181,  66, 247,   6, 213, 237,  46,  12,  18, 170,  34, 119,  28,
+         25,  22, 108, 187, 238, 126,  29,  97, 178,   5,  14, 160, 125, 226,
+        150,  60])
+time: 0.0022s
+start pruning module.layer3.2.conv1, num of channels: 64
+tensor([ 4, 27, 19, 16, 55, 21, 29, 46, 20, 40, 42, 32,  3, 45, 12, 43, 56, 54,
+        57, 33, 34, 51,  0, 36, 37, 50, 11, 52,  5,  8, 39, 53])
+time: 0.0012s
+start pruning module.layer3.2.conv2, num of channels: 64
+tensor([51, 37, 45, 13, 50, 27, 34, 36, 59, 11, 28, 44, 29, 55,  5, 32, 31, 61,
+        15,  3, 43, 38, 23,  4, 49, 14, 58, 26, 16, 42, 12,  6])
+time: 0.0014s
+start pruning module.layer3.2.conv3, num of channels: 256
+tensor([141, 252,  14,  59, 162,  29, 225,  73, 196,  76, 116, 106, 228,  54,
+        197,  69, 215, 124,   1, 129,  75, 193,  11, 181, 135, 132, 153, 111,
+        186, 232, 150, 148,  84, 254,  67, 159,  25,  68, 114,  50,  80, 219,
+         46,   6, 154, 209,  53, 230,  90, 220,  56, 242, 117, 211, 123,  98,
+        239,  37,  28, 112, 210, 134,  18, 133, 173, 206, 207,  82,  24, 217,
+        127, 243, 191,  89,   9, 244, 144, 238,  21,  26,  23, 168, 237,   8,
+        213, 126, 205,  92, 233,  66, 158, 231, 119,  42, 221, 249,  86, 108,
+        169,  32, 178, 151,  35, 157,  62, 145,  20,  74, 190,  30, 177, 170,
+        125, 183, 115, 176, 246,  58,  12,  77, 247, 192, 227,  48, 167, 166,
+        164, 161])
+time: 0.0021s
+start pruning module.layer3.3.conv1, num of channels: 64
+tensor([51, 47, 23, 11, 38, 54, 33, 50, 60, 25, 14, 28, 19,  9, 36, 43, 56, 37,
+        58, 20, 59,  1, 40, 34, 49, 27, 26,  6, 41,  4, 48, 45])
+time: 0.0018s
+start pruning module.layer3.3.conv2, num of channels: 64
+tensor([30, 29, 54, 58,  5, 41, 55,  4, 39, 26, 56, 32, 63, 11, 14, 60, 22, 21,
+         3,  6, 10, 23, 46, 52, 17,  9, 28, 35, 59, 38, 13, 25])
+time: 0.0014s
+start pruning module.layer3.3.conv3, num of channels: 256
+tensor([ 76, 244,  19, 141, 162, 132,  16, 114, 167,  62, 168, 123, 199,  12,
+        106, 251,  59, 116,   4,  22,  90, 238,   8, 134, 202, 174, 204, 253,
+        236, 184,   9, 205, 165, 133, 160,  10,  78,  35,  49, 142,  85,  25,
+        222,   6, 188, 200,  99, 228,  48, 252,  37, 138, 119, 117,  34, 189,
+        150,  13,   2, 190,  24, 198, 249, 159, 230, 245, 153, 176,  58, 130,
+        109, 235, 131, 187,  94, 145, 155, 149,   3, 234,  23, 233, 115,  73,
+        224, 215,  96,  86, 128,  33, 220,  92, 255, 144,  55, 161,  54, 214,
+         71,   5,  65,   0, 242, 219, 129, 105, 206, 126, 147,  79, 157, 177,
+         75, 140,  20, 246, 122,  57,  56,  40, 112,  68, 178,  51, 172,  50,
+         15, 221])
+time: 0.0022s
+start pruning module.layer3.4.conv1, num of channels: 64
+tensor([54, 52,  3, 39, 42, 14,  5, 22, 23, 16, 35, 50,  4, 48, 62, 33, 44, 59,
+        46, 38, 58, 34, 56, 26, 30, 53, 19, 13, 60, 41, 37,  7])
+time: 0.0013s
+start pruning module.layer3.4.conv2, num of channels: 64
+tensor([54, 45, 53,  2, 37, 46, 60, 30, 36, 21, 49, 20, 27, 32, 24, 13,  0, 19,
+        15, 62, 18,  5,  1,  6, 56, 10, 12,  7, 17, 47, 11, 40])
+time: 0.0014s
+start pruning module.layer3.4.conv3, num of channels: 256
+tensor([244,  64, 142,  24, 255,  33, 252, 254, 209,  30,  35, 147,  65, 201,
+        141, 165,  73, 174,   3,   5, 115, 162,  50,  92, 184, 152,  81, 150,
+        210, 129, 222, 159, 106, 130, 200,  90, 123,  55,  14, 225,  97, 119,
+        191,  59,  48, 217, 151,  12,  16, 134, 238, 226,  13, 197, 228,  68,
+        249, 114, 105, 144,  99,  28, 145,   6, 153, 239,  54,  95,  67,   8,
+        189, 172, 169, 234, 211, 139, 233,   9, 215,  41, 196,  76, 160, 192,
+        158,   7,  51,  80,  75, 140,  22, 164, 116, 168, 109, 232, 243, 223,
+        148,  19, 133, 178, 176, 111, 231,  79,  49, 167,  88,  71,  34, 187,
+        157, 125, 146,  86,  63,  56, 180,  27,  26,  70, 161, 149, 186, 250,
+         74,  43])
+time: 0.0022s
+start pruning module.layer3.5.conv1, num of channels: 64
+tensor([56, 10,  5, 23, 58, 38, 33, 11, 13, 21,  8, 47,  9, 43,  7, 28, 55, 61,
+        14, 17, 35, 31, 59, 22, 19, 30, 60, 62,  1, 34, 42, 15])
+time: 0.0012s
+start pruning module.layer3.5.conv2, num of channels: 64
+tensor([23, 29, 63, 37, 55, 46, 42, 61,  3, 43,  2, 31, 10, 59,  5, 35, 48, 28,
+        45, 52, 44, 21, 57, 60, 27, 58, 33, 13, 54, 18, 41, 16])
+time: 0.0014s
+start pruning module.layer3.5.conv3, num of channels: 256
+tensor([244,  28,  73, 255, 123,  20, 153, 175, 102, 176,   8,  16, 131, 220,
+         38, 145, 150, 138, 142, 162, 141, 167, 251, 140, 132,  22, 202, 127,
+         94, 210, 160, 101,  81, 129,  14,   9, 201,  13,   3,  57,  44, 166,
+        233, 229,  93, 146, 186, 230,  72, 189,  80, 225, 135, 147,  47,  82,
+         12, 156, 121,  50, 177, 164, 184, 171, 173, 149, 118, 252, 242,  89,
+        243,  79, 222, 211, 182,  55, 112,  42,  43, 143, 128, 234,  23, 133,
+        104, 206,  77, 161,  39,  58,  61,  95, 116, 237,  91, 217, 221,  75,
+         15,  49, 110,  88, 159, 115,  26, 109, 172, 208, 196, 254,  27,  59,
+        193, 174,   6, 216, 122,  56, 192, 235, 215, 253, 130,  53, 232, 185,
+         33, 148])
+time: 0.0021s
+start pruning module.layer3.6.conv1, num of channels: 64
+tensor([20, 42, 46, 35, 24, 14, 27, 57, 26, 11, 39,  6,  5,  4,  1, 17, 29, 61,
+        22, 58, 48, 60,  2, 28,  8, 25,  7, 59, 47, 18, 63, 56])
+time: 0.0012s
+start pruning module.layer3.6.conv2, num of channels: 64
+tensor([32, 46, 41, 34, 50, 24, 36, 38, 42, 62, 17, 54, 59, 10, 14, 28, 57, 20,
+        43, 40, 31, 39,  0,  1, 33, 61, 60, 27, 22,  3, 48, 51])
+time: 0.0016s
+start pruning module.layer3.6.conv3, num of channels: 256
+tensor([244,  62,  73, 132, 156, 233, 102,  23, 242,  78,  82,   6,   3,  22,
+        153, 134,  50, 141, 160, 144, 230, 190,  99,  25, 116, 109, 157, 252,
+        167,  92,  30, 249, 140, 148, 182,  54, 176, 237, 202, 246,  12,  45,
+        253, 125, 238, 154,  88,  38,  39, 208, 122, 133,  36, 255,  93, 142,
+        251, 105, 236, 193, 124,   9, 188, 152, 170,  43,  98, 150,  33, 192,
+        158,  29, 191,  13, 221, 163,   8, 187, 111,  57, 240, 161,  90,  70,
+         16, 172,  77,  65, 250, 215,  47, 210, 168,  66, 177, 214, 179, 231,
+          4, 180, 216,  56,  14, 145, 120, 239, 126, 229, 164,  75, 131, 119,
+         15,  49,  80, 143,  37,  83, 112, 155, 204,  58, 115,  63,  91,  69,
+        146, 209])
+time: 0.0022s
+start pruning module.layer3.7.conv1, num of channels: 64
+tensor([ 3, 10, 51, 45, 56, 19, 36, 58, 50, 49, 26, 17, 40, 48, 33, 27, 55, 14,
+         5, 47, 18,  1, 23, 37,  4,  9, 30, 34, 15, 25, 61, 41])
+time: 0.0013s
+start pruning module.layer3.7.conv2, num of channels: 64
+tensor([13, 26, 59, 52, 34, 21, 45, 29,  2, 32, 18, 42,  4, 36, 41, 37, 50, 58,
+        20, 53, 40, 61,  7, 57,  8, 35, 14, 56,  6,  0, 63, 31])
+time: 0.0014s
+start pruning module.layer3.7.conv3, num of channels: 256
+tensor([244,  14, 156,  75, 225,  73,  95,  22, 134,  81, 233, 176, 167, 101,
+          3, 116, 160,  59, 148,  72,  29, 132, 222,  90, 165, 106, 229, 130,
+        224, 198,  37, 158, 182, 141, 236,  54, 245, 145, 247, 150, 174, 206,
+         23, 196, 129, 193,   4,  17,  63,  50, 140, 234,  25, 251, 100, 209,
+         38,  99,  10, 111, 161, 133, 235, 157,  30, 138,  43,  94, 123, 238,
+        142, 117, 255,  16, 240, 124, 204,  92, 231, 162,  71,  86, 253, 210,
+          8, 172, 215, 249,   5, 113,  88, 109,  97,  26, 147,  52, 170,  44,
+        127, 254, 202,  98, 122, 180, 179, 115,   7, 252, 166, 153,  49, 102,
+         69, 221,  42,  51,   9,  47,  87,  48,  62, 186, 217, 152, 119, 205,
+        230,  40])
+time: 0.0021s
+start pruning module.layer3.8.conv1, num of channels: 64
+tensor([53, 54, 38, 10, 17, 48, 35,  5, 37, 23, 19,  0, 43, 28, 45, 21, 20,  9,
+        31, 18, 11, 33, 56, 58, 50, 42,  3, 59,  4,  2, 51,  7])
+time: 0.0013s
+start pruning module.layer3.8.conv2, num of channels: 64
+tensor([33, 20, 19,  1, 59, 42, 37, 23,  5, 29, 40, 58, 54, 32,  6, 51, 13, 43,
+        27, 18, 63, 21, 41, 17, 22, 56, 15, 45, 52,  7, 24, 57])
+time: 0.0014s
+start pruning module.layer3.8.conv3, num of channels: 256
+tensor([170,  43,  33, 119,  40,  83, 214, 182,  19, 173, 233, 122, 178, 155,
+         94, 135, 243, 240, 103, 230,  13,  41, 199, 198, 231, 132, 221, 206,
+         85,  30, 108, 181, 133, 115, 246, 154, 174,  93,  66, 162, 239,  96,
+        211,   6, 228,  86, 186, 175, 142, 179,  80,   0, 123, 237,  52, 111,
+         74, 244, 250, 120, 200, 196, 100,  58,  20,   1, 218, 202, 180, 253,
+        255,  72,  78,   5, 187,  22,   2, 251,  60, 232,  68, 193,  53,  15,
+          7, 226,  44,  45, 168,  71, 219,  77, 148, 189, 134, 236, 222,  14,
+         79,   3, 191, 185, 106, 131, 104,  92, 167, 177, 169, 102, 146, 235,
+        107,  28,  21, 159,  65, 140, 114,  87, 229, 183, 234, 128,  98, 152,
+         39,  67])
+time: 0.0022s
+Global sparsity: 49.47%
+epoch: 0, train loss: 11.4952, train acc: 10.0000, test accuracy: 10.0000
+step: 0, CrossEntropy loss: 3.9820 (3.9820), train accuracy: 12.500(12.500), lr: 0.0100
+step: 100, CrossEntropy loss: 1.3027 (1.7423), train accuracy: 51.562(38.792), lr: 0.0100
+step: 200, CrossEntropy loss: 1.0043 (1.4022), train accuracy: 67.188(50.727), lr: 0.0100
+step: 300, CrossEntropy loss: 0.7599 (1.2042), train accuracy: 73.438(57.716), lr: 0.0100
+epoch: 0, CrossEntropy loss: 1.0827, accuracy: 61.958
+test acc: 77.3900
+step: 0, CrossEntropy loss: 0.6681 (0.6681), train accuracy: 77.344(77.344), lr: 0.0100
+step: 100, CrossEntropy loss: 0.8007 (0.5742), train accuracy: 72.656(80.384), lr: 0.0100
+step: 200, CrossEntropy loss: 0.4283 (0.5516), train accuracy: 84.375(81.063), lr: 0.0100
+step: 300, CrossEntropy loss: 0.4846 (0.5319), train accuracy: 82.031(81.665), lr: 0.0100
+epoch: 1, CrossEntropy loss: 0.5171, accuracy: 82.202
+test acc: 82.4500
+step: 0, CrossEntropy loss: 0.4594 (0.4594), train accuracy: 82.031(82.031), lr: 0.0100
+step: 100, CrossEntropy loss: 0.3247 (0.4155), train accuracy: 88.281(85.512), lr: 0.0100
+step: 200, CrossEntropy loss: 0.4884 (0.4116), train accuracy: 81.250(85.790), lr: 0.0100
+step: 300, CrossEntropy loss: 0.3560 (0.4042), train accuracy: 88.281(86.052), lr: 0.0100
+epoch: 2, CrossEntropy loss: 0.3996, accuracy: 86.230
+test acc: 85.4500
+step: 0, CrossEntropy loss: 0.3575 (0.3575), train accuracy: 86.719(86.719), lr: 0.0099
+step: 100, CrossEntropy loss: 0.3857 (0.3469), train accuracy: 87.500(87.856), lr: 0.0099
+step: 200, CrossEntropy loss: 0.2115 (0.3478), train accuracy: 91.406(87.718), lr: 0.0099
+step: 300, CrossEntropy loss: 0.2642 (0.3424), train accuracy: 92.969(87.918), lr: 0.0099
+epoch: 3, CrossEntropy loss: 0.3397, accuracy: 88.080
+test acc: 85.9100
+step: 0, CrossEntropy loss: 0.4471 (0.4471), train accuracy: 83.594(83.594), lr: 0.0099
+step: 100, CrossEntropy loss: 0.2110 (0.3004), train accuracy: 91.406(89.712), lr: 0.0099
+step: 200, CrossEntropy loss: 0.2367 (0.2986), train accuracy: 92.969(89.770), lr: 0.0099
+step: 300, CrossEntropy loss: 0.3870 (0.3029), train accuracy: 88.281(89.587), lr: 0.0099
+epoch: 4, CrossEntropy loss: 0.3031, accuracy: 89.522
+test acc: 87.0600
+step: 0, CrossEntropy loss: 0.2396 (0.2396), train accuracy: 91.406(91.406), lr: 0.0098
+step: 100, CrossEntropy loss: 0.2385 (0.2687), train accuracy: 91.406(90.803), lr: 0.0098
+step: 200, CrossEntropy loss: 0.2329 (0.2715), train accuracy: 92.188(90.571), lr: 0.0098
+step: 300, CrossEntropy loss: 0.2687 (0.2777), train accuracy: 92.188(90.417), lr: 0.0098
+epoch: 5, CrossEntropy loss: 0.2771, accuracy: 90.392
+test acc: 87.7200
+step: 0, CrossEntropy loss: 0.2239 (0.2239), train accuracy: 92.969(92.969), lr: 0.0098
+step: 100, CrossEntropy loss: 0.3217 (0.2385), train accuracy: 90.625(91.731), lr: 0.0098
+step: 200, CrossEntropy loss: 0.2481 (0.2471), train accuracy: 92.188(91.402), lr: 0.0098
+step: 300, CrossEntropy loss: 0.3312 (0.2560), train accuracy: 86.719(91.162), lr: 0.0098
+epoch: 6, CrossEntropy loss: 0.2581, accuracy: 91.082
+test acc: 87.5700
+step: 0, CrossEntropy loss: 0.1973 (0.1973), train accuracy: 94.531(94.531), lr: 0.0097
+step: 100, CrossEntropy loss: 0.2319 (0.2325), train accuracy: 91.406(92.033), lr: 0.0097
+step: 200, CrossEntropy loss: 0.1775 (0.2364), train accuracy: 92.188(91.826), lr: 0.0097
+step: 300, CrossEntropy loss: 0.3408 (0.2410), train accuracy: 86.719(91.674), lr: 0.0097
+epoch: 7, CrossEntropy loss: 0.2430, accuracy: 91.590
+test acc: 88.9200
+step: 0, CrossEntropy loss: 0.2157 (0.2157), train accuracy: 91.406(91.406), lr: 0.0096
+step: 100, CrossEntropy loss: 0.2408 (0.2239), train accuracy: 90.625(92.342), lr: 0.0096
+step: 200, CrossEntropy loss: 0.2593 (0.2285), train accuracy: 90.625(92.172), lr: 0.0096
+step: 300, CrossEntropy loss: 0.2451 (0.2316), train accuracy: 92.188(92.045), lr: 0.0096
+epoch: 8, CrossEntropy loss: 0.2278, accuracy: 92.162
+test acc: 88.7800
+step: 0, CrossEntropy loss: 0.1618 (0.1618), train accuracy: 94.531(94.531), lr: 0.0095
+step: 100, CrossEntropy loss: 0.2120 (0.2051), train accuracy: 92.188(92.930), lr: 0.0095
+step: 200, CrossEntropy loss: 0.1793 (0.2146), train accuracy: 92.969(92.565), lr: 0.0095
+step: 300, CrossEntropy loss: 0.2064 (0.2134), train accuracy: 90.625(92.587), lr: 0.0095
+epoch: 9, CrossEntropy loss: 0.2162, accuracy: 92.424
+test acc: 88.3900
+step: 0, CrossEntropy loss: 0.3228 (0.3228), train accuracy: 86.719(86.719), lr: 0.0093
+step: 100, CrossEntropy loss: 0.2411 (0.2024), train accuracy: 89.844(93.108), lr: 0.0093
+step: 200, CrossEntropy loss: 0.2360 (0.2037), train accuracy: 91.406(93.015), lr: 0.0093
+step: 300, CrossEntropy loss: 0.1419 (0.2040), train accuracy: 96.094(92.971), lr: 0.0093
+epoch: 10, CrossEntropy loss: 0.2046, accuracy: 92.980
+test acc: 87.2200
+step: 0, CrossEntropy loss: 0.1748 (0.1748), train accuracy: 93.750(93.750), lr: 0.0092
+step: 100, CrossEntropy loss: 0.1156 (0.1861), train accuracy: 95.312(93.572), lr: 0.0092
+step: 200, CrossEntropy loss: 0.2356 (0.1888), train accuracy: 92.969(93.439), lr: 0.0092
+step: 300, CrossEntropy loss: 0.1916 (0.1931), train accuracy: 94.531(93.343), lr: 0.0092
+epoch: 11, CrossEntropy loss: 0.1961, accuracy: 93.202
+test acc: 89.0100
+step: 0, CrossEntropy loss: 0.2321 (0.2321), train accuracy: 92.969(92.969), lr: 0.0090
+step: 100, CrossEntropy loss: 0.1565 (0.1839), train accuracy: 96.094(93.611), lr: 0.0090
+step: 200, CrossEntropy loss: 0.1969 (0.1847), train accuracy: 92.969(93.641), lr: 0.0090
+step: 300, CrossEntropy loss: 0.1845 (0.1875), train accuracy: 93.750(93.524), lr: 0.0090
+epoch: 12, CrossEntropy loss: 0.1889, accuracy: 93.426
+test acc: 88.7200
+step: 0, CrossEntropy loss: 0.1287 (0.1287), train accuracy: 96.875(96.875), lr: 0.0089
+step: 100, CrossEntropy loss: 0.1147 (0.1843), train accuracy: 97.656(93.704), lr: 0.0089
+step: 200, CrossEntropy loss: 0.1284 (0.1841), train accuracy: 95.312(93.602), lr: 0.0089
+step: 300, CrossEntropy loss: 0.1925 (0.1838), train accuracy: 93.750(93.558), lr: 0.0089
+epoch: 13, CrossEntropy loss: 0.1843, accuracy: 93.528
+test acc: 88.8700
+step: 0, CrossEntropy loss: 0.2163 (0.2163), train accuracy: 93.750(93.750), lr: 0.0087
+step: 100, CrossEntropy loss: 0.1920 (0.1589), train accuracy: 91.406(94.694), lr: 0.0087
+step: 200, CrossEntropy loss: 0.3173 (0.1646), train accuracy: 89.062(94.496), lr: 0.0087
+step: 300, CrossEntropy loss: 0.2190 (0.1676), train accuracy: 93.750(94.350), lr: 0.0087
+epoch: 14, CrossEntropy loss: 0.1727, accuracy: 94.128
+test acc: 89.9100
+step: 0, CrossEntropy loss: 0.1403 (0.1403), train accuracy: 96.094(96.094), lr: 0.0085
+step: 100, CrossEntropy loss: 0.1497 (0.1626), train accuracy: 94.531(94.585), lr: 0.0085
+step: 200, CrossEntropy loss: 0.1930 (0.1620), train accuracy: 93.750(94.547), lr: 0.0085
+step: 300, CrossEntropy loss: 0.1871 (0.1681), train accuracy: 92.969(94.248), lr: 0.0085
+epoch: 15, CrossEntropy loss: 0.1704, accuracy: 94.130
+test acc: 89.3500
+step: 0, CrossEntropy loss: 0.1665 (0.1665), train accuracy: 93.750(93.750), lr: 0.0083
+step: 100, CrossEntropy loss: 0.2179 (0.1509), train accuracy: 95.312(94.670), lr: 0.0083
+step: 200, CrossEntropy loss: 0.1813 (0.1583), train accuracy: 92.188(94.384), lr: 0.0083
+step: 300, CrossEntropy loss: 0.1770 (0.1639), train accuracy: 93.750(94.215), lr: 0.0083
+epoch: 16, CrossEntropy loss: 0.1633, accuracy: 94.268
+test acc: 89.1400
+step: 0, CrossEntropy loss: 0.1848 (0.1848), train accuracy: 92.969(92.969), lr: 0.0081
+step: 100, CrossEntropy loss: 0.1504 (0.1495), train accuracy: 94.531(94.841), lr: 0.0081
+step: 200, CrossEntropy loss: 0.1554 (0.1488), train accuracy: 94.531(94.889), lr: 0.0081
+step: 300, CrossEntropy loss: 0.1282 (0.1530), train accuracy: 96.094(94.770), lr: 0.0081
+epoch: 17, CrossEntropy loss: 0.1548, accuracy: 94.686
+test acc: 90.0400
+step: 0, CrossEntropy loss: 0.0960 (0.0960), train accuracy: 96.875(96.875), lr: 0.0079
+step: 100, CrossEntropy loss: 0.1320 (0.1369), train accuracy: 95.312(95.367), lr: 0.0079
+step: 200, CrossEntropy loss: 0.1858 (0.1423), train accuracy: 91.406(95.165), lr: 0.0079
+step: 300, CrossEntropy loss: 0.1482 (0.1450), train accuracy: 93.750(95.037), lr: 0.0079
+epoch: 18, CrossEntropy loss: 0.1484, accuracy: 94.890
+test acc: 90.1100
+step: 0, CrossEntropy loss: 0.1406 (0.1406), train accuracy: 93.750(93.750), lr: 0.0077
+step: 100, CrossEntropy loss: 0.1110 (0.1347), train accuracy: 94.531(95.196), lr: 0.0077
+step: 200, CrossEntropy loss: 0.1918 (0.1400), train accuracy: 93.750(95.040), lr: 0.0077
+step: 300, CrossEntropy loss: 0.0956 (0.1411), train accuracy: 96.094(95.037), lr: 0.0077
+epoch: 19, CrossEntropy loss: 0.1446, accuracy: 94.898
+test acc: 89.8800
+step: 0, CrossEntropy loss: 0.1104 (0.1104), train accuracy: 96.875(96.875), lr: 0.0075
+step: 100, CrossEntropy loss: 0.2116 (0.1390), train accuracy: 92.969(95.266), lr: 0.0075
+step: 200, CrossEntropy loss: 0.1972 (0.1371), train accuracy: 91.406(95.235), lr: 0.0075
+step: 300, CrossEntropy loss: 0.1608 (0.1387), train accuracy: 95.312(95.183), lr: 0.0075
+epoch: 20, CrossEntropy loss: 0.1416, accuracy: 95.102
+test acc: 90.0000
+step: 0, CrossEntropy loss: 0.0640 (0.0640), train accuracy: 98.438(98.438), lr: 0.0073
+step: 100, CrossEntropy loss: 0.1662 (0.1284), train accuracy: 96.094(95.614), lr: 0.0073
+step: 200, CrossEntropy loss: 0.1583 (0.1316), train accuracy: 94.531(95.557), lr: 0.0073
+step: 300, CrossEntropy loss: 0.1711 (0.1338), train accuracy: 93.750(95.479), lr: 0.0073
+epoch: 21, CrossEntropy loss: 0.1365, accuracy: 95.314
+test acc: 89.4900
+step: 0, CrossEntropy loss: 0.1213 (0.1213), train accuracy: 96.094(96.094), lr: 0.0070
+step: 100, CrossEntropy loss: 0.1474 (0.1202), train accuracy: 94.531(95.761), lr: 0.0070
+step: 200, CrossEntropy loss: 0.1610 (0.1229), train accuracy: 93.750(95.705), lr: 0.0070
+step: 300, CrossEntropy loss: 0.1586 (0.1261), train accuracy: 92.188(95.627), lr: 0.0070
+epoch: 22, CrossEntropy loss: 0.1285, accuracy: 95.526
+test acc: 90.8400
+step: 0, CrossEntropy loss: 0.1409 (0.1409), train accuracy: 92.969(92.969), lr: 0.0068
+step: 100, CrossEntropy loss: 0.1154 (0.1204), train accuracy: 96.875(95.699), lr: 0.0068
+step: 200, CrossEntropy loss: 0.1620 (0.1193), train accuracy: 92.969(95.841), lr: 0.0068
+step: 300, CrossEntropy loss: 0.1981 (0.1237), train accuracy: 91.406(95.702), lr: 0.0068
+epoch: 23, CrossEntropy loss: 0.1252, accuracy: 95.620
+test acc: 90.2300
+step: 0, CrossEntropy loss: 0.0979 (0.0979), train accuracy: 96.875(96.875), lr: 0.0065
+step: 100, CrossEntropy loss: 0.0588 (0.1191), train accuracy: 98.438(95.869), lr: 0.0065
+step: 200, CrossEntropy loss: 0.1155 (0.1195), train accuracy: 97.656(95.853), lr: 0.0065
+step: 300, CrossEntropy loss: 0.1118 (0.1201), train accuracy: 96.094(95.832), lr: 0.0065
+epoch: 24, CrossEntropy loss: 0.1214, accuracy: 95.770
+test acc: 90.9900
+step: 0, CrossEntropy loss: 0.1139 (0.1139), train accuracy: 96.094(96.094), lr: 0.0063
+step: 100, CrossEntropy loss: 0.1029 (0.1088), train accuracy: 97.656(96.272), lr: 0.0063
+step: 200, CrossEntropy loss: 0.1439 (0.1089), train accuracy: 95.312(96.222), lr: 0.0063
+step: 300, CrossEntropy loss: 0.1376 (0.1092), train accuracy: 93.750(96.226), lr: 0.0063
+epoch: 25, CrossEntropy loss: 0.1119, accuracy: 96.140
+test acc: 90.7400
+step: 0, CrossEntropy loss: 0.1600 (0.1600), train accuracy: 92.969(92.969), lr: 0.0060
+step: 100, CrossEntropy loss: 0.0596 (0.1074), train accuracy: 97.656(96.434), lr: 0.0060
+step: 200, CrossEntropy loss: 0.2046 (0.1113), train accuracy: 91.406(96.288), lr: 0.0060
+step: 300, CrossEntropy loss: 0.0798 (0.1110), train accuracy: 96.875(96.325), lr: 0.0060
+epoch: 26, CrossEntropy loss: 0.1137, accuracy: 96.218
+test acc: 90.6300
+step: 0, CrossEntropy loss: 0.1223 (0.1223), train accuracy: 95.312(95.312), lr: 0.0058
+step: 100, CrossEntropy loss: 0.1022 (0.1006), train accuracy: 96.875(96.542), lr: 0.0058
+step: 200, CrossEntropy loss: 0.1143 (0.0990), train accuracy: 97.656(96.650), lr: 0.0058
+step: 300, CrossEntropy loss: 0.1111 (0.1016), train accuracy: 96.875(96.569), lr: 0.0058
+epoch: 27, CrossEntropy loss: 0.1045, accuracy: 96.470
+test acc: 90.6900
+step: 0, CrossEntropy loss: 0.1331 (0.1331), train accuracy: 94.531(94.531), lr: 0.0055
+step: 100, CrossEntropy loss: 0.0815 (0.0927), train accuracy: 96.875(96.906), lr: 0.0055
+step: 200, CrossEntropy loss: 0.0436 (0.0963), train accuracy: 99.219(96.739), lr: 0.0055
+step: 300, CrossEntropy loss: 0.0816 (0.0978), train accuracy: 96.875(96.660), lr: 0.0055
+epoch: 28, CrossEntropy loss: 0.1000, accuracy: 96.582
+test acc: 90.3500
+step: 0, CrossEntropy loss: 0.1808 (0.1808), train accuracy: 94.531(94.531), lr: 0.0053
+step: 100, CrossEntropy loss: 0.0972 (0.0984), train accuracy: 97.656(96.581), lr: 0.0053
+step: 200, CrossEntropy loss: 0.1408 (0.0943), train accuracy: 96.875(96.793), lr: 0.0053
+step: 300, CrossEntropy loss: 0.0893 (0.0955), train accuracy: 96.875(96.756), lr: 0.0053
+epoch: 29, CrossEntropy loss: 0.0967, accuracy: 96.718
+test acc: 91.0400
+step: 0, CrossEntropy loss: 0.1002 (0.1002), train accuracy: 97.656(97.656), lr: 0.0050
+step: 100, CrossEntropy loss: 0.0665 (0.0906), train accuracy: 98.438(97.053), lr: 0.0050
+step: 200, CrossEntropy loss: 0.0669 (0.0934), train accuracy: 96.875(96.840), lr: 0.0050
+step: 300, CrossEntropy loss: 0.1508 (0.0935), train accuracy: 92.969(96.828), lr: 0.0050
+epoch: 30, CrossEntropy loss: 0.0945, accuracy: 96.812
+test acc: 91.0500
+step: 0, CrossEntropy loss: 0.0564 (0.0564), train accuracy: 99.219(99.219), lr: 0.0047
+step: 100, CrossEntropy loss: 0.1361 (0.0849), train accuracy: 95.312(97.014), lr: 0.0047
+step: 200, CrossEntropy loss: 0.0415 (0.0858), train accuracy: 99.219(97.139), lr: 0.0047
+step: 300, CrossEntropy loss: 0.1174 (0.0871), train accuracy: 95.312(97.077), lr: 0.0047
+epoch: 31, CrossEntropy loss: 0.0876, accuracy: 97.070
+test acc: 90.6900
+step: 0, CrossEntropy loss: 0.0486 (0.0486), train accuracy: 98.438(98.438), lr: 0.0045
+step: 100, CrossEntropy loss: 0.0583 (0.0811), train accuracy: 98.438(97.231), lr: 0.0045
+step: 200, CrossEntropy loss: 0.0414 (0.0824), train accuracy: 98.438(97.120), lr: 0.0045
+step: 300, CrossEntropy loss: 0.0469 (0.0848), train accuracy: 99.219(97.044), lr: 0.0045
+epoch: 32, CrossEntropy loss: 0.0862, accuracy: 97.000
+test acc: 91.0500
+step: 0, CrossEntropy loss: 0.0878 (0.0878), train accuracy: 96.875(96.875), lr: 0.0042
+step: 100, CrossEntropy loss: 0.0832 (0.0806), train accuracy: 96.094(97.347), lr: 0.0042
+step: 200, CrossEntropy loss: 0.0881 (0.0772), train accuracy: 96.875(97.435), lr: 0.0042
+step: 300, CrossEntropy loss: 0.0528 (0.0778), train accuracy: 97.656(97.399), lr: 0.0042
+epoch: 33, CrossEntropy loss: 0.0790, accuracy: 97.348
+test acc: 91.2700
+step: 0, CrossEntropy loss: 0.1013 (0.1013), train accuracy: 96.875(96.875), lr: 0.0040
+step: 100, CrossEntropy loss: 0.0809 (0.0715), train accuracy: 97.656(97.695), lr: 0.0040
+step: 200, CrossEntropy loss: 0.1270 (0.0742), train accuracy: 94.531(97.547), lr: 0.0040
+step: 300, CrossEntropy loss: 0.0893 (0.0749), train accuracy: 97.656(97.513), lr: 0.0040
+epoch: 34, CrossEntropy loss: 0.0746, accuracy: 97.528
+test acc: 91.5700
+step: 0, CrossEntropy loss: 0.0400 (0.0400), train accuracy: 99.219(99.219), lr: 0.0037
+step: 100, CrossEntropy loss: 0.1127 (0.0718), train accuracy: 95.312(97.718), lr: 0.0037
+step: 200, CrossEntropy loss: 0.0493 (0.0717), train accuracy: 98.438(97.703), lr: 0.0037
+step: 300, CrossEntropy loss: 0.1126 (0.0717), train accuracy: 95.312(97.703), lr: 0.0037
+epoch: 35, CrossEntropy loss: 0.0723, accuracy: 97.648
+test acc: 91.2000
+step: 0, CrossEntropy loss: 0.0744 (0.0744), train accuracy: 96.875(96.875), lr: 0.0035
+step: 100, CrossEntropy loss: 0.0482 (0.0624), train accuracy: 98.438(97.912), lr: 0.0035
+step: 200, CrossEntropy loss: 0.0466 (0.0639), train accuracy: 98.438(97.905), lr: 0.0035
+step: 300, CrossEntropy loss: 0.0769 (0.0657), train accuracy: 97.656(97.851), lr: 0.0035
+epoch: 36, CrossEntropy loss: 0.0665, accuracy: 97.830
+test acc: 91.2700
+step: 0, CrossEntropy loss: 0.0632 (0.0632), train accuracy: 98.438(98.438), lr: 0.0032
+step: 100, CrossEntropy loss: 0.0470 (0.0674), train accuracy: 98.438(97.826), lr: 0.0032
+step: 200, CrossEntropy loss: 0.0534 (0.0638), train accuracy: 96.875(98.018), lr: 0.0032
+step: 300, CrossEntropy loss: 0.1070 (0.0646), train accuracy: 96.875(97.955), lr: 0.0032
+epoch: 37, CrossEntropy loss: 0.0640, accuracy: 97.952
+test acc: 91.5100
+step: 0, CrossEntropy loss: 0.0233 (0.0233), train accuracy: 100.000(100.000), lr: 0.0030
+step: 100, CrossEntropy loss: 0.0816 (0.0648), train accuracy: 96.875(97.834), lr: 0.0030
+step: 200, CrossEntropy loss: 0.0516 (0.0649), train accuracy: 98.438(97.882), lr: 0.0030
+step: 300, CrossEntropy loss: 0.0313 (0.0643), train accuracy: 100.000(97.924), lr: 0.0030
+epoch: 38, CrossEntropy loss: 0.0636, accuracy: 97.968
+test acc: 91.5700
+step: 0, CrossEntropy loss: 0.0336 (0.0336), train accuracy: 99.219(99.219), lr: 0.0027
+step: 100, CrossEntropy loss: 0.0851 (0.0544), train accuracy: 97.656(98.291), lr: 0.0027
+step: 200, CrossEntropy loss: 0.0575 (0.0555), train accuracy: 97.656(98.216), lr: 0.0027
+step: 300, CrossEntropy loss: 0.0700 (0.0572), train accuracy: 97.656(98.162), lr: 0.0027
+epoch: 39, CrossEntropy loss: 0.0574, accuracy: 98.170
+test acc: 91.5100
+step: 0, CrossEntropy loss: 0.0463 (0.0463), train accuracy: 98.438(98.438), lr: 0.0025
+step: 100, CrossEntropy loss: 0.0389 (0.0490), train accuracy: 98.438(98.631), lr: 0.0025
+step: 200, CrossEntropy loss: 0.0413 (0.0516), train accuracy: 100.000(98.511), lr: 0.0025
+step: 300, CrossEntropy loss: 0.0541 (0.0520), train accuracy: 98.438(98.479), lr: 0.0025
+epoch: 40, CrossEntropy loss: 0.0528, accuracy: 98.430
+test acc: 91.5400
+step: 0, CrossEntropy loss: 0.0589 (0.0589), train accuracy: 99.219(99.219), lr: 0.0023
+step: 100, CrossEntropy loss: 0.0452 (0.0513), train accuracy: 98.438(98.430), lr: 0.0023
+step: 200, CrossEntropy loss: 0.0417 (0.0516), train accuracy: 97.656(98.352), lr: 0.0023
+step: 300, CrossEntropy loss: 0.0504 (0.0515), train accuracy: 97.656(98.383), lr: 0.0023
+epoch: 41, CrossEntropy loss: 0.0519, accuracy: 98.372
+test acc: 91.7000
+step: 0, CrossEntropy loss: 0.0536 (0.0536), train accuracy: 99.219(99.219), lr: 0.0021
+step: 100, CrossEntropy loss: 0.0475 (0.0494), train accuracy: 99.219(98.515), lr: 0.0021
+step: 200, CrossEntropy loss: 0.0421 (0.0481), train accuracy: 99.219(98.531), lr: 0.0021
+step: 300, CrossEntropy loss: 0.0710 (0.0484), train accuracy: 96.875(98.495), lr: 0.0021
+epoch: 42, CrossEntropy loss: 0.0485, accuracy: 98.504
+test acc: 91.8600
+step: 0, CrossEntropy loss: 0.0493 (0.0493), train accuracy: 98.438(98.438), lr: 0.0019
+step: 100, CrossEntropy loss: 0.0629 (0.0434), train accuracy: 97.656(98.739), lr: 0.0019
+step: 200, CrossEntropy loss: 0.0415 (0.0469), train accuracy: 99.219(98.574), lr: 0.0019
+step: 300, CrossEntropy loss: 0.0327 (0.0474), train accuracy: 100.000(98.572), lr: 0.0019
+epoch: 43, CrossEntropy loss: 0.0472, accuracy: 98.600
+test acc: 91.7700
+step: 0, CrossEntropy loss: 0.0340 (0.0340), train accuracy: 99.219(99.219), lr: 0.0017
+step: 100, CrossEntropy loss: 0.0489 (0.0439), train accuracy: 99.219(98.693), lr: 0.0017
+step: 200, CrossEntropy loss: 0.0403 (0.0444), train accuracy: 99.219(98.690), lr: 0.0017
+step: 300, CrossEntropy loss: 0.0356 (0.0443), train accuracy: 99.219(98.720), lr: 0.0017
+epoch: 44, CrossEntropy loss: 0.0445, accuracy: 98.714
+test acc: 92.0600
+step: 0, CrossEntropy loss: 0.0442 (0.0442), train accuracy: 98.438(98.438), lr: 0.0015
+step: 100, CrossEntropy loss: 0.0561 (0.0429), train accuracy: 97.656(98.809), lr: 0.0015
+step: 200, CrossEntropy loss: 0.0708 (0.0423), train accuracy: 96.875(98.861), lr: 0.0015
+step: 300, CrossEntropy loss: 0.0106 (0.0431), train accuracy: 100.000(98.816), lr: 0.0015
+epoch: 45, CrossEntropy loss: 0.0428, accuracy: 98.802
+test acc: 91.8500
+step: 0, CrossEntropy loss: 0.0395 (0.0395), train accuracy: 100.000(100.000), lr: 0.0013
+step: 100, CrossEntropy loss: 0.0619 (0.0393), train accuracy: 98.438(98.963), lr: 0.0013
+step: 200, CrossEntropy loss: 0.0516 (0.0406), train accuracy: 98.438(98.892), lr: 0.0013
+step: 300, CrossEntropy loss: 0.0463 (0.0412), train accuracy: 99.219(98.853), lr: 0.0013
+epoch: 46, CrossEntropy loss: 0.0416, accuracy: 98.826
+test acc: 91.8400
+step: 0, CrossEntropy loss: 0.0263 (0.0263), train accuracy: 100.000(100.000), lr: 0.0011
+step: 100, CrossEntropy loss: 0.0290 (0.0382), train accuracy: 100.000(98.909), lr: 0.0011
+step: 200, CrossEntropy loss: 0.0186 (0.0375), train accuracy: 100.000(98.970), lr: 0.0011
+step: 300, CrossEntropy loss: 0.0537 (0.0385), train accuracy: 99.219(98.910), lr: 0.0011
+epoch: 47, CrossEntropy loss: 0.0384, accuracy: 98.910
+test acc: 91.9800
+step: 0, CrossEntropy loss: 0.0534 (0.0534), train accuracy: 98.438(98.438), lr: 0.0010
+step: 100, CrossEntropy loss: 0.0379 (0.0357), train accuracy: 99.219(99.080), lr: 0.0010
+step: 200, CrossEntropy loss: 0.0149 (0.0361), train accuracy: 100.000(99.071), lr: 0.0010
+step: 300, CrossEntropy loss: 0.0478 (0.0360), train accuracy: 99.219(99.076), lr: 0.0010
+epoch: 48, CrossEntropy loss: 0.0365, accuracy: 99.022
+test acc: 91.9500
+step: 0, CrossEntropy loss: 0.0563 (0.0563), train accuracy: 97.656(97.656), lr: 0.0008
+step: 100, CrossEntropy loss: 0.0205 (0.0364), train accuracy: 99.219(98.948), lr: 0.0008
+step: 200, CrossEntropy loss: 0.0496 (0.0357), train accuracy: 97.656(99.024), lr: 0.0008
+step: 300, CrossEntropy loss: 0.0503 (0.0367), train accuracy: 99.219(98.967), lr: 0.0008
+epoch: 49, CrossEntropy loss: 0.0361, accuracy: 99.002
+test acc: 91.8700
+step: 0, CrossEntropy loss: 0.0418 (0.0418), train accuracy: 98.438(98.438), lr: 0.0007
+step: 100, CrossEntropy loss: 0.0300 (0.0323), train accuracy: 98.438(99.196), lr: 0.0007
+step: 200, CrossEntropy loss: 0.0334 (0.0336), train accuracy: 99.219(99.149), lr: 0.0007
+step: 300, CrossEntropy loss: 0.0152 (0.0338), train accuracy: 100.000(99.159), lr: 0.0007
+epoch: 50, CrossEntropy loss: 0.0344, accuracy: 99.110
+test acc: 91.9100
+step: 0, CrossEntropy loss: 0.0535 (0.0535), train accuracy: 99.219(99.219), lr: 0.0005
+step: 100, CrossEntropy loss: 0.0471 (0.0353), train accuracy: 98.438(99.080), lr: 0.0005
+step: 200, CrossEntropy loss: 0.0078 (0.0345), train accuracy: 100.000(99.075), lr: 0.0005
+step: 300, CrossEntropy loss: 0.0290 (0.0341), train accuracy: 99.219(99.081), lr: 0.0005
+epoch: 51, CrossEntropy loss: 0.0343, accuracy: 99.072
+test acc: 91.8700
+step: 0, CrossEntropy loss: 0.0450 (0.0450), train accuracy: 98.438(98.438), lr: 0.0004
+step: 100, CrossEntropy loss: 0.0364 (0.0341), train accuracy: 99.219(99.095), lr: 0.0004
+step: 200, CrossEntropy loss: 0.0210 (0.0335), train accuracy: 99.219(99.094), lr: 0.0004
+step: 300, CrossEntropy loss: 0.0307 (0.0332), train accuracy: 99.219(99.120), lr: 0.0004
+epoch: 52, CrossEntropy loss: 0.0335, accuracy: 99.102
+test acc: 91.9200
+step: 0, CrossEntropy loss: 0.0209 (0.0209), train accuracy: 100.000(100.000), lr: 0.0003
+step: 100, CrossEntropy loss: 0.0241 (0.0328), train accuracy: 100.000(99.072), lr: 0.0003
+step: 200, CrossEntropy loss: 0.0480 (0.0330), train accuracy: 99.219(99.052), lr: 0.0003
+step: 300, CrossEntropy loss: 0.0258 (0.0329), train accuracy: 100.000(99.084), lr: 0.0003
+epoch: 53, CrossEntropy loss: 0.0324, accuracy: 99.118
+test acc: 91.9000
+step: 0, CrossEntropy loss: 0.0182 (0.0182), train accuracy: 100.000(100.000), lr: 0.0002
+step: 100, CrossEntropy loss: 0.0376 (0.0336), train accuracy: 98.438(99.080), lr: 0.0002
+step: 200, CrossEntropy loss: 0.0370 (0.0327), train accuracy: 98.438(99.153), lr: 0.0002
+step: 300, CrossEntropy loss: 0.0201 (0.0325), train accuracy: 100.000(99.182), lr: 0.0002
+epoch: 54, CrossEntropy loss: 0.0324, accuracy: 99.178
+test acc: 91.9800
+step: 0, CrossEntropy loss: 0.0150 (0.0150), train accuracy: 100.000(100.000), lr: 0.0002
+step: 100, CrossEntropy loss: 0.0635 (0.0321), train accuracy: 97.656(99.211), lr: 0.0002
+step: 200, CrossEntropy loss: 0.0235 (0.0319), train accuracy: 100.000(99.184), lr: 0.0002
+step: 300, CrossEntropy loss: 0.0618 (0.0327), train accuracy: 97.656(99.151), lr: 0.0002
+epoch: 55, CrossEntropy loss: 0.0328, accuracy: 99.152
+test acc: 91.8800
+step: 0, CrossEntropy loss: 0.0137 (0.0137), train accuracy: 100.000(100.000), lr: 0.0001
+step: 100, CrossEntropy loss: 0.0258 (0.0325), train accuracy: 98.438(99.087), lr: 0.0001
+step: 200, CrossEntropy loss: 0.0249 (0.0326), train accuracy: 100.000(99.133), lr: 0.0001
+step: 300, CrossEntropy loss: 0.0449 (0.0323), train accuracy: 98.438(99.141), lr: 0.0001
+epoch: 56, CrossEntropy loss: 0.0319, accuracy: 99.176
+test acc: 91.9400
+step: 0, CrossEntropy loss: 0.0186 (0.0186), train accuracy: 100.000(100.000), lr: 0.0001
+step: 100, CrossEntropy loss: 0.0193 (0.0306), train accuracy: 100.000(99.250), lr: 0.0001
+step: 200, CrossEntropy loss: 0.0192 (0.0303), train accuracy: 100.000(99.246), lr: 0.0001
+step: 300, CrossEntropy loss: 0.0121 (0.0312), train accuracy: 100.000(99.195), lr: 0.0001
+epoch: 57, CrossEntropy loss: 0.0307, accuracy: 99.238
+test acc: 91.9800
+step: 0, CrossEntropy loss: 0.0319 (0.0319), train accuracy: 99.219(99.219), lr: 0.0000
+step: 100, CrossEntropy loss: 0.0319 (0.0316), train accuracy: 100.000(99.126), lr: 0.0000
+step: 200, CrossEntropy loss: 0.0205 (0.0319), train accuracy: 99.219(99.141), lr: 0.0000
+step: 300, CrossEntropy loss: 0.0193 (0.0315), train accuracy: 100.000(99.177), lr: 0.0000
+epoch: 58, CrossEntropy loss: 0.0315, accuracy: 99.180
+test acc: 92.0400
+step: 0, CrossEntropy loss: 0.0283 (0.0283), train accuracy: 98.438(98.438), lr: 0.0000
+step: 100, CrossEntropy loss: 0.0235 (0.0284), train accuracy: 99.219(99.288), lr: 0.0000
+step: 200, CrossEntropy loss: 0.0181 (0.0296), train accuracy: 99.219(99.227), lr: 0.0000
+step: 300, CrossEntropy loss: 0.0280 (0.0305), train accuracy: 99.219(99.182), lr: 0.0000
+epoch: 59, CrossEntropy loss: 0.0311, accuracy: 99.168
+test acc: 92.0100
+ln structured pruning testing
+order: 1
+model sum:  -1111.3250433802605
+before pruning, train loss: 0.0034, train acc: 99.9640, test accuracy: 94.2900
+start pruning module.conv1, num of channels: 16
+tensor([ 3, 12, 10,  7, 15,  2,  9,  8], device='cuda:0')
+time: 0.0019s
+start pruning module.layer1.0.conv1, num of channels: 16
+tensor([ 5, 10, 14,  4, 11,  8,  7,  0], device='cuda:0')
+time: 0.0008s
+start pruning module.layer1.0.conv2, num of channels: 16
+tensor([ 9,  1, 14, 11,  4, 12,  5,  6], device='cuda:0')
+time: 0.0007s
+start pruning module.layer1.0.conv3, num of channels: 64
+tensor([13,  8, 26, 63, 54, 34,  5, 28, 50, 52, 41, 27, 44, 25, 59, 48, 10, 29,
+        19, 37,  1, 55, 43, 11, 38, 57, 18, 22, 60, 33, 42,  3],
+       device='cuda:0')
+time: 0.0013s
+start pruning module.layer1.0.downsample.0, num of channels: 64
+tensor([26,  5,  1, 34, 27, 28, 48, 41, 63, 44, 54, 52, 50, 25, 59,  8, 10, 29,
+        43, 13, 37, 55, 11, 19, 33, 18, 38, 22, 42, 57, 32, 60],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer1.1.conv1, num of channels: 16
+tensor([14,  3, 10,  8,  6,  5,  7,  2], device='cuda:0')
+time: 0.0007s
+start pruning module.layer1.1.conv2, num of channels: 16
+tensor([ 4, 12,  3, 13, 14,  0,  1, 15], device='cuda:0')
+time: 0.0007s
+start pruning module.layer1.1.conv3, num of channels: 64
+tensor([53, 26, 28,  5, 44, 27,  8, 41, 34, 48, 63, 13, 10,  1, 15, 52, 50, 54,
+        11, 25, 29, 37, 55, 59, 43, 35, 19, 18, 57, 38, 47,  2],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer1.2.conv1, num of channels: 16
+tensor([14,  1, 11, 13,  9,  3,  0,  2], device='cuda:0')
+time: 0.0007s
+start pruning module.layer1.2.conv2, num of channels: 16
+tensor([ 2,  1, 13,  3,  6,  4,  9, 10], device='cuda:0')
+time: 0.0007s
+start pruning module.layer1.2.conv3, num of channels: 64
+tensor([53, 48, 63, 26, 27,  5, 41, 52, 28, 44, 34, 25, 50,  1, 21, 15, 54, 43,
+        55, 51, 37, 59, 13, 10,  8, 29, 11, 23, 57, 18, 19, 56],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer1.3.conv1, num of channels: 16
+tensor([11,  6,  1,  3,  8,  0,  7, 12], device='cuda:0')
+time: 0.0007s
+start pruning module.layer1.3.conv2, num of channels: 16
+tensor([11,  6,  9,  8,  5,  2, 15,  1], device='cuda:0')
+time: 0.0006s
+start pruning module.layer1.3.conv3, num of channels: 64
+tensor([ 5, 26, 63,  1, 34, 48, 13, 29, 41, 52, 28, 59, 53, 10, 15, 39,  8, 37,
+        54, 27, 44, 11, 51, 25, 21, 23, 50, 55, 43, 22, 18, 14],
+       device='cuda:0')
+time: 0.0013s
+start pruning module.layer1.4.conv1, num of channels: 16
+tensor([ 7,  8, 14,  0, 12,  3,  2,  5], device='cuda:0')
+time: 0.0007s
+start pruning module.layer1.4.conv2, num of channels: 16
+tensor([13,  8,  1, 10, 12,  9, 14,  3], device='cuda:0')
+time: 0.0007s
+start pruning module.layer1.4.conv3, num of channels: 64
+tensor([27, 48, 20, 49, 57, 16, 56, 62, 61, 14, 55,  1, 51, 15,  0, 22, 32, 58,
+        29, 10,  6, 18, 42, 44, 30,  7, 37, 12, 28,  2, 59, 38],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer1.5.conv1, num of channels: 16
+tensor([13,  4,  3, 11,  7,  1, 14,  6], device='cuda:0')
+time: 0.0006s
+start pruning module.layer1.5.conv2, num of channels: 16
+tensor([ 4,  0,  3,  1,  9,  8, 14, 12], device='cuda:0')
+time: 0.0006s
+start pruning module.layer1.5.conv3, num of channels: 64
+tensor([30, 57, 49, 36, 14, 20, 22, 17, 39,  2, 12, 33, 18, 61,  5, 32,  4, 58,
+        42, 38,  3,  9, 27, 47, 56, 25, 19, 10, 13, 23, 41, 21],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer1.6.conv1, num of channels: 16
+tensor([11, 15,  2,  5,  0, 14,  9, 13], device='cuda:0')
+time: 0.0007s
+start pruning module.layer1.6.conv2, num of channels: 16
+tensor([ 9,  7, 12,  2,  4,  5, 15,  6], device='cuda:0')
+time: 0.0007s
+start pruning module.layer1.6.conv3, num of channels: 64
+tensor([27, 36, 49, 23, 61, 18, 42, 48, 14, 25, 45,  6,  3, 10, 17, 22, 41, 58,
+        53, 28, 20,  5, 62, 39, 21, 26, 59, 40, 47, 56, 11, 50],
+       device='cuda:0')
+time: 0.0010s
+start pruning module.layer1.7.conv1, num of channels: 16
+tensor([ 7, 12,  2,  3,  1, 15,  6, 13], device='cuda:0')
+time: 0.0006s
+start pruning module.layer1.7.conv2, num of channels: 16
+tensor([ 1,  6,  5, 12,  8,  3, 15, 10], device='cuda:0')
+time: 0.0006s
+start pruning module.layer1.7.conv3, num of channels: 64
+tensor([47,  0, 61, 12, 33, 31, 30, 20,  9, 49, 60, 40, 58, 46,  2, 17,  6, 27,
+        18, 45, 36,  3, 32, 14, 16, 42, 11, 38, 24, 56,  5, 35],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer1.8.conv1, num of channels: 16
+tensor([14,  0, 12,  9,  7,  6,  1, 10], device='cuda:0')
+time: 0.0006s
+start pruning module.layer1.8.conv2, num of channels: 16
+tensor([10,  3,  1,  6,  9, 14, 15,  2], device='cuda:0')
+time: 0.0006s
+start pruning module.layer1.8.conv3, num of channels: 64
+tensor([40, 61, 20,  2, 10,  3, 18, 17, 26, 25, 51, 45,  6, 42, 60,  5, 14, 46,
+        31, 29,  9, 27,  4, 23, 43, 21, 41, 63, 34, 50, 48, 57],
+       device='cuda:0')
+time: 0.0010s
+start pruning module.layer2.0.conv1, num of channels: 32
+tensor([21, 24, 15,  5, 26, 23,  0, 30, 10,  1, 19, 29,  7, 25, 14, 18],
+       device='cuda:0')
+time: 0.0008s
+start pruning module.layer2.0.conv2, num of channels: 32
+tensor([ 2, 11, 26, 25, 30, 21, 20, 13, 12, 16, 31, 17,  8,  6,  5,  4],
+       device='cuda:0')
+time: 0.0009s
+start pruning module.layer2.0.conv3, num of channels: 128
+tensor([  9,  58,  52, 126,  79,   4,  11, 106,  98,  23,  70, 124,  48,  38,
+         87,  96,  84,  10,   1,  86,  27,  78,   5,  35, 120,  54, 122, 101,
+          7,  71,  73,  17, 110,  33, 123,  45, 103, 117,  24, 105,  12, 125,
+         22, 114,   0,  44,   8, 102,  21,  53, 104,  83,  29,  62,  49,  69,
+         97,  61, 113,  51,  90,  74,  26,  89], device='cuda:0')
+time: 0.0017s
+start pruning module.layer2.0.downsample.0, num of channels: 128
+tensor([ 79,  29,  70,  35,  48, 124,  21,   1,  26, 102,  62,  83,  96, 116,
+         28, 104,  56,  22,  49,  93,  90,   4,  51,  71,  11, 125,  23, 103,
+         42,  19,   0, 120,  61,  59,  82,  69,  60, 110,  17,  98,  45,   5,
+        114, 105,  74,   7,  10,  38,  37,  46, 106, 126, 122,  84, 101,  78,
+         65,  24,  39, 109,  97,  87,  27,  54], device='cuda:0')
+time: 0.0016s
+start pruning module.layer2.1.conv1, num of channels: 32
+tensor([ 5, 31, 27,  2,  0, 30,  7, 16, 13, 28, 15, 10, 12, 24,  1, 23],
+       device='cuda:0')
+time: 0.0008s
+start pruning module.layer2.1.conv2, num of channels: 32
+tensor([22, 19, 30, 23, 25,  4,  6,  5, 17, 11, 28,  9, 12, 20,  2,  3],
+       device='cuda:0')
+time: 0.0008s
+start pruning module.layer2.1.conv3, num of channels: 128
+tensor([111,  60,  88,  72,  28,  61,  80,  94,  37,  40,  97, 120, 102,  82,
+        123, 112,   8, 121, 116, 109,  17,  39,  31,  19,  89,  13,  59,  21,
+         64,  44,  14,  26,  73,  45,  93, 125, 118, 104,  49,  27,  54, 105,
+          0,  24,  56,  29, 114,  75,  22,  67,  18,  74,  91,  12, 107, 126,
+         62,  32,  69,   9,  83,   1,  50,  84], device='cuda:0')
+time: 0.0016s
+start pruning module.layer2.2.conv1, num of channels: 32
+tensor([20, 27, 26, 24, 12, 15, 10,  2, 21,  0,  9, 14, 23, 19, 22, 31],
+       device='cuda:0')
+time: 0.0008s
+start pruning module.layer2.2.conv2, num of channels: 32
+tensor([16, 12,  3, 19, 18, 29, 13,  8, 27,  4, 25,  6, 14,  5, 31, 17],
+       device='cuda:0')
+time: 0.0008s
+start pruning module.layer2.2.conv3, num of channels: 128
+tensor([102,  19,  79,  61,  93,  64,  72,  13,  71,   5, 123,   8,  28,  11,
+         52, 112, 106,  94, 126,  43,  59, 117,  40,  95,  48, 111,  21,  27,
+         33,  97,  39,  37,   0,  89,  73,  31,  88, 121,  49, 109,  10,  14,
+        101,  60,  38,  44,  54, 120,  92,  16,  62,  83,  63,  80,  23,  29,
+        113,  84, 118, 107, 110,   9,  91,  65], device='cuda:0')
+time: 0.0015s
+start pruning module.layer2.3.conv1, num of channels: 32
+tensor([24, 26, 18,  9, 19,  2, 31, 13,  4, 29,  7, 28,  8, 12, 16, 10],
+       device='cuda:0')
+time: 0.0008s
+start pruning module.layer2.3.conv2, num of channels: 32
+tensor([ 8,  1,  3, 28,  5, 25,  2, 12,  9, 30, 21,  4, 24, 19, 27, 23],
+       device='cuda:0')
+time: 0.0008s
+start pruning module.layer2.3.conv3, num of channels: 128
+tensor([ 44, 112,  82,  65,  72,  80,   3,  60,  88,   0, 108,  95, 118,  13,
+        116,  63,  18,  40,  45, 111,  64,  66,  97,  28,  56,  92, 109,  31,
+        120,  89,   8,  29,  67,  27,  74, 105,  73,  38,  75,  84,  79, 121,
+          9,  59,  52, 119, 114,  69,   1,  21,  91, 102,  17,  43, 122,  57,
+        124,  93,  94,  51,  42,  62,  35,  70], device='cuda:0')
+time: 0.0015s
+start pruning module.layer2.4.conv1, num of channels: 32
+tensor([ 8, 22, 29, 24, 16, 23, 14,  1, 11, 15, 30,  6,  4, 25, 17, 27],
+       device='cuda:0')
+time: 0.0007s
+start pruning module.layer2.4.conv2, num of channels: 32
+tensor([11,  7, 27, 16, 13,  1, 12, 23,  8, 15, 18, 17, 30, 31, 22, 24],
+       device='cuda:0')
+time: 0.0007s
+start pruning module.layer2.4.conv3, num of channels: 128
+tensor([ 40,  46,  69,  18,  29,  51,  92,  26, 111, 125,  78,  63,  90,   7,
+         42, 124,  95,  37, 112, 120,  94,  60, 122,  59, 121,  77,  73,  80,
+        101,  10, 123,  56,  97,   2,  43,  33, 110,  34, 108,  21,  27,  67,
+         54, 118, 105, 113,  32, 119,  17,  61,  91,  66,  28,  88,  23,  13,
+          3,  93,  47,  75,  39,   8,  84,  24], device='cuda:0')
+time: 0.0016s
+start pruning module.layer2.5.conv1, num of channels: 32
+tensor([26, 11,  7, 21, 17, 12, 28, 20,  8, 30,  4, 13, 27, 23,  5, 14],
+       device='cuda:0')
+time: 0.0008s
+start pruning module.layer2.5.conv2, num of channels: 32
+tensor([12,  3, 10, 29, 26, 18, 14, 27, 11, 13, 21,  7, 25, 28, 23,  6],
+       device='cuda:0')
+time: 0.0007s
+start pruning module.layer2.5.conv3, num of channels: 128
+tensor([ 68,  98, 113, 101,  10,  52,   5, 126,  81, 117,  86,  53,  43,  33,
+         73,  38,  11, 125, 119,  32,  47,  40,  63,  75,  34,   1,  21, 124,
+         90,  25, 118,  54, 115,   2,  65,  95, 120,  57, 108,  26,  85,  66,
+        110, 103,  23,  24,  96,  91, 123,   7, 106,  84,  27,  69,  78,  16,
+         15, 104,  12,   4,  42,  79,  14,  44], device='cuda:0')
+time: 0.0020s
+start pruning module.layer2.6.conv1, num of channels: 32
+tensor([27, 28,  4,  6, 24, 31, 20, 16, 29,  9,  5, 18, 19,  8, 12, 11],
+       device='cuda:0')
+time: 0.0014s
+start pruning module.layer2.6.conv2, num of channels: 32
+tensor([14,  9, 25, 29, 23,  1, 26, 20, 12, 16, 22,  3, 27, 28, 30, 17],
+       device='cuda:0')
+time: 0.0013s
+start pruning module.layer2.6.conv3, num of channels: 128
+tensor([126, 117,  68,  98,  81,  87,  31,  47,  96,  43, 123,  38, 108,  86,
+         11,  78,  51,  90,  62,  75,  52,   5,  25,  17, 100,  61,  46,  66,
+         91, 124, 115,  23,  65,  77, 103,  88, 107,  57,  21, 104,  54,   8,
+        101,  55,  12,   6,  84, 110,  15,  99,  76, 120,  44,  74,  26,  39,
+         50,  42,  67,  85,  60,  24,  33,   9], device='cuda:0')
+time: 0.0024s
+start pruning module.layer2.7.conv1, num of channels: 32
+tensor([12, 20, 16, 13,  0, 19, 14,  9,  2,  6, 27, 10, 29, 23,  7,  3],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer2.7.conv2, num of channels: 32
+tensor([ 1, 30, 31, 15, 17, 13, 11, 27, 21,  7, 22, 23, 16,  4, 20, 10],
+       device='cuda:0')
+time: 0.0010s
+start pruning module.layer2.7.conv3, num of channels: 128
+tensor([ 20, 127,  77,  25, 106,  64,  15,  36, 113,  53,  76,  41,  45,  71,
+        103,  92,   2,  21,  22,   1,  32,  14, 104,  54,  66,  38, 100,  85,
+         11, 101, 119,  74, 108,   5, 111,  55,  50,  31,   3,  63, 121,  49,
+         78,   4, 109, 125,  97,  81,  67,  73,  23,  35,  75,  33,  28, 122,
+         68,  69,  30,  59,  89,  16,  90,  44], device='cuda:0')
+time: 0.0018s
+start pruning module.layer2.8.conv1, num of channels: 32
+tensor([18, 15, 17,  9, 10, 31,  6, 28, 23, 12, 30,  4, 21, 14, 19, 16],
+       device='cuda:0')
+time: 0.0009s
+start pruning module.layer2.8.conv2, num of channels: 32
+tensor([ 1,  0, 23, 31, 11,  8, 25, 13, 10,  4,  6, 17, 30,  7, 21, 16],
+       device='cuda:0')
+time: 0.0009s
+start pruning module.layer2.8.conv3, num of channels: 128
+tensor([ 36,   9,  55,  10,  85,  86,   6, 100,  81,  12,  76,  68,  30, 108,
+         70,   3,  27,  24,  42,  48,  87,  99, 103,  31,  43, 113,  33, 110,
+         89,  44,  17,  65, 104,  77,   5, 115,  13, 119,  45,  21,  25, 126,
+        123, 107,  11, 120,  80, 106,  91,  16,  14, 118,  92,  38,  50, 117,
+        105, 101,  19,  41,  22,  47,  67, 112], device='cuda:0')
+time: 0.0018s
+start pruning module.layer3.0.conv1, num of channels: 64
+tensor([42, 22,  9, 52, 50, 58,  4, 59, 44, 32, 55,  5, 63, 57, 53, 26, 49, 37,
+        43, 21, 38,  7, 10, 28, 35, 61, 30, 11, 56, 20, 47, 24],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.0.conv2, num of channels: 64
+tensor([43, 29,  0,  8, 57, 24,  2, 30, 51, 39, 54,  9, 61, 52, 22, 16, 20, 23,
+         1, 28, 45, 26, 41, 62, 46, 63, 60, 25, 19,  6, 37, 58],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.0.conv3, num of channels: 256
+tensor([ 65,  76, 107,  40, 189,  92, 151, 183, 159,  56, 207, 248, 155, 234,
+         87, 139,  21,   4, 251,  15, 212, 192, 101, 188, 190,  93, 104,  27,
+         50,  13,  57, 164, 150,  37, 109,  83,  44,  88,  91, 255, 208, 154,
+         16,  31,  99, 144,  68, 137, 125,  80, 130, 195, 200,  25,  97,  23,
+         79, 175, 185, 219,  42, 163, 191, 232,  47, 133,  22,  55, 199, 140,
+        177,   5, 113,  58, 110, 201, 100,   3, 122, 194, 117, 111, 218, 211,
+         35, 197,  78, 179, 108,  45,  52,  73, 136,  20,  67,  46,  94, 124,
+         48, 121,  36,  26,  49,   6,  60, 142, 141,  32,  59, 178, 143, 129,
+        210,  69, 241,  82, 205, 148,  24, 225, 204,  85, 203, 215, 134,  19,
+         84,  11], device='cuda:0')
+time: 0.0032s
+start pruning module.layer3.0.downsample.0, num of channels: 256
+tensor([ 64, 255, 110,  89,  34,  38, 189,  65,  19,  35, 156,  33, 141, 155,
+         53,  79, 130,  72,  36,  76,  12, 208,  52,  92, 166, 170, 212, 125,
+         85,  27,  57, 216,  21,  66, 164, 136,  43,  15, 237,  11, 251, 100,
+         25, 150, 147,  93,  70,   7, 129, 167, 187,   1, 101,  98,  91, 122,
+          4,  60,  62,  77, 197, 234,  24, 248,   5, 175, 240, 163, 117, 232,
+        246, 233, 109,  78, 165, 222,  37, 180, 140, 201,  96, 191,  31, 115,
+         16,  47, 207,  90, 228, 185, 107,  42, 174,  23, 144,  83,   8,  97,
+         44, 160,  80,  48, 235, 142, 118,  17, 182, 179,  40, 247, 111,  14,
+        121, 195, 223, 127, 203, 159,   3, 139, 128,  13, 134, 104,  30,  59,
+         67,  26], device='cuda:0')
+time: 0.0031s
+start pruning module.layer3.1.conv1, num of channels: 64
+tensor([ 2, 52,  7, 32,  6, 24, 59, 42, 36, 29, 18, 12,  3, 26, 28, 31, 39, 51,
+        58, 50, 35,  5, 13, 34, 62, 37, 21, 49,  1, 60, 57, 46],
+       device='cuda:0')
+time: 0.0013s
+start pruning module.layer3.1.conv2, num of channels: 64
+tensor([31,  1, 35,  4, 15,  6, 45, 20, 34, 25, 30, 33, 46, 38, 39, 55, 27, 40,
+        13,  2, 61, 48, 42, 22, 18, 12, 23, 58, 36, 56, 16,  5],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.1.conv3, num of channels: 256
+tensor([ 40,  11,  43, 178, 218, 231, 154,  49, 147, 122, 117, 232,  45, 221,
+        199, 228, 247,  79, 240, 212,  52,  81,  78, 180,  27, 112, 155,  30,
+        234,  34, 250, 111, 166,  65, 109, 249,   5,  89, 203,  28,  97, 104,
+        121,  62,  53,  85, 179,  13, 107, 190, 106, 192, 202,  39, 100, 110,
+          7,  20,  96, 187, 219,   6, 174, 194,   8, 116,  80, 227, 235, 136,
+        210, 134, 246,  24,  70,  60,  95,  91, 114,   4,  64, 254, 198, 158,
+         77, 255, 113, 242, 236, 163, 248, 171,   9,  16, 186, 191,  57,  25,
+        181, 176,  90,  87, 244, 206, 152,  21,  88, 184, 230, 214, 135,  94,
+        241, 164, 133, 209,  67, 197,  66, 150, 169, 132, 101, 153, 201,  10,
+         29,  33], device='cuda:0')
+time: 0.0032s
+start pruning module.layer3.2.conv1, num of channels: 64
+tensor([ 1, 34, 59, 10, 48, 17, 60,  9, 39, 51,  3, 38, 18,  0, 47, 45, 12, 13,
+        31, 52, 25,  6, 44, 29,  7, 55, 49, 61, 26, 24,  2, 32],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.2.conv2, num of channels: 64
+tensor([16, 48, 53,  7, 54,  9, 59, 57, 43, 32, 24, 50, 21,  0, 13, 35,  5, 60,
+        27, 62, 25, 33, 34, 22, 10, 44, 49, 41, 47, 30, 56, 52],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.2.conv3, num of channels: 256
+tensor([  1, 112, 175,  20, 148, 136,  39,   3, 199, 147, 110,  95,   5,  19,
+        113,  56,  73,  64,  78, 108, 255, 135, 231, 107, 179, 251, 141, 205,
+        216, 117,  92, 146, 122,  88,  59, 252,  52, 206, 170,  31, 201, 166,
+         97,  16, 219, 115, 188, 245, 203, 232, 161, 155,  21,   0, 165, 106,
+        153, 172,  89,  77,  45, 150, 247, 220,   6,  12,   7, 143, 225, 235,
+        174, 254, 190, 109,  74, 133,  23,  29,  67, 160, 227,  80, 248,  94,
+         17,  70,  91, 240, 189,   4,  60, 101,  32,  85,  62, 202, 131, 119,
+        200,  43, 250, 116,  72, 163, 187, 249, 191,  46, 204, 129, 159, 237,
+        156,  13,  25,  11,  38, 192, 132, 145,  75, 223, 103, 121,  35, 154,
+        238,  54], device='cuda:0')
+time: 0.0030s
+start pruning module.layer3.3.conv1, num of channels: 64
+tensor([50, 36,  6, 11, 37, 54, 47,  9, 20, 31, 34, 63, 13, 46, 62, 45, 58, 16,
+        14, 60, 41, 19, 57, 29, 21,  7, 22, 43, 35, 23, 42, 39],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.3.conv2, num of channels: 64
+tensor([29, 40, 45, 49, 17, 38, 63, 36, 41, 32, 30, 14,  8, 11, 62, 23, 55, 52,
+        48,  5, 33,  3, 12, 21,  0, 46, 26, 25, 60, 59, 19, 57],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.3.conv3, num of channels: 256
+tensor([ 42, 206, 115,   1, 213,  35, 148, 244,  94, 198, 117, 105, 205, 254,
+        179,  20, 222,  41, 204, 208, 193, 112, 133, 124,  96, 223,   0, 227,
+         75,  48,  29,  87, 238, 170,   7,  73,  93, 250,  10,  55,  65,  21,
+        182, 251, 140,  52, 189,  64,  54, 146,  51, 212,  63, 236, 119, 171,
+        191, 197, 108, 220,  78, 136, 130,  56, 194,  15,  85, 118, 160, 249,
+         39, 121, 107,  86,  88,   9, 200,  31, 192, 230, 104, 195,  22,  79,
+         25, 157, 145,  50, 113, 120, 175,  59, 196, 100,  60, 167, 162, 125,
+        156, 176, 245, 185, 252, 241,  28,  27, 215, 181, 231,  80, 187,  34,
+        172, 173, 141,  12,  57,  74, 188,  38, 201, 247,  77,  62, 110, 255,
+        235,  47], device='cuda:0')
+time: 0.0030s
+start pruning module.layer3.4.conv1, num of channels: 64
+tensor([31, 57, 10, 58, 42, 60, 51, 26,  1, 24,  3, 11, 41, 21, 40, 49, 50, 17,
+        54, 36,  0, 22, 35, 61,  6, 20, 63,  2, 45, 39, 28, 56],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.4.conv2, num of channels: 64
+tensor([ 2, 24, 35, 50, 46, 17, 38,  7,  3, 29, 58, 13, 27, 15, 59, 55,  1, 39,
+        48, 57, 30, 11, 40,  0,  6, 21, 54, 26, 36, 28,  9,  8],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.4.conv3, num of channels: 256
+tensor([ 34, 230,  45, 114, 115, 250, 238, 191, 189, 188, 170, 151, 117,   1,
+         96, 210, 192, 220, 236, 203,  41,  93, 204,  86, 154, 177, 132,  75,
+         11, 121,  74,  78,  85, 101, 149, 225, 146, 190, 140,  14,  60,  42,
+        109, 179,  83, 241,  47,  56,  92, 147,  18, 105,  89,  98,  65, 215,
+        112, 224,  29, 244, 233,  57, 100,  50, 228,  55,  27, 137, 198, 155,
+          5, 235, 185,  17, 163,  21, 108,  77, 143, 129,   4, 202,  63,  35,
+         40,  82, 134, 214, 247, 200,  20, 213,   8, 222,  53, 186, 217, 196,
+         10,   7,  44, 180, 133, 219,  67, 237,  19, 130, 183, 206, 232, 131,
+        216,  73, 242,  91,  51, 187, 231,  37,  26,  69, 159, 104, 205, 246,
+        239,  80], device='cuda:0')
+time: 0.0035s
+start pruning module.layer3.5.conv1, num of channels: 64
+tensor([ 1, 21, 61, 59, 16, 36, 54, 15, 34, 18, 43, 33, 63, 14, 30,  0, 41, 51,
+        62, 45, 24, 57, 13, 38, 48, 27, 20,  8, 28, 31, 47, 22],
+       device='cuda:0')
+time: 0.0014s
+start pruning module.layer3.5.conv2, num of channels: 64
+tensor([60, 35, 18, 53, 33, 17, 29, 39, 58, 15, 50, 38,  9, 12, 14, 28, 59, 42,
+        30, 13,  6,  5, 21, 54, 43, 24, 61,  3, 22, 20,  1, 56],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.5.conv3, num of channels: 256
+tensor([ 20, 220, 190,  53,  34, 113,   2, 208,  76, 218,  37, 154,  89, 108,
+        170,  45, 175,   1, 236,  40, 189, 230,  78, 146,  13,  93,  86, 207,
+        114, 186, 211,  44,  74, 144, 234, 117, 159, 191, 202,  84, 245,  80,
+         26,  35, 239,   7, 241, 120, 179,  48, 252,  42, 151,  75, 103, 210,
+         61, 163,  71, 152,  43, 204,  52, 115,  96, 149, 136,  39, 122, 248,
+        250, 137, 126,  82, 225,   6, 148, 131, 206,  88,  31, 150, 107,  98,
+        223, 188,   3,  59, 132, 160, 106, 213,  87, 192, 195, 193,  63,  23,
+        181, 198, 112, 130, 205, 247, 105,  56, 237,  58,  91, 244, 135, 203,
+        214,  60, 174, 229,  11, 215, 183, 121,  57, 233, 217, 156, 235,  28,
+        254,  10], device='cuda:0')
+time: 0.0030s
+start pruning module.layer3.6.conv1, num of channels: 64
+tensor([22, 55, 34, 39, 12, 13, 28,  9, 57, 52, 23, 27, 58, 43, 47, 48, 40, 38,
+        53, 61, 41,  4, 26, 60, 15, 35,  2, 54, 29, 18, 56, 62],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.6.conv2, num of channels: 64
+tensor([17, 10, 53, 31, 51, 57,  0, 22, 28,  3, 23, 43, 60,  5, 61, 27,  2, 39,
+        50, 16, 34, 19, 11, 14, 58, 15, 38, 26, 54, 59, 35,  6],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.6.conv3, num of channels: 256
+tensor([120,  34,  45, 236, 190, 121,   1, 103, 193, 117, 218,  93, 240, 202,
+         20,  37, 154,   2,  35,  21, 220, 152, 109,  80, 239, 179, 136, 114,
+        168, 205, 115,  42, 126,  86, 166, 186,  53,   5,  58,  40, 183, 206,
+        147,   6, 238,  87, 150, 108,  27, 210,  61,  71,  13, 105, 198, 146,
+        149,  92, 189, 159, 245,   3, 111,  75,  96,   8,  82,  76,  49, 235,
+         99, 112, 113, 175, 201,  48,  36, 173, 233, 221,  11, 243, 104, 211,
+        140, 181, 234, 132,  89,   0, 157,  39,  77, 101,  23, 247,  85, 208,
+        242,   7, 153,  25, 170, 204, 130, 188, 174, 226,  30,  47,  31, 203,
+        225, 216, 180, 191, 209,   9,  14, 224,  91,  98, 207,  43, 222,  26,
+        158,  68], device='cuda:0')
+time: 0.0031s
+start pruning module.layer3.7.conv1, num of channels: 64
+tensor([46, 12, 27, 43, 58, 39, 45, 49, 41, 63,  9, 30, 42, 21, 33, 28, 16,  6,
+        51, 38, 44, 55, 36, 10, 54, 11,  3, 32,  7, 40, 23, 37],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.7.conv2, num of channels: 64
+tensor([30, 52, 25, 60, 15, 27, 59, 23, 24, 17, 50,  2, 51, 38, 57, 62, 55, 47,
+         8, 54, 37,  4,  3, 40,  6, 61, 42, 56, 21,  7, 53, 31],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.7.conv3, num of channels: 256
+tensor([ 34,   1, 117, 168,  43, 147,  20,  87,  85, 103, 205, 173, 245, 149,
+        240,  53,  47, 104, 206, 126, 165, 174,   2,   5, 170,  78, 234, 179,
+        222, 231, 204, 178, 142, 114,  45,   7,  35,  93, 188, 135, 252, 150,
+         37, 153, 239, 220, 190,  42, 159, 244, 203, 199, 232,  74,  22, 108,
+         86,  49, 120,  89, 148, 115,  80, 189, 140, 200, 166,  30, 158, 138,
+          6, 226, 175, 236, 230, 109, 253, 132,   4, 152,  82,  92, 255,  32,
+         27, 160, 134,  40,  13,  61,  10, 110, 157, 128, 212, 121,  58,  99,
+        223, 151, 133, 218,  48, 241,  38,  73, 217,  90, 202,  81, 229, 106,
+        191, 183, 180,  75,  97, 242, 214, 113, 112, 145,  59, 141,  65, 193,
+        101, 125], device='cuda:0')
+time: 0.0030s
+start pruning module.layer3.8.conv1, num of channels: 64
+tensor([15, 63, 55, 52, 37, 36, 35, 60, 13,  6, 61,  7, 12,  4, 20, 45, 39,  1,
+        46, 51, 62,  3, 57, 26, 47, 44, 49, 31, 14, 24, 33, 25],
+       device='cuda:0')
+time: 0.0012s
+start pruning module.layer3.8.conv2, num of channels: 64
+tensor([16, 52, 32, 45, 48,  0, 36, 53, 58, 44, 57, 62, 56, 41, 24, 27, 14, 21,
+        26, 39, 25, 54, 63,  8, 46, 50, 28, 49, 40, 33, 10, 61],
+       device='cuda:0')
+time: 0.0016s
+start pruning module.layer3.8.conv3, num of channels: 256
+tensor([ 96,  87,   7,  34, 148, 152,  29, 205, 170,  45, 255,  97,  57, 136,
+        101,   1, 179,  93, 132,  30, 103,  38, 141, 218, 106, 245,  22, 168,
+         52,   5,  37, 223, 247, 206,  27, 190, 158,  10, 114,  47, 122, 240,
+        104, 253, 210,  28, 220, 178, 167, 145, 201,   8, 184, 182, 160,  43,
+        180,  72,  95, 128,  35, 251, 221, 232,  65,  12, 118, 125,  78, 153,
+        127, 112,  58,   4,  82, 163, 149, 117, 140,  49, 165,  40,  81, 214,
+        208, 203, 115, 147,  33, 231, 200,  23,  54,  91, 213, 110, 242, 146,
+        159,  63, 239,  53, 222, 135, 174, 183, 109,  64, 249,  62, 166, 164,
+        155, 162,  20, 126, 226,  79, 191, 212,  42, 171, 217,  85, 113,  99,
+         51,  25], device='cuda:0')
+time: 0.0030s
+Global sparsity: 49.47%
+epoch: 0, train loss: 2.3174, train acc: 26.3660, test accuracy: 25.7000
+step: 0, CrossEntropy loss: 1.3991 (1.3991), train accuracy: 57.031(57.031), lr: 0.0000
+step: 100, CrossEntropy loss: 1.2633 (1.2665), train accuracy: 65.625(61.966), lr: 0.0000
+step: 200, CrossEntropy loss: 1.0857 (1.2590), train accuracy: 62.500(61.816), lr: 0.0000
+step: 300, CrossEntropy loss: 1.1589 (1.2683), train accuracy: 67.188(62.004), lr: 0.0000
+epoch: 0, CrossEntropy loss: 1.2672, accuracy: 62.058
+test acc: 59.6800
+step: 0, CrossEntropy loss: 1.1173 (1.1173), train accuracy: 63.281(63.281), lr: 0.0000
+step: 100, CrossEntropy loss: 1.1489 (1.2498), train accuracy: 64.062(62.461), lr: 0.0000
+step: 200, CrossEntropy loss: 1.2990 (1.2397), train accuracy: 63.281(62.815), lr: 0.0000
+step: 300, CrossEntropy loss: 1.1175 (1.2289), train accuracy: 65.625(63.183), lr: 0.0000
+epoch: 1, CrossEntropy loss: 1.2167, accuracy: 63.374
+test acc: 61.5400
+step: 0, CrossEntropy loss: 1.0221 (1.0221), train accuracy: 67.969(67.969), lr: 0.0000
+step: 100, CrossEntropy loss: 1.2105 (1.1061), train accuracy: 65.625(65.857), lr: 0.0000
+step: 200, CrossEntropy loss: 1.1525 (1.0659), train accuracy: 65.625(66.694), lr: 0.0000
+step: 300, CrossEntropy loss: 0.9138 (1.0300), train accuracy: 70.312(67.499), lr: 0.0000
+epoch: 2, CrossEntropy loss: 1.0048, accuracy: 68.212
+test acc: 69.6100
+step: 0, CrossEntropy loss: 0.7561 (0.7561), train accuracy: 71.875(71.875), lr: 0.0001
+step: 100, CrossEntropy loss: 0.9806 (0.8534), train accuracy: 71.094(71.836), lr: 0.0001
+step: 200, CrossEntropy loss: 0.9853 (0.8056), train accuracy: 68.750(73.562), lr: 0.0001
+step: 300, CrossEntropy loss: 0.5377 (0.7697), train accuracy: 80.469(74.753), lr: 0.0001
+epoch: 3, CrossEntropy loss: 0.7509, accuracy: 75.304
+test acc: 76.1300
+step: 0, CrossEntropy loss: 0.6323 (0.6323), train accuracy: 78.125(78.125), lr: 0.0001
+step: 100, CrossEntropy loss: 0.6023 (0.6352), train accuracy: 77.344(78.489), lr: 0.0001
+step: 200, CrossEntropy loss: 0.4492 (0.6154), train accuracy: 85.938(79.295), lr: 0.0001
+step: 300, CrossEntropy loss: 0.6481 (0.5969), train accuracy: 78.906(79.906), lr: 0.0001
+epoch: 4, CrossEntropy loss: 0.5831, accuracy: 80.400
+test acc: 80.1500
+step: 0, CrossEntropy loss: 0.5802 (0.5802), train accuracy: 84.375(84.375), lr: 0.0002
+step: 100, CrossEntropy loss: 0.4370 (0.5171), train accuracy: 85.156(82.596), lr: 0.0002
+step: 200, CrossEntropy loss: 0.6877 (0.5051), train accuracy: 75.000(82.758), lr: 0.0002
+step: 300, CrossEntropy loss: 0.4052 (0.4942), train accuracy: 85.156(83.184), lr: 0.0002
+epoch: 5, CrossEntropy loss: 0.4855, accuracy: 83.512
+test acc: 82.6700
+step: 0, CrossEntropy loss: 0.3450 (0.3450), train accuracy: 85.938(85.938), lr: 0.0002
+step: 100, CrossEntropy loss: 0.6243 (0.4207), train accuracy: 82.812(85.326), lr: 0.0002
+step: 200, CrossEntropy loss: 0.4022 (0.4211), train accuracy: 84.375(85.281), lr: 0.0002
+step: 300, CrossEntropy loss: 0.5037 (0.4160), train accuracy: 86.719(85.597), lr: 0.0002
+epoch: 6, CrossEntropy loss: 0.4088, accuracy: 85.886
+test acc: 84.9100
+step: 0, CrossEntropy loss: 0.4008 (0.4008), train accuracy: 88.281(88.281), lr: 0.0003
+step: 100, CrossEntropy loss: 0.3558 (0.3728), train accuracy: 89.062(87.129), lr: 0.0003
+step: 200, CrossEntropy loss: 0.2653 (0.3644), train accuracy: 90.625(87.380), lr: 0.0003
+step: 300, CrossEntropy loss: 0.4037 (0.3551), train accuracy: 86.719(87.780), lr: 0.0003
+epoch: 7, CrossEntropy loss: 0.3530, accuracy: 87.882
+test acc: 85.9900
+step: 0, CrossEntropy loss: 0.2458 (0.2458), train accuracy: 91.406(91.406), lr: 0.0004
+step: 100, CrossEntropy loss: 0.4074 (0.3222), train accuracy: 87.500(88.668), lr: 0.0004
+step: 200, CrossEntropy loss: 0.2921 (0.3204), train accuracy: 89.844(88.837), lr: 0.0004
+step: 300, CrossEntropy loss: 0.2515 (0.3150), train accuracy: 88.281(89.166), lr: 0.0004
+epoch: 8, CrossEntropy loss: 0.3118, accuracy: 89.230
+test acc: 87.3900
+step: 0, CrossEntropy loss: 0.2479 (0.2479), train accuracy: 91.406(91.406), lr: 0.0005
+step: 100, CrossEntropy loss: 0.2675 (0.2902), train accuracy: 89.844(90.006), lr: 0.0005
+step: 200, CrossEntropy loss: 0.3390 (0.2862), train accuracy: 89.062(90.131), lr: 0.0005
+step: 300, CrossEntropy loss: 0.3573 (0.2845), train accuracy: 88.281(90.134), lr: 0.0005
+epoch: 9, CrossEntropy loss: 0.2805, accuracy: 90.306
+test acc: 88.1000
+step: 0, CrossEntropy loss: 0.3055 (0.3055), train accuracy: 88.281(88.281), lr: 0.0007
+step: 100, CrossEntropy loss: 0.1681 (0.2630), train accuracy: 94.531(90.834), lr: 0.0007
+step: 200, CrossEntropy loss: 0.2117 (0.2572), train accuracy: 92.188(91.037), lr: 0.0007
+step: 300, CrossEntropy loss: 0.3326 (0.2552), train accuracy: 88.281(91.121), lr: 0.0007
+epoch: 10, CrossEntropy loss: 0.2552, accuracy: 91.074
+test acc: 88.8800
+step: 0, CrossEntropy loss: 0.2375 (0.2375), train accuracy: 92.969(92.969), lr: 0.0008
+step: 100, CrossEntropy loss: 0.1671 (0.2420), train accuracy: 92.969(91.762), lr: 0.0008
+step: 200, CrossEntropy loss: 0.2158 (0.2380), train accuracy: 91.406(91.985), lr: 0.0008
+step: 300, CrossEntropy loss: 0.2283 (0.2329), train accuracy: 90.625(92.084), lr: 0.0008
+epoch: 11, CrossEntropy loss: 0.2312, accuracy: 92.088
+test acc: 89.4300
+step: 0, CrossEntropy loss: 0.2065 (0.2065), train accuracy: 92.188(92.188), lr: 0.0010
+step: 100, CrossEntropy loss: 0.2592 (0.2213), train accuracy: 90.625(92.358), lr: 0.0010
+step: 200, CrossEntropy loss: 0.1619 (0.2153), train accuracy: 92.188(92.565), lr: 0.0010
+step: 300, CrossEntropy loss: 0.2343 (0.2129), train accuracy: 92.188(92.696), lr: 0.0010
+epoch: 12, CrossEntropy loss: 0.2112, accuracy: 92.786
+test acc: 89.8800
+step: 0, CrossEntropy loss: 0.2377 (0.2377), train accuracy: 92.188(92.188), lr: 0.0011
+step: 100, CrossEntropy loss: 0.1485 (0.2012), train accuracy: 92.969(93.131), lr: 0.0011
+step: 200, CrossEntropy loss: 0.1564 (0.1987), train accuracy: 94.531(93.171), lr: 0.0011
+step: 300, CrossEntropy loss: 0.1946 (0.1975), train accuracy: 92.969(93.176), lr: 0.0011
+epoch: 13, CrossEntropy loss: 0.1953, accuracy: 93.206
+test acc: 90.2600
+step: 0, CrossEntropy loss: 0.1872 (0.1872), train accuracy: 93.750(93.750), lr: 0.0013
+step: 100, CrossEntropy loss: 0.2074 (0.1846), train accuracy: 90.625(93.580), lr: 0.0013
+step: 200, CrossEntropy loss: 0.1881 (0.1865), train accuracy: 95.312(93.455), lr: 0.0013
+step: 300, CrossEntropy loss: 0.2083 (0.1843), train accuracy: 93.750(93.574), lr: 0.0013
+epoch: 14, CrossEntropy loss: 0.1829, accuracy: 93.630
+test acc: 90.5300
+step: 0, CrossEntropy loss: 0.2411 (0.2411), train accuracy: 91.406(91.406), lr: 0.0015
+step: 100, CrossEntropy loss: 0.1146 (0.1659), train accuracy: 97.656(94.299), lr: 0.0015
+step: 200, CrossEntropy loss: 0.1104 (0.1705), train accuracy: 96.094(94.174), lr: 0.0015
+step: 300, CrossEntropy loss: 0.1737 (0.1701), train accuracy: 92.969(94.126), lr: 0.0015
+epoch: 15, CrossEntropy loss: 0.1694, accuracy: 94.176
+test acc: 90.6600
+step: 0, CrossEntropy loss: 0.2058 (0.2058), train accuracy: 92.188(92.188), lr: 0.0017
+step: 100, CrossEntropy loss: 0.2310 (0.1608), train accuracy: 91.406(94.554), lr: 0.0017
+step: 200, CrossEntropy loss: 0.1792 (0.1617), train accuracy: 92.188(94.523), lr: 0.0017
+step: 300, CrossEntropy loss: 0.0878 (0.1601), train accuracy: 97.656(94.581), lr: 0.0017
+epoch: 16, CrossEntropy loss: 0.1603, accuracy: 94.542
+test acc: 90.8700
+step: 0, CrossEntropy loss: 0.1366 (0.1366), train accuracy: 94.531(94.531), lr: 0.0019
+step: 100, CrossEntropy loss: 0.1757 (0.1527), train accuracy: 92.969(94.717), lr: 0.0019
+step: 200, CrossEntropy loss: 0.1038 (0.1508), train accuracy: 96.875(94.737), lr: 0.0019
+step: 300, CrossEntropy loss: 0.1109 (0.1498), train accuracy: 96.094(94.791), lr: 0.0019
+epoch: 17, CrossEntropy loss: 0.1488, accuracy: 94.812
+test acc: 91.1600
+step: 0, CrossEntropy loss: 0.1569 (0.1569), train accuracy: 96.094(96.094), lr: 0.0021
+step: 100, CrossEntropy loss: 0.1433 (0.1474), train accuracy: 94.531(94.995), lr: 0.0021
+step: 200, CrossEntropy loss: 0.0959 (0.1479), train accuracy: 96.875(94.994), lr: 0.0021
+step: 300, CrossEntropy loss: 0.1684 (0.1454), train accuracy: 93.750(95.089), lr: 0.0021
+epoch: 18, CrossEntropy loss: 0.1459, accuracy: 95.094
+test acc: 91.3000
+step: 0, CrossEntropy loss: 0.1371 (0.1371), train accuracy: 94.531(94.531), lr: 0.0023
+step: 100, CrossEntropy loss: 0.0911 (0.1439), train accuracy: 96.875(95.088), lr: 0.0023
+step: 200, CrossEntropy loss: 0.2344 (0.1374), train accuracy: 92.188(95.312), lr: 0.0023
+step: 300, CrossEntropy loss: 0.1234 (0.1354), train accuracy: 95.312(95.383), lr: 0.0023
+epoch: 19, CrossEntropy loss: 0.1355, accuracy: 95.366
+test acc: 91.3300
+step: 0, CrossEntropy loss: 0.1619 (0.1619), train accuracy: 96.875(96.875), lr: 0.0025
+step: 100, CrossEntropy loss: 0.1100 (0.1338), train accuracy: 96.094(95.614), lr: 0.0025
+step: 200, CrossEntropy loss: 0.0834 (0.1293), train accuracy: 98.438(95.620), lr: 0.0025
+step: 300, CrossEntropy loss: 0.1592 (0.1291), train accuracy: 96.094(95.601), lr: 0.0025
+epoch: 20, CrossEntropy loss: 0.1286, accuracy: 95.622
+test acc: 91.4300
+step: 0, CrossEntropy loss: 0.1281 (0.1281), train accuracy: 95.312(95.312), lr: 0.0027
+step: 100, CrossEntropy loss: 0.1055 (0.1141), train accuracy: 96.094(96.210), lr: 0.0027
+step: 200, CrossEntropy loss: 0.0959 (0.1183), train accuracy: 96.875(95.923), lr: 0.0027
+step: 300, CrossEntropy loss: 0.0902 (0.1200), train accuracy: 95.312(95.852), lr: 0.0027
+epoch: 21, CrossEntropy loss: 0.1195, accuracy: 95.892
+test acc: 91.4700
+step: 0, CrossEntropy loss: 0.1513 (0.1513), train accuracy: 94.531(94.531), lr: 0.0030
+step: 100, CrossEntropy loss: 0.1320 (0.1158), train accuracy: 94.531(95.978), lr: 0.0030
+step: 200, CrossEntropy loss: 0.1509 (0.1176), train accuracy: 94.531(95.888), lr: 0.0030
+step: 300, CrossEntropy loss: 0.1130 (0.1166), train accuracy: 96.875(95.982), lr: 0.0030
+epoch: 22, CrossEntropy loss: 0.1166, accuracy: 95.998
+test acc: 91.3300
+step: 0, CrossEntropy loss: 0.0984 (0.0984), train accuracy: 97.656(97.656), lr: 0.0032
+step: 100, CrossEntropy loss: 0.1319 (0.1120), train accuracy: 96.094(96.326), lr: 0.0032
+step: 200, CrossEntropy loss: 0.1545 (0.1117), train accuracy: 91.406(96.214), lr: 0.0032
+step: 300, CrossEntropy loss: 0.0921 (0.1119), train accuracy: 96.875(96.143), lr: 0.0032
+epoch: 23, CrossEntropy loss: 0.1125, accuracy: 96.156
+test acc: 91.2700
+step: 0, CrossEntropy loss: 0.1351 (0.1351), train accuracy: 93.750(93.750), lr: 0.0035
+step: 100, CrossEntropy loss: 0.1382 (0.1057), train accuracy: 94.531(96.473), lr: 0.0035
+step: 200, CrossEntropy loss: 0.1850 (0.1053), train accuracy: 93.750(96.517), lr: 0.0035
+step: 300, CrossEntropy loss: 0.0891 (0.1063), train accuracy: 97.656(96.449), lr: 0.0035
+epoch: 24, CrossEntropy loss: 0.1079, accuracy: 96.386
+test acc: 91.3900
+step: 0, CrossEntropy loss: 0.1128 (0.1128), train accuracy: 95.312(95.312), lr: 0.0037
+step: 100, CrossEntropy loss: 0.1513 (0.1024), train accuracy: 92.969(96.550), lr: 0.0037
+step: 200, CrossEntropy loss: 0.0521 (0.1025), train accuracy: 98.438(96.537), lr: 0.0037
+step: 300, CrossEntropy loss: 0.0861 (0.1032), train accuracy: 99.219(96.540), lr: 0.0037
+epoch: 25, CrossEntropy loss: 0.1025, accuracy: 96.514
+test acc: 91.3200
+step: 0, CrossEntropy loss: 0.0832 (0.0832), train accuracy: 96.875(96.875), lr: 0.0040
+step: 100, CrossEntropy loss: 0.1078 (0.1013), train accuracy: 95.312(96.566), lr: 0.0040
+step: 200, CrossEntropy loss: 0.0866 (0.0975), train accuracy: 97.656(96.708), lr: 0.0040
+step: 300, CrossEntropy loss: 0.1952 (0.0974), train accuracy: 92.188(96.652), lr: 0.0040
+epoch: 26, CrossEntropy loss: 0.0989, accuracy: 96.626
+test acc: 91.5100
+step: 0, CrossEntropy loss: 0.0823 (0.0823), train accuracy: 96.875(96.875), lr: 0.0042
+step: 100, CrossEntropy loss: 0.0677 (0.0887), train accuracy: 96.875(97.045), lr: 0.0042
+step: 200, CrossEntropy loss: 0.1002 (0.0901), train accuracy: 96.094(96.945), lr: 0.0042
+step: 300, CrossEntropy loss: 0.1140 (0.0929), train accuracy: 96.094(96.802), lr: 0.0042
+epoch: 27, CrossEntropy loss: 0.0954, accuracy: 96.714
+test acc: 91.5300
+step: 0, CrossEntropy loss: 0.0812 (0.0812), train accuracy: 96.875(96.875), lr: 0.0045
+step: 100, CrossEntropy loss: 0.0937 (0.0907), train accuracy: 96.094(96.890), lr: 0.0045
+step: 200, CrossEntropy loss: 0.0468 (0.0892), train accuracy: 100.000(97.046), lr: 0.0045
+step: 300, CrossEntropy loss: 0.0786 (0.0900), train accuracy: 97.656(96.955), lr: 0.0045
+epoch: 28, CrossEntropy loss: 0.0924, accuracy: 96.858
+test acc: 91.4600
+step: 0, CrossEntropy loss: 0.0650 (0.0650), train accuracy: 97.656(97.656), lr: 0.0047
+step: 100, CrossEntropy loss: 0.1602 (0.0846), train accuracy: 96.094(97.215), lr: 0.0047
+step: 200, CrossEntropy loss: 0.1053 (0.0906), train accuracy: 96.094(96.976), lr: 0.0047
+step: 300, CrossEntropy loss: 0.0877 (0.0906), train accuracy: 95.312(96.958), lr: 0.0047
+epoch: 29, CrossEntropy loss: 0.0913, accuracy: 96.964
+test acc: 91.3900
+step: 0, CrossEntropy loss: 0.0760 (0.0760), train accuracy: 97.656(97.656), lr: 0.0050
+step: 100, CrossEntropy loss: 0.0510 (0.0813), train accuracy: 97.656(97.262), lr: 0.0050
+step: 200, CrossEntropy loss: 0.1038 (0.0832), train accuracy: 97.656(97.209), lr: 0.0050
+step: 300, CrossEntropy loss: 0.1038 (0.0847), train accuracy: 94.531(97.155), lr: 0.0050
+epoch: 30, CrossEntropy loss: 0.0864, accuracy: 97.090
+test acc: 91.6900
+step: 0, CrossEntropy loss: 0.0766 (0.0766), train accuracy: 97.656(97.656), lr: 0.0053
+step: 100, CrossEntropy loss: 0.0897 (0.0806), train accuracy: 96.875(97.486), lr: 0.0053
+step: 200, CrossEntropy loss: 0.1311 (0.0828), train accuracy: 95.312(97.322), lr: 0.0053
+step: 300, CrossEntropy loss: 0.0739 (0.0833), train accuracy: 98.438(97.241), lr: 0.0053
+epoch: 31, CrossEntropy loss: 0.0843, accuracy: 97.190
+test acc: 91.5900
+step: 0, CrossEntropy loss: 0.1162 (0.1162), train accuracy: 94.531(94.531), lr: 0.0055
+step: 100, CrossEntropy loss: 0.0689 (0.0802), train accuracy: 98.438(97.277), lr: 0.0055
+step: 200, CrossEntropy loss: 0.0685 (0.0843), train accuracy: 97.656(97.108), lr: 0.0055
+step: 300, CrossEntropy loss: 0.0645 (0.0844), train accuracy: 97.656(97.122), lr: 0.0055
+epoch: 32, CrossEntropy loss: 0.0861, accuracy: 97.068
+test acc: 91.3100
+step: 0, CrossEntropy loss: 0.0393 (0.0393), train accuracy: 99.219(99.219), lr: 0.0058
+step: 100, CrossEntropy loss: 0.0774 (0.0784), train accuracy: 96.875(97.331), lr: 0.0058
+step: 200, CrossEntropy loss: 0.0628 (0.0817), train accuracy: 97.656(97.256), lr: 0.0058
+step: 300, CrossEntropy loss: 0.0475 (0.0800), train accuracy: 98.438(97.321), lr: 0.0058
+epoch: 33, CrossEntropy loss: 0.0801, accuracy: 97.352
+test acc: 91.7400
+step: 0, CrossEntropy loss: 0.0806 (0.0806), train accuracy: 97.656(97.656), lr: 0.0060
+step: 100, CrossEntropy loss: 0.0558 (0.0808), train accuracy: 98.438(97.153), lr: 0.0060
+step: 200, CrossEntropy loss: 0.0863 (0.0798), train accuracy: 98.438(97.221), lr: 0.0060
+step: 300, CrossEntropy loss: 0.1067 (0.0828), train accuracy: 96.875(97.106), lr: 0.0060
+epoch: 34, CrossEntropy loss: 0.0827, accuracy: 97.092
+test acc: 92.0000
+step: 0, CrossEntropy loss: 0.1078 (0.1078), train accuracy: 95.312(95.312), lr: 0.0063
+step: 100, CrossEntropy loss: 0.0561 (0.0785), train accuracy: 98.438(97.416), lr: 0.0063
+step: 200, CrossEntropy loss: 0.0578 (0.0809), train accuracy: 97.656(97.318), lr: 0.0063
+step: 300, CrossEntropy loss: 0.0536 (0.0806), train accuracy: 97.656(97.303), lr: 0.0063
+epoch: 35, CrossEntropy loss: 0.0795, accuracy: 97.344
+test acc: 91.7600
+step: 0, CrossEntropy loss: 0.0496 (0.0496), train accuracy: 98.438(98.438), lr: 0.0065
+step: 100, CrossEntropy loss: 0.0800 (0.0743), train accuracy: 96.875(97.494), lr: 0.0065
+step: 200, CrossEntropy loss: 0.0784 (0.0772), train accuracy: 97.656(97.357), lr: 0.0065
+step: 300, CrossEntropy loss: 0.1231 (0.0809), train accuracy: 95.312(97.220), lr: 0.0065
+epoch: 36, CrossEntropy loss: 0.0816, accuracy: 97.172
+test acc: 91.3200
+step: 0, CrossEntropy loss: 0.1235 (0.1235), train accuracy: 95.312(95.312), lr: 0.0068
+step: 100, CrossEntropy loss: 0.0359 (0.0756), train accuracy: 99.219(97.509), lr: 0.0068
+step: 200, CrossEntropy loss: 0.0599 (0.0790), train accuracy: 97.656(97.376), lr: 0.0068
+step: 300, CrossEntropy loss: 0.0714 (0.0788), train accuracy: 98.438(97.350), lr: 0.0068
+epoch: 37, CrossEntropy loss: 0.0805, accuracy: 97.280
+test acc: 91.6300
+step: 0, CrossEntropy loss: 0.0879 (0.0879), train accuracy: 97.656(97.656), lr: 0.0070
+step: 100, CrossEntropy loss: 0.0944 (0.0777), train accuracy: 96.875(97.262), lr: 0.0070
+step: 200, CrossEntropy loss: 0.0697 (0.0793), train accuracy: 97.656(97.244), lr: 0.0070
+step: 300, CrossEntropy loss: 0.0509 (0.0800), train accuracy: 97.656(97.262), lr: 0.0070
+epoch: 38, CrossEntropy loss: 0.0814, accuracy: 97.228
+test acc: 91.7300
+step: 0, CrossEntropy loss: 0.0627 (0.0627), train accuracy: 96.875(96.875), lr: 0.0073
+step: 100, CrossEntropy loss: 0.0359 (0.0746), train accuracy: 99.219(97.362), lr: 0.0073
+step: 200, CrossEntropy loss: 0.1312 (0.0763), train accuracy: 96.094(97.361), lr: 0.0073
+step: 300, CrossEntropy loss: 0.0992 (0.0781), train accuracy: 97.656(97.342), lr: 0.0073
+epoch: 39, CrossEntropy loss: 0.0800, accuracy: 97.268
+test acc: 91.8600
+step: 0, CrossEntropy loss: 0.0619 (0.0619), train accuracy: 99.219(99.219), lr: 0.0075
+step: 100, CrossEntropy loss: 0.0306 (0.0789), train accuracy: 99.219(97.308), lr: 0.0075
+step: 200, CrossEntropy loss: 0.0823 (0.0785), train accuracy: 96.875(97.303), lr: 0.0075
+step: 300, CrossEntropy loss: 0.1488 (0.0806), train accuracy: 94.531(97.194), lr: 0.0075
+epoch: 40, CrossEntropy loss: 0.0819, accuracy: 97.190
+test acc: 91.7000
+step: 0, CrossEntropy loss: 0.2025 (0.2025), train accuracy: 93.750(93.750), lr: 0.0077
+step: 100, CrossEntropy loss: 0.0748 (0.0761), train accuracy: 97.656(97.401), lr: 0.0077
+step: 200, CrossEntropy loss: 0.1076 (0.0760), train accuracy: 96.094(97.497), lr: 0.0077
+step: 300, CrossEntropy loss: 0.1099 (0.0776), train accuracy: 97.656(97.412), lr: 0.0077
+epoch: 41, CrossEntropy loss: 0.0783, accuracy: 97.390
+test acc: 91.3800
+step: 0, CrossEntropy loss: 0.0828 (0.0828), train accuracy: 96.875(96.875), lr: 0.0079
+step: 100, CrossEntropy loss: 0.0636 (0.0695), train accuracy: 98.438(97.679), lr: 0.0079
+step: 200, CrossEntropy loss: 0.0393 (0.0713), train accuracy: 99.219(97.598), lr: 0.0079
+step: 300, CrossEntropy loss: 0.1521 (0.0755), train accuracy: 94.531(97.475), lr: 0.0079
+epoch: 42, CrossEntropy loss: 0.0773, accuracy: 97.434
+test acc: 91.2400
+step: 0, CrossEntropy loss: 0.0440 (0.0440), train accuracy: 98.438(98.438), lr: 0.0081
+step: 100, CrossEntropy loss: 0.1197 (0.0712), train accuracy: 95.312(97.687), lr: 0.0081
+step: 200, CrossEntropy loss: 0.1008 (0.0755), train accuracy: 96.094(97.462), lr: 0.0081
+step: 300, CrossEntropy loss: 0.1607 (0.0759), train accuracy: 94.531(97.477), lr: 0.0081
+epoch: 43, CrossEntropy loss: 0.0793, accuracy: 97.316
+test acc: 91.5500
+step: 0, CrossEntropy loss: 0.0714 (0.0714), train accuracy: 96.875(96.875), lr: 0.0083
+step: 100, CrossEntropy loss: 0.0480 (0.0785), train accuracy: 98.438(97.308), lr: 0.0083
+step: 200, CrossEntropy loss: 0.0856 (0.0757), train accuracy: 99.219(97.481), lr: 0.0083
+step: 300, CrossEntropy loss: 0.0546 (0.0792), train accuracy: 98.438(97.314), lr: 0.0083
+epoch: 44, CrossEntropy loss: 0.0810, accuracy: 97.238
+test acc: 91.3600
+step: 0, CrossEntropy loss: 0.0473 (0.0473), train accuracy: 97.656(97.656), lr: 0.0085
+step: 100, CrossEntropy loss: 0.0531 (0.0766), train accuracy: 98.438(97.440), lr: 0.0085
+step: 200, CrossEntropy loss: 0.0532 (0.0753), train accuracy: 99.219(97.497), lr: 0.0085
+step: 300, CrossEntropy loss: 0.0537 (0.0766), train accuracy: 98.438(97.425), lr: 0.0085
+epoch: 45, CrossEntropy loss: 0.0804, accuracy: 97.288
+test acc: 91.1400
+step: 0, CrossEntropy loss: 0.0495 (0.0495), train accuracy: 99.219(99.219), lr: 0.0087
+step: 100, CrossEntropy loss: 0.0479 (0.0783), train accuracy: 98.438(97.324), lr: 0.0087
+step: 200, CrossEntropy loss: 0.0951 (0.0800), train accuracy: 96.875(97.291), lr: 0.0087
+step: 300, CrossEntropy loss: 0.1360 (0.0824), train accuracy: 97.656(97.202), lr: 0.0087
+epoch: 46, CrossEntropy loss: 0.0837, accuracy: 97.172
+test acc: 91.3200
+step: 0, CrossEntropy loss: 0.0730 (0.0730), train accuracy: 96.875(96.875), lr: 0.0089
+step: 100, CrossEntropy loss: 0.0462 (0.0739), train accuracy: 97.656(97.571), lr: 0.0089
+step: 200, CrossEntropy loss: 0.0826 (0.0775), train accuracy: 96.094(97.384), lr: 0.0089
+step: 300, CrossEntropy loss: 0.2059 (0.0814), train accuracy: 93.750(97.199), lr: 0.0089
+epoch: 47, CrossEntropy loss: 0.0828, accuracy: 97.182
+test acc: 91.2000
+step: 0, CrossEntropy loss: 0.0457 (0.0457), train accuracy: 100.000(100.000), lr: 0.0090
+step: 100, CrossEntropy loss: 0.0720 (0.0785), train accuracy: 96.875(97.416), lr: 0.0090
+step: 200, CrossEntropy loss: 0.0479 (0.0807), train accuracy: 99.219(97.279), lr: 0.0090
+step: 300, CrossEntropy loss: 0.1513 (0.0829), train accuracy: 93.750(97.150), lr: 0.0090
+epoch: 48, CrossEntropy loss: 0.0850, accuracy: 97.072
+test acc: 91.4700
+step: 0, CrossEntropy loss: 0.1275 (0.1275), train accuracy: 96.875(96.875), lr: 0.0092
+step: 100, CrossEntropy loss: 0.1250 (0.0750), train accuracy: 96.094(97.455), lr: 0.0092
+step: 200, CrossEntropy loss: 0.0629 (0.0762), train accuracy: 96.875(97.415), lr: 0.0092
+step: 300, CrossEntropy loss: 0.0486 (0.0759), train accuracy: 98.438(97.407), lr: 0.0092
+epoch: 49, CrossEntropy loss: 0.0796, accuracy: 97.266
+test acc: 91.1400
+step: 0, CrossEntropy loss: 0.1250 (0.1250), train accuracy: 96.094(96.094), lr: 0.0093
+step: 100, CrossEntropy loss: 0.0924 (0.0871), train accuracy: 96.875(96.906), lr: 0.0093
+step: 200, CrossEntropy loss: 0.0477 (0.0883), train accuracy: 97.656(96.844), lr: 0.0093
+step: 300, CrossEntropy loss: 0.0871 (0.0886), train accuracy: 96.875(96.898), lr: 0.0093
+epoch: 50, CrossEntropy loss: 0.0900, accuracy: 96.836
+test acc: 91.2100
+step: 0, CrossEntropy loss: 0.0598 (0.0598), train accuracy: 97.656(97.656), lr: 0.0095
+step: 100, CrossEntropy loss: 0.0827 (0.0809), train accuracy: 97.656(97.362), lr: 0.0095
+step: 200, CrossEntropy loss: 0.0801 (0.0789), train accuracy: 98.438(97.404), lr: 0.0095
+step: 300, CrossEntropy loss: 0.0857 (0.0833), train accuracy: 98.438(97.142), lr: 0.0095
+epoch: 51, CrossEntropy loss: 0.0835, accuracy: 97.122
+test acc: 91.3800
+step: 0, CrossEntropy loss: 0.0772 (0.0772), train accuracy: 98.438(98.438), lr: 0.0096
+step: 100, CrossEntropy loss: 0.0725 (0.0842), train accuracy: 97.656(97.200), lr: 0.0096
+step: 200, CrossEntropy loss: 0.1000 (0.0817), train accuracy: 96.875(97.287), lr: 0.0096
+step: 300, CrossEntropy loss: 0.0718 (0.0812), train accuracy: 98.438(97.285), lr: 0.0096
+epoch: 52, CrossEntropy loss: 0.0813, accuracy: 97.224
+test acc: 91.2000
+step: 0, CrossEntropy loss: 0.0720 (0.0720), train accuracy: 97.656(97.656), lr: 0.0097
+step: 100, CrossEntropy loss: 0.1185 (0.0772), train accuracy: 96.875(97.339), lr: 0.0097
+step: 200, CrossEntropy loss: 0.1692 (0.0820), train accuracy: 95.312(97.174), lr: 0.0097
+step: 300, CrossEntropy loss: 0.0700 (0.0852), train accuracy: 99.219(97.031), lr: 0.0097
+epoch: 53, CrossEntropy loss: 0.0866, accuracy: 96.974
+test acc: 91.2800
+step: 0, CrossEntropy loss: 0.0854 (0.0854), train accuracy: 96.875(96.875), lr: 0.0098
+step: 100, CrossEntropy loss: 0.0838 (0.0809), train accuracy: 98.438(97.339), lr: 0.0098
+step: 200, CrossEntropy loss: 0.0918 (0.0826), train accuracy: 96.094(97.205), lr: 0.0098
+step: 300, CrossEntropy loss: 0.1105 (0.0872), train accuracy: 96.094(96.987), lr: 0.0098
+epoch: 54, CrossEntropy loss: 0.0892, accuracy: 96.916
+test acc: 90.5600
+step: 0, CrossEntropy loss: 0.0432 (0.0432), train accuracy: 98.438(98.438), lr: 0.0098
+step: 100, CrossEntropy loss: 0.0449 (0.0824), train accuracy: 99.219(97.246), lr: 0.0098
+step: 200, CrossEntropy loss: 0.0908 (0.0822), train accuracy: 95.312(97.256), lr: 0.0098
+step: 300, CrossEntropy loss: 0.1218 (0.0844), train accuracy: 93.750(97.129), lr: 0.0098
+epoch: 55, CrossEntropy loss: 0.0871, accuracy: 97.004
+test acc: 91.3100
+step: 0, CrossEntropy loss: 0.0474 (0.0474), train accuracy: 98.438(98.438), lr: 0.0099
+step: 100, CrossEntropy loss: 0.0686 (0.0795), train accuracy: 96.875(97.208), lr: 0.0099
+step: 200, CrossEntropy loss: 0.1196 (0.0799), train accuracy: 95.312(97.240), lr: 0.0099
+step: 300, CrossEntropy loss: 0.0372 (0.0833), train accuracy: 98.438(97.072), lr: 0.0099
+epoch: 56, CrossEntropy loss: 0.0873, accuracy: 96.940
+test acc: 91.2400
+step: 0, CrossEntropy loss: 0.1033 (0.1033), train accuracy: 96.875(96.875), lr: 0.0099
+step: 100, CrossEntropy loss: 0.1009 (0.0830), train accuracy: 95.312(97.115), lr: 0.0099
+step: 200, CrossEntropy loss: 0.1422 (0.0864), train accuracy: 96.094(97.003), lr: 0.0099
+step: 300, CrossEntropy loss: 0.0315 (0.0867), train accuracy: 100.000(97.044), lr: 0.0099
+epoch: 57, CrossEntropy loss: 0.0872, accuracy: 97.056
+test acc: 91.3700
+step: 0, CrossEntropy loss: 0.0396 (0.0396), train accuracy: 97.656(97.656), lr: 0.0100
+step: 100, CrossEntropy loss: 0.1234 (0.0832), train accuracy: 96.094(97.153), lr: 0.0100
+step: 200, CrossEntropy loss: 0.0798 (0.0832), train accuracy: 98.438(97.135), lr: 0.0100
+step: 300, CrossEntropy loss: 0.1106 (0.0861), train accuracy: 96.094(97.018), lr: 0.0100
+epoch: 58, CrossEntropy loss: 0.0881, accuracy: 96.904
+test acc: 90.8300
+step: 0, CrossEntropy loss: 0.0619 (0.0619), train accuracy: 98.438(98.438), lr: 0.0100
+step: 100, CrossEntropy loss: 0.0961 (0.0821), train accuracy: 96.875(97.208), lr: 0.0100
+step: 200, CrossEntropy loss: 0.1148 (0.0861), train accuracy: 97.656(97.077), lr: 0.0100
+step: 300, CrossEntropy loss: 0.0671 (0.0856), train accuracy: 97.656(97.067), lr: 0.0100
+epoch: 59, CrossEntropy loss: 0.0884, accuracy: 96.938
+test acc: 90.8000
+ln structured pruning testing
+order: 2
+model sum:  -1111.3250433802605
+before pruning, train loss: 0.0032, train acc: 99.9680, test accuracy: 94.2900
+start pruning module.conv1, num of channels: 16
+tensor([ 3, 12, 10,  7, 15,  2,  9,  8], device='cuda:0')
+time: 0.0033s
+start pruning module.layer1.0.conv1, num of channels: 16
+tensor([ 5, 10, 14,  4, 11,  8,  7,  0], device='cuda:0')
+time: 0.0017s
+start pruning module.layer1.0.conv2, num of channels: 16
+tensor([ 9,  1, 14, 11,  4, 12,  5,  6], device='cuda:0')
+time: 0.0017s
+start pruning module.layer1.0.conv3, num of channels: 64
+tensor([13,  8, 26, 63, 54, 34,  5, 28, 50, 52, 41, 27, 44, 25, 59, 48, 10, 29,
+        19, 37,  1, 55, 43, 11, 38, 57, 18, 22, 60, 33, 42,  3],
+       device='cuda:0')
+time: 0.0027s
+start pruning module.layer1.0.downsample.0, num of channels: 64
+tensor([26,  5,  1, 34, 27, 28, 48, 41, 63, 44, 54, 52, 50, 25, 59,  8, 10, 29,
+        43, 13, 37, 55, 11, 19, 33, 18, 38, 22, 42, 57, 32, 60],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer1.1.conv1, num of channels: 16
+tensor([14,  3, 10,  8,  6,  5,  7,  2], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.1.conv2, num of channels: 16
+tensor([ 4, 12,  3, 13, 14,  0,  1, 15], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.1.conv3, num of channels: 64
+tensor([53, 26, 28,  5, 44, 27,  8, 41, 34, 48, 63, 13, 10,  1, 15, 52, 50, 54,
+        11, 25, 29, 37, 55, 59, 43, 35, 19, 18, 57, 38, 47,  2],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer1.2.conv1, num of channels: 16
+tensor([14,  1, 11, 13,  9,  3,  0,  2], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.2.conv2, num of channels: 16
+tensor([ 2,  1, 13,  3,  6,  4,  9, 10], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.2.conv3, num of channels: 64
+tensor([53, 48, 63, 26, 27,  5, 41, 52, 28, 44, 34, 25, 50,  1, 21, 15, 54, 43,
+        55, 51, 37, 59, 13, 10,  8, 29, 11, 23, 57, 18, 19, 56],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer1.3.conv1, num of channels: 16
+tensor([11,  6,  1,  3,  8,  0,  7, 12], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.3.conv2, num of channels: 16
+tensor([11,  6,  9,  8,  5,  2, 15,  1], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.3.conv3, num of channels: 64
+tensor([ 5, 26, 63,  1, 34, 48, 13, 29, 41, 52, 28, 59, 53, 10, 15, 39,  8, 37,
+        54, 27, 44, 11, 51, 25, 21, 23, 50, 55, 43, 22, 18, 14],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer1.4.conv1, num of channels: 16
+tensor([ 7,  8, 14,  0, 12,  3,  2,  5], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.4.conv2, num of channels: 16
+tensor([13,  8,  1, 10, 12,  9, 14,  3], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.4.conv3, num of channels: 64
+tensor([27, 48, 20, 49, 57, 16, 56, 62, 61, 14, 55,  1, 51, 15,  0, 22, 32, 58,
+        29, 10,  6, 18, 42, 44, 30,  7, 37, 12, 28,  2, 59, 38],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer1.5.conv1, num of channels: 16
+tensor([13,  4,  3, 11,  7,  1, 14,  6], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.5.conv2, num of channels: 16
+tensor([ 4,  0,  3,  1,  9,  8, 14, 12], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.5.conv3, num of channels: 64
+tensor([30, 57, 49, 36, 14, 20, 22, 17, 39,  2, 12, 33, 18, 61,  5, 32,  4, 58,
+        42, 38,  3,  9, 27, 47, 56, 25, 19, 10, 13, 23, 41, 21],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer1.6.conv1, num of channels: 16
+tensor([11, 15,  2,  5,  0, 14,  9, 13], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.6.conv2, num of channels: 16
+tensor([ 9,  7, 12,  2,  4,  5, 15,  6], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.6.conv3, num of channels: 64
+tensor([27, 36, 49, 23, 61, 18, 42, 48, 14, 25, 45,  6,  3, 10, 17, 22, 41, 58,
+        53, 28, 20,  5, 62, 39, 21, 26, 59, 40, 47, 56, 11, 50],
+       device='cuda:0')
+time: 0.0014s
+start pruning module.layer1.7.conv1, num of channels: 16
+tensor([ 7, 12,  2,  3,  1, 15,  6, 13], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.7.conv2, num of channels: 16
+tensor([ 1,  6,  5, 12,  8,  3, 15, 10], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.7.conv3, num of channels: 64
+tensor([47,  0, 61, 12, 33, 31, 30, 20,  9, 49, 60, 40, 58, 46,  2, 17,  6, 27,
+        18, 45, 36,  3, 32, 14, 16, 42, 11, 38, 24, 56,  5, 35],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer1.8.conv1, num of channels: 16
+tensor([14,  0, 12,  9,  7,  6,  1, 10], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.8.conv2, num of channels: 16
+tensor([10,  3,  1,  6,  9, 14, 15,  2], device='cuda:0')
+time: 0.0009s
+start pruning module.layer1.8.conv3, num of channels: 64
+tensor([40, 61, 20,  2, 10,  3, 18, 17, 26, 25, 51, 45,  6, 42, 60,  5, 14, 46,
+        31, 29,  9, 27,  4, 23, 43, 21, 41, 63, 34, 50, 48, 57],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer2.0.conv1, num of channels: 32
+tensor([21, 24, 15,  5, 26, 23,  0, 30, 10,  1, 19, 29,  7, 25, 14, 18],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.0.conv2, num of channels: 32
+tensor([ 2, 11, 26, 25, 30, 21, 20, 13, 12, 16, 31, 17,  8,  6,  5,  4],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.0.conv3, num of channels: 128
+tensor([  9,  58,  52, 126,  79,   4,  11, 106,  98,  23,  70, 124,  48,  38,
+         87,  96,  84,  10,   1,  86,  27,  78,   5,  35, 120,  54, 122, 101,
+          7,  71,  73,  17, 110,  33, 123,  45, 103, 117,  24, 105,  12, 125,
+         22, 114,   0,  44,   8, 102,  21,  53, 104,  83,  29,  62,  49,  69,
+         97,  61, 113,  51,  90,  74,  26,  89], device='cuda:0')
+time: 0.0023s
+start pruning module.layer2.0.downsample.0, num of channels: 128
+tensor([ 79,  29,  70,  35,  48, 124,  21,   1,  26, 102,  62,  83,  96, 116,
+         28, 104,  56,  22,  49,  93,  90,   4,  51,  71,  11, 125,  23, 103,
+         42,  19,   0, 120,  61,  59,  82,  69,  60, 110,  17,  98,  45,   5,
+        114, 105,  74,   7,  10,  38,  37,  46, 106, 126, 122,  84, 101,  78,
+         65,  24,  39, 109,  97,  87,  27,  54], device='cuda:0')
+time: 0.0022s
+start pruning module.layer2.1.conv1, num of channels: 32
+tensor([ 5, 31, 27,  2,  0, 30,  7, 16, 13, 28, 15, 10, 12, 24,  1, 23],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.1.conv2, num of channels: 32
+tensor([22, 19, 30, 23, 25,  4,  6,  5, 17, 11, 28,  9, 12, 20,  2,  3],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.1.conv3, num of channels: 128
+tensor([111,  60,  88,  72,  28,  61,  80,  94,  37,  40,  97, 120, 102,  82,
+        123, 112,   8, 121, 116, 109,  17,  39,  31,  19,  89,  13,  59,  21,
+         64,  44,  14,  26,  73,  45,  93, 125, 118, 104,  49,  27,  54, 105,
+          0,  24,  56,  29, 114,  75,  22,  67,  18,  74,  91,  12, 107, 126,
+         62,  32,  69,   9,  83,   1,  50,  84], device='cuda:0')
+time: 0.0023s
+start pruning module.layer2.2.conv1, num of channels: 32
+tensor([20, 27, 26, 24, 12, 15, 10,  2, 21,  0,  9, 14, 23, 19, 22, 31],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.2.conv2, num of channels: 32
+tensor([16, 12,  3, 19, 18, 29, 13,  8, 27,  4, 25,  6, 14,  5, 31, 17],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.2.conv3, num of channels: 128
+tensor([102,  19,  79,  61,  93,  64,  72,  13,  71,   5, 123,   8,  28,  11,
+         52, 112, 106,  94, 126,  43,  59, 117,  40,  95,  48, 111,  21,  27,
+         33,  97,  39,  37,   0,  89,  73,  31,  88, 121,  49, 109,  10,  14,
+        101,  60,  38,  44,  54, 120,  92,  16,  62,  83,  63,  80,  23,  29,
+        113,  84, 118, 107, 110,   9,  91,  65], device='cuda:0')
+time: 0.0022s
+start pruning module.layer2.3.conv1, num of channels: 32
+tensor([24, 26, 18,  9, 19,  2, 31, 13,  4, 29,  7, 28,  8, 12, 16, 10],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.3.conv2, num of channels: 32
+tensor([ 8,  1,  3, 28,  5, 25,  2, 12,  9, 30, 21,  4, 24, 19, 27, 23],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.3.conv3, num of channels: 128
+tensor([ 44, 112,  82,  65,  72,  80,   3,  60,  88,   0, 108,  95, 118,  13,
+        116,  63,  18,  40,  45, 111,  64,  66,  97,  28,  56,  92, 109,  31,
+        120,  89,   8,  29,  67,  27,  74, 105,  73,  38,  75,  84,  79, 121,
+          9,  59,  52, 119, 114,  69,   1,  21,  91, 102,  17,  43, 122,  57,
+        124,  93,  94,  51,  42,  62,  35,  70], device='cuda:0')
+time: 0.0022s
+start pruning module.layer2.4.conv1, num of channels: 32
+tensor([ 8, 22, 29, 24, 16, 23, 14,  1, 11, 15, 30,  6,  4, 25, 17, 27],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.4.conv2, num of channels: 32
+tensor([11,  7, 27, 16, 13,  1, 12, 23,  8, 15, 18, 17, 30, 31, 22, 24],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.4.conv3, num of channels: 128
+tensor([ 40,  46,  69,  18,  29,  51,  92,  26, 111, 125,  78,  63,  90,   7,
+         42, 124,  95,  37, 112, 120,  94,  60, 122,  59, 121,  77,  73,  80,
+        101,  10, 123,  56,  97,   2,  43,  33, 110,  34, 108,  21,  27,  67,
+         54, 118, 105, 113,  32, 119,  17,  61,  91,  66,  28,  88,  23,  13,
+          3,  93,  47,  75,  39,   8,  84,  24], device='cuda:0')
+time: 0.0022s
+start pruning module.layer2.5.conv1, num of channels: 32
+tensor([26, 11,  7, 21, 17, 12, 28, 20,  8, 30,  4, 13, 27, 23,  5, 14],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.5.conv2, num of channels: 32
+tensor([12,  3, 10, 29, 26, 18, 14, 27, 11, 13, 21,  7, 25, 28, 23,  6],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.5.conv3, num of channels: 128
+tensor([ 68,  98, 113, 101,  10,  52,   5, 126,  81, 117,  86,  53,  43,  33,
+         73,  38,  11, 125, 119,  32,  47,  40,  63,  75,  34,   1,  21, 124,
+         90,  25, 118,  54, 115,   2,  65,  95, 120,  57, 108,  26,  85,  66,
+        110, 103,  23,  24,  96,  91, 123,   7, 106,  84,  27,  69,  78,  16,
+         15, 104,  12,   4,  42,  79,  14,  44], device='cuda:0')
+time: 0.0022s
+start pruning module.layer2.6.conv1, num of channels: 32
+tensor([27, 28,  4,  6, 24, 31, 20, 16, 29,  9,  5, 18, 19,  8, 12, 11],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.6.conv2, num of channels: 32
+tensor([14,  9, 25, 29, 23,  1, 26, 20, 12, 16, 22,  3, 27, 28, 30, 17],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.6.conv3, num of channels: 128
+tensor([126, 117,  68,  98,  81,  87,  31,  47,  96,  43, 123,  38, 108,  86,
+         11,  78,  51,  90,  62,  75,  52,   5,  25,  17, 100,  61,  46,  66,
+         91, 124, 115,  23,  65,  77, 103,  88, 107,  57,  21, 104,  54,   8,
+        101,  55,  12,   6,  84, 110,  15,  99,  76, 120,  44,  74,  26,  39,
+         50,  42,  67,  85,  60,  24,  33,   9], device='cuda:0')
+time: 0.0022s
+start pruning module.layer2.7.conv1, num of channels: 32
+tensor([12, 20, 16, 13,  0, 19, 14,  9,  2,  6, 27, 10, 29, 23,  7,  3],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.7.conv2, num of channels: 32
+tensor([ 1, 30, 31, 15, 17, 13, 11, 27, 21,  7, 22, 23, 16,  4, 20, 10],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.7.conv3, num of channels: 128
+tensor([ 20, 127,  77,  25, 106,  64,  15,  36, 113,  53,  76,  41,  45,  71,
+        103,  92,   2,  21,  22,   1,  32,  14, 104,  54,  66,  38, 100,  85,
+         11, 101, 119,  74, 108,   5, 111,  55,  50,  31,   3,  63, 121,  49,
+         78,   4, 109, 125,  97,  81,  67,  73,  23,  35,  75,  33,  28, 122,
+         68,  69,  30,  59,  89,  16,  90,  44], device='cuda:0')
+time: 0.0022s
+start pruning module.layer2.8.conv1, num of channels: 32
+tensor([18, 15, 17,  9, 10, 31,  6, 28, 23, 12, 30,  4, 21, 14, 19, 16],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.8.conv2, num of channels: 32
+tensor([ 1,  0, 23, 31, 11,  8, 25, 13, 10,  4,  6, 17, 30,  7, 21, 16],
+       device='cuda:0')
+time: 0.0011s
+start pruning module.layer2.8.conv3, num of channels: 128
+tensor([ 36,   9,  55,  10,  85,  86,   6, 100,  81,  12,  76,  68,  30, 108,
+         70,   3,  27,  24,  42,  48,  87,  99, 103,  31,  43, 113,  33, 110,
+         89,  44,  17,  65, 104,  77,   5, 115,  13, 119,  45,  21,  25, 126,
+        123, 107,  11, 120,  80, 106,  91,  16,  14, 118,  92,  38,  50, 117,
+        105, 101,  19,  41,  22,  47,  67, 112], device='cuda:0')
+time: 0.0022s
+start pruning module.layer3.0.conv1, num of channels: 64
+tensor([42, 22,  9, 52, 50, 58,  4, 59, 44, 32, 55,  5, 63, 57, 53, 26, 49, 37,
+        43, 21, 38,  7, 10, 28, 35, 61, 30, 11, 56, 20, 47, 24],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.0.conv2, num of channels: 64
+tensor([43, 29,  0,  8, 57, 24,  2, 30, 51, 39, 54,  9, 61, 52, 22, 16, 20, 23,
+         1, 28, 45, 26, 41, 62, 46, 63, 60, 25, 19,  6, 37, 58],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.0.conv3, num of channels: 256
+tensor([ 65,  76, 107,  40, 189,  92, 151, 183, 159,  56, 207, 248, 155, 234,
+         87, 139,  21,   4, 251,  15, 212, 192, 101, 188, 190,  93, 104,  27,
+         50,  13,  57, 164, 150,  37, 109,  83,  44,  88,  91, 255, 208, 154,
+         16,  31,  99, 144,  68, 137, 125,  80, 130, 195, 200,  25,  97,  23,
+         79, 175, 185, 219,  42, 163, 191, 232,  47, 133,  22,  55, 199, 140,
+        177,   5, 113,  58, 110, 201, 100,   3, 122, 194, 117, 111, 218, 211,
+         35, 197,  78, 179, 108,  45,  52,  73, 136,  20,  67,  46,  94, 124,
+         48, 121,  36,  26,  49,   6,  60, 142, 141,  32,  59, 178, 143, 129,
+        210,  69, 241,  82, 205, 148,  24, 225, 204,  85, 203, 215, 134,  19,
+         84,  11], device='cuda:0')
+time: 0.0039s
+start pruning module.layer3.0.downsample.0, num of channels: 256
+tensor([ 64, 255, 110,  89,  34,  38, 189,  65,  19,  35, 156,  33, 141, 155,
+         53,  79, 130,  72,  36,  76,  12, 208,  52,  92, 166, 170, 212, 125,
+         85,  27,  57, 216,  21,  66, 164, 136,  43,  15, 237,  11, 251, 100,
+         25, 150, 147,  93,  70,   7, 129, 167, 187,   1, 101,  98,  91, 122,
+          4,  60,  62,  77, 197, 234,  24, 248,   5, 175, 240, 163, 117, 232,
+        246, 233, 109,  78, 165, 222,  37, 180, 140, 201,  96, 191,  31, 115,
+         16,  47, 207,  90, 228, 185, 107,  42, 174,  23, 144,  83,   8,  97,
+         44, 160,  80,  48, 235, 142, 118,  17, 182, 179,  40, 247, 111,  14,
+        121, 195, 223, 127, 203, 159,   3, 139, 128,  13, 134, 104,  30,  59,
+         67,  26], device='cuda:0')
+time: 0.0038s
+start pruning module.layer3.1.conv1, num of channels: 64
+tensor([ 2, 52,  7, 32,  6, 24, 59, 42, 36, 29, 18, 12,  3, 26, 28, 31, 39, 51,
+        58, 50, 35,  5, 13, 34, 62, 37, 21, 49,  1, 60, 57, 46],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.1.conv2, num of channels: 64
+tensor([31,  1, 35,  4, 15,  6, 45, 20, 34, 25, 30, 33, 46, 38, 39, 55, 27, 40,
+        13,  2, 61, 48, 42, 22, 18, 12, 23, 58, 36, 56, 16,  5],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.1.conv3, num of channels: 256
+tensor([ 40,  11,  43, 178, 218, 231, 154,  49, 147, 122, 117, 232,  45, 221,
+        199, 228, 247,  79, 240, 212,  52,  81,  78, 180,  27, 112, 155,  30,
+        234,  34, 250, 111, 166,  65, 109, 249,   5,  89, 203,  28,  97, 104,
+        121,  62,  53,  85, 179,  13, 107, 190, 106, 192, 202,  39, 100, 110,
+          7,  20,  96, 187, 219,   6, 174, 194,   8, 116,  80, 227, 235, 136,
+        210, 134, 246,  24,  70,  60,  95,  91, 114,   4,  64, 254, 198, 158,
+         77, 255, 113, 242, 236, 163, 248, 171,   9,  16, 186, 191,  57,  25,
+        181, 176,  90,  87, 244, 206, 152,  21,  88, 184, 230, 214, 135,  94,
+        241, 164, 133, 209,  67, 197,  66, 150, 169, 132, 101, 153, 201,  10,
+         29,  33], device='cuda:0')
+time: 0.0038s
+start pruning module.layer3.2.conv1, num of channels: 64
+tensor([ 1, 34, 59, 10, 48, 17, 60,  9, 39, 51,  3, 38, 18,  0, 47, 45, 12, 13,
+        31, 52, 25,  6, 44, 29,  7, 55, 49, 61, 26, 24,  2, 32],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.2.conv2, num of channels: 64
+tensor([16, 48, 53,  7, 54,  9, 59, 57, 43, 32, 24, 50, 21,  0, 13, 35,  5, 60,
+        27, 62, 25, 33, 34, 22, 10, 44, 49, 41, 47, 30, 56, 52],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.2.conv3, num of channels: 256
+tensor([  1, 112, 175,  20, 148, 136,  39,   3, 199, 147, 110,  95,   5,  19,
+        113,  56,  73,  64,  78, 108, 255, 135, 231, 107, 179, 251, 141, 205,
+        216, 117,  92, 146, 122,  88,  59, 252,  52, 206, 170,  31, 201, 166,
+         97,  16, 219, 115, 188, 245, 203, 232, 161, 155,  21,   0, 165, 106,
+        153, 172,  89,  77,  45, 150, 247, 220,   6,  12,   7, 143, 225, 235,
+        174, 254, 190, 109,  74, 133,  23,  29,  67, 160, 227,  80, 248,  94,
+         17,  70,  91, 240, 189,   4,  60, 101,  32,  85,  62, 202, 131, 119,
+        200,  43, 250, 116,  72, 163, 187, 249, 191,  46, 204, 129, 159, 237,
+        156,  13,  25,  11,  38, 192, 132, 145,  75, 223, 103, 121,  35, 154,
+        238,  54], device='cuda:0')
+time: 0.0038s
+start pruning module.layer3.3.conv1, num of channels: 64
+tensor([50, 36,  6, 11, 37, 54, 47,  9, 20, 31, 34, 63, 13, 46, 62, 45, 58, 16,
+        14, 60, 41, 19, 57, 29, 21,  7, 22, 43, 35, 23, 42, 39],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.3.conv2, num of channels: 64
+tensor([29, 40, 45, 49, 17, 38, 63, 36, 41, 32, 30, 14,  8, 11, 62, 23, 55, 52,
+        48,  5, 33,  3, 12, 21,  0, 46, 26, 25, 60, 59, 19, 57],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.3.conv3, num of channels: 256
+tensor([ 42, 206, 115,   1, 213,  35, 148, 244,  94, 198, 117, 105, 205, 254,
+        179,  20, 222,  41, 204, 208, 193, 112, 133, 124,  96, 223,   0, 227,
+         75,  48,  29,  87, 238, 170,   7,  73,  93, 250,  10,  55,  65,  21,
+        182, 251, 140,  52, 189,  64,  54, 146,  51, 212,  63, 236, 119, 171,
+        191, 197, 108, 220,  78, 136, 130,  56, 194,  15,  85, 118, 160, 249,
+         39, 121, 107,  86,  88,   9, 200,  31, 192, 230, 104, 195,  22,  79,
+         25, 157, 145,  50, 113, 120, 175,  59, 196, 100,  60, 167, 162, 125,
+        156, 176, 245, 185, 252, 241,  28,  27, 215, 181, 231,  80, 187,  34,
+        172, 173, 141,  12,  57,  74, 188,  38, 201, 247,  77,  62, 110, 255,
+        235,  47], device='cuda:0')
+time: 0.0038s
+start pruning module.layer3.4.conv1, num of channels: 64
+tensor([31, 57, 10, 58, 42, 60, 51, 26,  1, 24,  3, 11, 41, 21, 40, 49, 50, 17,
+        54, 36,  0, 22, 35, 61,  6, 20, 63,  2, 45, 39, 28, 56],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.4.conv2, num of channels: 64
+tensor([ 2, 24, 35, 50, 46, 17, 38,  7,  3, 29, 58, 13, 27, 15, 59, 55,  1, 39,
+        48, 57, 30, 11, 40,  0,  6, 21, 54, 26, 36, 28,  9,  8],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.4.conv3, num of channels: 256
+tensor([ 34, 230,  45, 114, 115, 250, 238, 191, 189, 188, 170, 151, 117,   1,
+         96, 210, 192, 220, 236, 203,  41,  93, 204,  86, 154, 177, 132,  75,
+         11, 121,  74,  78,  85, 101, 149, 225, 146, 190, 140,  14,  60,  42,
+        109, 179,  83, 241,  47,  56,  92, 147,  18, 105,  89,  98,  65, 215,
+        112, 224,  29, 244, 233,  57, 100,  50, 228,  55,  27, 137, 198, 155,
+          5, 235, 185,  17, 163,  21, 108,  77, 143, 129,   4, 202,  63,  35,
+         40,  82, 134, 214, 247, 200,  20, 213,   8, 222,  53, 186, 217, 196,
+         10,   7,  44, 180, 133, 219,  67, 237,  19, 130, 183, 206, 232, 131,
+        216,  73, 242,  91,  51, 187, 231,  37,  26,  69, 159, 104, 205, 246,
+        239,  80], device='cuda:0')
+time: 0.0038s
+start pruning module.layer3.5.conv1, num of channels: 64
+tensor([ 1, 21, 61, 59, 16, 36, 54, 15, 34, 18, 43, 33, 63, 14, 30,  0, 41, 51,
+        62, 45, 24, 57, 13, 38, 48, 27, 20,  8, 28, 31, 47, 22],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.5.conv2, num of channels: 64
+tensor([60, 35, 18, 53, 33, 17, 29, 39, 58, 15, 50, 38,  9, 12, 14, 28, 59, 42,
+        30, 13,  6,  5, 21, 54, 43, 24, 61,  3, 22, 20,  1, 56],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.5.conv3, num of channels: 256
+tensor([ 20, 220, 190,  53,  34, 113,   2, 208,  76, 218,  37, 154,  89, 108,
+        170,  45, 175,   1, 236,  40, 189, 230,  78, 146,  13,  93,  86, 207,
+        114, 186, 211,  44,  74, 144, 234, 117, 159, 191, 202,  84, 245,  80,
+         26,  35, 239,   7, 241, 120, 179,  48, 252,  42, 151,  75, 103, 210,
+         61, 163,  71, 152,  43, 204,  52, 115,  96, 149, 136,  39, 122, 248,
+        250, 137, 126,  82, 225,   6, 148, 131, 206,  88,  31, 150, 107,  98,
+        223, 188,   3,  59, 132, 160, 106, 213,  87, 192, 195, 193,  63,  23,
+        181, 198, 112, 130, 205, 247, 105,  56, 237,  58,  91, 244, 135, 203,
+        214,  60, 174, 229,  11, 215, 183, 121,  57, 233, 217, 156, 235,  28,
+        254,  10], device='cuda:0')
+time: 0.0038s
+start pruning module.layer3.6.conv1, num of channels: 64
+tensor([22, 55, 34, 39, 12, 13, 28,  9, 57, 52, 23, 27, 58, 43, 47, 48, 40, 38,
+        53, 61, 41,  4, 26, 60, 15, 35,  2, 54, 29, 18, 56, 62],
+       device='cuda:0')
+time: 0.0014s
+start pruning module.layer3.6.conv2, num of channels: 64
+tensor([17, 10, 53, 31, 51, 57,  0, 22, 28,  3, 23, 43, 60,  5, 61, 27,  2, 39,
+        50, 16, 34, 19, 11, 14, 58, 15, 38, 26, 54, 59, 35,  6],
+       device='cuda:0')
+time: 0.0015s
+start pruning module.layer3.6.conv3, num of channels: 256
+tensor([120,  34,  45, 236, 190, 121,   1, 103, 193, 117, 218,  93, 240, 202,
+         20,  37, 154,   2,  35,  21, 220, 152, 109,  80, 239, 179, 136, 114,
+        168, 205, 115,  42, 126,  86, 166, 186,  53,   5,  58,  40, 183, 206,
+        147,   6, 238,  87, 150, 108,  27, 210,  61,  71,  13, 105, 198, 146,
+        149,  92, 189, 159, 245,   3, 111,  75,  96,   8,  82,  76,  49, 235,
+         99, 112, 113, 175, 201,  48,  36, 173, 233, 221,  11, 243, 104, 211,
+        140, 181, 234, 132,  89,   0, 157,  39,  77, 101,  23, 247,  85, 208,
+        242,   7, 153,  25, 170, 204, 130, 188, 174, 226,  30,  47,  31, 203,
+        225, 216, 180, 191, 209,   9,  14, 224,  91,  98, 207,  43, 222,  26,
+        158,  68], device='cuda:0')
+time: 0.0033s
+start pruning module.layer3.7.conv1, num of channels: 64
+tensor([46, 12, 27, 43, 58, 39, 45, 49, 41, 63,  9, 30, 42, 21, 33, 28, 16,  6,
+        51, 38, 44, 55, 36, 10, 54, 11,  3, 32,  7, 40, 23, 37],
+       device='cuda:0')
+time: 0.0013s
+start pruning module.layer3.7.conv2, num of channels: 64
+tensor([30, 52, 25, 60, 15, 27, 59, 23, 24, 17, 50,  2, 51, 38, 57, 62, 55, 47,
+         8, 54, 37,  4,  3, 40,  6, 61, 42, 56, 21,  7, 53, 31],
+       device='cuda:0')
+time: 0.0013s
+start pruning module.layer3.7.conv3, num of channels: 256
+tensor([ 34,   1, 117, 168,  43, 147,  20,  87,  85, 103, 205, 173, 245, 149,
+        240,  53,  47, 104, 206, 126, 165, 174,   2,   5, 170,  78, 234, 179,
+        222, 231, 204, 178, 142, 114,  45,   7,  35,  93, 188, 135, 252, 150,
+         37, 153, 239, 220, 190,  42, 159, 244, 203, 199, 232,  74,  22, 108,
+         86,  49, 120,  89, 148, 115,  80, 189, 140, 200, 166,  30, 158, 138,
+          6, 226, 175, 236, 230, 109, 253, 132,   4, 152,  82,  92, 255,  32,
+         27, 160, 134,  40,  13,  61,  10, 110, 157, 128, 212, 121,  58,  99,
+        223, 151, 133, 218,  48, 241,  38,  73, 217,  90, 202,  81, 229, 106,
+        191, 183, 180,  75,  97, 242, 214, 113, 112, 145,  59, 141,  65, 193,
+        101, 125], device='cuda:0')
+time: 0.0033s
+start pruning module.layer3.8.conv1, num of channels: 64
+tensor([15, 63, 55, 52, 37, 36, 35, 60, 13,  6, 61,  7, 12,  4, 20, 45, 39,  1,
+        46, 51, 62,  3, 57, 26, 47, 44, 49, 31, 14, 24, 33, 25],
+       device='cuda:0')
+time: 0.0013s
+start pruning module.layer3.8.conv2, num of channels: 64
+tensor([16, 52, 32, 45, 48,  0, 36, 53, 58, 44, 57, 62, 56, 41, 24, 27, 14, 21,
+        26, 39, 25, 54, 63,  8, 46, 50, 28, 49, 40, 33, 10, 61],
+       device='cuda:0')
+time: 0.0014s
+start pruning module.layer3.8.conv3, num of channels: 256
+tensor([ 96,  87,   7,  34, 148, 152,  29, 205, 170,  45, 255,  97,  57, 136,
+        101,   1, 179,  93, 132,  30, 103,  38, 141, 218, 106, 245,  22, 168,
+         52,   5,  37, 223, 247, 206,  27, 190, 158,  10, 114,  47, 122, 240,
+        104, 253, 210,  28, 220, 178, 167, 145, 201,   8, 184, 182, 160,  43,
+        180,  72,  95, 128,  35, 251, 221, 232,  65,  12, 118, 125,  78, 153,
+        127, 112,  58,   4,  82, 163, 149, 117, 140,  49, 165,  40,  81, 214,
+        208, 203, 115, 147,  33, 231, 200,  23,  54,  91, 213, 110, 242, 146,
+        159,  63, 239,  53, 222, 135, 174, 183, 109,  64, 249,  62, 166, 164,
+        155, 162,  20, 126, 226,  79, 191, 212,  42, 171, 217,  85, 113,  99,
+         51,  25], device='cuda:0')
+time: 0.0033s
+Global sparsity: 49.47%
+epoch: 0, train loss: 2.3171, train acc: 26.4800, test accuracy: 25.7000
+step: 0, CrossEntropy loss: 1.0440 (1.0440), train accuracy: 68.750(68.750), lr: 0.0100
+step: 100, CrossEntropy loss: 0.4114 (0.4650), train accuracy: 85.938(84.414), lr: 0.0100
+step: 200, CrossEntropy loss: 0.2356 (0.3739), train accuracy: 89.844(87.228), lr: 0.0100
+step: 300, CrossEntropy loss: 0.1972 (0.3298), train accuracy: 93.750(88.800), lr: 0.0100
+epoch: 0, CrossEntropy loss: 0.3059, accuracy: 89.658
+test acc: 89.5300
+step: 0, CrossEntropy loss: 0.2961 (0.2961), train accuracy: 89.844(89.844), lr: 0.0100
+step: 100, CrossEntropy loss: 0.1712 (0.1902), train accuracy: 93.750(93.472), lr: 0.0100
+step: 200, CrossEntropy loss: 0.2416 (0.1874), train accuracy: 94.531(93.536), lr: 0.0100
+step: 300, CrossEntropy loss: 0.2353 (0.1891), train accuracy: 90.625(93.483), lr: 0.0100
+epoch: 1, CrossEntropy loss: 0.1889, accuracy: 93.516
+test acc: 90.8800
+step: 0, CrossEntropy loss: 0.2278 (0.2278), train accuracy: 92.969(92.969), lr: 0.0100
+step: 100, CrossEntropy loss: 0.1472 (0.1593), train accuracy: 96.094(94.578), lr: 0.0100
+step: 200, CrossEntropy loss: 0.2115 (0.1604), train accuracy: 95.312(94.508), lr: 0.0100
+step: 300, CrossEntropy loss: 0.1544 (0.1587), train accuracy: 94.531(94.617), lr: 0.0100
+epoch: 2, CrossEntropy loss: 0.1582, accuracy: 94.604
+test acc: 90.7500
+step: 0, CrossEntropy loss: 0.1578 (0.1578), train accuracy: 94.531(94.531), lr: 0.0099
+step: 100, CrossEntropy loss: 0.1920 (0.1485), train accuracy: 92.969(94.957), lr: 0.0099
+step: 200, CrossEntropy loss: 0.1201 (0.1461), train accuracy: 96.094(95.021), lr: 0.0099
+step: 300, CrossEntropy loss: 0.1601 (0.1483), train accuracy: 92.969(94.908), lr: 0.0099
+epoch: 3, CrossEntropy loss: 0.1464, accuracy: 94.968
+test acc: 91.3400
+step: 0, CrossEntropy loss: 0.0458 (0.0458), train accuracy: 98.438(98.438), lr: 0.0099
+step: 100, CrossEntropy loss: 0.1011 (0.1230), train accuracy: 97.656(95.939), lr: 0.0099
+step: 200, CrossEntropy loss: 0.0895 (0.1280), train accuracy: 99.219(95.686), lr: 0.0099
+step: 300, CrossEntropy loss: 0.1432 (0.1292), train accuracy: 93.750(95.653), lr: 0.0099
+epoch: 4, CrossEntropy loss: 0.1307, accuracy: 95.602
+test acc: 90.6800
+step: 0, CrossEntropy loss: 0.1231 (0.1231), train accuracy: 95.312(95.312), lr: 0.0098
+step: 100, CrossEntropy loss: 0.1050 (0.1202), train accuracy: 96.875(95.877), lr: 0.0098
+step: 200, CrossEntropy loss: 0.1300 (0.1255), train accuracy: 95.312(95.709), lr: 0.0098
+step: 300, CrossEntropy loss: 0.1405 (0.1262), train accuracy: 96.875(95.660), lr: 0.0098
+epoch: 5, CrossEntropy loss: 0.1263, accuracy: 95.646
+test acc: 91.3200
+step: 0, CrossEntropy loss: 0.1057 (0.1057), train accuracy: 96.875(96.875), lr: 0.0098
+step: 100, CrossEntropy loss: 0.1045 (0.1118), train accuracy: 96.875(96.272), lr: 0.0098
+step: 200, CrossEntropy loss: 0.1153 (0.1171), train accuracy: 96.094(96.008), lr: 0.0098
+step: 300, CrossEntropy loss: 0.0597 (0.1174), train accuracy: 99.219(95.993), lr: 0.0098
+epoch: 6, CrossEntropy loss: 0.1174, accuracy: 95.986
+test acc: 91.0800
+step: 0, CrossEntropy loss: 0.0939 (0.0939), train accuracy: 96.875(96.875), lr: 0.0097
+step: 100, CrossEntropy loss: 0.1254 (0.1077), train accuracy: 96.094(96.434), lr: 0.0097
+step: 200, CrossEntropy loss: 0.0864 (0.1104), train accuracy: 96.094(96.374), lr: 0.0097
+step: 300, CrossEntropy loss: 0.0633 (0.1110), train accuracy: 97.656(96.268), lr: 0.0097
+epoch: 7, CrossEntropy loss: 0.1114, accuracy: 96.214
+test acc: 90.9200
+step: 0, CrossEntropy loss: 0.1304 (0.1304), train accuracy: 96.875(96.875), lr: 0.0096
+step: 100, CrossEntropy loss: 0.0462 (0.1052), train accuracy: 99.219(96.411), lr: 0.0096
+step: 200, CrossEntropy loss: 0.0684 (0.1064), train accuracy: 98.438(96.366), lr: 0.0096
+step: 300, CrossEntropy loss: 0.0406 (0.1068), train accuracy: 99.219(96.346), lr: 0.0096
+epoch: 8, CrossEntropy loss: 0.1078, accuracy: 96.302
+test acc: 91.2500
+step: 0, CrossEntropy loss: 0.1148 (0.1148), train accuracy: 95.312(95.312), lr: 0.0095
+step: 100, CrossEntropy loss: 0.1443 (0.0953), train accuracy: 94.531(96.697), lr: 0.0095
+step: 200, CrossEntropy loss: 0.0719 (0.0982), train accuracy: 98.438(96.618), lr: 0.0095
+step: 300, CrossEntropy loss: 0.1132 (0.0981), train accuracy: 95.312(96.667), lr: 0.0095
+epoch: 9, CrossEntropy loss: 0.1017, accuracy: 96.512
+test acc: 91.8600
+step: 0, CrossEntropy loss: 0.0797 (0.0797), train accuracy: 97.656(97.656), lr: 0.0093
+step: 100, CrossEntropy loss: 0.1130 (0.0901), train accuracy: 96.094(96.914), lr: 0.0093
+step: 200, CrossEntropy loss: 0.0597 (0.0916), train accuracy: 97.656(96.809), lr: 0.0093
+step: 300, CrossEntropy loss: 0.0815 (0.0952), train accuracy: 97.656(96.670), lr: 0.0093
+epoch: 10, CrossEntropy loss: 0.0975, accuracy: 96.576
+test acc: 91.4500
+step: 0, CrossEntropy loss: 0.1312 (0.1312), train accuracy: 95.312(95.312), lr: 0.0092
+step: 100, CrossEntropy loss: 0.0650 (0.0868), train accuracy: 97.656(97.123), lr: 0.0092
+step: 200, CrossEntropy loss: 0.0897 (0.0892), train accuracy: 97.656(97.011), lr: 0.0092
+step: 300, CrossEntropy loss: 0.0770 (0.0910), train accuracy: 98.438(96.919), lr: 0.0092
+epoch: 11, CrossEntropy loss: 0.0913, accuracy: 96.856
+test acc: 90.8900
+step: 0, CrossEntropy loss: 0.1141 (0.1141), train accuracy: 94.531(94.531), lr: 0.0090
+step: 100, CrossEntropy loss: 0.0885 (0.0858), train accuracy: 98.438(97.331), lr: 0.0090
+step: 200, CrossEntropy loss: 0.0890 (0.0844), train accuracy: 96.875(97.306), lr: 0.0090
+step: 300, CrossEntropy loss: 0.1638 (0.0885), train accuracy: 92.969(97.106), lr: 0.0090
+epoch: 12, CrossEntropy loss: 0.0910, accuracy: 96.976
+test acc: 91.8300
+step: 0, CrossEntropy loss: 0.0441 (0.0441), train accuracy: 98.438(98.438), lr: 0.0089
+step: 100, CrossEntropy loss: 0.0970 (0.0835), train accuracy: 98.438(97.254), lr: 0.0089
+step: 200, CrossEntropy loss: 0.0901 (0.0829), train accuracy: 97.656(97.205), lr: 0.0089
+step: 300, CrossEntropy loss: 0.0738 (0.0858), train accuracy: 97.656(97.090), lr: 0.0089
+epoch: 13, CrossEntropy loss: 0.0881, accuracy: 96.990
+test acc: 91.7300
+step: 0, CrossEntropy loss: 0.1197 (0.1197), train accuracy: 96.094(96.094), lr: 0.0087
+step: 100, CrossEntropy loss: 0.1538 (0.0804), train accuracy: 96.094(97.347), lr: 0.0087
+step: 200, CrossEntropy loss: 0.0980 (0.0820), train accuracy: 97.656(97.217), lr: 0.0087
+step: 300, CrossEntropy loss: 0.0684 (0.0830), train accuracy: 95.312(97.181), lr: 0.0087
+epoch: 14, CrossEntropy loss: 0.0847, accuracy: 97.092
+test acc: 90.8200
+step: 0, CrossEntropy loss: 0.0497 (0.0497), train accuracy: 99.219(99.219), lr: 0.0085
+step: 100, CrossEntropy loss: 0.0984 (0.0838), train accuracy: 95.312(97.123), lr: 0.0085
+step: 200, CrossEntropy loss: 0.0450 (0.0793), train accuracy: 98.438(97.376), lr: 0.0085
+step: 300, CrossEntropy loss: 0.1523 (0.0807), train accuracy: 94.531(97.272), lr: 0.0085
+epoch: 15, CrossEntropy loss: 0.0831, accuracy: 97.188
+test acc: 91.8800
+step: 0, CrossEntropy loss: 0.0859 (0.0859), train accuracy: 96.094(96.094), lr: 0.0083
+step: 100, CrossEntropy loss: 0.0815 (0.0818), train accuracy: 98.438(97.324), lr: 0.0083
+step: 200, CrossEntropy loss: 0.1068 (0.0804), train accuracy: 96.094(97.423), lr: 0.0083
+step: 300, CrossEntropy loss: 0.0472 (0.0815), train accuracy: 98.438(97.280), lr: 0.0083
+epoch: 16, CrossEntropy loss: 0.0806, accuracy: 97.318
+test acc: 91.9200
+step: 0, CrossEntropy loss: 0.0732 (0.0732), train accuracy: 96.875(96.875), lr: 0.0081
+step: 100, CrossEntropy loss: 0.0611 (0.0725), train accuracy: 98.438(97.625), lr: 0.0081
+step: 200, CrossEntropy loss: 0.0876 (0.0728), train accuracy: 97.656(97.672), lr: 0.0081
+step: 300, CrossEntropy loss: 0.0663 (0.0740), train accuracy: 98.438(97.597), lr: 0.0081
+epoch: 17, CrossEntropy loss: 0.0758, accuracy: 97.528
+test acc: 91.7300
+step: 0, CrossEntropy loss: 0.0585 (0.0585), train accuracy: 98.438(98.438), lr: 0.0079
+step: 100, CrossEntropy loss: 0.0736 (0.0705), train accuracy: 96.875(97.618), lr: 0.0079
+step: 200, CrossEntropy loss: 0.0698 (0.0724), train accuracy: 97.656(97.613), lr: 0.0079
+step: 300, CrossEntropy loss: 0.0718 (0.0739), train accuracy: 96.094(97.529), lr: 0.0079
+epoch: 18, CrossEntropy loss: 0.0735, accuracy: 97.568
+test acc: 92.1800
+step: 0, CrossEntropy loss: 0.0682 (0.0682), train accuracy: 97.656(97.656), lr: 0.0077
+step: 100, CrossEntropy loss: 0.1468 (0.0737), train accuracy: 96.094(97.587), lr: 0.0077
+step: 200, CrossEntropy loss: 0.0426 (0.0704), train accuracy: 98.438(97.734), lr: 0.0077
+step: 300, CrossEntropy loss: 0.0358 (0.0720), train accuracy: 99.219(97.646), lr: 0.0077
+epoch: 19, CrossEntropy loss: 0.0731, accuracy: 97.580
+test acc: 91.6400
+step: 0, CrossEntropy loss: 0.0444 (0.0444), train accuracy: 98.438(98.438), lr: 0.0075
+step: 100, CrossEntropy loss: 0.0907 (0.0646), train accuracy: 97.656(97.834), lr: 0.0075
+step: 200, CrossEntropy loss: 0.0832 (0.0668), train accuracy: 97.656(97.722), lr: 0.0075
+step: 300, CrossEntropy loss: 0.0671 (0.0682), train accuracy: 99.219(97.687), lr: 0.0075
+epoch: 20, CrossEntropy loss: 0.0702, accuracy: 97.602
+test acc: 91.7300
+step: 0, CrossEntropy loss: 0.1066 (0.1066), train accuracy: 96.094(96.094), lr: 0.0073
+step: 100, CrossEntropy loss: 0.0868 (0.0666), train accuracy: 96.875(97.834), lr: 0.0073
+step: 200, CrossEntropy loss: 0.0458 (0.0661), train accuracy: 98.438(97.870), lr: 0.0073
+step: 300, CrossEntropy loss: 0.1032 (0.0672), train accuracy: 96.875(97.807), lr: 0.0073
+epoch: 21, CrossEntropy loss: 0.0679, accuracy: 97.766
+test acc: 91.9400
+step: 0, CrossEntropy loss: 0.0153 (0.0153), train accuracy: 100.000(100.000), lr: 0.0070
+step: 100, CrossEntropy loss: 0.0365 (0.0636), train accuracy: 99.219(97.935), lr: 0.0070
+step: 200, CrossEntropy loss: 0.1072 (0.0647), train accuracy: 94.531(97.808), lr: 0.0070
+step: 300, CrossEntropy loss: 0.0521 (0.0624), train accuracy: 96.875(97.864), lr: 0.0070
+epoch: 22, CrossEntropy loss: 0.0638, accuracy: 97.818
+test acc: 92.0600
+step: 0, CrossEntropy loss: 0.0703 (0.0703), train accuracy: 98.438(98.438), lr: 0.0068
+step: 100, CrossEntropy loss: 0.0806 (0.0577), train accuracy: 98.438(98.182), lr: 0.0068
+step: 200, CrossEntropy loss: 0.0715 (0.0584), train accuracy: 97.656(98.146), lr: 0.0068
+step: 300, CrossEntropy loss: 0.1185 (0.0625), train accuracy: 93.750(97.994), lr: 0.0068
+epoch: 23, CrossEntropy loss: 0.0621, accuracy: 97.980
+test acc: 92.2300
+step: 0, CrossEntropy loss: 0.0967 (0.0967), train accuracy: 96.094(96.094), lr: 0.0065
+step: 100, CrossEntropy loss: 0.0585 (0.0544), train accuracy: 98.438(98.260), lr: 0.0065
+step: 200, CrossEntropy loss: 0.0275 (0.0563), train accuracy: 99.219(98.162), lr: 0.0065
+step: 300, CrossEntropy loss: 0.0461 (0.0581), train accuracy: 98.438(98.116), lr: 0.0065
+epoch: 24, CrossEntropy loss: 0.0593, accuracy: 98.066
+test acc: 92.3200
+step: 0, CrossEntropy loss: 0.0433 (0.0433), train accuracy: 98.438(98.438), lr: 0.0063
+step: 100, CrossEntropy loss: 0.0741 (0.0551), train accuracy: 96.094(98.221), lr: 0.0063
+step: 200, CrossEntropy loss: 0.0529 (0.0553), train accuracy: 98.438(98.200), lr: 0.0063
+step: 300, CrossEntropy loss: 0.0250 (0.0561), train accuracy: 100.000(98.170), lr: 0.0063
+epoch: 25, CrossEntropy loss: 0.0570, accuracy: 98.166
+test acc: 92.0700
+step: 0, CrossEntropy loss: 0.0377 (0.0377), train accuracy: 98.438(98.438), lr: 0.0060
+step: 100, CrossEntropy loss: 0.0386 (0.0501), train accuracy: 98.438(98.345), lr: 0.0060
+step: 200, CrossEntropy loss: 0.0756 (0.0538), train accuracy: 95.312(98.243), lr: 0.0060
+step: 300, CrossEntropy loss: 0.0403 (0.0537), train accuracy: 97.656(98.284), lr: 0.0060
+epoch: 26, CrossEntropy loss: 0.0543, accuracy: 98.236
+test acc: 92.1000
+step: 0, CrossEntropy loss: 0.0693 (0.0693), train accuracy: 96.094(96.094), lr: 0.0058
+step: 100, CrossEntropy loss: 0.0349 (0.0469), train accuracy: 99.219(98.538), lr: 0.0058
+step: 200, CrossEntropy loss: 0.0195 (0.0474), train accuracy: 100.000(98.531), lr: 0.0058
+step: 300, CrossEntropy loss: 0.0530 (0.0501), train accuracy: 98.438(98.391), lr: 0.0058
+epoch: 27, CrossEntropy loss: 0.0511, accuracy: 98.388
+test acc: 92.5300
+step: 0, CrossEntropy loss: 0.0507 (0.0507), train accuracy: 98.438(98.438), lr: 0.0055
+step: 100, CrossEntropy loss: 0.0280 (0.0444), train accuracy: 99.219(98.654), lr: 0.0055
+step: 200, CrossEntropy loss: 0.0241 (0.0452), train accuracy: 100.000(98.663), lr: 0.0055
+step: 300, CrossEntropy loss: 0.0618 (0.0464), train accuracy: 96.875(98.575), lr: 0.0055
+epoch: 28, CrossEntropy loss: 0.0473, accuracy: 98.534
+test acc: 92.5500
+step: 0, CrossEntropy loss: 0.0741 (0.0741), train accuracy: 98.438(98.438), lr: 0.0053
+step: 100, CrossEntropy loss: 0.0376 (0.0437), train accuracy: 99.219(98.731), lr: 0.0053
+step: 200, CrossEntropy loss: 0.0555 (0.0429), train accuracy: 99.219(98.768), lr: 0.0053
+step: 300, CrossEntropy loss: 0.0401 (0.0444), train accuracy: 98.438(98.713), lr: 0.0053
+epoch: 29, CrossEntropy loss: 0.0449, accuracy: 98.670
+test acc: 92.0200
+step: 0, CrossEntropy loss: 0.0557 (0.0557), train accuracy: 96.875(96.875), lr: 0.0050
+step: 100, CrossEntropy loss: 0.0481 (0.0462), train accuracy: 99.219(98.515), lr: 0.0050
+step: 200, CrossEntropy loss: 0.0370 (0.0455), train accuracy: 98.438(98.581), lr: 0.0050
+step: 300, CrossEntropy loss: 0.0657 (0.0458), train accuracy: 97.656(98.611), lr: 0.0050
+epoch: 30, CrossEntropy loss: 0.0453, accuracy: 98.642
+test acc: 92.5100
+step: 0, CrossEntropy loss: 0.0237 (0.0237), train accuracy: 99.219(99.219), lr: 0.0047
+step: 100, CrossEntropy loss: 0.0413 (0.0433), train accuracy: 99.219(98.840), lr: 0.0047
+step: 200, CrossEntropy loss: 0.0152 (0.0407), train accuracy: 100.000(98.884), lr: 0.0047
+step: 300, CrossEntropy loss: 0.0308 (0.0405), train accuracy: 99.219(98.871), lr: 0.0047
+epoch: 31, CrossEntropy loss: 0.0404, accuracy: 98.862
+test acc: 92.2800
+step: 0, CrossEntropy loss: 0.0173 (0.0173), train accuracy: 99.219(99.219), lr: 0.0045
+step: 100, CrossEntropy loss: 0.0643 (0.0406), train accuracy: 97.656(98.755), lr: 0.0045
+step: 200, CrossEntropy loss: 0.0660 (0.0392), train accuracy: 97.656(98.873), lr: 0.0045
+step: 300, CrossEntropy loss: 0.0317 (0.0405), train accuracy: 100.000(98.827), lr: 0.0045
+epoch: 32, CrossEntropy loss: 0.0410, accuracy: 98.786
+test acc: 92.1700
+step: 0, CrossEntropy loss: 0.0554 (0.0554), train accuracy: 97.656(97.656), lr: 0.0042
+step: 100, CrossEntropy loss: 0.1118 (0.0388), train accuracy: 95.312(98.793), lr: 0.0042
+step: 200, CrossEntropy loss: 0.0332 (0.0384), train accuracy: 98.438(98.857), lr: 0.0042
+step: 300, CrossEntropy loss: 0.0260 (0.0384), train accuracy: 99.219(98.884), lr: 0.0042
+epoch: 33, CrossEntropy loss: 0.0389, accuracy: 98.844
+test acc: 92.5800
+step: 0, CrossEntropy loss: 0.0882 (0.0882), train accuracy: 98.438(98.438), lr: 0.0040
+step: 100, CrossEntropy loss: 0.0451 (0.0332), train accuracy: 98.438(99.149), lr: 0.0040
+step: 200, CrossEntropy loss: 0.0287 (0.0355), train accuracy: 99.219(98.997), lr: 0.0040
+step: 300, CrossEntropy loss: 0.0321 (0.0375), train accuracy: 99.219(98.892), lr: 0.0040
+epoch: 34, CrossEntropy loss: 0.0379, accuracy: 98.864
+test acc: 92.3600
+step: 0, CrossEntropy loss: 0.0539 (0.0539), train accuracy: 97.656(97.656), lr: 0.0037
+step: 100, CrossEntropy loss: 0.0755 (0.0337), train accuracy: 96.875(99.118), lr: 0.0037
+step: 200, CrossEntropy loss: 0.0098 (0.0336), train accuracy: 100.000(99.098), lr: 0.0037
+step: 300, CrossEntropy loss: 0.0713 (0.0344), train accuracy: 96.875(99.073), lr: 0.0037
+epoch: 35, CrossEntropy loss: 0.0352, accuracy: 99.032
+test acc: 92.5600
+step: 0, CrossEntropy loss: 0.0121 (0.0121), train accuracy: 100.000(100.000), lr: 0.0035
+step: 100, CrossEntropy loss: 0.0457 (0.0337), train accuracy: 98.438(98.987), lr: 0.0035
+step: 200, CrossEntropy loss: 0.0237 (0.0337), train accuracy: 100.000(99.013), lr: 0.0035
+step: 300, CrossEntropy loss: 0.0139 (0.0339), train accuracy: 99.219(99.027), lr: 0.0035
+epoch: 36, CrossEntropy loss: 0.0347, accuracy: 98.994
+test acc: 92.5200
+step: 0, CrossEntropy loss: 0.0580 (0.0580), train accuracy: 97.656(97.656), lr: 0.0032
+step: 100, CrossEntropy loss: 0.0322 (0.0298), train accuracy: 98.438(99.141), lr: 0.0032
+step: 200, CrossEntropy loss: 0.0271 (0.0302), train accuracy: 100.000(99.145), lr: 0.0032
+step: 300, CrossEntropy loss: 0.0235 (0.0313), train accuracy: 100.000(99.094), lr: 0.0032
+epoch: 37, CrossEntropy loss: 0.0318, accuracy: 99.102
+test acc: 92.4800
+step: 0, CrossEntropy loss: 0.0373 (0.0373), train accuracy: 98.438(98.438), lr: 0.0030
+step: 100, CrossEntropy loss: 0.0336 (0.0290), train accuracy: 98.438(99.265), lr: 0.0030
+step: 200, CrossEntropy loss: 0.0403 (0.0300), train accuracy: 98.438(99.199), lr: 0.0030
+step: 300, CrossEntropy loss: 0.0359 (0.0305), train accuracy: 99.219(99.175), lr: 0.0030
+epoch: 38, CrossEntropy loss: 0.0309, accuracy: 99.148
+test acc: 92.5400
+step: 0, CrossEntropy loss: 0.0122 (0.0122), train accuracy: 100.000(100.000), lr: 0.0027
+step: 100, CrossEntropy loss: 0.0231 (0.0292), train accuracy: 99.219(99.265), lr: 0.0027
+step: 200, CrossEntropy loss: 0.0328 (0.0282), train accuracy: 99.219(99.254), lr: 0.0027
+step: 300, CrossEntropy loss: 0.0145 (0.0283), train accuracy: 100.000(99.252), lr: 0.0027
+epoch: 39, CrossEntropy loss: 0.0287, accuracy: 99.224
+test acc: 92.3900
+step: 0, CrossEntropy loss: 0.0211 (0.0211), train accuracy: 100.000(100.000), lr: 0.0025
+step: 100, CrossEntropy loss: 0.0070 (0.0254), train accuracy: 100.000(99.273), lr: 0.0025
+step: 200, CrossEntropy loss: 0.0360 (0.0264), train accuracy: 99.219(99.300), lr: 0.0025
+step: 300, CrossEntropy loss: 0.0117 (0.0266), train accuracy: 100.000(99.286), lr: 0.0025
+epoch: 40, CrossEntropy loss: 0.0273, accuracy: 99.234
+test acc: 92.7200
+step: 0, CrossEntropy loss: 0.0438 (0.0438), train accuracy: 99.219(99.219), lr: 0.0023
+step: 100, CrossEntropy loss: 0.0173 (0.0292), train accuracy: 100.000(99.180), lr: 0.0023
+step: 200, CrossEntropy loss: 0.0222 (0.0279), train accuracy: 100.000(99.199), lr: 0.0023
+step: 300, CrossEntropy loss: 0.0184 (0.0272), train accuracy: 100.000(99.242), lr: 0.0023
+epoch: 41, CrossEntropy loss: 0.0267, accuracy: 99.274
+test acc: 92.8800
+step: 0, CrossEntropy loss: 0.0160 (0.0160), train accuracy: 100.000(100.000), lr: 0.0021
+step: 100, CrossEntropy loss: 0.0248 (0.0253), train accuracy: 99.219(99.358), lr: 0.0021
+step: 200, CrossEntropy loss: 0.0116 (0.0259), train accuracy: 100.000(99.370), lr: 0.0021
+step: 300, CrossEntropy loss: 0.0104 (0.0269), train accuracy: 100.000(99.289), lr: 0.0021
+epoch: 42, CrossEntropy loss: 0.0267, accuracy: 99.292
+test acc: 92.7500
+step: 0, CrossEntropy loss: 0.0419 (0.0419), train accuracy: 98.438(98.438), lr: 0.0019
+step: 100, CrossEntropy loss: 0.0124 (0.0239), train accuracy: 100.000(99.381), lr: 0.0019
+step: 200, CrossEntropy loss: 0.0130 (0.0245), train accuracy: 100.000(99.347), lr: 0.0019
+step: 300, CrossEntropy loss: 0.0109 (0.0246), train accuracy: 100.000(99.380), lr: 0.0019
+epoch: 43, CrossEntropy loss: 0.0248, accuracy: 99.362
+test acc: 92.5900
+step: 0, CrossEntropy loss: 0.0173 (0.0173), train accuracy: 100.000(100.000), lr: 0.0017
+step: 100, CrossEntropy loss: 0.0245 (0.0227), train accuracy: 100.000(99.428), lr: 0.0017
+step: 200, CrossEntropy loss: 0.0233 (0.0230), train accuracy: 100.000(99.386), lr: 0.0017
+step: 300, CrossEntropy loss: 0.0340 (0.0231), train accuracy: 99.219(99.411), lr: 0.0017
+epoch: 44, CrossEntropy loss: 0.0231, accuracy: 99.442
+test acc: 92.8200
+step: 0, CrossEntropy loss: 0.0137 (0.0137), train accuracy: 100.000(100.000), lr: 0.0015
+step: 100, CrossEntropy loss: 0.0113 (0.0201), train accuracy: 100.000(99.559), lr: 0.0015
+step: 200, CrossEntropy loss: 0.0254 (0.0215), train accuracy: 99.219(99.526), lr: 0.0015
+step: 300, CrossEntropy loss: 0.0640 (0.0221), train accuracy: 97.656(99.473), lr: 0.0015
+epoch: 45, CrossEntropy loss: 0.0224, accuracy: 99.476
+test acc: 92.6100
+step: 0, CrossEntropy loss: 0.0075 (0.0075), train accuracy: 100.000(100.000), lr: 0.0013
+step: 100, CrossEntropy loss: 0.0208 (0.0199), train accuracy: 100.000(99.575), lr: 0.0013
+step: 200, CrossEntropy loss: 0.0101 (0.0207), train accuracy: 100.000(99.553), lr: 0.0013
+step: 300, CrossEntropy loss: 0.0239 (0.0207), train accuracy: 99.219(99.538), lr: 0.0013
+epoch: 46, CrossEntropy loss: 0.0215, accuracy: 99.502
+test acc: 92.6400
+step: 0, CrossEntropy loss: 0.0345 (0.0345), train accuracy: 99.219(99.219), lr: 0.0011
+step: 100, CrossEntropy loss: 0.0157 (0.0215), train accuracy: 100.000(99.489), lr: 0.0011
+step: 200, CrossEntropy loss: 0.0140 (0.0211), train accuracy: 100.000(99.526), lr: 0.0011
+step: 300, CrossEntropy loss: 0.0432 (0.0204), train accuracy: 99.219(99.564), lr: 0.0011
+epoch: 47, CrossEntropy loss: 0.0208, accuracy: 99.546
+test acc: 92.7700
+step: 0, CrossEntropy loss: 0.0650 (0.0650), train accuracy: 98.438(98.438), lr: 0.0010
+step: 100, CrossEntropy loss: 0.0369 (0.0209), train accuracy: 98.438(99.544), lr: 0.0010
+step: 200, CrossEntropy loss: 0.0131 (0.0210), train accuracy: 100.000(99.541), lr: 0.0010
+step: 300, CrossEntropy loss: 0.0268 (0.0202), train accuracy: 100.000(99.580), lr: 0.0010
+epoch: 48, CrossEntropy loss: 0.0205, accuracy: 99.562
+test acc: 92.8900
+step: 0, CrossEntropy loss: 0.0108 (0.0108), train accuracy: 100.000(100.000), lr: 0.0008
+step: 100, CrossEntropy loss: 0.0257 (0.0196), train accuracy: 100.000(99.590), lr: 0.0008
+step: 200, CrossEntropy loss: 0.0410 (0.0197), train accuracy: 98.438(99.580), lr: 0.0008
+step: 300, CrossEntropy loss: 0.0117 (0.0193), train accuracy: 100.000(99.598), lr: 0.0008
+epoch: 49, CrossEntropy loss: 0.0196, accuracy: 99.564
+test acc: 92.9700
+step: 0, CrossEntropy loss: 0.0208 (0.0208), train accuracy: 100.000(100.000), lr: 0.0007
+step: 100, CrossEntropy loss: 0.0261 (0.0183), train accuracy: 99.219(99.652), lr: 0.0007
+step: 200, CrossEntropy loss: 0.0195 (0.0192), train accuracy: 99.219(99.588), lr: 0.0007
+step: 300, CrossEntropy loss: 0.0171 (0.0196), train accuracy: 100.000(99.580), lr: 0.0007
+epoch: 50, CrossEntropy loss: 0.0197, accuracy: 99.570
+test acc: 92.9700
+step: 0, CrossEntropy loss: 0.0363 (0.0363), train accuracy: 99.219(99.219), lr: 0.0005
+step: 100, CrossEntropy loss: 0.0253 (0.0182), train accuracy: 99.219(99.629), lr: 0.0005
+step: 200, CrossEntropy loss: 0.0165 (0.0190), train accuracy: 99.219(99.600), lr: 0.0005
+step: 300, CrossEntropy loss: 0.0246 (0.0191), train accuracy: 99.219(99.603), lr: 0.0005
+epoch: 51, CrossEntropy loss: 0.0194, accuracy: 99.588
+test acc: 92.9000
+step: 0, CrossEntropy loss: 0.0100 (0.0100), train accuracy: 100.000(100.000), lr: 0.0004
+step: 100, CrossEntropy loss: 0.0103 (0.0168), train accuracy: 100.000(99.714), lr: 0.0004
+step: 200, CrossEntropy loss: 0.0345 (0.0185), train accuracy: 100.000(99.623), lr: 0.0004
+step: 300, CrossEntropy loss: 0.0185 (0.0182), train accuracy: 99.219(99.629), lr: 0.0004
+epoch: 52, CrossEntropy loss: 0.0185, accuracy: 99.614
+test acc: 92.9200
+step: 0, CrossEntropy loss: 0.0149 (0.0149), train accuracy: 99.219(99.219), lr: 0.0003
+step: 100, CrossEntropy loss: 0.0142 (0.0182), train accuracy: 100.000(99.613), lr: 0.0003
+step: 200, CrossEntropy loss: 0.0406 (0.0183), train accuracy: 99.219(99.623), lr: 0.0003
+step: 300, CrossEntropy loss: 0.0236 (0.0187), train accuracy: 99.219(99.603), lr: 0.0003
+epoch: 53, CrossEntropy loss: 0.0186, accuracy: 99.606
+test acc: 92.8500
+step: 0, CrossEntropy loss: 0.0072 (0.0072), train accuracy: 100.000(100.000), lr: 0.0002
+step: 100, CrossEntropy loss: 0.0156 (0.0189), train accuracy: 99.219(99.551), lr: 0.0002
+step: 200, CrossEntropy loss: 0.0206 (0.0187), train accuracy: 100.000(99.592), lr: 0.0002
+step: 300, CrossEntropy loss: 0.0276 (0.0188), train accuracy: 99.219(99.587), lr: 0.0002
+epoch: 54, CrossEntropy loss: 0.0182, accuracy: 99.602
+test acc: 92.8700
+step: 0, CrossEntropy loss: 0.0088 (0.0088), train accuracy: 100.000(100.000), lr: 0.0002
+step: 100, CrossEntropy loss: 0.0119 (0.0176), train accuracy: 100.000(99.621), lr: 0.0002
+step: 200, CrossEntropy loss: 0.0263 (0.0170), train accuracy: 99.219(99.658), lr: 0.0002
+step: 300, CrossEntropy loss: 0.0076 (0.0172), train accuracy: 100.000(99.663), lr: 0.0002
+epoch: 55, CrossEntropy loss: 0.0172, accuracy: 99.648
+test acc: 92.8500
+step: 0, CrossEntropy loss: 0.0087 (0.0087), train accuracy: 100.000(100.000), lr: 0.0001
+step: 100, CrossEntropy loss: 0.0193 (0.0179), train accuracy: 99.219(99.660), lr: 0.0001
+step: 200, CrossEntropy loss: 0.0092 (0.0187), train accuracy: 100.000(99.604), lr: 0.0001
+step: 300, CrossEntropy loss: 0.0127 (0.0189), train accuracy: 100.000(99.593), lr: 0.0001
+epoch: 56, CrossEntropy loss: 0.0186, accuracy: 99.606
+test acc: 92.9000
+step: 0, CrossEntropy loss: 0.0087 (0.0087), train accuracy: 100.000(100.000), lr: 0.0001
+step: 100, CrossEntropy loss: 0.0166 (0.0193), train accuracy: 99.219(99.629), lr: 0.0001
+step: 200, CrossEntropy loss: 0.0091 (0.0185), train accuracy: 100.000(99.619), lr: 0.0001
+step: 300, CrossEntropy loss: 0.0640 (0.0186), train accuracy: 99.219(99.618), lr: 0.0001
+epoch: 57, CrossEntropy loss: 0.0184, accuracy: 99.628
+test acc: 92.9400
+step: 0, CrossEntropy loss: 0.0132 (0.0132), train accuracy: 99.219(99.219), lr: 0.0000
+step: 100, CrossEntropy loss: 0.0073 (0.0164), train accuracy: 100.000(99.722), lr: 0.0000
+step: 200, CrossEntropy loss: 0.0198 (0.0181), train accuracy: 100.000(99.654), lr: 0.0000
+step: 300, CrossEntropy loss: 0.0160 (0.0178), train accuracy: 100.000(99.670), lr: 0.0000
+epoch: 58, CrossEntropy loss: 0.0179, accuracy: 99.642
+test acc: 92.8900
+step: 0, CrossEntropy loss: 0.0215 (0.0215), train accuracy: 99.219(99.219), lr: 0.0000
+step: 100, CrossEntropy loss: 0.0265 (0.0179), train accuracy: 99.219(99.683), lr: 0.0000
+step: 200, CrossEntropy loss: 0.0249 (0.0178), train accuracy: 99.219(99.674), lr: 0.0000
+step: 300, CrossEntropy loss: 0.0331 (0.0175), train accuracy: 99.219(99.689), lr: 0.0000
+epoch: 59, CrossEntropy loss: 0.0175, accuracy: 99.686
+test acc: 92.7900
+[11.495164857788087, 1.082709181060791, 0.517141219329834, 0.3996040990257263, 0.33971086064338685, 0.30314578524589536, 0.277136390452385, 0.25814132165908815, 0.2429809860563278, 0.22782503348350525, 0.21616388283252716, 0.20455321769714355, 0.1960606725025177, 0.18892127353191376, 0.18434156679630279, 0.17274186611175538, 0.1704060185623169, 0.16329589714050294, 0.1548133493232727, 0.14837931691646575, 0.14461872294425965, 0.1416369104528427, 0.13651094794273377, 0.12851033284664154, 0.12518425614595413, 0.1213864667224884, 0.1118916330242157, 0.11370485709190369, 0.10445194625616074, 0.10004393225669861, 0.0966775459241867, 0.09446183914661407, 0.08762092862606048, 0.08623116220235824, 0.07895711765885353, 0.0745882686328888, 0.07232711021184922, 0.06653506414055824, 0.06403845584869385, 0.06358084807395935, 0.0574357489323616, 0.0528148734331131, 0.051852979320287707, 0.04852516884803772, 0.04719597304463387, 0.04451980994701386, 0.0427506986784935, 0.04161393178701401, 0.038434894590377806, 0.03652033538222313, 0.03607134378373623, 0.03435638346195221, 0.03426125033259392, 0.03347314052939415, 0.03244896087408066, 0.03243163555622101, 0.03276128861308098, 0.03191736296892166, 0.03069140278071165, 0.031481656050682066, 0.031099945597648622]
+[2.317391664810181, 1.2671609828948975, 1.216730037689209, 1.0047790849113465, 0.7508765795707703, 0.5831154860115051, 0.48552233150482177, 0.40878711084365843, 0.3529991723871231, 0.3118124095344543, 0.28052940641403196, 0.25516300174236295, 0.23124159539937972, 0.21122315378189088, 0.19534930867671965, 0.1828862870168686, 0.1693678242444992, 0.16033232994794847, 0.1488418031835556, 0.14591752349853515, 0.13553943377256394, 0.12860049741506577, 0.11952433694601058, 0.11659649163484573, 0.11254832100391388, 0.10787807947635651, 0.10253342405319214, 0.09894978133320809, 0.09537079382419586, 0.0923681708574295, 0.09126207471370697, 0.08637675139427185, 0.08427335354804992, 0.08611838848829269, 0.08014932592630386, 0.08268818253993988, 0.07949612118840217, 0.0815864328622818, 0.08052079062342644, 0.08141886209964752, 0.07996803687572479, 0.08189260696172715, 0.0782578944325447, 0.07734030610203743, 0.07926487274050713, 0.08097405624389649, 0.08044308969259262, 0.08365013820052147, 0.08282715442419052, 0.08495002142429352, 0.07955051560401917, 0.089983407664299, 0.08346037391424178, 0.08130101646423339, 0.08662358822464943, 0.08917449638843536, 0.08714470798254013, 0.08730258026599884, 0.08715022145748139, 0.088147710916996, 0.08838560188293457]
+[2.317131401977539, 0.30590950310707093, 0.18891204260110855, 0.15823551462650298, 0.14637693334579469, 0.13073737193584442, 0.12630009335041045, 0.1173962496471405, 0.11139171223640441, 0.10778768967866897, 0.10166558057785034, 0.0975203333902359, 0.09134896816253663, 0.09096448732614518, 0.08814288681268692, 0.084651240234375, 0.08305332776546479, 0.08062652260065079, 0.07579913582801819, 0.07352175275564193, 0.07309488312721252, 0.07021021058797837, 0.06793467275619507, 0.06382813952684402, 0.0620678531742096, 0.059267848041057586, 0.05696527985930443, 0.05428916754961014, 0.0510849214220047, 0.0472912742125988, 0.044891399481296536, 0.04528834941625595, 0.04042281111359596, 0.04101599303483963, 0.038901048350334165, 0.03791202681064606, 0.035210312242805956, 0.034717015283107756, 0.0317990781390667, 0.030916621159315108, 0.028697429530620575, 0.02733725229024887, 0.026747714126706124, 0.02671886682510376, 0.0247697062844038, 0.023079597252607345, 0.022373335491418837, 0.021482052146196366, 0.02079791619002819, 0.020460440203547477, 0.019567325193881987, 0.01973508322894573, 0.01938032449245453, 0.018478078748583794, 0.018639784042537213, 0.018193050772547723, 0.017210949847102166, 0.01863095774590969, 0.018384979333281516, 0.017920363121032713, 0.01746288639962673]

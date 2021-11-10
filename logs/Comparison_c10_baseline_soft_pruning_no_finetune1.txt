@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "experiments/Comparison_soft_pruning_scratch.py", line 14, in <module>
+    from pruning.pruning_training import baseline_pruning_train, compute_pruned_distance
+  File "/home/yj373/QGS2/experiments/pruning/pruning_training.py", line 315
+    distance = 0:
+                ^
+SyntaxError: invalid syntax

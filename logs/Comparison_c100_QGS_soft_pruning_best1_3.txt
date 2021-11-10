@@ -1,0 +1,1720 @@
+Namespace(QGS_lr_constant=0.08, QGS_lr_max=0.08, batch_size=128, ce_target=0.0, dataset='cifar100', distance_order=2, distance_target=0.0, finetune=60, finetune_best=True, finetune_lr=0.001, gpu='2', harder_prune=0.0, init_model='results/Comparison_c100_baseline_soft_pruning1/initial.pt', k=0.0005, lr_warmup=50, manual_pretrain_lr=None, max_factor=0.1, min_factor=0.01, model='resnet56', num_workers=8, pretrain=160, pretrain_lr=0.01, pretrain_method='QGS', prune_alpha=0.5, prune_dim=0, prune_order=1, savedir='results/Comparison_c100_QGS_soft_pruning_best1_3', seed=12, soft_prune_cycle=1, soft_prune_start=0, structured=True, weight_decay=0.0003)
+Files already downloaded and verified
+load the initial model from results/Comparison_c100_baseline_soft_pruning1/initial.pt
+model sum:  6410.831784665585
+initialize learning rate: 0.01
+initialize CrossEntropy
+k: 0.00050
+Targets >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+original loss: 0.0, distance: 0.0
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+pretraining stage with method: QGS >>>>>>>>>>>>>>>>>>>>>>>
+step: 0, loss(original): 5.4217 (5.4217), distance: 0.3058, train loss: 44.3479 (44.3479), train accuracy(original): 1.562(1.562), lr: 0.01000
+step: 100, loss(original): 4.5032 (4.7974), distance: 0.3239, train loss: 30.8039 (35.2720), train accuracy(original): 1.562(1.524), lr: 0.01000
+step: 200, loss(original): 4.1868 (4.5925), distance: 0.3249, train loss: 26.9349 (32.4554), train accuracy(original): 3.906(2.464), lr: 0.01000
+step: 300, loss(original): 4.1929 (4.4649), distance: 0.3250, train loss: 26.9572 (30.7435), train accuracy(original): 3.906(3.164), lr: 0.01000
+epoch: 0, CrossEntropy loss (original): 4.3726, distance: 0.3248, train loss: 29.5117, train accuracy: 3.934, lr: 0.00850
+test accuracy: 6.940
+Global sparsity: 0.00%
+pruned model test accuracy: 1.000, test loss: 4.7523, train accuracy: 1.000, train loss: 4.7524
+step: 0, loss(original): 4.9678 (4.9678), distance: 0.0000, train loss: 37.1059 (37.1059), train accuracy(original): 0.781(0.781), lr: 0.00850
+step: 100, loss(original): 4.1797 (4.5959), distance: 0.3295, train loss: 26.5962 (32.2662), train accuracy(original): 1.562(3.326), lr: 0.00850
+step: 200, loss(original): 4.1137 (4.3768), distance: 0.3351, train loss: 25.7323 (29.3215), train accuracy(original): 4.688(4.625), lr: 0.00850
+step: 300, loss(original): 4.1943 (4.2636), distance: 0.3368, train loss: 26.6679 (27.8864), train accuracy(original): 7.812(5.505), lr: 0.00850
+epoch: 1, CrossEntropy loss (original): 4.1970, distance: 0.3374, train loss: 27.0027, train accuracy: 6.056, lr: 0.00882
+test accuracy: 8.830
+Global sparsity: 0.00%
+pruned model test accuracy: 1.000, test loss: 5.0033, train accuracy: 1.000, train loss: 5.0031
+step: 0, loss(original): 4.7969 (4.7969), distance: 0.0000, train loss: 34.5261 (34.5261), train accuracy(original): 1.562(1.562), lr: 0.00882
+step: 100, loss(original): 4.2970 (4.8090), distance: 0.9932, train loss: 29.8812 (36.8434), train accuracy(original): 9.375(3.342), lr: 0.00882
+step: 200, loss(original): 4.2732 (4.5349), distance: 1.0181, train loss: 29.2562 (32.9920), train accuracy(original): 3.906(4.272), lr: 0.00882
+step: 300, loss(original): 3.9254 (4.3939), distance: 1.0256, train loss: 24.9191 (31.0582), train accuracy(original): 7.812(5.178), lr: 0.00882
+epoch: 2, CrossEntropy loss (original): 4.3181, distance: 1.0284, train loss: 30.1004, train accuracy: 5.676, lr: 0.00740
+test accuracy: 7.950
+Global sparsity: 0.00%
+pruned model test accuracy: 1.000, test loss: 5.0048, train accuracy: 1.000, train loss: 5.0044
+step: 0, loss(original): 5.0631 (5.0631), distance: 0.0000, train loss: 39.5405 (39.5405), train accuracy(original): 1.562(1.562), lr: 0.00740
+step: 100, loss(original): 4.6796 (5.0497), distance: 1.1952, train loss: 35.5044 (41.5308), train accuracy(original): 3.125(2.893), lr: 0.00740
+step: 200, loss(original): 4.2112 (4.7446), distance: 1.2426, train loss: 29.7762 (37.0149), train accuracy(original): 5.469(3.638), lr: 0.00740
+step: 300, loss(original): 4.4083 (4.5775), distance: 1.2577, train loss: 31.9915 (34.6467), train accuracy(original): 3.906(4.527), lr: 0.00740
+epoch: 3, CrossEntropy loss (original): 4.4757, distance: 1.2640, train loss: 33.1873, train accuracy: 5.122, lr: 0.00694
+test accuracy: 7.150
+Global sparsity: 0.00%
+pruned model test accuracy: 0.900, test loss: 5.1597, train accuracy: 0.904, train loss: 5.1611
+step: 0, loss(original): 5.1480 (5.1480), distance: 0.0000, train loss: 40.0564 (40.0564), train accuracy(original): 1.562(1.562), lr: 0.00694
+step: 100, loss(original): 4.2795 (4.8791), distance: 1.2262, train loss: 31.0260 (38.7618), train accuracy(original): 3.906(3.465), lr: 0.00694
+step: 200, loss(original): 4.3466 (4.6423), distance: 1.2690, train loss: 31.3277 (35.4433), train accuracy(original): 7.812(4.330), lr: 0.00694
+step: 300, loss(original): 4.1578 (4.5154), distance: 1.2824, train loss: 29.0352 (33.6772), train accuracy(original): 7.812(5.297), lr: 0.00694
+epoch: 4, CrossEntropy loss (original): 4.4389, distance: 1.2880, train loss: 32.6519, train accuracy: 5.674, lr: 0.00695
+test accuracy: 7.660
+Global sparsity: 0.00%
+pruned model test accuracy: 1.490, test loss: 5.0238, train accuracy: 1.422, train loss: 5.0125
+step: 0, loss(original): 4.7364 (4.7364), distance: 0.0000, train loss: 34.1825 (34.1825), train accuracy(original): 1.562(1.562), lr: 0.00695
+step: 100, loss(original): 4.5296 (5.0281), distance: 0.9606, train loss: 32.5244 (39.9351), train accuracy(original): 4.688(3.210), lr: 0.00695
+step: 200, loss(original): 4.6226 (4.8861), distance: 1.0015, train loss: 34.2143 (37.8948), train accuracy(original): 3.125(3.521), lr: 0.00695
+step: 300, loss(original): 4.4510 (4.7360), distance: 1.0149, train loss: 31.9177 (35.7923), train accuracy(original): 6.250(4.228), lr: 0.00695
+epoch: 5, CrossEntropy loss (original): 4.6198, distance: 1.0206, train loss: 34.1764, train accuracy: 4.844, lr: 0.00708
+test accuracy: 6.830
+Global sparsity: 0.00%
+pruned model test accuracy: 1.000, test loss: 5.2049, train accuracy: 1.000, train loss: 5.1978
+step: 0, loss(original): 4.7947 (4.7947), distance: 0.0000, train loss: 34.6485 (34.6485), train accuracy(original): 0.000(0.000), lr: 0.00708
+step: 100, loss(original): 4.5013 (4.9590), distance: 0.9474, train loss: 32.7447 (39.5228), train accuracy(original): 4.688(4.231), lr: 0.00708
+step: 200, loss(original): 4.1892 (4.6570), distance: 0.9935, train loss: 28.3026 (35.0815), train accuracy(original): 5.469(5.302), lr: 0.00708
+step: 300, loss(original): 4.4782 (4.5035), distance: 1.0082, train loss: 31.7064 (32.8371), train accuracy(original): 7.812(5.887), lr: 0.00708
+epoch: 6, CrossEntropy loss (original): 4.3957, distance: 1.0145, train loss: 31.3421, train accuracy: 6.436, lr: 0.00738
+test accuracy: 8.720
+Global sparsity: 0.00%
+pruned model test accuracy: 0.820, test loss: 5.5055, train accuracy: 0.928, train loss: 5.6277
+step: 0, loss(original): 4.8247 (4.8247), distance: 0.0000, train loss: 35.0515 (35.0515), train accuracy(original): 2.344(2.344), lr: 0.00738
+step: 100, loss(original): 4.7458 (4.8627), distance: 0.9140, train loss: 35.4379 (37.6717), train accuracy(original): 6.250(4.858), lr: 0.00738
+step: 200, loss(original): 4.3682 (4.5961), distance: 0.9558, train loss: 30.1679 (33.8448), train accuracy(original): 7.031(5.721), lr: 0.00738
+step: 300, loss(original): 4.6031 (4.4348), distance: 0.9691, train loss: 33.4199 (31.6456), train accuracy(original): 10.156(6.567), lr: 0.00738
+epoch: 7, CrossEntropy loss (original): 4.3495, distance: 0.9748, train loss: 30.4745, train accuracy: 7.072, lr: 0.00751
+test accuracy: 10.070
+Global sparsity: 0.00%
+pruned model test accuracy: 1.000, test loss: 5.3025, train accuracy: 1.000, train loss: 5.2957
+step: 0, loss(original): 4.6543 (4.6543), distance: 0.0000, train loss: 32.5165 (32.5165), train accuracy(original): 0.781(0.781), lr: 0.00751
+step: 100, loss(original): 4.4534 (4.5380), distance: 0.5812, train loss: 31.4335 (31.9245), train accuracy(original): 5.469(4.525), lr: 0.00751
+step: 200, loss(original): 4.2777 (4.4254), distance: 0.6101, train loss: 28.1465 (30.4682), train accuracy(original): 7.031(5.364), lr: 0.00751
+step: 300, loss(original): 4.1434 (4.3332), distance: 0.6194, train loss: 26.7589 (29.2165), train accuracy(original): 6.250(5.998), lr: 0.00751
+epoch: 8, CrossEntropy loss (original): 4.2622, distance: 0.6234, train loss: 28.2749, train accuracy: 6.466, lr: 0.00814
+test accuracy: 8.810
+Global sparsity: 0.00%
+pruned model test accuracy: 1.580, test loss: 5.2802, train accuracy: 1.598, train loss: 5.2764
+step: 0, loss(original): 4.6047 (4.6047), distance: 0.0000, train loss: 32.2691 (32.2691), train accuracy(original): 3.906(3.906), lr: 0.00814
+step: 100, loss(original): 4.3234 (4.5860), distance: 0.5460, train loss: 28.6872 (32.6252), train accuracy(original): 7.812(4.618), lr: 0.00814
+step: 200, loss(original): 4.0719 (4.4048), distance: 0.5734, train loss: 25.5299 (30.1706), train accuracy(original): 11.719(5.974), lr: 0.00814
+step: 300, loss(original): 3.7843 (4.2840), distance: 0.5821, train loss: 22.4428 (28.5530), train accuracy(original): 14.844(6.590), lr: 0.00814
+epoch: 9, CrossEntropy loss (original): 4.2010, distance: 0.5859, train loss: 27.4872, train accuracy: 7.114, lr: 0.00825
+test accuracy: 9.380
+Global sparsity: 0.00%
+pruned model test accuracy: 1.030, test loss: 5.0309, train accuracy: 1.010, train loss: 5.0402
+step: 0, loss(original): 4.7258 (4.7258), distance: 0.0000, train loss: 34.6664 (34.6664), train accuracy(original): 3.125(3.125), lr: 0.00825
+step: 100, loss(original): 4.4903 (4.5411), distance: 1.0486, train loss: 32.3758 (33.2864), train accuracy(original): 8.594(5.484), lr: 0.00825
+step: 200, loss(original): 4.0519 (4.3313), distance: 1.0945, train loss: 27.1945 (30.6228), train accuracy(original): 11.719(6.576), lr: 0.00825
+step: 300, loss(original): 4.0931 (4.2193), distance: 1.1089, train loss: 27.4099 (29.1680), train accuracy(original): 7.812(7.221), lr: 0.00825
+epoch: 10, CrossEntropy loss (original): 4.1654, distance: 1.1149, train loss: 28.4503, train accuracy: 7.646, lr: 0.00756
+test accuracy: 9.700
+Global sparsity: 0.00%
+pruned model test accuracy: 1.610, test loss: 4.9212, train accuracy: 1.360, train loss: 4.9419
+step: 0, loss(original): 4.8365 (4.8365), distance: 0.0000, train loss: 35.2327 (35.2327), train accuracy(original): 3.125(3.125), lr: 0.00756
+step: 100, loss(original): 4.2844 (4.3927), distance: 0.8738, train loss: 29.6389 (30.6602), train accuracy(original): 7.812(5.105), lr: 0.00756
+step: 200, loss(original): 4.0098 (4.2578), distance: 0.9170, train loss: 26.3206 (29.1076), train accuracy(original): 8.594(6.087), lr: 0.00756
+step: 300, loss(original): 4.0423 (4.1863), distance: 0.9308, train loss: 26.1221 (28.1376), train accuracy(original): 7.812(6.857), lr: 0.00756
+epoch: 11, CrossEntropy loss (original): 4.1255, distance: 0.9367, train loss: 27.3591, train accuracy: 7.460, lr: 0.00787
+test accuracy: 10.420
+Global sparsity: 0.00%
+pruned model test accuracy: 1.760, test loss: 5.1324, train accuracy: 1.682, train loss: 5.1185
+step: 0, loss(original): 4.7427 (4.7427), distance: 0.0000, train loss: 34.0131 (34.0131), train accuracy(original): 0.781(0.781), lr: 0.00787
+step: 100, loss(original): 4.1495 (4.3475), distance: 0.6796, train loss: 26.7361 (29.5364), train accuracy(original): 7.031(5.005), lr: 0.00787
+step: 200, loss(original): 3.9151 (4.2422), distance: 0.7147, train loss: 24.3124 (28.1921), train accuracy(original): 8.594(6.052), lr: 0.00787
+step: 300, loss(original): 3.8159 (4.1581), distance: 0.7259, train loss: 22.7884 (27.1398), train accuracy(original): 9.375(6.850), lr: 0.00787
+epoch: 12, CrossEntropy loss (original): 4.1026, distance: 0.7307, train loss: 26.4350, train accuracy: 7.490, lr: 0.00826
+test accuracy: 10.120
+Global sparsity: 0.01%
+pruned model test accuracy: 1.770, test loss: 4.8881, train accuracy: 1.564, train loss: 4.9082
+step: 0, loss(original): 4.6232 (4.6232), distance: 0.0000, train loss: 32.0770 (32.0770), train accuracy(original): 0.781(0.781), lr: 0.00826
+step: 100, loss(original): 4.3052 (4.2960), distance: 0.5478, train loss: 28.4499 (28.3634), train accuracy(original): 4.688(5.175), lr: 0.00826
+step: 200, loss(original): 3.9769 (4.1852), distance: 0.5755, train loss: 24.5301 (27.1220), train accuracy(original): 6.250(6.075), lr: 0.00826
+step: 300, loss(original): 3.9508 (4.1106), distance: 0.5843, train loss: 24.3439 (26.2399), train accuracy(original): 8.594(6.847), lr: 0.00826
+epoch: 13, CrossEntropy loss (original): 4.0594, distance: 0.5880, train loss: 25.6314, train accuracy: 7.464, lr: 0.00859
+test accuracy: 9.930
+Global sparsity: 0.02%
+pruned model test accuracy: 2.050, test loss: 4.7087, train accuracy: 1.900, train loss: 4.7164
+step: 0, loss(original): 4.4086 (4.4086), distance: 0.0000, train loss: 29.1906 (29.1906), train accuracy(original): 2.344(2.344), lr: 0.00859
+step: 100, loss(original): 3.9879 (4.1783), distance: 0.5775, train loss: 25.0841 (27.2403), train accuracy(original): 7.812(6.157), lr: 0.00859
+step: 200, loss(original): 3.7218 (4.0734), distance: 0.6073, train loss: 21.7174 (25.8980), train accuracy(original): 11.719(7.350), lr: 0.00859
+step: 300, loss(original): 3.8497 (4.0099), distance: 0.6168, train loss: 22.9871 (25.1117), train accuracy(original): 10.938(8.254), lr: 0.00859
+epoch: 14, CrossEntropy loss (original): 3.9703, distance: 0.6209, train loss: 24.6081, train accuracy: 8.672, lr: 0.00871
+test accuracy: 10.870
+Global sparsity: 0.05%
+pruned model test accuracy: 1.650, test loss: 5.2125, train accuracy: 1.708, train loss: 5.2184
+step: 0, loss(original): 4.6043 (4.6043), distance: 0.0000, train loss: 31.8365 (31.8365), train accuracy(original): 3.125(3.125), lr: 0.00871
+step: 100, loss(original): 3.9111 (4.1588), distance: 0.6927, train loss: 24.2517 (27.0817), train accuracy(original): 8.594(6.977), lr: 0.00871
+step: 200, loss(original): 3.8524 (4.0628), distance: 0.7278, train loss: 23.1650 (25.9037), train accuracy(original): 7.812(8.038), lr: 0.00871
+step: 300, loss(original): 3.8794 (4.0047), distance: 0.7389, train loss: 24.2295 (25.2620), train accuracy(original): 9.375(8.589), lr: 0.00871
+epoch: 15, CrossEntropy loss (original): 3.9631, distance: 0.7436, train loss: 24.7461, train accuracy: 9.006, lr: 0.00841
+test accuracy: 12.010
+Global sparsity: 0.18%
+pruned model test accuracy: 1.790, test loss: 4.8629, train accuracy: 1.596, train loss: 4.8537
+step: 0, loss(original): 4.7475 (4.7475), distance: 0.0000, train loss: 34.5703 (34.5703), train accuracy(original): 0.781(0.781), lr: 0.00841
+step: 100, loss(original): 4.1064 (4.2377), distance: 0.7597, train loss: 26.8372 (28.3498), train accuracy(original): 8.594(5.848), lr: 0.00841
+step: 200, loss(original): 3.9200 (4.1093), distance: 0.7971, train loss: 24.5167 (26.8045), train accuracy(original): 10.156(7.113), lr: 0.00841
+step: 300, loss(original): 3.7416 (4.0326), distance: 0.8089, train loss: 22.1291 (25.8158), train accuracy(original): 9.375(7.968), lr: 0.00841
+epoch: 16, CrossEntropy loss (original): 3.9919, distance: 0.8139, train loss: 25.3162, train accuracy: 8.364, lr: 0.00828
+test accuracy: 10.380
+Global sparsity: 0.29%
+pruned model test accuracy: 1.530, test loss: 5.0087, train accuracy: 1.582, train loss: 4.9559
+step: 0, loss(original): 4.4729 (4.4729), distance: 0.0000, train loss: 30.3827 (30.3827), train accuracy(original): 4.688(4.688), lr: 0.00828
+step: 100, loss(original): 3.9979 (4.1477), distance: 0.6565, train loss: 24.9250 (26.8027), train accuracy(original): 6.250(6.683), lr: 0.00828
+step: 200, loss(original): 3.9828 (4.0384), distance: 0.6897, train loss: 24.9667 (25.5307), train accuracy(original): 7.812(7.824), lr: 0.00828
+step: 300, loss(original): 3.7058 (3.9779), distance: 0.7003, train loss: 21.5017 (24.8038), train accuracy(original): 11.719(8.607), lr: 0.00828
+epoch: 17, CrossEntropy loss (original): 3.9404, distance: 0.7048, train loss: 24.4034, train accuracy: 9.074, lr: 0.00858
+test accuracy: 11.480
+Global sparsity: 0.37%
+pruned model test accuracy: 1.460, test loss: 4.7392, train accuracy: 1.270, train loss: 4.7743
+step: 0, loss(original): 4.5135 (4.5135), distance: 0.0000, train loss: 30.8098 (30.8098), train accuracy(original): 3.125(3.125), lr: 0.00858
+step: 100, loss(original): 3.9959 (4.0889), distance: 0.6342, train loss: 25.0159 (26.0422), train accuracy(original): 3.906(6.791), lr: 0.00858
+step: 200, loss(original): 4.0247 (4.0025), distance: 0.6674, train loss: 25.4606 (25.0194), train accuracy(original): 7.812(8.096), lr: 0.00858
+step: 300, loss(original): 4.2264 (3.9502), distance: 0.6780, train loss: 27.8284 (24.3931), train accuracy(original): 10.156(8.778), lr: 0.00858
+epoch: 18, CrossEntropy loss (original): 3.9168, distance: 0.6824, train loss: 24.0152, train accuracy: 9.198, lr: 0.00863
+test accuracy: 11.390
+Global sparsity: 0.43%
+pruned model test accuracy: 1.510, test loss: 5.3379, train accuracy: 1.492, train loss: 5.3954
+step: 0, loss(original): 4.5047 (4.5047), distance: 0.0000, train loss: 31.0033 (31.0033), train accuracy(original): 3.125(3.125), lr: 0.00863
+step: 100, loss(original): 3.7880 (4.1232), distance: 0.7675, train loss: 23.1495 (26.8660), train accuracy(original): 14.062(5.972), lr: 0.00863
+step: 200, loss(original): 3.8574 (4.0407), distance: 0.8051, train loss: 23.8839 (25.8306), train accuracy(original): 11.719(7.241), lr: 0.00863
+step: 300, loss(original): 3.8041 (3.9888), distance: 0.8169, train loss: 23.3093 (25.2315), train accuracy(original): 7.031(8.056), lr: 0.00863
+epoch: 19, CrossEntropy loss (original): 3.9533, distance: 0.8219, train loss: 24.8200, train accuracy: 8.510, lr: 0.00835
+test accuracy: 11.200
+Global sparsity: 0.56%
+pruned model test accuracy: 0.760, test loss: 5.0035, train accuracy: 0.776, train loss: 4.9971
+step: 0, loss(original): 4.2727 (4.2727), distance: 0.0000, train loss: 27.5957 (27.5957), train accuracy(original): 5.469(5.469), lr: 0.00835
+step: 100, loss(original): 3.9451 (4.1162), distance: 0.5200, train loss: 24.5145 (26.2610), train accuracy(original): 5.469(6.304), lr: 0.00835
+step: 200, loss(original): 3.7901 (4.0026), distance: 0.5468, train loss: 22.2998 (24.8706), train accuracy(original): 3.906(7.785), lr: 0.00835
+step: 300, loss(original): 3.7944 (3.9448), distance: 0.5553, train loss: 22.3935 (24.1709), train accuracy(original): 10.156(8.602), lr: 0.00835
+epoch: 20, CrossEntropy loss (original): 3.9085, distance: 0.5590, train loss: 23.7162, train accuracy: 9.142, lr: 0.00894
+test accuracy: 11.060
+Global sparsity: 0.82%
+pruned model test accuracy: 1.600, test loss: 5.3236, train accuracy: 1.554, train loss: 5.3203
+step: 0, loss(original): 4.2899 (4.2899), distance: 0.0000, train loss: 27.6414 (27.6414), train accuracy(original): 3.906(3.906), lr: 0.00894
+step: 100, loss(original): 4.0106 (4.0251), distance: 0.7365, train loss: 25.2668 (25.4211), train accuracy(original): 3.906(7.998), lr: 0.00894
+step: 200, loss(original): 3.9850 (3.9484), distance: 0.7740, train loss: 24.9009 (24.5919), train accuracy(original): 10.938(8.916), lr: 0.00894
+step: 300, loss(original): 3.8746 (3.8990), distance: 0.7858, train loss: 23.9515 (24.0477), train accuracy(original): 9.375(9.432), lr: 0.00894
+epoch: 21, CrossEntropy loss (original): 3.8670, distance: 0.7908, train loss: 23.6910, train accuracy: 9.914, lr: 0.00857
+test accuracy: 12.850
+Global sparsity: 1.17%
+pruned model test accuracy: 2.540, test loss: 4.4968, train accuracy: 2.290, train loss: 4.5121
+step: 0, loss(original): 4.2142 (4.2142), distance: 0.0000, train loss: 26.8011 (26.8011), train accuracy(original): 3.906(3.906), lr: 0.00857
+step: 100, loss(original): 3.8451 (4.0497), distance: 0.6649, train loss: 23.2101 (25.7308), train accuracy(original): 10.938(7.573), lr: 0.00857
+step: 200, loss(original): 3.8278 (3.9507), distance: 0.7004, train loss: 23.0439 (24.5585), train accuracy(original): 12.500(8.823), lr: 0.00857
+step: 300, loss(original): 3.7570 (3.9037), distance: 0.7117, train loss: 22.0452 (24.0118), train accuracy(original): 15.625(9.507), lr: 0.00857
+epoch: 22, CrossEntropy loss (original): 3.8659, distance: 0.7164, train loss: 23.5526, train accuracy: 10.062, lr: 0.00866
+test accuracy: 11.610
+Global sparsity: 1.42%
+pruned model test accuracy: 1.400, test loss: 6.3953, train accuracy: 1.296, train loss: 6.3205
+step: 0, loss(original): 4.3853 (4.3853), distance: 0.0000, train loss: 29.3952 (29.3952), train accuracy(original): 4.688(4.688), lr: 0.00866
+step: 100, loss(original): 3.9178 (3.9922), distance: 0.6667, train loss: 24.0071 (24.9952), train accuracy(original): 6.250(7.929), lr: 0.00866
+step: 200, loss(original): 3.7117 (3.9157), distance: 0.7008, train loss: 21.5006 (24.0792), train accuracy(original): 13.281(9.200), lr: 0.00866
+step: 300, loss(original): 3.7163 (3.8784), distance: 0.7116, train loss: 22.0956 (23.6427), train accuracy(original): 11.719(9.681), lr: 0.00866
+epoch: 23, CrossEntropy loss (original): 3.8513, distance: 0.7162, train loss: 23.3402, train accuracy: 10.070, lr: 0.00864
+test accuracy: 12.820
+Global sparsity: 1.70%
+pruned model test accuracy: 1.490, test loss: 5.1575, train accuracy: 1.424, train loss: 5.1645
+step: 0, loss(original): 4.3011 (4.3011), distance: 0.0000, train loss: 28.7135 (28.7135), train accuracy(original): 2.344(2.344), lr: 0.00864
+step: 100, loss(original): 3.7817 (3.9715), distance: 0.6872, train loss: 22.4941 (24.7880), train accuracy(original): 13.281(8.841), lr: 0.00864
+step: 200, loss(original): 3.7298 (3.8868), distance: 0.7210, train loss: 21.8362 (23.8145), train accuracy(original): 10.938(9.729), lr: 0.00864
+step: 300, loss(original): 3.8059 (3.8445), distance: 0.7316, train loss: 22.7057 (23.3334), train accuracy(original): 8.594(10.268), lr: 0.00864
+epoch: 24, CrossEntropy loss (original): 3.8157, distance: 0.7361, train loss: 22.9903, train accuracy: 10.670, lr: 0.00873
+test accuracy: 13.110
+Global sparsity: 2.05%
+pruned model test accuracy: 1.970, test loss: 5.0528, train accuracy: 1.870, train loss: 5.0491
+step: 0, loss(original): 4.2805 (4.2805), distance: 0.0000, train loss: 28.0017 (28.0017), train accuracy(original): 7.812(7.812), lr: 0.00873
+step: 100, loss(original): 3.9504 (3.9915), distance: 0.9374, train loss: 25.7272 (26.0222), train accuracy(original): 5.469(8.331), lr: 0.00873
+step: 200, loss(original): 3.7265 (3.9191), distance: 0.9784, train loss: 22.6274 (25.1477), train accuracy(original): 7.812(9.286), lr: 0.00873
+step: 300, loss(original): 3.8237 (3.8743), distance: 0.9912, train loss: 23.7801 (24.5298), train accuracy(original): 10.938(9.694), lr: 0.00873
+epoch: 25, CrossEntropy loss (original): 3.8448, distance: 0.9965, train loss: 24.1448, train accuracy: 10.078, lr: 0.00821
+test accuracy: 12.470
+Global sparsity: 2.40%
+pruned model test accuracy: 1.840, test loss: 4.9009, train accuracy: 1.914, train loss: 4.8810
+step: 0, loss(original): 4.2164 (4.2164), distance: 0.0000, train loss: 27.0745 (27.0745), train accuracy(original): 4.688(4.688), lr: 0.00821
+step: 100, loss(original): 3.8502 (3.9705), distance: 0.7795, train loss: 23.5593 (24.9434), train accuracy(original): 16.406(8.277), lr: 0.00821
+step: 200, loss(original): 3.7407 (3.8905), distance: 0.8161, train loss: 22.7993 (24.1509), train accuracy(original): 16.406(9.457), lr: 0.00821
+step: 300, loss(original): 3.7675 (3.8434), distance: 0.8277, train loss: 23.3017 (23.6828), train accuracy(original): 10.938(10.099), lr: 0.00821
+epoch: 26, CrossEntropy loss (original): 3.8144, distance: 0.8325, train loss: 23.3120, train accuracy: 10.468, lr: 0.00860
+test accuracy: 12.350
+Global sparsity: 2.79%
+pruned model test accuracy: 2.050, test loss: 4.7741, train accuracy: 1.846, train loss: 4.8037
+step: 0, loss(original): 4.7449 (4.7449), distance: 0.0000, train loss: 33.8154 (33.8154), train accuracy(original): 3.125(3.125), lr: 0.00860
+step: 100, loss(original): 4.0552 (4.0177), distance: 0.8739, train loss: 26.3981 (25.7292), train accuracy(original): 9.375(7.735), lr: 0.00860
+step: 200, loss(original): 3.9035 (3.9145), distance: 0.9140, train loss: 24.4272 (24.6015), train accuracy(original): 9.375(9.239), lr: 0.00860
+step: 300, loss(original): 3.6421 (3.8662), distance: 0.9265, train loss: 21.3268 (24.0322), train accuracy(original): 12.500(10.078), lr: 0.00860
+epoch: 27, CrossEntropy loss (original): 3.8300, distance: 0.9318, train loss: 23.6191, train accuracy: 10.658, lr: 0.00838
+test accuracy: 13.110
+Global sparsity: 3.17%
+pruned model test accuracy: 2.360, test loss: 4.9118, train accuracy: 2.208, train loss: 4.9164
+step: 0, loss(original): 4.5856 (4.5856), distance: 0.0000, train loss: 31.7451 (31.7451), train accuracy(original): 3.906(3.906), lr: 0.00838
+step: 100, loss(original): 3.7997 (4.0036), distance: 0.9333, train loss: 23.5597 (25.7755), train accuracy(original): 10.156(7.287), lr: 0.00838
+step: 200, loss(original): 3.9002 (3.9254), distance: 0.9753, train loss: 25.1072 (24.9576), train accuracy(original): 8.594(8.804), lr: 0.00838
+step: 300, loss(original): 3.7482 (3.8750), distance: 0.9885, train loss: 22.8947 (24.4300), train accuracy(original): 14.844(9.785), lr: 0.00838
+epoch: 28, CrossEntropy loss (original): 3.8425, distance: 0.9940, train loss: 24.0563, train accuracy: 10.164, lr: 0.00823
+test accuracy: 12.090
+Global sparsity: 3.67%
+pruned model test accuracy: 2.830, test loss: 5.1631, train accuracy: 2.752, train loss: 5.0708
+step: 0, loss(original): 4.4780 (4.4780), distance: 0.0000, train loss: 30.3905 (30.3905), train accuracy(original): 2.344(2.344), lr: 0.00823
+step: 100, loss(original): 3.8283 (3.9702), distance: 0.6558, train loss: 23.3119 (24.7582), train accuracy(original): 12.500(8.346), lr: 0.00823
+step: 200, loss(original): 3.9146 (3.8890), distance: 0.6881, train loss: 24.0040 (23.8146), train accuracy(original): 8.594(9.480), lr: 0.00823
+step: 300, loss(original): 3.8540 (3.8361), distance: 0.6984, train loss: 23.2514 (23.1982), train accuracy(original): 14.844(10.416), lr: 0.00823
+epoch: 29, CrossEntropy loss (original): 3.8080, distance: 0.7027, train loss: 22.8803, train accuracy: 10.762, lr: 0.00885
+test accuracy: 12.500
+Global sparsity: 4.10%
+pruned model test accuracy: 1.910, test loss: 4.9965, train accuracy: 1.660, train loss: 5.0427
+step: 0, loss(original): 4.3814 (4.3814), distance: 0.0000, train loss: 28.8642 (28.8642), train accuracy(original): 7.031(7.031), lr: 0.00885
+step: 100, loss(original): 3.8592 (3.9346), distance: 0.5326, train loss: 23.4818 (24.0466), train accuracy(original): 7.812(9.329), lr: 0.00885
+step: 200, loss(original): 3.8103 (3.8728), distance: 0.5589, train loss: 22.7711 (23.3196), train accuracy(original): 9.375(9.795), lr: 0.00885
+step: 300, loss(original): 3.6341 (3.8317), distance: 0.5672, train loss: 20.4344 (22.8643), train accuracy(original): 11.719(10.499), lr: 0.00885
+epoch: 30, CrossEntropy loss (original): 3.8043, distance: 0.5707, train loss: 22.5667, train accuracy: 10.918, lr: 0.00910
+test accuracy: 12.820
+Global sparsity: 4.46%
+pruned model test accuracy: 2.280, test loss: 5.5845, train accuracy: 2.082, train loss: 5.5931
+step: 0, loss(original): 4.1386 (4.1386), distance: 0.0000, train loss: 26.0045 (26.0045), train accuracy(original): 14.062(14.062), lr: 0.00910
+step: 100, loss(original): 3.8511 (3.9235), distance: 0.5453, train loss: 23.0178 (23.8685), train accuracy(original): 10.938(9.189), lr: 0.00910
+step: 200, loss(original): 3.7201 (3.8460), distance: 0.5737, train loss: 22.2756 (23.0911), train accuracy(original): 12.500(10.113), lr: 0.00910
+step: 300, loss(original): 3.7228 (3.7968), distance: 0.5826, train loss: 21.4043 (22.4997), train accuracy(original): 9.375(10.852), lr: 0.00910
+epoch: 31, CrossEntropy loss (original): 3.7737, distance: 0.5864, train loss: 22.2442, train accuracy: 11.288, lr: 0.00916
+test accuracy: 13.280
+Global sparsity: 5.03%
+pruned model test accuracy: 3.770, test loss: 4.8544, train accuracy: 3.624, train loss: 4.7374
+step: 0, loss(original): 4.3508 (4.3508), distance: 0.0000, train loss: 28.4956 (28.4956), train accuracy(original): 5.469(5.469), lr: 0.00916
+step: 100, loss(original): 3.8201 (3.8533), distance: 0.5549, train loss: 22.7595 (23.1809), train accuracy(original): 10.938(10.435), lr: 0.00916
+step: 200, loss(original): 3.6480 (3.7858), distance: 0.5840, train loss: 20.5654 (22.4053), train accuracy(original): 12.500(11.334), lr: 0.00916
+step: 300, loss(original): 3.7485 (3.7535), distance: 0.5932, train loss: 21.7581 (22.0050), train accuracy(original): 6.250(11.882), lr: 0.00916
+epoch: 32, CrossEntropy loss (original): 3.7333, distance: 0.5970, train loss: 21.7516, train accuracy: 12.170, lr: 0.00923
+test accuracy: 14.170
+Global sparsity: 5.70%
+pruned model test accuracy: 2.820, test loss: 5.8375, train accuracy: 2.328, train loss: 5.6134
+step: 0, loss(original): 4.1793 (4.1793), distance: 0.0000, train loss: 26.2172 (26.2172), train accuracy(original): 4.688(4.688), lr: 0.00923
+step: 100, loss(original): 3.7381 (3.8496), distance: 0.5173, train loss: 21.6671 (23.0775), train accuracy(original): 16.406(10.365), lr: 0.00923
+step: 200, loss(original): 3.6476 (3.7855), distance: 0.5445, train loss: 20.6254 (22.3058), train accuracy(original): 14.062(11.287), lr: 0.00923
+step: 300, loss(original): 3.7016 (3.7497), distance: 0.5531, train loss: 21.2791 (21.9029), train accuracy(original): 15.625(11.880), lr: 0.00923
+epoch: 33, CrossEntropy loss (original): 3.7304, distance: 0.5567, train loss: 21.6572, train accuracy: 12.212, lr: 0.00930
+test accuracy: 14.050
+Global sparsity: 6.05%
+pruned model test accuracy: 2.370, test loss: 5.3054, train accuracy: 2.320, train loss: 5.1808
+step: 0, loss(original): 4.2355 (4.2355), distance: 0.0000, train loss: 27.0689 (27.0689), train accuracy(original): 6.250(6.250), lr: 0.00930
+step: 100, loss(original): 3.8270 (3.8043), distance: 0.5394, train loss: 22.7396 (22.7816), train accuracy(original): 14.844(11.247), lr: 0.00930
+step: 200, loss(original): 3.6542 (3.7385), distance: 0.5669, train loss: 20.8329 (21.9146), train accuracy(original): 12.500(12.123), lr: 0.00930
+step: 300, loss(original): 3.5429 (3.7147), distance: 0.5756, train loss: 19.4843 (21.6368), train accuracy(original): 13.281(12.542), lr: 0.00930
+epoch: 34, CrossEntropy loss (original): 3.6988, distance: 0.5792, train loss: 21.4653, train accuracy: 12.630, lr: 0.00932
+test accuracy: 14.910
+Global sparsity: 6.19%
+pruned model test accuracy: 2.460, test loss: 5.1895, train accuracy: 2.270, train loss: 5.1933
+step: 0, loss(original): 4.4377 (4.4377), distance: 0.0000, train loss: 29.7252 (29.7252), train accuracy(original): 5.469(5.469), lr: 0.00932
+step: 100, loss(original): 3.7609 (3.7928), distance: 0.4657, train loss: 21.8955 (22.3482), train accuracy(original): 7.812(10.984), lr: 0.00932
+step: 200, loss(original): 3.7036 (3.7262), distance: 0.4889, train loss: 21.1320 (21.6199), train accuracy(original): 14.062(12.255), lr: 0.00932
+step: 300, loss(original): 3.5338 (3.6967), distance: 0.4962, train loss: 19.6757 (21.2612), train accuracy(original): 20.312(12.760), lr: 0.00932
+epoch: 35, CrossEntropy loss (original): 3.6822, distance: 0.4992, train loss: 21.1101, train accuracy: 12.980, lr: 0.00946
+test accuracy: 15.040
+Global sparsity: 6.50%
+pruned model test accuracy: 3.200, test loss: 4.7745, train accuracy: 2.966, train loss: 4.8026
+step: 0, loss(original): 4.0397 (4.0397), distance: 0.0000, train loss: 25.1891 (25.1891), train accuracy(original): 7.031(7.031), lr: 0.00946
+step: 100, loss(original): 3.5556 (3.7203), distance: 0.3794, train loss: 19.4258 (21.4852), train accuracy(original): 13.281(12.252), lr: 0.00946
+step: 200, loss(original): 3.6418 (3.6799), distance: 0.3998, train loss: 20.5590 (20.9721), train accuracy(original): 9.375(12.896), lr: 0.00946
+step: 300, loss(original): 3.6371 (3.6651), distance: 0.4062, train loss: 20.1103 (20.7437), train accuracy(original): 14.062(13.240), lr: 0.00946
+epoch: 36, CrossEntropy loss (original): 3.6480, distance: 0.4089, train loss: 20.6093, train accuracy: 13.544, lr: 0.00971
+test accuracy: 15.400
+Global sparsity: 7.05%
+pruned model test accuracy: 4.210, test loss: 5.1518, train accuracy: 3.308, train loss: 5.1684
+step: 0, loss(original): 4.0464 (4.0464), distance: 0.0000, train loss: 25.5365 (25.5365), train accuracy(original): 6.250(6.250), lr: 0.00971
+step: 100, loss(original): 3.6411 (3.6757), distance: 0.4434, train loss: 20.9195 (20.9166), train accuracy(original): 15.625(13.088), lr: 0.00971
+step: 200, loss(original): 3.4167 (3.6443), distance: 0.4661, train loss: 18.2885 (20.5836), train accuracy(original): 19.531(13.849), lr: 0.00971
+step: 300, loss(original): 3.8560 (3.6228), distance: 0.4733, train loss: 22.6789 (20.3810), train accuracy(original): 7.031(14.094), lr: 0.00971
+epoch: 37, CrossEntropy loss (original): 3.6102, distance: 0.4763, train loss: 20.2640, train accuracy: 14.384, lr: 0.00973
+test accuracy: 15.920
+Global sparsity: 7.64%
+pruned model test accuracy: 4.060, test loss: 4.8574, train accuracy: 3.972, train loss: 4.7972
+step: 0, loss(original): 4.1541 (4.1541), distance: 0.0000, train loss: 26.1835 (26.1835), train accuracy(original): 7.812(7.812), lr: 0.00973
+step: 100, loss(original): 3.6477 (3.7033), distance: 0.4604, train loss: 20.5495 (21.3286), train accuracy(original): 17.188(12.809), lr: 0.00973
+step: 200, loss(original): 3.5323 (3.6544), distance: 0.4847, train loss: 19.2737 (20.8107), train accuracy(original): 16.406(13.790), lr: 0.00973
+step: 300, loss(original): 3.6174 (3.6227), distance: 0.4923, train loss: 20.1055 (20.4365), train accuracy(original): 9.375(14.415), lr: 0.00973
+epoch: 38, CrossEntropy loss (original): 3.6087, distance: 0.4955, train loss: 20.2941, train accuracy: 14.596, lr: 0.00971
+test accuracy: 16.100
+Global sparsity: 8.00%
+pruned model test accuracy: 3.430, test loss: 4.7333, train accuracy: 3.120, train loss: 4.7337
+step: 0, loss(original): 4.0513 (4.0513), distance: 0.0000, train loss: 24.8318 (24.8318), train accuracy(original): 5.469(5.469), lr: 0.00971
+step: 100, loss(original): 3.4304 (3.6562), distance: 0.5464, train loss: 18.4091 (20.7980), train accuracy(original): 14.844(13.274), lr: 0.00971
+step: 200, loss(original): 3.6174 (3.6092), distance: 0.5742, train loss: 20.5445 (20.3324), train accuracy(original): 14.062(14.249), lr: 0.00971
+step: 300, loss(original): 3.5563 (3.5863), distance: 0.5829, train loss: 19.9179 (20.1183), train accuracy(original): 13.281(14.810), lr: 0.00971
+epoch: 39, CrossEntropy loss (original): 3.5707, distance: 0.5865, train loss: 19.9710, train accuracy: 14.972, lr: 0.00955
+test accuracy: 17.260
+Global sparsity: 8.86%
+pruned model test accuracy: 5.200, test loss: 4.7828, train accuracy: 5.104, train loss: 4.6802
+step: 0, loss(original): 4.0543 (4.0543), distance: 0.0000, train loss: 25.0257 (25.0257), train accuracy(original): 5.469(5.469), lr: 0.00955
+step: 100, loss(original): 3.5381 (3.6779), distance: 0.3782, train loss: 19.2554 (20.8950), train accuracy(original): 17.188(13.072), lr: 0.00955
+step: 200, loss(original): 3.4732 (3.6227), distance: 0.3984, train loss: 18.5620 (20.2413), train accuracy(original): 14.844(14.292), lr: 0.00955
+step: 300, loss(original): 3.5774 (3.5883), distance: 0.4048, train loss: 20.1015 (19.8808), train accuracy(original): 10.938(14.981), lr: 0.00955
+epoch: 40, CrossEntropy loss (original): 3.5746, distance: 0.4075, train loss: 19.7385, train accuracy: 15.138, lr: 0.00997
+test accuracy: 16.350
+Global sparsity: 9.60%
+pruned model test accuracy: 3.780, test loss: 6.0880, train accuracy: 3.560, train loss: 5.6687
+step: 0, loss(original): 3.9114 (3.9114), distance: 0.0000, train loss: 23.3507 (23.3507), train accuracy(original): 7.031(7.031), lr: 0.00997
+step: 100, loss(original): 3.4693 (3.6060), distance: 0.3802, train loss: 18.4274 (20.0787), train accuracy(original): 18.750(14.240), lr: 0.00997
+step: 200, loss(original): 3.6682 (3.5677), distance: 0.4004, train loss: 20.4928 (19.7821), train accuracy(original): 10.938(15.104), lr: 0.00997
+step: 300, loss(original): 3.4685 (3.5406), distance: 0.4067, train loss: 18.7763 (19.4693), train accuracy(original): 17.188(15.565), lr: 0.00997
+epoch: 41, CrossEntropy loss (original): 3.5311, distance: 0.4094, train loss: 19.3278, train accuracy: 15.836, lr: 0.01009
+test accuracy: 17.790
+Global sparsity: 10.05%
+pruned model test accuracy: 2.120, test loss: 6.4025, train accuracy: 2.026, train loss: 6.2385
+step: 0, loss(original): 4.0178 (4.0178), distance: 0.0000, train loss: 24.5610 (24.5610), train accuracy(original): 6.250(6.250), lr: 0.01009
+step: 100, loss(original): 3.4480 (3.5919), distance: 0.2965, train loss: 18.2348 (19.7673), train accuracy(original): 21.875(14.395), lr: 0.01009
+step: 200, loss(original): 3.7320 (3.5380), distance: 0.3129, train loss: 21.6813 (19.2276), train accuracy(original): 10.938(15.458), lr: 0.01009
+step: 300, loss(original): 3.5075 (3.5239), distance: 0.3180, train loss: 18.6783 (19.0738), train accuracy(original): 13.281(15.667), lr: 0.01009
+epoch: 42, CrossEntropy loss (original): 3.5142, distance: 0.3202, train loss: 18.9697, train accuracy: 15.876, lr: 0.01031
+test accuracy: 18.010
+Global sparsity: 10.32%
+pruned model test accuracy: 2.610, test loss: 5.9579, train accuracy: 2.334, train loss: 5.7872
+step: 0, loss(original): 3.8918 (3.8918), distance: 0.0000, train loss: 23.4334 (23.4334), train accuracy(original): 8.594(8.594), lr: 0.01031
+step: 100, loss(original): 3.3768 (3.5562), distance: 0.3820, train loss: 17.5913 (19.4331), train accuracy(original): 20.312(15.880), lr: 0.01031
+step: 200, loss(original): 3.4223 (3.5105), distance: 0.4025, train loss: 18.0115 (19.0371), train accuracy(original): 17.188(16.418), lr: 0.01031
+step: 300, loss(original): 3.5171 (3.4960), distance: 0.4090, train loss: 18.8873 (18.9189), train accuracy(original): 14.062(16.622), lr: 0.01031
+epoch: 43, CrossEntropy loss (original): 3.4861, distance: 0.4117, train loss: 18.7942, train accuracy: 16.702, lr: 0.01024
+test accuracy: 18.270
+Global sparsity: 10.69%
+pruned model test accuracy: 2.850, test loss: 6.8819, train accuracy: 2.738, train loss: 6.7378
+step: 0, loss(original): 3.8437 (3.8437), distance: 0.0000, train loss: 22.2671 (22.2671), train accuracy(original): 16.406(16.406), lr: 0.01024
+step: 100, loss(original): 3.5103 (3.5447), distance: 0.3318, train loss: 18.7228 (19.2142), train accuracy(original): 14.062(15.873), lr: 0.01024
+step: 200, loss(original): 3.3836 (3.5185), distance: 0.3498, train loss: 17.4260 (18.9848), train accuracy(original): 21.094(16.165), lr: 0.01024
+step: 300, loss(original): 3.4864 (3.4844), distance: 0.3554, train loss: 19.3555 (18.6596), train accuracy(original): 15.625(16.811), lr: 0.01024
+epoch: 44, CrossEntropy loss (original): 3.4745, distance: 0.3578, train loss: 18.6382, train accuracy: 17.130, lr: 0.01025
+test accuracy: 18.560
+Global sparsity: 11.01%
+pruned model test accuracy: 1.160, test loss: 8.2551, train accuracy: 1.182, train loss: 8.0947
+step: 0, loss(original): 4.0104 (4.0104), distance: 0.0000, train loss: 25.2434 (25.2434), train accuracy(original): 9.375(9.375), lr: 0.01025
+step: 100, loss(original): 3.4456 (3.5234), distance: 0.3927, train loss: 18.1466 (19.3051), train accuracy(original): 17.969(15.958), lr: 0.01025
+step: 200, loss(original): 3.3958 (3.4801), distance: 0.4140, train loss: 18.1210 (18.7505), train accuracy(original): 14.062(16.888), lr: 0.01025
+step: 300, loss(original): 3.2068 (3.4658), distance: 0.4206, train loss: 16.2205 (18.6741), train accuracy(original): 17.969(17.195), lr: 0.01025
+epoch: 45, CrossEntropy loss (original): 3.4512, distance: 0.4234, train loss: 18.5190, train accuracy: 17.404, lr: 0.01027
+test accuracy: 18.790
+Global sparsity: 11.25%
+pruned model test accuracy: 5.320, test loss: 4.7984, train accuracy: 4.916, train loss: 4.7428
+step: 0, loss(original): 4.0103 (4.0103), distance: 0.0000, train loss: 24.4296 (24.4296), train accuracy(original): 7.812(7.812), lr: 0.01027
+step: 100, loss(original): 3.4844 (3.4619), distance: 0.4281, train loss: 18.6792 (18.4904), train accuracy(original): 19.531(17.296), lr: 0.01027
+step: 200, loss(original): 3.5027 (3.4439), distance: 0.4502, train loss: 19.0228 (18.3740), train accuracy(original): 19.531(17.386), lr: 0.01027
+step: 300, loss(original): 3.6322 (3.4276), distance: 0.4572, train loss: 20.4011 (18.2184), train accuracy(original): 13.281(17.553), lr: 0.01027
+epoch: 46, CrossEntropy loss (original): 3.4225, distance: 0.4600, train loss: 18.1722, train accuracy: 17.782, lr: 0.01028
+test accuracy: 19.750
+Global sparsity: 11.59%
+pruned model test accuracy: 3.460, test loss: 5.8069, train accuracy: 3.364, train loss: 5.7937
+step: 0, loss(original): 4.1037 (4.1037), distance: 0.0000, train loss: 25.3306 (25.3306), train accuracy(original): 7.812(7.812), lr: 0.01028
+step: 100, loss(original): 3.3046 (3.4647), distance: 0.3077, train loss: 16.6045 (18.4149), train accuracy(original): 17.188(17.141), lr: 0.01028
+step: 200, loss(original): 3.4510 (3.4391), distance: 0.3246, train loss: 18.3310 (18.1908), train accuracy(original): 12.500(17.553), lr: 0.01028
+step: 300, loss(original): 3.2579 (3.4188), distance: 0.3300, train loss: 16.4305 (18.0183), train accuracy(original): 20.312(17.761), lr: 0.01028
+epoch: 47, CrossEntropy loss (original): 3.4059, distance: 0.3322, train loss: 17.8859, train accuracy: 17.988, lr: 0.01063
+test accuracy: 19.820
+Global sparsity: 11.97%
+pruned model test accuracy: 3.310, test loss: 6.4346, train accuracy: 2.896, train loss: 6.4447
+step: 0, loss(original): 3.8850 (3.8850), distance: 0.0000, train loss: 23.0133 (23.0133), train accuracy(original): 10.156(10.156), lr: 0.01063
+step: 100, loss(original): 3.4485 (3.4366), distance: 0.2638, train loss: 18.0700 (18.0843), train accuracy(original): 14.062(18.054), lr: 0.01063
+step: 200, loss(original): 3.2696 (3.4178), distance: 0.2782, train loss: 16.6216 (17.8987), train accuracy(original): 23.438(18.198), lr: 0.01063
+step: 300, loss(original): 3.3566 (3.4023), distance: 0.2828, train loss: 17.1872 (17.7642), train accuracy(original): 14.844(18.540), lr: 0.01063
+epoch: 48, CrossEntropy loss (original): 3.3909, distance: 0.2847, train loss: 17.6551, train accuracy: 18.606, lr: 0.01074
+test accuracy: 19.580
+Global sparsity: 12.33%
+pruned model test accuracy: 3.400, test loss: 6.8596, train accuracy: 2.780, train loss: 6.7619
+step: 0, loss(original): 3.9491 (3.9491), distance: 0.0000, train loss: 24.1516 (24.1516), train accuracy(original): 8.594(8.594), lr: 0.01074
+step: 100, loss(original): 3.4902 (3.4061), distance: 0.3299, train loss: 18.5501 (17.9106), train accuracy(original): 17.969(18.023), lr: 0.01074
+step: 200, loss(original): 3.4980 (3.3912), distance: 0.3480, train loss: 18.7391 (17.7614), train accuracy(original): 25.000(18.657), lr: 0.01074
+step: 300, loss(original): 3.2054 (3.3775), distance: 0.3536, train loss: 16.0660 (17.6149), train accuracy(original): 21.875(18.869), lr: 0.01074
+epoch: 49, CrossEntropy loss (original): 3.3748, distance: 0.3560, train loss: 17.5817, train accuracy: 18.932, lr: 0.01061
+test accuracy: 20.410
+Global sparsity: 12.51%
+pruned model test accuracy: 4.890, test loss: 5.8993, train accuracy: 4.548, train loss: 5.6137
+step: 0, loss(original): 3.8849 (3.8849), distance: 0.0000, train loss: 23.2245 (23.2245), train accuracy(original): 14.844(14.844), lr: 0.01061
+step: 100, loss(original): 3.4903 (3.3875), distance: 0.3235, train loss: 18.6354 (17.7366), train accuracy(original): 15.625(18.874), lr: 0.01061
+step: 200, loss(original): 3.5447 (3.3611), distance: 0.3411, train loss: 19.4548 (17.4729), train accuracy(original): 15.625(19.127), lr: 0.01061
+step: 300, loss(original): 3.4783 (3.3512), distance: 0.3466, train loss: 18.4691 (17.3402), train accuracy(original): 17.188(19.207), lr: 0.01061
+epoch: 50, CrossEntropy loss (original): 3.3427, distance: 0.3489, train loss: 17.2467, train accuracy: 19.416, lr: 0.01070
+test accuracy: 20.730
+Global sparsity: 12.76%
+pruned model test accuracy: 5.090, test loss: 5.4028, train accuracy: 4.468, train loss: 5.3781
+step: 0, loss(original): 4.0407 (4.0407), distance: 0.0000, train loss: 25.2185 (25.2185), train accuracy(original): 9.375(9.375), lr: 0.01070
+step: 100, loss(original): 3.1826 (3.3764), distance: 0.3649, train loss: 15.8490 (17.6844), train accuracy(original): 25.000(18.889), lr: 0.01070
+step: 200, loss(original): 3.3889 (3.3548), distance: 0.3843, train loss: 17.5806 (17.4697), train accuracy(original): 19.531(19.178), lr: 0.01070
+step: 300, loss(original): 3.4304 (3.3380), distance: 0.3904, train loss: 17.9542 (17.3059), train accuracy(original): 14.062(19.386), lr: 0.01070
+epoch: 51, CrossEntropy loss (original): 3.3284, distance: 0.3929, train loss: 17.1758, train accuracy: 19.672, lr: 0.01070
+test accuracy: 21.700
+Global sparsity: 13.03%
+pruned model test accuracy: 5.020, test loss: 4.9641, train accuracy: 4.452, train loss: 5.0165
+step: 0, loss(original): 3.9182 (3.9182), distance: 0.0000, train loss: 23.2633 (23.2633), train accuracy(original): 11.719(11.719), lr: 0.01070
+step: 100, loss(original): 3.2828 (3.3416), distance: 0.2561, train loss: 17.1634 (17.3191), train accuracy(original): 22.656(19.725), lr: 0.01070
+step: 200, loss(original): 3.3842 (3.3174), distance: 0.2698, train loss: 17.7764 (17.0164), train accuracy(original): 17.969(20.060), lr: 0.01070
+step: 300, loss(original): 3.0657 (3.3077), distance: 0.2742, train loss: 14.5000 (16.9148), train accuracy(original): 26.562(20.191), lr: 0.01070
+epoch: 52, CrossEntropy loss (original): 3.3012, distance: 0.2760, train loss: 16.8108, train accuracy: 20.264, lr: 0.01107
+test accuracy: 21.630
+Global sparsity: 13.35%
+pruned model test accuracy: 8.200, test loss: 4.3361, train accuracy: 7.622, train loss: 4.3726
+step: 0, loss(original): 3.5777 (3.5777), distance: 0.0000, train loss: 19.7387 (19.7387), train accuracy(original): 14.844(14.844), lr: 0.01107
+step: 100, loss(original): 3.2011 (3.3458), distance: 0.2563, train loss: 15.5579 (17.2173), train accuracy(original): 21.094(19.052), lr: 0.01107
+step: 200, loss(original): 3.1756 (3.3051), distance: 0.2702, train loss: 15.3196 (16.8058), train accuracy(original): 25.781(20.013), lr: 0.01107
+step: 300, loss(original): 3.3644 (3.2928), distance: 0.2746, train loss: 17.3317 (16.6859), train accuracy(original): 25.781(20.450), lr: 0.01107
+epoch: 53, CrossEntropy loss (original): 3.2876, distance: 0.2764, train loss: 16.6171, train accuracy: 20.532, lr: 0.01117
+test accuracy: 22.130
+Global sparsity: 13.66%
+pruned model test accuracy: 7.440, test loss: 4.5709, train accuracy: 6.400, train loss: 4.5993
+step: 0, loss(original): 3.8683 (3.8683), distance: 0.0000, train loss: 22.6665 (22.6665), train accuracy(original): 15.625(15.625), lr: 0.01117
+step: 100, loss(original): 3.0782 (3.3040), distance: 0.2383, train loss: 14.3229 (16.6879), train accuracy(original): 28.125(20.282), lr: 0.01117
+step: 200, loss(original): 3.2789 (3.2863), distance: 0.2508, train loss: 16.2525 (16.5897), train accuracy(original): 21.094(20.620), lr: 0.01117
+step: 300, loss(original): 3.1468 (3.2744), distance: 0.2550, train loss: 15.2373 (16.4408), train accuracy(original): 23.438(20.852), lr: 0.01117
+epoch: 54, CrossEntropy loss (original): 3.2658, distance: 0.2568, train loss: 16.3917, train accuracy: 20.930, lr: 0.01132
+test accuracy: 21.850
+Global sparsity: 13.87%
+pruned model test accuracy: 8.310, test loss: 4.4319, train accuracy: 7.856, train loss: 4.4277
+step: 0, loss(original): 3.6253 (3.6253), distance: 0.0000, train loss: 19.8861 (19.8861), train accuracy(original): 12.500(12.500), lr: 0.01132
+step: 100, loss(original): 3.5181 (3.2653), distance: 0.2109, train loss: 19.0372 (16.2624), train accuracy(original): 19.531(20.970), lr: 0.01132
+step: 200, loss(original): 3.3999 (3.2592), distance: 0.2224, train loss: 17.8920 (16.2858), train accuracy(original): 21.875(21.226), lr: 0.01132
+step: 300, loss(original): 3.2938 (3.2525), distance: 0.2260, train loss: 16.6334 (16.2400), train accuracy(original): 28.125(21.288), lr: 0.01132
+epoch: 55, CrossEntropy loss (original): 3.2443, distance: 0.2275, train loss: 16.1483, train accuracy: 21.376, lr: 0.01150
+test accuracy: 21.170
+Global sparsity: 14.19%
+pruned model test accuracy: 6.900, test loss: 4.6221, train accuracy: 6.518, train loss: 4.6532
+step: 0, loss(original): 3.7803 (3.7803), distance: 0.0000, train loss: 21.4978 (21.4978), train accuracy(original): 10.938(10.938), lr: 0.01150
+step: 100, loss(original): 3.3806 (3.2735), distance: 0.2370, train loss: 17.8794 (16.6639), train accuracy(original): 20.312(20.444), lr: 0.01150
+step: 200, loss(original): 3.0318 (3.2527), distance: 0.2498, train loss: 14.2753 (16.3120), train accuracy(original): 22.656(20.787), lr: 0.01150
+step: 300, loss(original): 3.3165 (3.2393), distance: 0.2538, train loss: 16.7179 (16.1704), train accuracy(original): 22.656(21.187), lr: 0.01150
+epoch: 56, CrossEntropy loss (original): 3.2316, distance: 0.2555, train loss: 16.1161, train accuracy: 21.490, lr: 0.01128
+test accuracy: 23.280
+Global sparsity: 14.59%
+pruned model test accuracy: 3.440, test loss: 6.0779, train accuracy: 2.832, train loss: 6.2133
+step: 0, loss(original): 3.7370 (3.7370), distance: 0.0000, train loss: 21.8250 (21.8250), train accuracy(original): 14.062(14.062), lr: 0.01128
+step: 100, loss(original): 3.2620 (3.2326), distance: 0.2303, train loss: 16.5682 (16.0320), train accuracy(original): 21.094(21.627), lr: 0.01128
+step: 200, loss(original): 3.3079 (3.2222), distance: 0.2426, train loss: 16.9870 (15.9510), train accuracy(original): 23.438(21.673), lr: 0.01128
+step: 300, loss(original): 3.1297 (3.2134), distance: 0.2465, train loss: 15.1026 (15.8741), train accuracy(original): 23.438(21.865), lr: 0.01128
+epoch: 57, CrossEntropy loss (original): 3.2024, distance: 0.2481, train loss: 15.7607, train accuracy: 22.144, lr: 0.01154
+test accuracy: 22.800
+Global sparsity: 15.00%
+pruned model test accuracy: 7.540, test loss: 4.4758, train accuracy: 7.080, train loss: 4.4534
+step: 0, loss(original): 3.9465 (3.9465), distance: 0.0000, train loss: 23.5921 (23.5921), train accuracy(original): 14.844(14.844), lr: 0.01154
+step: 100, loss(original): 3.2414 (3.2292), distance: 0.2632, train loss: 16.1808 (16.0130), train accuracy(original): 20.312(21.558), lr: 0.01154
+step: 200, loss(original): 3.1101 (3.2018), distance: 0.2762, train loss: 14.6467 (15.7508), train accuracy(original): 23.438(21.805), lr: 0.01154
+step: 300, loss(original): 3.1830 (3.1915), distance: 0.2802, train loss: 15.5037 (15.6573), train accuracy(original): 27.344(22.005), lr: 0.01154
+epoch: 58, CrossEntropy loss (original): 3.1831, distance: 0.2819, train loss: 15.5738, train accuracy: 22.298, lr: 0.01153
+test accuracy: 23.280
+Global sparsity: 15.38%
+pruned model test accuracy: 6.010, test loss: 4.8478, train accuracy: 5.338, train loss: 4.8833
+step: 0, loss(original): 3.7355 (3.7355), distance: 0.0000, train loss: 20.9748 (20.9748), train accuracy(original): 11.719(11.719), lr: 0.01153
+step: 100, loss(original): 3.2907 (3.1923), distance: 0.1429, train loss: 16.3489 (15.5275), train accuracy(original): 18.750(22.231), lr: 0.01153
+step: 200, loss(original): 3.2521 (3.1696), distance: 0.1506, train loss: 15.9751 (15.3509), train accuracy(original): 21.875(22.695), lr: 0.01153
+step: 300, loss(original): 3.1738 (3.1683), distance: 0.1531, train loss: 15.4731 (15.3704), train accuracy(original): 29.688(22.825), lr: 0.01153
+epoch: 59, CrossEntropy loss (original): 3.1624, distance: 0.1541, train loss: 15.3067, train accuracy: 22.862, lr: 0.01198
+test accuracy: 23.880
+Global sparsity: 15.78%
+pruned model test accuracy: 9.330, test loss: 4.4154, train accuracy: 8.434, train loss: 4.3756
+step: 0, loss(original): 3.6041 (3.6041), distance: 0.0000, train loss: 19.8074 (19.8074), train accuracy(original): 17.969(17.969), lr: 0.01198
+step: 100, loss(original): 3.0669 (3.1517), distance: 0.1461, train loss: 14.7178 (15.2203), train accuracy(original): 25.000(22.981), lr: 0.01198
+step: 200, loss(original): 2.9618 (3.1501), distance: 0.1541, train loss: 13.3861 (15.2171), train accuracy(original): 29.688(22.928), lr: 0.01198
+step: 300, loss(original): 3.0358 (3.1482), distance: 0.1566, train loss: 14.0188 (15.2524), train accuracy(original): 27.344(22.988), lr: 0.01198
+epoch: 60, CrossEntropy loss (original): 3.1444, distance: 0.1576, train loss: 15.2404, train accuracy: 22.992, lr: 0.01205
+test accuracy: 24.250
+Global sparsity: 16.12%
+pruned model test accuracy: 11.510, test loss: 4.0784, train accuracy: 10.420, train loss: 4.0904
+step: 0, loss(original): 3.2771 (3.2771), distance: 0.0000, train loss: 16.3012 (16.3012), train accuracy(original): 17.188(17.188), lr: 0.01205
+step: 100, loss(original): 3.2605 (3.1614), distance: 0.1241, train loss: 16.2502 (15.4158), train accuracy(original): 17.969(23.175), lr: 0.01205
+step: 200, loss(original): 3.1486 (3.1375), distance: 0.1311, train loss: 15.0926 (15.1292), train accuracy(original): 25.781(23.624), lr: 0.01205
+step: 300, loss(original): 3.0690 (3.1239), distance: 0.1333, train loss: 14.2265 (14.9658), train accuracy(original): 20.312(23.694), lr: 0.01205
+epoch: 61, CrossEntropy loss (original): 3.1254, distance: 0.1343, train loss: 14.9753, train accuracy: 23.588, lr: 0.01216
+test accuracy: 24.260
+Global sparsity: 16.30%
+pruned model test accuracy: 12.740, test loss: 3.9537, train accuracy: 11.938, train loss: 3.9348
+step: 0, loss(original): 3.3244 (3.3244), distance: 0.0000, train loss: 16.9528 (16.9528), train accuracy(original): 22.656(22.656), lr: 0.01216
+step: 100, loss(original): 3.0328 (3.1263), distance: 0.1256, train loss: 13.9969 (14.9373), train accuracy(original): 21.094(23.561), lr: 0.01216
+step: 200, loss(original): 2.9222 (3.1148), distance: 0.1324, train loss: 12.9042 (14.8667), train accuracy(original): 27.344(23.612), lr: 0.01216
+step: 300, loss(original): 3.0104 (3.1133), distance: 0.1346, train loss: 13.9396 (14.8952), train accuracy(original): 22.656(23.775), lr: 0.01216
+epoch: 62, CrossEntropy loss (original): 3.1061, distance: 0.1355, train loss: 14.8331, train accuracy: 23.938, lr: 0.01230
+test accuracy: 24.950
+Global sparsity: 16.77%
+pruned model test accuracy: 12.510, test loss: 3.9781, train accuracy: 11.914, train loss: 3.9992
+step: 0, loss(original): 3.3814 (3.3814), distance: 0.0000, train loss: 17.2864 (17.2864), train accuracy(original): 18.750(18.750), lr: 0.01230
+step: 100, loss(original): 2.8922 (3.0956), distance: 0.1146, train loss: 12.7642 (14.5848), train accuracy(original): 30.469(24.281), lr: 0.01230
+step: 200, loss(original): 3.1783 (3.0936), distance: 0.1208, train loss: 15.2251 (14.5958), train accuracy(original): 21.094(24.164), lr: 0.01230
+step: 300, loss(original): 3.1472 (3.0839), distance: 0.1228, train loss: 14.8867 (14.5039), train accuracy(original): 25.781(24.377), lr: 0.01230
+epoch: 63, CrossEntropy loss (original): 3.0870, distance: 0.1236, train loss: 14.5803, train accuracy: 24.314, lr: 0.01237
+test accuracy: 24.930
+Global sparsity: 17.05%
+pruned model test accuracy: 12.280, test loss: 3.9830, train accuracy: 12.184, train loss: 3.8929
+step: 0, loss(original): 3.3501 (3.3501), distance: 0.0000, train loss: 17.1469 (17.1469), train accuracy(original): 20.312(20.312), lr: 0.01237
+step: 100, loss(original): 3.1391 (3.0740), distance: 0.0921, train loss: 14.9443 (14.6524), train accuracy(original): 25.000(24.706), lr: 0.01237
+step: 200, loss(original): 3.1565 (3.0785), distance: 0.0971, train loss: 15.1263 (14.6470), train accuracy(original): 19.531(24.502), lr: 0.01237
+step: 300, loss(original): 3.0231 (3.0732), distance: 0.0987, train loss: 14.1755 (14.5584), train accuracy(original): 20.312(24.434), lr: 0.01237
+epoch: 64, CrossEntropy loss (original): 3.0677, distance: 0.0994, train loss: 14.4737, train accuracy: 24.672, lr: 0.01255
+test accuracy: 25.540
+Global sparsity: 17.29%
+pruned model test accuracy: 11.500, test loss: 4.2654, train accuracy: 10.020, train loss: 4.3822
+step: 0, loss(original): 3.2156 (3.2156), distance: 0.0000, train loss: 15.7602 (15.7602), train accuracy(original): 23.438(23.438), lr: 0.01255
+step: 100, loss(original): 2.8853 (3.0799), distance: 0.1063, train loss: 12.7120 (14.5060), train accuracy(original): 33.594(24.234), lr: 0.01255
+step: 200, loss(original): 3.2395 (3.0714), distance: 0.1120, train loss: 15.9817 (14.4476), train accuracy(original): 20.312(24.324), lr: 0.01255
+step: 300, loss(original): 2.9907 (3.0548), distance: 0.1139, train loss: 13.7907 (14.2788), train accuracy(original): 28.906(24.637), lr: 0.01255
+epoch: 65, CrossEntropy loss (original): 3.0493, distance: 0.1147, train loss: 14.2247, train accuracy: 24.922, lr: 0.01255
+test accuracy: 25.700
+Global sparsity: 17.62%
+pruned model test accuracy: 15.830, test loss: 3.7942, train accuracy: 14.790, train loss: 3.7878
+step: 0, loss(original): 3.1203 (3.1203), distance: 0.0000, train loss: 14.9002 (14.9002), train accuracy(original): 21.875(21.875), lr: 0.01255
+step: 100, loss(original): 3.0869 (3.0521), distance: 0.0845, train loss: 14.5546 (14.3490), train accuracy(original): 24.219(24.745), lr: 0.01255
+step: 200, loss(original): 3.0096 (3.0492), distance: 0.0893, train loss: 13.7342 (14.3322), train accuracy(original): 28.906(25.074), lr: 0.01255
+step: 300, loss(original): 2.9438 (3.0430), distance: 0.0909, train loss: 13.3296 (14.2630), train accuracy(original): 25.000(25.210), lr: 0.01255
+epoch: 66, CrossEntropy loss (original): 3.0350, distance: 0.0916, train loss: 14.1605, train accuracy: 25.346, lr: 0.01275
+test accuracy: 25.590
+Global sparsity: 17.87%
+pruned model test accuracy: 16.750, test loss: 3.6559, train accuracy: 16.574, train loss: 3.5962
+step: 0, loss(original): 3.0512 (3.0512), distance: 0.0000, train loss: 14.0926 (14.0926), train accuracy(original): 21.094(21.094), lr: 0.01275
+step: 100, loss(original): 2.8800 (3.0198), distance: 0.1013, train loss: 12.6190 (13.9573), train accuracy(original): 25.781(25.248), lr: 0.01275
+step: 200, loss(original): 2.8295 (3.0159), distance: 0.1069, train loss: 12.2800 (13.9123), train accuracy(original): 30.469(25.377), lr: 0.01275
+step: 300, loss(original): 2.8364 (3.0173), distance: 0.1086, train loss: 12.4795 (13.9536), train accuracy(original): 31.250(25.337), lr: 0.01275
+epoch: 67, CrossEntropy loss (original): 3.0130, distance: 0.1094, train loss: 13.9416, train accuracy: 25.472, lr: 0.01275
+test accuracy: 25.960
+Global sparsity: 18.13%
+pruned model test accuracy: 19.320, test loss: 3.4742, train accuracy: 18.708, train loss: 3.4194
+step: 0, loss(original): 3.0413 (3.0413), distance: 0.0000, train loss: 14.0199 (14.0199), train accuracy(original): 21.875(21.875), lr: 0.01275
+step: 100, loss(original): 2.9446 (3.0037), distance: 0.0799, train loss: 13.5557 (13.7586), train accuracy(original): 30.469(25.480), lr: 0.01275
+step: 200, loss(original): 3.2256 (3.0066), distance: 0.0845, train loss: 15.8023 (13.8537), train accuracy(original): 21.094(25.762), lr: 0.01275
+step: 300, loss(original): 2.8785 (2.9982), distance: 0.0859, train loss: 12.5971 (13.7688), train accuracy(original): 22.656(25.924), lr: 0.01275
+epoch: 68, CrossEntropy loss (original): 2.9972, distance: 0.0866, train loss: 13.7835, train accuracy: 25.920, lr: 0.01280
+test accuracy: 27.260
+Global sparsity: 18.58%
+pruned model test accuracy: 19.050, test loss: 3.4823, train accuracy: 18.236, train loss: 3.4504
+step: 0, loss(original): 3.1818 (3.1818), distance: 0.0000, train loss: 15.6924 (15.6924), train accuracy(original): 22.656(22.656), lr: 0.01280
+step: 100, loss(original): 3.1001 (2.9992), distance: 0.0753, train loss: 14.4541 (13.8963), train accuracy(original): 21.875(25.704), lr: 0.01280
+step: 200, loss(original): 3.0567 (2.9854), distance: 0.0796, train loss: 14.0781 (13.7200), train accuracy(original): 20.312(26.150), lr: 0.01280
+step: 300, loss(original): 3.0950 (2.9791), distance: 0.0810, train loss: 14.6133 (13.6435), train accuracy(original): 25.781(26.415), lr: 0.01280
+epoch: 69, CrossEntropy loss (original): 2.9746, distance: 0.0816, train loss: 13.6113, train accuracy: 26.518, lr: 0.01302
+test accuracy: 26.060
+Global sparsity: 18.96%
+pruned model test accuracy: 19.320, test loss: 3.4988, train accuracy: 19.312, train loss: 3.4002
+step: 0, loss(original): 3.2792 (3.2792), distance: 0.0000, train loss: 16.3204 (16.3204), train accuracy(original): 13.281(13.281), lr: 0.01302
+step: 100, loss(original): 3.2460 (2.9690), distance: 0.0802, train loss: 16.1077 (13.5242), train accuracy(original): 21.094(26.516), lr: 0.01302
+step: 200, loss(original): 2.9189 (2.9727), distance: 0.0848, train loss: 12.8316 (13.5271), train accuracy(original): 28.125(26.489), lr: 0.01302
+step: 300, loss(original): 2.8048 (2.9657), distance: 0.0862, train loss: 12.0599 (13.4869), train accuracy(original): 29.688(26.596), lr: 0.01302
+epoch: 70, CrossEntropy loss (original): 2.9610, distance: 0.0869, train loss: 13.4248, train accuracy: 26.822, lr: 0.01293
+test accuracy: 26.920
+Global sparsity: 19.44%
+pruned model test accuracy: 19.590, test loss: 3.4575, train accuracy: 19.476, train loss: 3.3757
+step: 0, loss(original): 3.0814 (3.0814), distance: 0.0000, train loss: 14.7928 (14.7928), train accuracy(original): 24.219(24.219), lr: 0.01293
+step: 100, loss(original): 3.0183 (2.9475), distance: 0.0732, train loss: 13.9455 (13.3372), train accuracy(original): 27.344(27.189), lr: 0.01293
+step: 200, loss(original): 2.8653 (2.9441), distance: 0.0774, train loss: 12.7570 (13.3106), train accuracy(original): 37.500(27.215), lr: 0.01293
+step: 300, loss(original): 2.8474 (2.9376), distance: 0.0788, train loss: 12.5327 (13.2412), train accuracy(original): 25.781(27.276), lr: 0.01293
+epoch: 71, CrossEntropy loss (original): 2.9387, distance: 0.0794, train loss: 13.2398, train accuracy: 27.256, lr: 0.01315
+test accuracy: 27.140
+Global sparsity: 19.86%
+pruned model test accuracy: 20.970, test loss: 3.3836, train accuracy: 20.906, train loss: 3.2915
+step: 0, loss(original): 3.0774 (3.0774), distance: 0.0000, train loss: 14.4817 (14.4817), train accuracy(original): 24.219(24.219), lr: 0.01315
+step: 100, loss(original): 2.7696 (2.9342), distance: 0.0707, train loss: 11.6820 (13.1335), train accuracy(original): 35.156(27.390), lr: 0.01315
+step: 200, loss(original): 2.8377 (2.9342), distance: 0.0749, train loss: 12.2101 (13.2097), train accuracy(original): 27.344(27.227), lr: 0.01315
+step: 300, loss(original): 3.1031 (2.9308), distance: 0.0762, train loss: 14.5715 (13.1914), train accuracy(original): 21.875(27.411), lr: 0.01315
+epoch: 72, CrossEntropy loss (original): 2.9287, distance: 0.0768, train loss: 13.1748, train accuracy: 27.416, lr: 0.01304
+test accuracy: 27.710
+Global sparsity: 20.24%
+pruned model test accuracy: 22.950, test loss: 3.2519, train accuracy: 22.512, train loss: 3.2093
+step: 0, loss(original): 2.9864 (2.9864), distance: 0.0000, train loss: 14.1168 (14.1168), train accuracy(original): 24.219(24.219), lr: 0.01304
+step: 100, loss(original): 3.1903 (2.9388), distance: 0.0452, train loss: 15.4080 (13.2565), train accuracy(original): 25.000(27.181), lr: 0.01304
+step: 200, loss(original): 2.9155 (2.9151), distance: 0.0480, train loss: 13.1692 (13.0322), train accuracy(original): 26.562(27.596), lr: 0.01304
+step: 300, loss(original): 2.6957 (2.9073), distance: 0.0490, train loss: 11.2630 (12.9844), train accuracy(original): 29.688(27.821), lr: 0.01304
+epoch: 73, CrossEntropy loss (original): 2.9094, distance: 0.0494, train loss: 12.9854, train accuracy: 27.754, lr: 0.01346
+test accuracy: 27.350
+Global sparsity: 20.73%
+pruned model test accuracy: 22.650, test loss: 3.1711, train accuracy: 23.856, train loss: 3.0672
+step: 0, loss(original): 2.9384 (2.9384), distance: 0.0000, train loss: 13.1011 (13.1011), train accuracy(original): 25.781(25.781), lr: 0.01346
+step: 100, loss(original): 2.8497 (2.9093), distance: 0.0535, train loss: 12.4680 (13.1201), train accuracy(original): 25.781(27.243), lr: 0.01346
+step: 200, loss(original): 3.0070 (2.9047), distance: 0.0568, train loss: 13.6957 (12.9788), train accuracy(original): 25.000(27.573), lr: 0.01346
+step: 300, loss(original): 3.0689 (2.8945), distance: 0.0579, train loss: 14.2069 (12.8772), train accuracy(original): 23.438(27.863), lr: 0.01346
+epoch: 74, CrossEntropy loss (original): 2.8917, distance: 0.0584, train loss: 12.8235, train accuracy: 27.908, lr: 0.01339
+test accuracy: 28.280
+Global sparsity: 21.01%
+pruned model test accuracy: 24.290, test loss: 3.0994, train accuracy: 25.320, train loss: 3.0203
+step: 0, loss(original): 3.0703 (3.0703), distance: 0.0000, train loss: 14.5979 (14.5979), train accuracy(original): 26.562(26.562), lr: 0.01339
+step: 100, loss(original): 2.6341 (2.8837), distance: 0.0508, train loss: 10.8076 (12.8814), train accuracy(original): 30.469(28.055), lr: 0.01339
+step: 200, loss(original): 2.7849 (2.8817), distance: 0.0538, train loss: 11.7005 (12.8271), train accuracy(original): 27.344(28.347), lr: 0.01339
+step: 300, loss(original): 2.6907 (2.8736), distance: 0.0549, train loss: 11.0205 (12.7140), train accuracy(original): 27.344(28.351), lr: 0.01339
+epoch: 75, CrossEntropy loss (original): 2.8728, distance: 0.0553, train loss: 12.6773, train accuracy: 28.392, lr: 0.01365
+test accuracy: 28.200
+Global sparsity: 21.56%
+pruned model test accuracy: 24.550, test loss: 3.1152, train accuracy: 25.480, train loss: 3.0165
+step: 0, loss(original): 2.8588 (2.8588), distance: 0.0000, train loss: 12.2851 (12.2851), train accuracy(original): 21.875(21.875), lr: 0.01365
+step: 100, loss(original): 2.9518 (2.8626), distance: 0.0414, train loss: 13.1981 (12.6118), train accuracy(original): 25.781(28.504), lr: 0.01365
+step: 200, loss(original): 2.8086 (2.8620), distance: 0.0440, train loss: 12.5790 (12.5764), train accuracy(original): 33.594(28.440), lr: 0.01365
+step: 300, loss(original): 2.7656 (2.8643), distance: 0.0449, train loss: 11.8903 (12.6156), train accuracy(original): 28.906(28.346), lr: 0.01365
+epoch: 76, CrossEntropy loss (original): 2.8642, distance: 0.0453, train loss: 12.5952, train accuracy: 28.464, lr: 0.01355
+test accuracy: 29.120
+Global sparsity: 22.37%
+pruned model test accuracy: 25.860, test loss: 3.0206, train accuracy: 26.300, train loss: 2.9771
+step: 0, loss(original): 3.1026 (3.1026), distance: 0.0000, train loss: 14.9562 (14.9562), train accuracy(original): 22.656(22.656), lr: 0.01355
+step: 100, loss(original): 3.0102 (2.8548), distance: 0.0473, train loss: 14.1961 (12.5502), train accuracy(original): 21.875(28.759), lr: 0.01355
+step: 200, loss(original): 2.6494 (2.8403), distance: 0.0501, train loss: 10.7750 (12.4163), train accuracy(original): 30.469(29.178), lr: 0.01355
+step: 300, loss(original): 2.7673 (2.8397), distance: 0.0511, train loss: 11.8478 (12.3863), train accuracy(original): 25.781(29.116), lr: 0.01355
+epoch: 77, CrossEntropy loss (original): 2.8403, distance: 0.0515, train loss: 12.3992, train accuracy: 29.064, lr: 0.01382
+test accuracy: 28.190
+Global sparsity: 22.95%
+pruned model test accuracy: 26.140, test loss: 3.0098, train accuracy: 27.240, train loss: 2.9311
+step: 0, loss(original): 2.8706 (2.8706), distance: 0.0000, train loss: 12.3854 (12.3854), train accuracy(original): 26.562(26.562), lr: 0.01382
+step: 100, loss(original): 2.5674 (2.8351), distance: 0.0429, train loss: 9.8926 (12.3141), train accuracy(original): 31.250(28.798), lr: 0.01382
+step: 200, loss(original): 2.8060 (2.8341), distance: 0.0456, train loss: 12.0665 (12.3226), train accuracy(original): 31.250(29.003), lr: 0.01382
+step: 300, loss(original): 2.7959 (2.8287), distance: 0.0465, train loss: 11.7606 (12.2652), train accuracy(original): 31.250(29.220), lr: 0.01382
+epoch: 78, CrossEntropy loss (original): 2.8287, distance: 0.0469, train loss: 12.2644, train accuracy: 29.300, lr: 0.01383
+test accuracy: 28.660
+Global sparsity: 23.59%
+pruned model test accuracy: 25.270, test loss: 3.0594, train accuracy: 26.372, train loss: 2.9537
+step: 0, loss(original): 2.8425 (2.8425), distance: 0.0000, train loss: 12.3086 (12.3086), train accuracy(original): 25.000(25.000), lr: 0.01383
+step: 100, loss(original): 2.8778 (2.8083), distance: 0.0326, train loss: 12.8015 (12.0997), train accuracy(original): 29.688(29.533), lr: 0.01383
+step: 200, loss(original): 2.7711 (2.8076), distance: 0.0347, train loss: 12.4180 (12.1133), train accuracy(original): 29.688(29.734), lr: 0.01383
+step: 300, loss(original): 2.8729 (2.8143), distance: 0.0355, train loss: 12.5079 (12.1752), train accuracy(original): 25.781(29.797), lr: 0.01383
+epoch: 79, CrossEntropy loss (original): 2.8090, distance: 0.0358, train loss: 12.1075, train accuracy: 29.812, lr: 0.01388
+test accuracy: 28.600
+Global sparsity: 24.03%
+pruned model test accuracy: 23.780, test loss: 3.1557, train accuracy: 25.848, train loss: 3.0105
+step: 0, loss(original): 3.0167 (3.0167), distance: 0.0000, train loss: 14.0983 (14.0983), train accuracy(original): 31.250(31.250), lr: 0.01388
+step: 100, loss(original): 2.7502 (2.8007), distance: 0.0341, train loss: 11.6490 (12.0124), train accuracy(original): 30.469(29.881), lr: 0.01388
+step: 200, loss(original): 2.7879 (2.7942), distance: 0.0363, train loss: 12.0958 (11.9957), train accuracy(original): 32.812(29.839), lr: 0.01388
+step: 300, loss(original): 2.8142 (2.7941), distance: 0.0371, train loss: 12.2657 (12.0475), train accuracy(original): 26.562(29.872), lr: 0.01388
+epoch: 80, CrossEntropy loss (original): 2.7939, distance: 0.0375, train loss: 12.0682, train accuracy: 29.920, lr: 0.01402
+test accuracy: 28.800
+Global sparsity: 24.55%
+pruned model test accuracy: 25.660, test loss: 3.0787, train accuracy: 27.306, train loss: 2.9346
+step: 0, loss(original): 2.9880 (2.9880), distance: 0.0000, train loss: 13.6537 (13.6537), train accuracy(original): 25.781(25.781), lr: 0.01402
+step: 100, loss(original): 2.6679 (2.7700), distance: 0.0317, train loss: 10.6952 (11.8137), train accuracy(original): 34.375(30.206), lr: 0.01402
+step: 200, loss(original): 2.6805 (2.7891), distance: 0.0338, train loss: 10.8815 (11.9805), train accuracy(original): 34.375(30.236), lr: 0.01402
+step: 300, loss(original): 2.8470 (2.7812), distance: 0.0345, train loss: 12.2574 (11.8996), train accuracy(original): 21.094(30.297), lr: 0.01402
+epoch: 81, CrossEntropy loss (original): 2.7780, distance: 0.0349, train loss: 11.8832, train accuracy: 30.392, lr: 0.01395
+test accuracy: 29.590
+Global sparsity: 25.05%
+pruned model test accuracy: 26.820, test loss: 2.9646, train accuracy: 28.652, train loss: 2.8547
+step: 0, loss(original): 2.6095 (2.6095), distance: 0.0000, train loss: 10.7948 (10.7948), train accuracy(original): 29.688(29.688), lr: 0.01395
+step: 100, loss(original): 2.7757 (2.7694), distance: 0.0301, train loss: 12.0672 (11.8155), train accuracy(original): 32.031(30.724), lr: 0.01395
+step: 200, loss(original): 2.6515 (2.7635), distance: 0.0320, train loss: 11.1566 (11.7956), train accuracy(original): 35.156(30.663), lr: 0.01395
+step: 300, loss(original): 2.8017 (2.7616), distance: 0.0327, train loss: 11.8892 (11.7482), train accuracy(original): 28.906(30.643), lr: 0.01395
+epoch: 82, CrossEntropy loss (original): 2.7585, distance: 0.0331, train loss: 11.7215, train accuracy: 30.730, lr: 0.01406
+test accuracy: 29.570
+Global sparsity: 25.47%
+pruned model test accuracy: 27.670, test loss: 2.9284, train accuracy: 28.492, train loss: 2.8479
+step: 0, loss(original): 2.7561 (2.7561), distance: 0.0000, train loss: 11.9875 (11.9875), train accuracy(original): 32.031(32.031), lr: 0.01406
+step: 100, loss(original): 2.7519 (2.7485), distance: 0.0306, train loss: 11.4227 (11.6949), train accuracy(original): 34.375(30.654), lr: 0.01406
+step: 200, loss(original): 3.0692 (2.7564), distance: 0.0326, train loss: 14.3198 (11.6993), train accuracy(original): 28.125(30.787), lr: 0.01406
+step: 300, loss(original): 2.7498 (2.7502), distance: 0.0333, train loss: 11.4718 (11.6332), train accuracy(original): 31.250(30.892), lr: 0.01406
+epoch: 83, CrossEntropy loss (original): 2.7425, distance: 0.0337, train loss: 11.5632, train accuracy: 30.892, lr: 0.01436
+test accuracy: 30.570
+Global sparsity: 26.01%
+pruned model test accuracy: 27.320, test loss: 2.9816, train accuracy: 28.652, train loss: 2.8556
+step: 0, loss(original): 2.8141 (2.8141), distance: 0.0000, train loss: 11.9928 (11.9928), train accuracy(original): 33.594(33.594), lr: 0.01436
+step: 100, loss(original): 2.6956 (2.7257), distance: 0.0288, train loss: 11.1573 (11.4567), train accuracy(original): 31.250(31.358), lr: 0.01436
+step: 200, loss(original): 2.8425 (2.7302), distance: 0.0306, train loss: 12.3065 (11.4925), train accuracy(original): 32.812(31.347), lr: 0.01436
+step: 300, loss(original): 2.7688 (2.7281), distance: 0.0313, train loss: 11.5919 (11.4678), train accuracy(original): 26.562(31.338), lr: 0.01436
+epoch: 84, CrossEntropy loss (original): 2.7219, distance: 0.0317, train loss: 11.4126, train accuracy: 31.386, lr: 0.01447
+test accuracy: 30.600
+Global sparsity: 26.45%
+pruned model test accuracy: 28.150, test loss: 2.8904, train accuracy: 30.054, train loss: 2.7703
+step: 0, loss(original): 2.4244 (2.4244), distance: 0.0000, train loss: 8.9291 (8.9291), train accuracy(original): 37.500(37.500), lr: 0.01447
+step: 100, loss(original): 2.7627 (2.7160), distance: 0.0229, train loss: 11.8749 (11.3160), train accuracy(original): 35.156(31.196), lr: 0.01447
+step: 200, loss(original): 2.7120 (2.7099), distance: 0.0245, train loss: 11.3895 (11.2503), train accuracy(original): 24.219(31.227), lr: 0.01447
+step: 300, loss(original): 2.8275 (2.7074), distance: 0.0251, train loss: 12.3683 (11.2699), train accuracy(original): 34.375(31.421), lr: 0.01447
+epoch: 85, CrossEntropy loss (original): 2.7111, distance: 0.0254, train loss: 11.3404, train accuracy: 31.308, lr: 0.01446
+test accuracy: 31.090
+Global sparsity: 27.37%
+pruned model test accuracy: 29.660, test loss: 2.8179, train accuracy: 31.400, train loss: 2.7206
+step: 0, loss(original): 2.7548 (2.7548), distance: 0.0000, train loss: 11.7188 (11.7188), train accuracy(original): 31.250(31.250), lr: 0.01446
+step: 100, loss(original): 2.3396 (2.6733), distance: 0.0297, train loss: 8.3593 (11.0367), train accuracy(original): 39.844(31.907), lr: 0.01446
+step: 200, loss(original): 2.7052 (2.6980), distance: 0.0316, train loss: 11.2231 (11.1880), train accuracy(original): 29.688(31.518), lr: 0.01446
+step: 300, loss(original): 2.7823 (2.6926), distance: 0.0323, train loss: 11.8178 (11.1518), train accuracy(original): 33.594(31.655), lr: 0.01446
+epoch: 86, CrossEntropy loss (original): 2.6925, distance: 0.0326, train loss: 11.1495, train accuracy: 31.712, lr: 0.01441
+test accuracy: 31.360
+Global sparsity: 27.88%
+pruned model test accuracy: 28.390, test loss: 2.8634, train accuracy: 30.652, train loss: 2.7479
+step: 0, loss(original): 2.4792 (2.4792), distance: 0.0000, train loss: 9.7307 (9.7307), train accuracy(original): 41.406(41.406), lr: 0.01441
+step: 100, loss(original): 2.5580 (2.6839), distance: 0.0252, train loss: 9.8510 (11.0697), train accuracy(original): 34.375(32.008), lr: 0.01441
+step: 200, loss(original): 2.7726 (2.6791), distance: 0.0269, train loss: 11.8645 (11.0075), train accuracy(original): 29.688(32.039), lr: 0.01441
+step: 300, loss(original): 2.7924 (2.6759), distance: 0.0275, train loss: 11.9185 (10.9650), train accuracy(original): 30.469(32.099), lr: 0.01441
+epoch: 87, CrossEntropy loss (original): 2.6736, distance: 0.0278, train loss: 10.9607, train accuracy: 32.108, lr: 0.01461
+test accuracy: 31.360
+Global sparsity: 28.43%
+pruned model test accuracy: 30.990, test loss: 2.8039, train accuracy: 32.182, train loss: 2.6790
+step: 0, loss(original): 2.4111 (2.4111), distance: 0.0000, train loss: 9.0733 (9.0733), train accuracy(original): 40.625(40.625), lr: 0.01461
+step: 100, loss(original): 2.8010 (2.6570), distance: 0.0203, train loss: 11.9313 (10.8090), train accuracy(original): 32.812(32.503), lr: 0.01461
+step: 200, loss(original): 2.4262 (2.6537), distance: 0.0217, train loss: 9.0653 (10.8046), train accuracy(original): 39.844(32.641), lr: 0.01461
+step: 300, loss(original): 2.7473 (2.6542), distance: 0.0223, train loss: 11.3243 (10.8491), train accuracy(original): 29.688(32.665), lr: 0.01461
+epoch: 88, CrossEntropy loss (original): 2.6575, distance: 0.0226, train loss: 10.8918, train accuracy: 32.662, lr: 0.01459
+test accuracy: 30.270
+Global sparsity: 28.88%
+pruned model test accuracy: 29.110, test loss: 2.8972, train accuracy: 30.476, train loss: 2.7433
+step: 0, loss(original): 2.5300 (2.5300), distance: 0.0000, train loss: 10.2255 (10.2255), train accuracy(original): 33.594(33.594), lr: 0.01459
+step: 100, loss(original): 2.4856 (2.6155), distance: 0.0223, train loss: 9.3760 (10.6995), train accuracy(original): 35.938(33.091), lr: 0.01459
+step: 200, loss(original): 2.5852 (2.6353), distance: 0.0239, train loss: 10.0315 (10.7418), train accuracy(original): 35.938(32.991), lr: 0.01459
+step: 300, loss(original): 2.5774 (2.6357), distance: 0.0245, train loss: 10.2956 (10.7462), train accuracy(original): 30.469(32.916), lr: 0.01459
+epoch: 89, CrossEntropy loss (original): 2.6376, distance: 0.0249, train loss: 10.7435, train accuracy: 32.850, lr: 0.01476
+test accuracy: 31.820
+Global sparsity: 29.29%
+pruned model test accuracy: 29.620, test loss: 2.8651, train accuracy: 31.038, train loss: 2.7382
+step: 0, loss(original): 2.4238 (2.4238), distance: 0.0000, train loss: 9.2776 (9.2776), train accuracy(original): 36.719(36.719), lr: 0.01476
+step: 100, loss(original): 2.6216 (2.6203), distance: 0.0220, train loss: 10.5859 (10.5904), train accuracy(original): 33.594(33.192), lr: 0.01476
+step: 200, loss(original): 2.6944 (2.6189), distance: 0.0234, train loss: 11.7251 (10.5976), train accuracy(original): 31.250(33.314), lr: 0.01476
+step: 300, loss(original): 2.5169 (2.6153), distance: 0.0240, train loss: 9.5596 (10.5642), train accuracy(original): 34.375(33.342), lr: 0.01476
+epoch: 90, CrossEntropy loss (original): 2.6192, distance: 0.0243, train loss: 10.5763, train accuracy: 33.390, lr: 0.01506
+test accuracy: 32.260
+Global sparsity: 29.83%
+pruned model test accuracy: 30.770, test loss: 2.7628, train accuracy: 31.880, train loss: 2.6953
+step: 0, loss(original): 2.7237 (2.7237), distance: 0.0000, train loss: 11.2695 (11.2695), train accuracy(original): 35.938(35.938), lr: 0.01506
+step: 100, loss(original): 2.6144 (2.5942), distance: 0.0236, train loss: 10.6966 (10.5463), train accuracy(original): 32.812(33.563), lr: 0.01506
+step: 200, loss(original): 2.5523 (2.6099), distance: 0.0252, train loss: 9.9689 (10.6302), train accuracy(original): 36.719(33.127), lr: 0.01506
+step: 300, loss(original): 2.7432 (2.5959), distance: 0.0259, train loss: 11.4535 (10.4897), train accuracy(original): 25.781(33.565), lr: 0.01506
+epoch: 91, CrossEntropy loss (original): 2.5948, distance: 0.0262, train loss: 10.4551, train accuracy: 33.730, lr: 0.01502
+test accuracy: 32.450
+Global sparsity: 30.44%
+pruned model test accuracy: 29.530, test loss: 2.8397, train accuracy: 31.160, train loss: 2.7185
+step: 0, loss(original): 2.4094 (2.4094), distance: 0.0000, train loss: 9.1148 (9.1148), train accuracy(original): 41.406(41.406), lr: 0.01502
+step: 100, loss(original): 2.8647 (2.5683), distance: 0.0222, train loss: 13.1290 (10.1988), train accuracy(original): 23.438(34.576), lr: 0.01502
+step: 200, loss(original): 2.5464 (2.5693), distance: 0.0237, train loss: 9.8086 (10.1727), train accuracy(original): 38.281(34.565), lr: 0.01502
+step: 300, loss(original): 2.7319 (2.5717), distance: 0.0242, train loss: 11.4815 (10.1635), train accuracy(original): 28.125(34.328), lr: 0.01502
+epoch: 92, CrossEntropy loss (original): 2.5746, distance: 0.0246, train loss: 10.1846, train accuracy: 34.298, lr: 0.01511
+test accuracy: 31.300
+Global sparsity: 31.16%
+pruned model test accuracy: 31.770, test loss: 2.7324, train accuracy: 32.860, train loss: 2.6334
+step: 0, loss(original): 2.6078 (2.6078), distance: 0.0000, train loss: 10.7100 (10.7100), train accuracy(original): 36.719(36.719), lr: 0.01511
+step: 100, loss(original): 2.4871 (2.5541), distance: 0.0225, train loss: 9.6834 (10.1305), train accuracy(original): 32.031(34.708), lr: 0.01511
+step: 200, loss(original): 2.4363 (2.5536), distance: 0.0240, train loss: 8.9902 (10.1710), train accuracy(original): 33.594(34.620), lr: 0.01511
+step: 300, loss(original): 2.6334 (2.5435), distance: 0.0245, train loss: 10.4824 (10.0340), train accuracy(original): 31.250(34.884), lr: 0.01511
+epoch: 93, CrossEntropy loss (original): 2.5426, distance: 0.0248, train loss: 10.0063, train accuracy: 34.890, lr: 0.01550
+test accuracy: 33.140
+Global sparsity: 31.59%
+pruned model test accuracy: 31.480, test loss: 2.7502, train accuracy: 32.840, train loss: 2.6360
+step: 0, loss(original): 2.5019 (2.5019), distance: 0.0000, train loss: 9.5240 (9.5240), train accuracy(original): 34.375(34.375), lr: 0.01550
+step: 100, loss(original): 2.5468 (2.5388), distance: 0.0187, train loss: 9.7795 (9.9337), train accuracy(original): 41.406(35.195), lr: 0.01550
+step: 200, loss(original): 2.5009 (2.5413), distance: 0.0200, train loss: 9.4516 (9.9123), train accuracy(original): 35.156(34.845), lr: 0.01550
+step: 300, loss(original): 2.4979 (2.5326), distance: 0.0205, train loss: 9.4447 (9.8650), train accuracy(original): 31.250(34.889), lr: 0.01550
+epoch: 94, CrossEntropy loss (original): 2.5301, distance: 0.0209, train loss: 9.8539, train accuracy: 34.980, lr: 0.01556
+test accuracy: 33.600
+Global sparsity: 31.96%
+pruned model test accuracy: 30.970, test loss: 2.7872, train accuracy: 32.574, train loss: 2.6558
+step: 0, loss(original): 2.3936 (2.3936), distance: 0.0000, train loss: 8.7753 (8.7753), train accuracy(original): 39.844(39.844), lr: 0.01556
+step: 100, loss(original): 2.4883 (2.4963), distance: 0.0210, train loss: 9.4417 (9.6018), train accuracy(original): 35.938(35.365), lr: 0.01556
+step: 200, loss(original): 2.5696 (2.5001), distance: 0.0224, train loss: 10.5665 (9.6491), train accuracy(original): 35.938(35.191), lr: 0.01556
+step: 300, loss(original): 2.6166 (2.5116), distance: 0.0230, train loss: 10.7245 (9.7604), train accuracy(original): 26.562(35.128), lr: 0.01556
+epoch: 95, CrossEntropy loss (original): 2.5110, distance: 0.0233, train loss: 9.7808, train accuracy: 35.168, lr: 0.01566
+test accuracy: 33.760
+Global sparsity: 32.40%
+pruned model test accuracy: 31.310, test loss: 2.7547, train accuracy: 33.452, train loss: 2.6117
+step: 0, loss(original): 2.5659 (2.5659), distance: 0.0000, train loss: 10.0723 (10.0723), train accuracy(original): 36.719(36.719), lr: 0.01566
+step: 100, loss(original): 2.4429 (2.4982), distance: 0.0205, train loss: 9.0839 (9.5682), train accuracy(original): 41.406(35.984), lr: 0.01566
+step: 200, loss(original): 2.6155 (2.4894), distance: 0.0219, train loss: 10.3181 (9.5168), train accuracy(original): 34.375(36.489), lr: 0.01566
+step: 300, loss(original): 2.4277 (2.4856), distance: 0.0225, train loss: 8.8559 (9.5039), train accuracy(original): 39.062(36.425), lr: 0.01566
+epoch: 96, CrossEntropy loss (original): 2.4904, distance: 0.0227, train loss: 9.5505, train accuracy: 36.394, lr: 0.01562
+test accuracy: 34.480
+Global sparsity: 32.82%
+pruned model test accuracy: 31.350, test loss: 2.7689, train accuracy: 33.200, train loss: 2.6417
+step: 0, loss(original): 2.4210 (2.4210), distance: 0.0000, train loss: 9.2608 (9.2608), train accuracy(original): 37.500(37.500), lr: 0.01562
+step: 100, loss(original): 2.4117 (2.4735), distance: 0.0197, train loss: 8.9211 (9.5182), train accuracy(original): 44.531(36.487), lr: 0.01562
+step: 200, loss(original): 2.4025 (2.4640), distance: 0.0211, train loss: 8.7354 (9.4688), train accuracy(original): 41.406(36.513), lr: 0.01562
+step: 300, loss(original): 2.6086 (2.4735), distance: 0.0216, train loss: 10.3690 (9.4990), train accuracy(original): 39.062(36.355), lr: 0.01562
+epoch: 97, CrossEntropy loss (original): 2.4685, distance: 0.0219, train loss: 9.4535, train accuracy: 36.424, lr: 0.01578
+test accuracy: 34.460
+Global sparsity: 33.50%
+pruned model test accuracy: 32.470, test loss: 2.6726, train accuracy: 33.910, train loss: 2.5677
+step: 0, loss(original): 2.4821 (2.4821), distance: 0.0000, train loss: 9.6761 (9.6761), train accuracy(original): 35.156(35.156), lr: 0.01578
+step: 100, loss(original): 2.4280 (2.4486), distance: 0.0205, train loss: 9.2806 (9.2904), train accuracy(original): 35.156(36.440), lr: 0.01578
+step: 200, loss(original): 2.3135 (2.4452), distance: 0.0218, train loss: 8.0686 (9.2537), train accuracy(original): 35.938(36.874), lr: 0.01578
+step: 300, loss(original): 2.3225 (2.4378), distance: 0.0224, train loss: 8.3590 (9.1873), train accuracy(original): 42.969(37.121), lr: 0.01578
+epoch: 98, CrossEntropy loss (original): 2.4396, distance: 0.0227, train loss: 9.1892, train accuracy: 37.062, lr: 0.01617
+test accuracy: 35.530
+Global sparsity: 33.91%
+pruned model test accuracy: 34.660, test loss: 2.6071, train accuracy: 35.890, train loss: 2.4973
+step: 0, loss(original): 2.4254 (2.4254), distance: 0.0000, train loss: 8.9378 (8.9378), train accuracy(original): 39.062(39.062), lr: 0.01617
+step: 100, loss(original): 2.6500 (2.4288), distance: 0.0201, train loss: 11.0093 (9.0140), train accuracy(original): 33.594(37.454), lr: 0.01617
+step: 200, loss(original): 2.4971 (2.4305), distance: 0.0214, train loss: 9.6492 (9.1111), train accuracy(original): 35.156(36.866), lr: 0.01617
+step: 300, loss(original): 2.5582 (2.4269), distance: 0.0220, train loss: 10.1195 (9.1332), train accuracy(original): 36.719(37.069), lr: 0.01617
+epoch: 99, CrossEntropy loss (original): 2.4277, distance: 0.0223, train loss: 9.1518, train accuracy: 37.092, lr: 0.01618
+test accuracy: 35.000
+Global sparsity: 34.15%
+pruned model test accuracy: 32.490, test loss: 2.6918, train accuracy: 34.812, train loss: 2.5385
+step: 0, loss(original): 2.5076 (2.5076), distance: 0.0000, train loss: 9.6560 (9.6560), train accuracy(original): 36.719(36.719), lr: 0.01618
+step: 100, loss(original): 2.4626 (2.4010), distance: 0.0193, train loss: 9.1278 (8.8706), train accuracy(original): 35.156(37.794), lr: 0.01618
+step: 200, loss(original): 2.2526 (2.4073), distance: 0.0206, train loss: 8.0010 (8.9534), train accuracy(original): 41.406(37.582), lr: 0.01618
+step: 300, loss(original): 2.5702 (2.4047), distance: 0.0212, train loss: 9.9153 (8.9068), train accuracy(original): 32.812(37.817), lr: 0.01618
+epoch: 100, CrossEntropy loss (original): 2.3998, distance: 0.0215, train loss: 8.8982, train accuracy: 37.722, lr: 0.01639
+test accuracy: 33.580
+Global sparsity: 34.70%
+pruned model test accuracy: 26.630, test loss: 3.1777, train accuracy: 28.644, train loss: 2.9084
+step: 0, loss(original): 2.3953 (2.3953), distance: 0.0000, train loss: 8.7923 (8.7923), train accuracy(original): 41.406(41.406), lr: 0.01639
+step: 100, loss(original): 2.3231 (2.3859), distance: 0.0187, train loss: 8.2338 (8.7609), train accuracy(original): 35.938(37.778), lr: 0.01639
+step: 200, loss(original): 2.5809 (2.3830), distance: 0.0200, train loss: 10.2570 (8.7602), train accuracy(original): 27.344(38.044), lr: 0.01639
+step: 300, loss(original): 2.4265 (2.3851), distance: 0.0205, train loss: 8.8774 (8.7736), train accuracy(original): 37.500(38.040), lr: 0.01639
+epoch: 101, CrossEntropy loss (original): 2.3904, distance: 0.0208, train loss: 8.8419, train accuracy: 37.908, lr: 0.01631
+test accuracy: 33.700
+Global sparsity: 35.18%
+pruned model test accuracy: 33.830, test loss: 2.6763, train accuracy: 35.360, train loss: 2.5206
+step: 0, loss(original): 2.3910 (2.3910), distance: 0.0000, train loss: 8.9720 (8.9720), train accuracy(original): 43.750(43.750), lr: 0.01631
+step: 100, loss(original): 2.3807 (2.3607), distance: 0.0201, train loss: 8.7316 (8.6791), train accuracy(original): 43.750(38.683), lr: 0.01631
+step: 200, loss(original): 2.0387 (2.3575), distance: 0.0215, train loss: 6.4608 (8.6138), train accuracy(original): 44.531(38.779), lr: 0.01631
+step: 300, loss(original): 2.0370 (2.3538), distance: 0.0220, train loss: 6.2538 (8.5804), train accuracy(original): 47.656(38.896), lr: 0.01631
+epoch: 102, CrossEntropy loss (original): 2.3659, distance: 0.0223, train loss: 8.6707, train accuracy: 38.652, lr: 0.01666
+test accuracy: 34.240
+Global sparsity: 35.50%
+pruned model test accuracy: 33.520, test loss: 2.6289, train accuracy: 35.412, train loss: 2.5136
+step: 0, loss(original): 2.4469 (2.4469), distance: 0.0000, train loss: 9.1059 (9.1059), train accuracy(original): 38.281(38.281), lr: 0.01666
+step: 100, loss(original): 2.5828 (2.3455), distance: 0.0181, train loss: 10.1190 (8.5211), train accuracy(original): 35.938(39.039), lr: 0.01666
+step: 200, loss(original): 2.4078 (2.3359), distance: 0.0193, train loss: 9.0067 (8.4306), train accuracy(original): 39.844(39.121), lr: 0.01666
+step: 300, loss(original): 2.3234 (2.3536), distance: 0.0198, train loss: 8.3239 (8.5397), train accuracy(original): 34.375(38.930), lr: 0.01666
+epoch: 103, CrossEntropy loss (original): 2.3532, distance: 0.0201, train loss: 8.5413, train accuracy: 38.890, lr: 0.01670
+test accuracy: 36.790
+Global sparsity: 35.74%
+pruned model test accuracy: 34.950, test loss: 2.5507, train accuracy: 37.426, train loss: 2.4048
+step: 0, loss(original): 2.3281 (2.3281), distance: 0.0000, train loss: 8.3316 (8.3316), train accuracy(original): 38.281(38.281), lr: 0.01670
+step: 100, loss(original): 2.5104 (2.3280), distance: 0.0172, train loss: 10.0472 (8.3252), train accuracy(original): 35.938(38.877), lr: 0.01670
+step: 200, loss(original): 2.4118 (2.3321), distance: 0.0184, train loss: 9.0598 (8.4010), train accuracy(original): 35.938(38.938), lr: 0.01670
+step: 300, loss(original): 2.4794 (2.3416), distance: 0.0189, train loss: 9.4821 (8.4948), train accuracy(original): 34.375(38.769), lr: 0.01670
+epoch: 104, CrossEntropy loss (original): 2.3381, distance: 0.0191, train loss: 8.4800, train accuracy: 39.032, lr: 0.01687
+test accuracy: 37.310
+Global sparsity: 35.96%
+pruned model test accuracy: 36.260, test loss: 2.4901, train accuracy: 38.590, train loss: 2.3490
+step: 0, loss(original): 2.4669 (2.4669), distance: 0.0000, train loss: 9.2665 (9.2665), train accuracy(original): 35.938(35.938), lr: 0.01687
+step: 100, loss(original): 2.4442 (2.3005), distance: 0.0146, train loss: 9.2026 (8.1284), train accuracy(original): 33.594(39.743), lr: 0.01687
+step: 200, loss(original): 2.3471 (2.3062), distance: 0.0157, train loss: 8.2892 (8.1690), train accuracy(original): 41.406(39.412), lr: 0.01687
+step: 300, loss(original): 2.4255 (2.3088), distance: 0.0161, train loss: 9.4801 (8.2052), train accuracy(original): 34.375(39.514), lr: 0.01687
+epoch: 105, CrossEntropy loss (original): 2.3196, distance: 0.0164, train loss: 8.3021, train accuracy: 39.340, lr: 0.01705
+test accuracy: 37.850
+Global sparsity: 36.33%
+pruned model test accuracy: 36.360, test loss: 2.4982, train accuracy: 37.870, train loss: 2.3909
+step: 0, loss(original): 2.2956 (2.2956), distance: 0.0000, train loss: 7.9988 (7.9988), train accuracy(original): 46.094(46.094), lr: 0.01705
+step: 100, loss(original): 2.1901 (2.2818), distance: 0.0142, train loss: 7.2852 (8.0829), train accuracy(original): 41.406(40.114), lr: 0.01705
+step: 200, loss(original): 2.3410 (2.2928), distance: 0.0153, train loss: 8.4387 (8.1381), train accuracy(original): 41.406(39.894), lr: 0.01705
+step: 300, loss(original): 2.3692 (2.2976), distance: 0.0158, train loss: 8.5545 (8.1747), train accuracy(original): 37.500(39.815), lr: 0.01705
+epoch: 106, CrossEntropy loss (original): 2.2937, distance: 0.0161, train loss: 8.1463, train accuracy: 40.006, lr: 0.01713
+test accuracy: 35.780
+Global sparsity: 36.60%
+pruned model test accuracy: 33.780, test loss: 2.6770, train accuracy: 36.178, train loss: 2.5065
+step: 0, loss(original): 2.4880 (2.4880), distance: 0.0000, train loss: 9.5315 (9.5315), train accuracy(original): 39.062(39.062), lr: 0.01713
+step: 100, loss(original): 2.1641 (2.2607), distance: 0.0168, train loss: 7.0411 (7.9027), train accuracy(original): 41.406(40.277), lr: 0.01713
+step: 200, loss(original): 2.6446 (2.2762), distance: 0.0180, train loss: 10.8341 (8.0542), train accuracy(original): 34.375(40.318), lr: 0.01713
+step: 300, loss(original): 2.0934 (2.2786), distance: 0.0185, train loss: 6.7830 (8.0493), train accuracy(original): 43.750(40.210), lr: 0.01713
+epoch: 107, CrossEntropy loss (original): 2.2801, distance: 0.0188, train loss: 8.0653, train accuracy: 40.186, lr: 0.01703
+test accuracy: 37.090
+Global sparsity: 36.88%
+pruned model test accuracy: 36.000, test loss: 2.5403, train accuracy: 38.376, train loss: 2.3744
+step: 0, loss(original): 2.2299 (2.2299), distance: 0.0000, train loss: 7.9048 (7.9048), train accuracy(original): 42.969(42.969), lr: 0.01703
+step: 100, loss(original): 2.2279 (2.2569), distance: 0.0155, train loss: 7.5200 (7.8897), train accuracy(original): 40.625(40.517), lr: 0.01703
+step: 200, loss(original): 2.2123 (2.2761), distance: 0.0166, train loss: 7.3976 (7.9975), train accuracy(original): 40.625(40.252), lr: 0.01703
+step: 300, loss(original): 2.1410 (2.2616), distance: 0.0171, train loss: 6.9355 (7.9123), train accuracy(original): 42.969(40.664), lr: 0.01703
+epoch: 108, CrossEntropy loss (original): 2.2606, distance: 0.0173, train loss: 7.9117, train accuracy: 40.684, lr: 0.01754
+test accuracy: 37.170
+Global sparsity: 37.27%
+pruned model test accuracy: 35.260, test loss: 2.5987, train accuracy: 37.962, train loss: 2.3939
+step: 0, loss(original): 2.4885 (2.4885), distance: 0.0000, train loss: 9.3081 (9.3081), train accuracy(original): 39.844(39.844), lr: 0.01754
+step: 100, loss(original): 2.1838 (2.2670), distance: 0.0156, train loss: 7.3147 (7.9179), train accuracy(original): 40.625(40.099), lr: 0.01754
+step: 200, loss(original): 2.1697 (2.2579), distance: 0.0167, train loss: 7.1209 (7.8412), train accuracy(original): 40.625(40.745), lr: 0.01754
+step: 300, loss(original): 2.4070 (2.2558), distance: 0.0172, train loss: 8.7376 (7.8233), train accuracy(original): 41.406(40.783), lr: 0.01754
+epoch: 109, CrossEntropy loss (original): 2.2534, distance: 0.0174, train loss: 7.8112, train accuracy: 40.732, lr: 0.01744
+test accuracy: 39.320
+Global sparsity: 37.55%
+pruned model test accuracy: 37.190, test loss: 2.4627, train accuracy: 39.166, train loss: 2.3298
+step: 0, loss(original): 2.1792 (2.1792), distance: 0.0000, train loss: 7.3261 (7.3261), train accuracy(original): 39.062(39.062), lr: 0.01744
+step: 100, loss(original): 2.2550 (2.2263), distance: 0.0141, train loss: 7.6493 (7.6269), train accuracy(original): 38.281(41.128), lr: 0.01744
+step: 200, loss(original): 2.2459 (2.2320), distance: 0.0152, train loss: 7.7539 (7.6982), train accuracy(original): 42.969(40.909), lr: 0.01744
+step: 300, loss(original): 2.2309 (2.2304), distance: 0.0156, train loss: 7.7269 (7.7194), train accuracy(original): 41.406(41.020), lr: 0.01744
+epoch: 110, CrossEntropy loss (original): 2.2338, distance: 0.0158, train loss: 7.7336, train accuracy: 40.946, lr: 0.01765
+test accuracy: 36.030
+Global sparsity: 37.73%
+pruned model test accuracy: 35.380, test loss: 2.5426, train accuracy: 37.830, train loss: 2.3801
+step: 0, loss(original): 2.3995 (2.3995), distance: 0.0000, train loss: 8.8028 (8.8028), train accuracy(original): 41.406(41.406), lr: 0.01765
+step: 100, loss(original): 2.3447 (2.1912), distance: 0.0140, train loss: 8.3301 (7.4568), train accuracy(original): 41.406(42.605), lr: 0.01765
+step: 200, loss(original): 2.0908 (2.2067), distance: 0.0150, train loss: 6.7083 (7.5299), train accuracy(original): 41.406(41.947), lr: 0.01765
+step: 300, loss(original): 2.0275 (2.2220), distance: 0.0155, train loss: 6.2749 (7.6405), train accuracy(original): 48.438(41.523), lr: 0.01765
+epoch: 111, CrossEntropy loss (original): 2.2219, distance: 0.0157, train loss: 7.6482, train accuracy: 41.442, lr: 0.01768
+test accuracy: 38.230
+Global sparsity: 37.84%
+pruned model test accuracy: 36.370, test loss: 2.5277, train accuracy: 39.342, train loss: 2.3364
+step: 0, loss(original): 1.9835 (1.9835), distance: 0.0000, train loss: 6.0985 (6.0985), train accuracy(original): 46.875(46.875), lr: 0.01768
+step: 100, loss(original): 2.0483 (2.2043), distance: 0.0130, train loss: 6.4837 (7.4934), train accuracy(original): 40.625(41.739), lr: 0.01768
+step: 200, loss(original): 1.9976 (2.1893), distance: 0.0140, train loss: 6.1599 (7.4180), train accuracy(original): 47.656(42.308), lr: 0.01768
+step: 300, loss(original): 2.1933 (2.1973), distance: 0.0144, train loss: 7.2234 (7.4677), train accuracy(original): 43.750(42.203), lr: 0.01768
+epoch: 112, CrossEntropy loss (original): 2.2015, distance: 0.0147, train loss: 7.5036, train accuracy: 42.186, lr: 0.01804
+test accuracy: 39.190
+Global sparsity: 37.97%
+pruned model test accuracy: 37.850, test loss: 2.4192, train accuracy: 40.666, train loss: 2.2458
+step: 0, loss(original): 2.0831 (2.0831), distance: 0.0000, train loss: 6.5110 (6.5110), train accuracy(original): 44.531(44.531), lr: 0.01804
+step: 100, loss(original): 2.2444 (2.1723), distance: 0.0109, train loss: 7.6699 (7.3819), train accuracy(original): 41.406(42.590), lr: 0.01804
+step: 200, loss(original): 2.3592 (2.1839), distance: 0.0118, train loss: 8.5935 (7.4419), train accuracy(original): 38.281(42.362), lr: 0.01804
+step: 300, loss(original): 2.1306 (2.1881), distance: 0.0122, train loss: 6.8247 (7.4802), train accuracy(original): 42.969(42.312), lr: 0.01804
+epoch: 113, CrossEntropy loss (original): 2.1865, distance: 0.0124, train loss: 7.4492, train accuracy: 42.396, lr: 0.01814
+test accuracy: 38.910
+Global sparsity: 38.20%
+pruned model test accuracy: 37.230, test loss: 2.4893, train accuracy: 38.852, train loss: 2.3291
+step: 0, loss(original): 2.1966 (2.1966), distance: 0.0000, train loss: 7.2856 (7.2856), train accuracy(original): 43.750(43.750), lr: 0.01814
+step: 100, loss(original): 2.0834 (2.1940), distance: 0.0114, train loss: 6.5182 (7.5022), train accuracy(original): 46.875(42.497), lr: 0.01814
+step: 200, loss(original): 2.0400 (2.1788), distance: 0.0123, train loss: 6.6773 (7.4085), train accuracy(original): 48.438(42.802), lr: 0.01814
+step: 300, loss(original): 2.2121 (2.1672), distance: 0.0127, train loss: 7.5575 (7.3461), train accuracy(original): 40.625(42.847), lr: 0.01814
+epoch: 114, CrossEntropy loss (original): 2.1741, distance: 0.0129, train loss: 7.4026, train accuracy: 42.532, lr: 0.01796
+test accuracy: 39.770
+Global sparsity: 38.36%
+pruned model test accuracy: 38.910, test loss: 2.3616, train accuracy: 41.188, train loss: 2.2177
+step: 0, loss(original): 2.1967 (2.1967), distance: 0.0000, train loss: 7.5965 (7.5965), train accuracy(original): 46.875(46.875), lr: 0.01796
+step: 100, loss(original): 2.3515 (2.1248), distance: 0.0105, train loss: 8.4320 (6.9750), train accuracy(original): 35.938(43.619), lr: 0.01796
+step: 200, loss(original): 2.2170 (2.1316), distance: 0.0113, train loss: 7.3855 (7.0169), train accuracy(original): 39.844(43.532), lr: 0.01796
+step: 300, loss(original): 2.3442 (2.1387), distance: 0.0117, train loss: 8.6948 (7.0925), train accuracy(original): 35.938(43.283), lr: 0.01796
+epoch: 115, CrossEntropy loss (original): 2.1408, distance: 0.0119, train loss: 7.1097, train accuracy: 43.162, lr: 0.01848
+test accuracy: 40.510
+Global sparsity: 38.55%
+pruned model test accuracy: 39.040, test loss: 2.3688, train accuracy: 41.122, train loss: 2.2252
+step: 0, loss(original): 2.2757 (2.2757), distance: 0.0000, train loss: 7.8757 (7.8757), train accuracy(original): 44.531(44.531), lr: 0.01848
+step: 100, loss(original): 1.9106 (2.1309), distance: 0.0117, train loss: 5.5304 (6.9875), train accuracy(original): 50.000(43.224), lr: 0.01848
+step: 200, loss(original): 2.0978 (2.1426), distance: 0.0126, train loss: 6.6795 (7.1052), train accuracy(original): 44.531(43.128), lr: 0.01848
+step: 300, loss(original): 2.2478 (2.1343), distance: 0.0129, train loss: 8.1339 (7.0455), train accuracy(original): 43.750(43.143), lr: 0.01848
+epoch: 116, CrossEntropy loss (original): 2.1369, distance: 0.0131, train loss: 7.0875, train accuracy: 43.152, lr: 0.01848
+test accuracy: 39.270
+Global sparsity: 38.87%
+pruned model test accuracy: 38.900, test loss: 2.3598, train accuracy: 42.314, train loss: 2.1736
+step: 0, loss(original): 2.0351 (2.0351), distance: 0.0000, train loss: 6.3248 (6.3248), train accuracy(original): 46.094(46.094), lr: 0.01848
+step: 100, loss(original): 2.2103 (2.0942), distance: 0.0096, train loss: 7.4788 (6.8005), train accuracy(original): 42.969(44.083), lr: 0.01848
+step: 200, loss(original): 2.2631 (2.0974), distance: 0.0104, train loss: 8.0337 (6.8382), train accuracy(original): 39.062(44.022), lr: 0.01848
+step: 300, loss(original): 2.2287 (2.1126), distance: 0.0108, train loss: 7.5903 (6.9614), train accuracy(original): 45.312(43.628), lr: 0.01848
+epoch: 117, CrossEntropy loss (original): 2.1210, distance: 0.0110, train loss: 7.0051, train accuracy: 43.604, lr: 0.01863
+test accuracy: 40.050
+Global sparsity: 39.20%
+pruned model test accuracy: 39.400, test loss: 2.3529, train accuracy: 42.506, train loss: 2.1749
+step: 0, loss(original): 1.9381 (1.9381), distance: 0.0000, train loss: 5.7509 (5.7509), train accuracy(original): 50.781(50.781), lr: 0.01863
+step: 100, loss(original): 2.0684 (2.0834), distance: 0.0091, train loss: 6.8844 (6.7326), train accuracy(original): 41.406(44.299), lr: 0.01863
+step: 200, loss(original): 2.3639 (2.0928), distance: 0.0099, train loss: 8.7695 (6.7765), train accuracy(original): 40.625(44.232), lr: 0.01863
+step: 300, loss(original): 1.9927 (2.1034), distance: 0.0102, train loss: 6.4258 (6.8509), train accuracy(original): 47.656(44.113), lr: 0.01863
+epoch: 118, CrossEntropy loss (original): 2.1083, distance: 0.0104, train loss: 6.8922, train accuracy: 43.982, lr: 0.01877
+test accuracy: 38.980
+Global sparsity: 39.77%
+pruned model test accuracy: 38.390, test loss: 2.3872, train accuracy: 42.250, train loss: 2.1810
+step: 0, loss(original): 2.1683 (2.1683), distance: 0.0000, train loss: 7.1597 (7.1597), train accuracy(original): 42.188(42.188), lr: 0.01877
+step: 100, loss(original): 2.2879 (2.0817), distance: 0.0102, train loss: 8.7089 (6.7563), train accuracy(original): 39.844(44.315), lr: 0.01877
+step: 200, loss(original): 2.2790 (2.0836), distance: 0.0110, train loss: 7.9856 (6.8093), train accuracy(original): 39.062(44.143), lr: 0.01877
+step: 300, loss(original): 1.9944 (2.0883), distance: 0.0113, train loss: 6.0627 (6.8094), train accuracy(original): 49.219(44.261), lr: 0.01877
+epoch: 119, CrossEntropy loss (original): 2.0870, distance: 0.0115, train loss: 6.7839, train accuracy: 44.348, lr: 0.01898
+test accuracy: 41.570
+Global sparsity: 40.27%
+pruned model test accuracy: 40.940, test loss: 2.2949, train accuracy: 42.880, train loss: 2.1484
+step: 0, loss(original): 1.9622 (1.9622), distance: 0.0000, train loss: 5.8449 (5.8449), train accuracy(original): 44.531(44.531), lr: 0.01898
+step: 100, loss(original): 1.9307 (2.0610), distance: 0.0100, train loss: 5.5945 (6.5590), train accuracy(original): 50.781(44.980), lr: 0.01898
+step: 200, loss(original): 2.1720 (2.0794), distance: 0.0108, train loss: 7.1704 (6.7403), train accuracy(original): 44.531(44.667), lr: 0.01898
+step: 300, loss(original): 2.0044 (2.0869), distance: 0.0112, train loss: 6.1451 (6.7830), train accuracy(original): 46.094(44.378), lr: 0.01898
+epoch: 120, CrossEntropy loss (original): 2.0826, distance: 0.0114, train loss: 6.7661, train accuracy: 44.432, lr: 0.01903
+test accuracy: 41.230
+Global sparsity: 40.38%
+pruned model test accuracy: 39.890, test loss: 2.3580, train accuracy: 41.882, train loss: 2.2100
+step: 0, loss(original): 2.1758 (2.1758), distance: 0.0000, train loss: 7.1711 (7.1711), train accuracy(original): 48.438(48.438), lr: 0.01903
+step: 100, loss(original): 2.0690 (2.0451), distance: 0.0100, train loss: 6.5410 (6.5623), train accuracy(original): 43.750(45.243), lr: 0.01903
+step: 200, loss(original): 2.1144 (2.0564), distance: 0.0108, train loss: 6.7295 (6.6288), train accuracy(original): 38.281(44.834), lr: 0.01903
+step: 300, loss(original): 2.0210 (2.0667), distance: 0.0111, train loss: 6.3308 (6.6673), train accuracy(original): 44.531(44.723), lr: 0.01903
+epoch: 121, CrossEntropy loss (original): 2.0639, distance: 0.0113, train loss: 6.6463, train accuracy: 44.866, lr: 0.01894
+test accuracy: 41.530
+Global sparsity: 40.54%
+pruned model test accuracy: 41.600, test loss: 2.3139, train accuracy: 43.804, train loss: 2.1272
+step: 0, loss(original): 1.8465 (1.8465), distance: 0.0000, train loss: 5.3902 (5.3902), train accuracy(original): 49.219(49.219), lr: 0.01894
+step: 100, loss(original): 1.9398 (2.0337), distance: 0.0100, train loss: 6.0899 (6.4511), train accuracy(original): 44.531(45.606), lr: 0.01894
+step: 200, loss(original): 2.2469 (2.0257), distance: 0.0107, train loss: 7.8665 (6.4105), train accuracy(original): 36.719(45.938), lr: 0.01894
+step: 300, loss(original): 1.8537 (2.0308), distance: 0.0111, train loss: 5.1612 (6.4562), train accuracy(original): 48.438(45.749), lr: 0.01894
+epoch: 122, CrossEntropy loss (original): 2.0426, distance: 0.0113, train loss: 6.5091, train accuracy: 45.472, lr: 0.01934
+test accuracy: 40.280
+Global sparsity: 40.78%
+pruned model test accuracy: 39.140, test loss: 2.3776, train accuracy: 42.044, train loss: 2.1706
+step: 0, loss(original): 2.1339 (2.1339), distance: 0.0000, train loss: 6.9511 (6.9511), train accuracy(original): 42.188(42.188), lr: 0.01934
+step: 100, loss(original): 1.8301 (2.0171), distance: 0.0095, train loss: 5.0878 (6.3194), train accuracy(original): 46.875(46.047), lr: 0.01934
+step: 200, loss(original): 1.9647 (2.0192), distance: 0.0102, train loss: 6.1182 (6.3612), train accuracy(original): 43.750(46.152), lr: 0.01934
+step: 300, loss(original): 1.9775 (2.0197), distance: 0.0105, train loss: 6.3414 (6.3569), train accuracy(original): 47.656(46.042), lr: 0.01934
+epoch: 123, CrossEntropy loss (original): 2.0242, distance: 0.0107, train loss: 6.3815, train accuracy: 45.850, lr: 0.01938
+test accuracy: 41.630
+Global sparsity: 40.95%
+pruned model test accuracy: 41.890, test loss: 2.2946, train accuracy: 43.404, train loss: 2.1363
+step: 0, loss(original): 1.8673 (1.8673), distance: 0.0000, train loss: 5.4490 (5.4490), train accuracy(original): 46.875(46.875), lr: 0.01938
+step: 100, loss(original): 2.0592 (2.0196), distance: 0.0096, train loss: 6.5670 (6.3535), train accuracy(original): 39.844(45.328), lr: 0.01938
+step: 200, loss(original): 2.0806 (2.0079), distance: 0.0104, train loss: 6.5426 (6.2514), train accuracy(original): 47.656(45.561), lr: 0.01938
+step: 300, loss(original): 2.2759 (2.0130), distance: 0.0107, train loss: 7.8334 (6.3061), train accuracy(original): 39.062(45.707), lr: 0.01938
+epoch: 124, CrossEntropy loss (original): 2.0156, distance: 0.0109, train loss: 6.3090, train accuracy: 45.828, lr: 0.01937
+test accuracy: 41.310
+Global sparsity: 41.09%
+pruned model test accuracy: 40.230, test loss: 2.3529, train accuracy: 43.088, train loss: 2.1527
+step: 0, loss(original): 2.4297 (2.4297), distance: 0.0000, train loss: 9.2338 (9.2338), train accuracy(original): 40.625(40.625), lr: 0.01937
+step: 100, loss(original): 1.7818 (1.9761), distance: 0.0107, train loss: 4.8003 (6.1746), train accuracy(original): 53.125(47.099), lr: 0.01937
+step: 200, loss(original): 2.1491 (1.9948), distance: 0.0115, train loss: 7.5271 (6.2326), train accuracy(original): 39.844(46.506), lr: 0.01937
+step: 300, loss(original): 1.8214 (1.9957), distance: 0.0118, train loss: 4.9784 (6.2248), train accuracy(original): 47.656(46.371), lr: 0.01937
+epoch: 125, CrossEntropy loss (original): 2.0022, distance: 0.0120, train loss: 6.2594, train accuracy: 46.188, lr: 0.01980
+test accuracy: 40.920
+Global sparsity: 41.36%
+pruned model test accuracy: 40.750, test loss: 2.3149, train accuracy: 45.018, train loss: 2.0549
+step: 0, loss(original): 2.0140 (2.0140), distance: 0.0000, train loss: 6.1354 (6.1354), train accuracy(original): 42.188(42.188), lr: 0.01980
+step: 100, loss(original): 2.0090 (1.9819), distance: 0.0079, train loss: 6.2173 (6.2008), train accuracy(original): 44.531(46.867), lr: 0.01980
+step: 200, loss(original): 1.9366 (1.9705), distance: 0.0086, train loss: 5.7809 (6.1484), train accuracy(original): 52.344(47.318), lr: 0.01980
+step: 300, loss(original): 2.0169 (1.9777), distance: 0.0089, train loss: 6.1325 (6.2002), train accuracy(original): 42.969(46.958), lr: 0.01980
+epoch: 126, CrossEntropy loss (original): 1.9884, distance: 0.0091, train loss: 6.2384, train accuracy: 46.624, lr: 0.01964
+test accuracy: 39.830
+Global sparsity: 41.49%
+pruned model test accuracy: 38.810, test loss: 2.4883, train accuracy: 42.186, train loss: 2.2015
+step: 0, loss(original): 1.8398 (1.8398), distance: 0.0000, train loss: 5.3704 (5.3704), train accuracy(original): 50.781(50.781), lr: 0.01964
+step: 100, loss(original): 1.9109 (1.9719), distance: 0.0094, train loss: 5.8658 (6.0678), train accuracy(original): 45.312(46.836), lr: 0.01964
+step: 200, loss(original): 1.8455 (1.9654), distance: 0.0101, train loss: 5.1633 (6.0204), train accuracy(original): 48.438(47.407), lr: 0.01964
+step: 300, loss(original): 1.9090 (1.9738), distance: 0.0104, train loss: 5.6628 (6.0593), train accuracy(original): 46.094(47.145), lr: 0.01964
+epoch: 127, CrossEntropy loss (original): 1.9747, distance: 0.0106, train loss: 6.0597, train accuracy: 47.152, lr: 0.01960
+test accuracy: 41.780
+Global sparsity: 41.64%
+pruned model test accuracy: 42.480, test loss: 2.2241, train accuracy: 46.228, train loss: 1.9889
+step: 0, loss(original): 2.0674 (2.0674), distance: 0.0000, train loss: 6.8748 (6.8748), train accuracy(original): 45.312(45.312), lr: 0.01960
+step: 100, loss(original): 2.0040 (1.9649), distance: 0.0092, train loss: 6.5847 (6.0788), train accuracy(original): 44.531(47.432), lr: 0.01960
+step: 200, loss(original): 1.8130 (1.9724), distance: 0.0099, train loss: 5.2863 (6.1280), train accuracy(original): 49.219(46.828), lr: 0.01960
+step: 300, loss(original): 1.9733 (1.9616), distance: 0.0102, train loss: 5.9008 (6.0559), train accuracy(original): 43.750(47.015), lr: 0.01960
+epoch: 128, CrossEntropy loss (original): 1.9638, distance: 0.0104, train loss: 6.0444, train accuracy: 47.034, lr: 0.02008
+test accuracy: 42.700
+Global sparsity: 41.75%
+pruned model test accuracy: 42.640, test loss: 2.2176, train accuracy: 46.774, train loss: 1.9770
+step: 0, loss(original): 1.8421 (1.8421), distance: 0.0000, train loss: 5.2193 (5.2193), train accuracy(original): 52.344(52.344), lr: 0.02008
+step: 100, loss(original): 1.9154 (1.9419), distance: 0.0069, train loss: 5.6293 (5.8807), train accuracy(original): 49.219(48.128), lr: 0.02008
+step: 200, loss(original): 1.7273 (1.9469), distance: 0.0075, train loss: 4.4818 (5.8899), train accuracy(original): 57.031(47.936), lr: 0.02008
+step: 300, loss(original): 1.8082 (1.9473), distance: 0.0078, train loss: 4.9962 (5.8918), train accuracy(original): 50.000(47.744), lr: 0.02008
+epoch: 129, CrossEntropy loss (original): 1.9511, distance: 0.0080, train loss: 5.9256, train accuracy: 47.568, lr: 0.02007
+test accuracy: 43.050
+Global sparsity: 41.88%
+pruned model test accuracy: 43.040, test loss: 2.1839, train accuracy: 46.288, train loss: 1.9889
+step: 0, loss(original): 1.6727 (1.6727), distance: 0.0000, train loss: 4.4239 (4.4239), train accuracy(original): 53.906(53.906), lr: 0.02007
+step: 100, loss(original): 1.8355 (1.9132), distance: 0.0071, train loss: 5.0800 (5.7012), train accuracy(original): 52.344(48.267), lr: 0.02007
+step: 200, loss(original): 2.0270 (1.9468), distance: 0.0077, train loss: 6.3388 (5.8719), train accuracy(original): 39.844(47.454), lr: 0.02007
+step: 300, loss(original): 2.2418 (1.9431), distance: 0.0080, train loss: 7.6355 (5.8513), train accuracy(original): 44.531(47.508), lr: 0.02007
+epoch: 130, CrossEntropy loss (original): 1.9486, distance: 0.0082, train loss: 5.8915, train accuracy: 47.332, lr: 0.02034
+test accuracy: 43.460
+Global sparsity: 42.01%
+pruned model test accuracy: 43.480, test loss: 2.1690, train accuracy: 47.388, train loss: 1.9566
+step: 0, loss(original): 1.8277 (1.8277), distance: 0.0000, train loss: 5.0808 (5.0808), train accuracy(original): 52.344(52.344), lr: 0.02034
+step: 100, loss(original): 2.1083 (1.9211), distance: 0.0072, train loss: 6.7760 (5.6962), train accuracy(original): 40.625(47.935), lr: 0.02034
+step: 200, loss(original): 1.8159 (1.9230), distance: 0.0079, train loss: 5.0531 (5.7173), train accuracy(original): 50.781(47.991), lr: 0.02034
+step: 300, loss(original): 1.8460 (1.9284), distance: 0.0082, train loss: 5.1601 (5.7656), train accuracy(original): 50.781(47.783), lr: 0.02034
+epoch: 131, CrossEntropy loss (original): 1.9336, distance: 0.0083, train loss: 5.7953, train accuracy: 47.716, lr: 0.02029
+test accuracy: 43.560
+Global sparsity: 42.13%
+pruned model test accuracy: 43.310, test loss: 2.1741, train accuracy: 47.482, train loss: 1.9455
+step: 0, loss(original): 1.8835 (1.8835), distance: 0.0000, train loss: 5.5431 (5.5431), train accuracy(original): 45.312(45.312), lr: 0.02029
+step: 100, loss(original): 1.8997 (1.8726), distance: 0.0069, train loss: 5.4332 (5.5018), train accuracy(original): 49.219(49.327), lr: 0.02029
+step: 200, loss(original): 1.8743 (1.8786), distance: 0.0075, train loss: 5.4346 (5.4977), train accuracy(original): 50.781(49.071), lr: 0.02029
+step: 300, loss(original): 1.9096 (1.9032), distance: 0.0078, train loss: 5.4996 (5.6409), train accuracy(original): 49.219(48.500), lr: 0.02029
+epoch: 132, CrossEntropy loss (original): 1.9155, distance: 0.0080, train loss: 5.7103, train accuracy: 48.090, lr: 0.02028
+test accuracy: 45.260
+Global sparsity: 42.30%
+pruned model test accuracy: 45.360, test loss: 2.0997, train accuracy: 47.620, train loss: 1.9481
+step: 0, loss(original): 1.7406 (1.7406), distance: 0.0000, train loss: 4.8910 (4.8910), train accuracy(original): 53.125(53.125), lr: 0.02028
+step: 100, loss(original): 1.9172 (1.8858), distance: 0.0072, train loss: 5.6575 (5.5747), train accuracy(original): 49.219(49.110), lr: 0.02028
+step: 200, loss(original): 1.9828 (1.8880), distance: 0.0078, train loss: 6.2082 (5.5924), train accuracy(original): 50.000(48.780), lr: 0.02028
+step: 300, loss(original): 1.8650 (1.8913), distance: 0.0081, train loss: 5.5324 (5.6078), train accuracy(original): 45.312(48.770), lr: 0.02028
+epoch: 133, CrossEntropy loss (original): 1.9001, distance: 0.0083, train loss: 5.6485, train accuracy: 48.640, lr: 0.02094
+test accuracy: 42.580
+Global sparsity: 42.38%
+pruned model test accuracy: 41.910, test loss: 2.2839, train accuracy: 45.904, train loss: 2.0299
+step: 0, loss(original): 1.9458 (1.9458), distance: 0.0000, train loss: 5.6891 (5.6891), train accuracy(original): 48.438(48.438), lr: 0.02094
+step: 100, loss(original): 1.9323 (1.8524), distance: 0.0060, train loss: 5.6958 (5.3369), train accuracy(original): 49.219(50.232), lr: 0.02094
+step: 200, loss(original): 2.0396 (1.8734), distance: 0.0066, train loss: 6.2683 (5.4818), train accuracy(original): 46.094(49.378), lr: 0.02094
+step: 300, loss(original): 1.9241 (1.8833), distance: 0.0068, train loss: 5.6206 (5.5143), train accuracy(original): 45.312(49.016), lr: 0.02094
+epoch: 134, CrossEntropy loss (original): 1.8938, distance: 0.0070, train loss: 5.5850, train accuracy: 48.648, lr: 0.02073
+test accuracy: 44.770
+Global sparsity: 42.48%
+pruned model test accuracy: 44.340, test loss: 2.1471, train accuracy: 47.752, train loss: 1.9454
+step: 0, loss(original): 1.9205 (1.9205), distance: 0.0000, train loss: 5.7571 (5.7571), train accuracy(original): 50.000(50.000), lr: 0.02073
+step: 100, loss(original): 1.9200 (1.8662), distance: 0.0070, train loss: 5.6328 (5.4187), train accuracy(original): 44.531(49.056), lr: 0.02073
+step: 200, loss(original): 1.7281 (1.8658), distance: 0.0076, train loss: 4.4811 (5.4273), train accuracy(original): 49.219(48.966), lr: 0.02073
+step: 300, loss(original): 1.9615 (1.8738), distance: 0.0079, train loss: 5.8499 (5.4730), train accuracy(original): 47.656(49.042), lr: 0.02073
+epoch: 135, CrossEntropy loss (original): 1.8788, distance: 0.0081, train loss: 5.5061, train accuracy: 48.942, lr: 0.02039
+test accuracy: 45.020
+Global sparsity: 42.60%
+pruned model test accuracy: 43.860, test loss: 2.1858, train accuracy: 48.428, train loss: 1.9079
+step: 0, loss(original): 1.7414 (1.7414), distance: 0.0000, train loss: 5.0821 (5.0821), train accuracy(original): 47.656(47.656), lr: 0.02039
+step: 100, loss(original): 1.7459 (1.8399), distance: 0.0066, train loss: 4.7220 (5.2710), train accuracy(original): 51.562(50.348), lr: 0.02039
+step: 200, loss(original): 2.1478 (1.8578), distance: 0.0072, train loss: 7.2277 (5.3922), train accuracy(original): 42.969(49.623), lr: 0.02039
+step: 300, loss(original): 1.7808 (1.8516), distance: 0.0075, train loss: 4.8508 (5.3683), train accuracy(original): 53.906(49.761), lr: 0.02039
+epoch: 136, CrossEntropy loss (original): 1.8544, distance: 0.0076, train loss: 5.3719, train accuracy: 49.766, lr: 0.02106
+test accuracy: 43.880
+Global sparsity: 42.67%
+pruned model test accuracy: 44.750, test loss: 2.1430, train accuracy: 49.260, train loss: 1.8707
+step: 0, loss(original): 1.8270 (1.8270), distance: 0.0000, train loss: 5.2840 (5.2840), train accuracy(original): 47.656(47.656), lr: 0.02106
+step: 100, loss(original): 1.9769 (1.8494), distance: 0.0067, train loss: 6.1728 (5.3431), train accuracy(original): 50.000(49.660), lr: 0.02106
+step: 200, loss(original): 2.0608 (1.8572), distance: 0.0073, train loss: 6.7435 (5.4344), train accuracy(original): 40.625(49.526), lr: 0.02106
+step: 300, loss(original): 1.9561 (1.8557), distance: 0.0076, train loss: 5.7932 (5.4013), train accuracy(original): 43.750(49.408), lr: 0.02106
+epoch: 137, CrossEntropy loss (original): 1.8607, distance: 0.0078, train loss: 5.4338, train accuracy: 49.340, lr: 0.02131
+test accuracy: 43.080
+Global sparsity: 42.77%
+pruned model test accuracy: 42.540, test loss: 2.2536, train accuracy: 46.810, train loss: 1.9618
+step: 0, loss(original): 2.0757 (2.0757), distance: 0.0000, train loss: 6.5325 (6.5325), train accuracy(original): 45.312(45.312), lr: 0.02131
+step: 100, loss(original): 1.7909 (1.8617), distance: 0.0077, train loss: 4.8151 (5.4281), train accuracy(original): 50.000(49.350), lr: 0.02131
+step: 200, loss(original): 1.8179 (1.8492), distance: 0.0083, train loss: 5.0895 (5.3699), train accuracy(original): 48.438(49.677), lr: 0.02131
+step: 300, loss(original): 1.6169 (1.8607), distance: 0.0086, train loss: 4.0415 (5.4566), train accuracy(original): 58.594(49.219), lr: 0.02131
+epoch: 138, CrossEntropy loss (original): 1.8615, distance: 0.0088, train loss: 5.4475, train accuracy: 49.224, lr: 0.02112
+test accuracy: 45.020
+Global sparsity: 42.88%
+pruned model test accuracy: 45.600, test loss: 2.1252, train accuracy: 49.720, train loss: 1.8433
+step: 0, loss(original): 1.6486 (1.6486), distance: 0.0000, train loss: 4.2322 (4.2322), train accuracy(original): 54.688(54.688), lr: 0.02112
+step: 100, loss(original): 1.7101 (1.8047), distance: 0.0059, train loss: 4.4245 (5.1034), train accuracy(original): 55.469(51.516), lr: 0.02112
+step: 200, loss(original): 1.8775 (1.8156), distance: 0.0064, train loss: 5.4276 (5.1234), train accuracy(original): 46.875(50.669), lr: 0.02112
+step: 300, loss(original): 1.6639 (1.8218), distance: 0.0067, train loss: 4.8137 (5.2062), train accuracy(original): 50.781(50.459), lr: 0.02112
+epoch: 139, CrossEntropy loss (original): 1.8279, distance: 0.0069, train loss: 5.2534, train accuracy: 50.156, lr: 0.02174
+test accuracy: 45.520
+Global sparsity: 42.94%
+pruned model test accuracy: 45.330, test loss: 2.0878, train accuracy: 48.868, train loss: 1.8884
+step: 0, loss(original): 1.5844 (1.5844), distance: 0.0000, train loss: 3.7987 (3.7987), train accuracy(original): 53.906(53.906), lr: 0.02174
+step: 100, loss(original): 1.7838 (1.8170), distance: 0.0053, train loss: 4.7820 (5.1423), train accuracy(original): 53.125(50.696), lr: 0.02174
+step: 200, loss(original): 2.0283 (1.8208), distance: 0.0059, train loss: 6.4088 (5.1737), train accuracy(original): 45.312(50.214), lr: 0.02174
+step: 300, loss(original): 1.8444 (1.8204), distance: 0.0062, train loss: 5.1594 (5.1804), train accuracy(original): 45.312(50.314), lr: 0.02174
+epoch: 140, CrossEntropy loss (original): 1.8228, distance: 0.0063, train loss: 5.1866, train accuracy: 50.308, lr: 0.02184
+test accuracy: 43.360
+Global sparsity: 42.98%
+pruned model test accuracy: 44.090, test loss: 2.2009, train accuracy: 49.056, train loss: 1.8810
+step: 0, loss(original): 1.6905 (1.6905), distance: 0.0000, train loss: 4.3043 (4.3043), train accuracy(original): 50.781(50.781), lr: 0.02184
+step: 100, loss(original): 1.6040 (1.8048), distance: 0.0051, train loss: 3.9257 (5.0897), train accuracy(original): 57.031(51.013), lr: 0.02184
+step: 200, loss(original): 1.6680 (1.8093), distance: 0.0056, train loss: 4.2818 (5.1213), train accuracy(original): 52.344(50.847), lr: 0.02184
+step: 300, loss(original): 1.8916 (1.8103), distance: 0.0059, train loss: 5.5258 (5.1057), train accuracy(original): 49.219(50.838), lr: 0.02184
+epoch: 141, CrossEntropy loss (original): 1.8184, distance: 0.0061, train loss: 5.1415, train accuracy: 50.492, lr: 0.02190
+test accuracy: 46.900
+Global sparsity: 43.01%
+pruned model test accuracy: 46.280, test loss: 2.0686, train accuracy: 49.420, train loss: 1.8712
+step: 0, loss(original): 2.0612 (2.0612), distance: 0.0000, train loss: 6.3916 (6.3916), train accuracy(original): 43.750(43.750), lr: 0.02190
+step: 100, loss(original): 2.0652 (1.7829), distance: 0.0069, train loss: 6.6215 (5.0011), train accuracy(original): 42.969(51.400), lr: 0.02190
+step: 200, loss(original): 1.8948 (1.7866), distance: 0.0075, train loss: 5.5805 (4.9759), train accuracy(original): 47.656(51.026), lr: 0.02190
+step: 300, loss(original): 1.8492 (1.8062), distance: 0.0078, train loss: 5.2528 (5.0968), train accuracy(original): 50.000(50.797), lr: 0.02190
+epoch: 142, CrossEntropy loss (original): 1.8037, distance: 0.0079, train loss: 5.0874, train accuracy: 50.848, lr: 0.02157
+test accuracy: 46.720
+Global sparsity: 43.03%
+pruned model test accuracy: 47.040, test loss: 2.0630, train accuracy: 51.378, train loss: 1.7822
+step: 0, loss(original): 1.8729 (1.8729), distance: 0.0000, train loss: 5.5837 (5.5837), train accuracy(original): 47.656(47.656), lr: 0.02157
+step: 100, loss(original): 1.5876 (1.7609), distance: 0.0065, train loss: 3.8453 (4.8213), train accuracy(original): 55.469(51.965), lr: 0.02157
+step: 200, loss(original): 2.0001 (1.7739), distance: 0.0071, train loss: 6.2080 (4.9525), train accuracy(original): 50.781(51.376), lr: 0.02157
+step: 300, loss(original): 2.0094 (1.7861), distance: 0.0074, train loss: 6.2631 (5.0182), train accuracy(original): 42.969(51.225), lr: 0.02157
+epoch: 143, CrossEntropy loss (original): 1.7927, distance: 0.0075, train loss: 5.0438, train accuracy: 51.168, lr: 0.02199
+test accuracy: 46.640
+Global sparsity: 43.08%
+pruned model test accuracy: 46.100, test loss: 2.0482, train accuracy: 50.492, train loss: 1.8188
+step: 0, loss(original): 1.8392 (1.8392), distance: 0.0000, train loss: 5.2099 (5.2099), train accuracy(original): 48.438(48.438), lr: 0.02199
+step: 100, loss(original): 1.7594 (1.7262), distance: 0.0057, train loss: 4.9288 (4.6727), train accuracy(original): 50.781(52.816), lr: 0.02199
+step: 200, loss(original): 1.9385 (1.7560), distance: 0.0062, train loss: 5.7023 (4.8339), train accuracy(original): 53.125(51.893), lr: 0.02199
+step: 300, loss(original): 1.8842 (1.7683), distance: 0.0065, train loss: 5.4531 (4.8991), train accuracy(original): 51.562(51.612), lr: 0.02199
+epoch: 144, CrossEntropy loss (original): 1.7797, distance: 0.0067, train loss: 4.9505, train accuracy: 51.300, lr: 0.02224
+test accuracy: 44.080
+Global sparsity: 43.12%
+pruned model test accuracy: 42.740, test loss: 2.2873, train accuracy: 48.546, train loss: 1.9141
+step: 0, loss(original): 1.7731 (1.7731), distance: 0.0000, train loss: 4.8001 (4.8001), train accuracy(original): 45.312(45.312), lr: 0.02224
+step: 100, loss(original): 1.8255 (1.7396), distance: 0.0057, train loss: 5.0168 (4.7378), train accuracy(original): 46.094(51.717), lr: 0.02224
+step: 200, loss(original): 1.8984 (1.7410), distance: 0.0063, train loss: 5.6919 (4.7502), train accuracy(original): 49.219(51.745), lr: 0.02224
+step: 300, loss(original): 1.4690 (1.7586), distance: 0.0065, train loss: 3.3704 (4.8528), train accuracy(original): 60.938(51.570), lr: 0.02224
+epoch: 145, CrossEntropy loss (original): 1.7669, distance: 0.0067, train loss: 4.8853, train accuracy: 51.390, lr: 0.02229
+test accuracy: 47.030
+Global sparsity: 43.13%
+pruned model test accuracy: 46.500, test loss: 2.0502, train accuracy: 51.032, train loss: 1.7925
+step: 0, loss(original): 1.6859 (1.6859), distance: 0.0000, train loss: 4.4033 (4.4033), train accuracy(original): 54.688(54.688), lr: 0.02229
+step: 100, loss(original): 1.9821 (1.7231), distance: 0.0052, train loss: 6.2147 (4.6435), train accuracy(original): 50.781(52.684), lr: 0.02229
+step: 200, loss(original): 1.6170 (1.7433), distance: 0.0057, train loss: 4.0476 (4.7826), train accuracy(original): 54.688(52.165), lr: 0.02229
+step: 300, loss(original): 2.0062 (1.7561), distance: 0.0060, train loss: 6.1776 (4.8280), train accuracy(original): 36.719(51.897), lr: 0.02229
+epoch: 146, CrossEntropy loss (original): 1.7644, distance: 0.0062, train loss: 4.8613, train accuracy: 51.730, lr: 0.02178
+test accuracy: 43.160
+Global sparsity: 43.16%
+pruned model test accuracy: 42.990, test loss: 2.2162, train accuracy: 45.566, train loss: 2.0347
+step: 0, loss(original): 1.7321 (1.7321), distance: 0.0000, train loss: 4.9652 (4.9652), train accuracy(original): 51.562(51.562), lr: 0.02178
+step: 100, loss(original): 1.7797 (1.7353), distance: 0.0056, train loss: 5.0143 (4.6851), train accuracy(original): 50.000(52.351), lr: 0.02178
+step: 200, loss(original): 1.6681 (1.7384), distance: 0.0061, train loss: 4.2035 (4.7365), train accuracy(original): 52.344(52.355), lr: 0.02178
+step: 300, loss(original): 1.5736 (1.7427), distance: 0.0064, train loss: 3.7175 (4.7377), train accuracy(original): 59.375(52.372), lr: 0.02178
+epoch: 147, CrossEntropy loss (original): 1.7432, distance: 0.0065, train loss: 4.7308, train accuracy: 52.298, lr: 0.02250
+test accuracy: 43.590
+Global sparsity: 43.17%
+pruned model test accuracy: 43.400, test loss: 2.2139, train accuracy: 49.358, train loss: 1.8783
+step: 0, loss(original): 1.6429 (1.6429), distance: 0.0000, train loss: 4.2334 (4.2334), train accuracy(original): 50.781(50.781), lr: 0.02250
+step: 100, loss(original): 1.7922 (1.7141), distance: 0.0053, train loss: 4.9426 (4.6086), train accuracy(original): 54.688(53.009), lr: 0.02250
+step: 200, loss(original): 1.6829 (1.7359), distance: 0.0058, train loss: 4.2791 (4.7247), train accuracy(original): 49.219(52.328), lr: 0.02250
+step: 300, loss(original): 1.8063 (1.7390), distance: 0.0061, train loss: 4.9971 (4.7366), train accuracy(original): 50.000(52.274), lr: 0.02250
+epoch: 148, CrossEntropy loss (original): 1.7447, distance: 0.0063, train loss: 4.7684, train accuracy: 52.092, lr: 0.02271
+test accuracy: 45.940
+Global sparsity: 43.19%
+pruned model test accuracy: 45.760, test loss: 2.1289, train accuracy: 48.844, train loss: 1.8922
+step: 0, loss(original): 1.5378 (1.5378), distance: 0.0000, train loss: 3.6120 (3.6120), train accuracy(original): 55.469(55.469), lr: 0.02271
+step: 100, loss(original): 1.7684 (1.6965), distance: 0.0049, train loss: 5.0122 (4.4938), train accuracy(original): 47.656(53.427), lr: 0.02271
+step: 200, loss(original): 1.9773 (1.7227), distance: 0.0054, train loss: 5.9541 (4.6682), train accuracy(original): 41.406(52.577), lr: 0.02271
+step: 300, loss(original): 1.9313 (1.7371), distance: 0.0057, train loss: 5.8440 (4.7483), train accuracy(original): 45.312(52.102), lr: 0.02271
+epoch: 149, CrossEntropy loss (original): 1.7413, distance: 0.0059, train loss: 4.7769, train accuracy: 52.100, lr: 0.02257
+test accuracy: 47.430
+Global sparsity: 43.26%
+pruned model test accuracy: 47.580, test loss: 2.0138, train accuracy: 52.534, train loss: 1.7334
+step: 0, loss(original): 1.5496 (1.5496), distance: 0.0000, train loss: 3.7560 (3.7560), train accuracy(original): 57.031(57.031), lr: 0.02257
+step: 100, loss(original): 1.6455 (1.6851), distance: 0.0044, train loss: 4.0989 (4.4776), train accuracy(original): 53.125(53.411), lr: 0.02257
+step: 200, loss(original): 1.7842 (1.6858), distance: 0.0049, train loss: 4.8860 (4.4383), train accuracy(original): 48.438(53.280), lr: 0.02257
+step: 300, loss(original): 1.7088 (1.7089), distance: 0.0052, train loss: 4.4168 (4.5765), train accuracy(original): 54.688(52.902), lr: 0.02257
+epoch: 150, CrossEntropy loss (original): 1.7160, distance: 0.0054, train loss: 4.6105, train accuracy: 52.682, lr: 0.02220
+test accuracy: 46.800
+Global sparsity: 43.30%
+pruned model test accuracy: 46.160, test loss: 2.0755, train accuracy: 50.944, train loss: 1.7805
+step: 0, loss(original): 1.7618 (1.7618), distance: 0.0000, train loss: 5.2317 (5.2317), train accuracy(original): 54.688(54.688), lr: 0.02220
+step: 100, loss(original): 1.8937 (1.6835), distance: 0.0045, train loss: 5.4738 (4.5162), train accuracy(original): 48.438(53.527), lr: 0.02220
+step: 200, loss(original): 1.3970 (1.6857), distance: 0.0049, train loss: 3.0945 (4.4961), train accuracy(original): 58.594(53.591), lr: 0.02220
+step: 300, loss(original): 1.5553 (1.6972), distance: 0.0052, train loss: 3.6870 (4.5563), train accuracy(original): 62.500(53.327), lr: 0.02220
+epoch: 151, CrossEntropy loss (original): 1.7031, distance: 0.0053, train loss: 4.5769, train accuracy: 53.068, lr: 0.02338
+test accuracy: 43.460
+Global sparsity: 43.34%
+pruned model test accuracy: 44.060, test loss: 2.1932, train accuracy: 48.936, train loss: 1.8846
+step: 0, loss(original): 1.6907 (1.6907), distance: 0.0000, train loss: 4.3037 (4.3037), train accuracy(original): 50.781(50.781), lr: 0.02338
+step: 100, loss(original): 1.6396 (1.7033), distance: 0.0050, train loss: 4.0808 (4.5604), train accuracy(original): 53.906(53.365), lr: 0.02338
+step: 200, loss(original): 1.7493 (1.7049), distance: 0.0055, train loss: 4.7071 (4.5635), train accuracy(original): 55.469(53.125), lr: 0.02338
+step: 300, loss(original): 1.6373 (1.7156), distance: 0.0057, train loss: 4.0621 (4.6216), train accuracy(original): 54.688(52.923), lr: 0.02338
+epoch: 152, CrossEntropy loss (original): 1.7209, distance: 0.0059, train loss: 4.6389, train accuracy: 52.710, lr: 0.02263
+test accuracy: 46.550
+Global sparsity: 43.38%
+pruned model test accuracy: 46.410, test loss: 2.0520, train accuracy: 50.578, train loss: 1.8046
+step: 0, loss(original): 1.7995 (1.7995), distance: 0.0000, train loss: 5.1550 (5.1550), train accuracy(original): 52.344(52.344), lr: 0.02263
+step: 100, loss(original): 1.6807 (1.6631), distance: 0.0043, train loss: 4.4260 (4.3231), train accuracy(original): 56.250(54.231), lr: 0.02263
+step: 200, loss(original): 1.4770 (1.6623), distance: 0.0048, train loss: 3.2920 (4.2960), train accuracy(original): 64.062(54.007), lr: 0.02263
+step: 300, loss(original): 1.7564 (1.6817), distance: 0.0050, train loss: 4.8686 (4.4279), train accuracy(original): 42.969(53.473), lr: 0.02263
+epoch: 153, CrossEntropy loss (original): 1.6865, distance: 0.0052, train loss: 4.4541, train accuracy: 53.344, lr: 0.02360
+test accuracy: 46.300
+Global sparsity: 43.41%
+pruned model test accuracy: 46.030, test loss: 2.0442, train accuracy: 50.574, train loss: 1.7978
+step: 0, loss(original): 1.6033 (1.6033), distance: 0.0000, train loss: 3.8760 (3.8760), train accuracy(original): 57.031(57.031), lr: 0.02360
+step: 100, loss(original): 1.8056 (1.6479), distance: 0.0041, train loss: 5.0377 (4.2893), train accuracy(original): 45.312(54.479), lr: 0.02360
+step: 200, loss(original): 1.6097 (1.6643), distance: 0.0046, train loss: 3.9648 (4.3648), train accuracy(original): 58.594(53.996), lr: 0.02360
+step: 300, loss(original): 1.9122 (1.6823), distance: 0.0048, train loss: 5.5851 (4.4593), train accuracy(original): 47.656(53.538), lr: 0.02360
+epoch: 154, CrossEntropy loss (original): 1.6941, distance: 0.0050, train loss: 4.5083, train accuracy: 53.300, lr: 0.02319
+test accuracy: 46.770
+Global sparsity: 43.45%
+pruned model test accuracy: 46.340, test loss: 2.0621, train accuracy: 51.434, train loss: 1.7661
+step: 0, loss(original): 1.6151 (1.6151), distance: 0.0000, train loss: 4.0793 (4.0793), train accuracy(original): 57.031(57.031), lr: 0.02319
+step: 100, loss(original): 1.8594 (1.6471), distance: 0.0037, train loss: 5.2915 (4.2329), train accuracy(original): 49.219(54.819), lr: 0.02319
+step: 200, loss(original): 1.6860 (1.6593), distance: 0.0042, train loss: 4.6742 (4.3036), train accuracy(original): 55.469(54.085), lr: 0.02319
+step: 300, loss(original): 1.4257 (1.6732), distance: 0.0044, train loss: 3.1719 (4.3997), train accuracy(original): 60.938(53.556), lr: 0.02319
+epoch: 155, CrossEntropy loss (original): 1.6779, distance: 0.0046, train loss: 4.4243, train accuracy: 53.554, lr: 0.02321
+test accuracy: 47.520
+Global sparsity: 43.50%
+pruned model test accuracy: 48.460, test loss: 1.9908, train accuracy: 52.422, train loss: 1.7219
+step: 0, loss(original): 1.5461 (1.5461), distance: 0.0000, train loss: 3.8441 (3.8441), train accuracy(original): 57.031(57.031), lr: 0.02321
+step: 100, loss(original): 1.6702 (1.6521), distance: 0.0037, train loss: 4.2868 (4.3434), train accuracy(original): 53.125(54.316), lr: 0.02321
+step: 200, loss(original): 1.8311 (1.6614), distance: 0.0041, train loss: 5.1171 (4.3424), train accuracy(original): 46.875(54.171), lr: 0.02321
+step: 300, loss(original): 1.8102 (1.6630), distance: 0.0044, train loss: 5.1238 (4.3461), train accuracy(original): 48.438(53.810), lr: 0.02321
+epoch: 156, CrossEntropy loss (original): 1.6675, distance: 0.0046, train loss: 4.3774, train accuracy: 53.716, lr: 0.02361
+test accuracy: 47.450
+Global sparsity: 43.55%
+pruned model test accuracy: 47.780, test loss: 2.0063, train accuracy: 53.296, train loss: 1.6841
+step: 0, loss(original): 1.5193 (1.5193), distance: 0.0000, train loss: 3.5960 (3.5960), train accuracy(original): 60.156(60.156), lr: 0.02361
+step: 100, loss(original): 1.6425 (1.6524), distance: 0.0037, train loss: 4.1565 (4.3098), train accuracy(original): 57.031(54.440), lr: 0.02361
+step: 200, loss(original): 1.6750 (1.6482), distance: 0.0042, train loss: 4.4748 (4.2598), train accuracy(original): 50.781(54.664), lr: 0.02361
+step: 300, loss(original): 1.5813 (1.6509), distance: 0.0044, train loss: 3.7542 (4.2758), train accuracy(original): 54.688(54.566), lr: 0.02361
+epoch: 157, CrossEntropy loss (original): 1.6558, distance: 0.0046, train loss: 4.2928, train accuracy: 54.340, lr: 0.02379
+test accuracy: 45.670
+Global sparsity: 43.66%
+pruned model test accuracy: 45.210, test loss: 2.1216, train accuracy: 49.540, train loss: 1.8617
+step: 0, loss(original): 1.7782 (1.7782), distance: 0.0000, train loss: 4.8949 (4.8949), train accuracy(original): 50.000(50.000), lr: 0.02379
+step: 100, loss(original): 1.5228 (1.6256), distance: 0.0040, train loss: 3.5166 (4.1584), train accuracy(original): 61.719(55.399), lr: 0.02379
+step: 200, loss(original): 1.6066 (1.6265), distance: 0.0045, train loss: 3.9323 (4.1616), train accuracy(original): 54.688(54.866), lr: 0.02379
+step: 300, loss(original): 1.8398 (1.6475), distance: 0.0047, train loss: 5.3971 (4.2526), train accuracy(original): 50.000(54.181), lr: 0.02379
+epoch: 158, CrossEntropy loss (original): 1.6577, distance: 0.0049, train loss: 4.3252, train accuracy: 54.036, lr: 0.02333
+test accuracy: 47.080
+Global sparsity: 43.75%
+pruned model test accuracy: 46.980, test loss: 1.9990, train accuracy: 52.584, train loss: 1.7092
+step: 0, loss(original): 1.7415 (1.7415), distance: 0.0000, train loss: 4.9168 (4.9168), train accuracy(original): 51.562(51.562), lr: 0.02333
+step: 100, loss(original): 1.5480 (1.6165), distance: 0.0044, train loss: 3.8051 (4.1376), train accuracy(original): 57.031(54.935), lr: 0.02333
+step: 200, loss(original): 1.6402 (1.6315), distance: 0.0048, train loss: 4.1592 (4.2099), train accuracy(original): 55.469(54.435), lr: 0.02333
+step: 300, loss(original): 1.6468 (1.6455), distance: 0.0051, train loss: 4.1193 (4.2670), train accuracy(original): 51.562(54.238), lr: 0.02333
+epoch: 159, CrossEntropy loss (original): 1.6450, distance: 0.0052, train loss: 4.2524, train accuracy: 54.226, lr: 0.02354
+test accuracy: 49.000
+Global sparsity: 43.76%
+pruned model test accuracy: 49.300, test loss: 1.9395, train accuracy: 53.346, train loss: 1.6744
+Hard pruning: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+load best pretraining pruned model saved at 160
+Global sparsity: 50.30%
+pruned model test accuracy before finetuning: 49.300, test loss: 1.9395, train accuracy: 53.970, train loss: 1.6681
+finetuning stage (finetune best: True) >>>>>>>>>>>>>>>>>>>>>>>
+step: 0, CrossEntropy loss: 1.4794 (1.4794), train accuracy: 57.031(57.031), lr: 0.0010
+step: 100, CrossEntropy loss: 1.5062 (1.5302), train accuracy: 57.031(57.348), lr: 0.0010
+step: 200, CrossEntropy loss: 1.3444 (1.4998), train accuracy: 68.750(58.633), lr: 0.0010
+step: 300, CrossEntropy loss: 1.3168 (1.4844), train accuracy: 62.500(59.082), lr: 0.0010
+epoch: 160, CrossEntropy loss: 1.4712, accuracy: 59.456
+test accuracy: 54.880
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2309 (1.2309), train accuracy: 70.312(70.312), lr: 0.0235
+step: 100, CrossEntropy loss: 1.8469 (1.4754), train accuracy: 52.344(59.066), lr: 0.0235
+step: 200, CrossEntropy loss: 1.5785 (1.4960), train accuracy: 58.594(58.532), lr: 0.0235
+step: 300, CrossEntropy loss: 1.3035 (1.5041), train accuracy: 60.156(58.277), lr: 0.0235
+epoch: 161, CrossEntropy loss: 1.5120, accuracy: 58.004
+test accuracy: 51.920
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.8034 (1.8034), train accuracy: 46.875(46.875), lr: 0.0235
+step: 100, CrossEntropy loss: 1.4667 (1.4779), train accuracy: 57.031(58.199), lr: 0.0235
+step: 200, CrossEntropy loss: 1.6151 (1.4898), train accuracy: 53.125(58.108), lr: 0.0235
+step: 300, CrossEntropy loss: 1.4887 (1.5002), train accuracy: 57.031(57.745), lr: 0.0235
+epoch: 162, CrossEntropy loss: 1.5046, accuracy: 57.760
+test accuracy: 51.740
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.3489 (1.3489), train accuracy: 60.156(60.156), lr: 0.0234
+step: 100, CrossEntropy loss: 1.9873 (1.4947), train accuracy: 48.438(57.959), lr: 0.0234
+step: 200, CrossEntropy loss: 1.3766 (1.5021), train accuracy: 66.406(57.875), lr: 0.0234
+step: 300, CrossEntropy loss: 1.3294 (1.5016), train accuracy: 60.938(57.901), lr: 0.0234
+epoch: 163, CrossEntropy loss: 1.5044, accuracy: 57.982
+test accuracy: 51.660
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.5549 (1.5549), train accuracy: 52.344(52.344), lr: 0.0233
+step: 100, CrossEntropy loss: 1.5762 (1.4887), train accuracy: 54.688(58.431), lr: 0.0233
+step: 200, CrossEntropy loss: 1.3771 (1.4888), train accuracy: 57.031(58.407), lr: 0.0233
+step: 300, CrossEntropy loss: 1.6957 (1.5062), train accuracy: 53.906(57.909), lr: 0.0233
+epoch: 164, CrossEntropy loss: 1.5109, accuracy: 57.844
+test accuracy: 49.890
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.5806 (1.5806), train accuracy: 55.469(55.469), lr: 0.0231
+step: 100, CrossEntropy loss: 1.5804 (1.4709), train accuracy: 48.438(58.253), lr: 0.0231
+step: 200, CrossEntropy loss: 1.3550 (1.4870), train accuracy: 60.156(58.318), lr: 0.0231
+step: 300, CrossEntropy loss: 1.1980 (1.4969), train accuracy: 61.719(58.090), lr: 0.0231
+epoch: 165, CrossEntropy loss: 1.5040, accuracy: 57.896
+test accuracy: 50.570
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.5380 (1.5380), train accuracy: 60.938(60.938), lr: 0.0230
+step: 100, CrossEntropy loss: 1.4156 (1.5076), train accuracy: 57.031(58.052), lr: 0.0230
+step: 200, CrossEntropy loss: 1.4878 (1.4934), train accuracy: 60.938(58.123), lr: 0.0230
+step: 300, CrossEntropy loss: 1.7700 (1.5048), train accuracy: 52.344(57.836), lr: 0.0230
+epoch: 166, CrossEntropy loss: 1.5032, accuracy: 57.954
+test accuracy: 51.470
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.5122 (1.5122), train accuracy: 57.812(57.812), lr: 0.0228
+step: 100, CrossEntropy loss: 1.7264 (1.4652), train accuracy: 49.219(58.578), lr: 0.0228
+step: 200, CrossEntropy loss: 1.5786 (1.4760), train accuracy: 60.156(58.368), lr: 0.0228
+step: 300, CrossEntropy loss: 1.6591 (1.4911), train accuracy: 50.781(58.160), lr: 0.0228
+epoch: 167, CrossEntropy loss: 1.4985, accuracy: 57.908
+test accuracy: 49.900
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.7170 (1.7170), train accuracy: 50.000(50.000), lr: 0.0225
+step: 100, CrossEntropy loss: 1.4828 (1.4755), train accuracy: 53.906(58.493), lr: 0.0225
+step: 200, CrossEntropy loss: 1.3390 (1.4882), train accuracy: 59.375(58.403), lr: 0.0225
+step: 300, CrossEntropy loss: 1.4222 (1.5028), train accuracy: 60.938(57.953), lr: 0.0225
+epoch: 168, CrossEntropy loss: 1.5068, accuracy: 57.842
+test accuracy: 50.630
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4996 (1.4996), train accuracy: 58.594(58.594), lr: 0.0223
+step: 100, CrossEntropy loss: 1.3931 (1.4732), train accuracy: 64.844(59.220), lr: 0.0223
+step: 200, CrossEntropy loss: 1.4285 (1.4958), train accuracy: 63.281(58.396), lr: 0.0223
+step: 300, CrossEntropy loss: 1.4944 (1.5005), train accuracy: 57.031(58.233), lr: 0.0223
+epoch: 169, CrossEntropy loss: 1.5055, accuracy: 58.012
+test accuracy: 51.700
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4760 (1.4760), train accuracy: 57.812(57.812), lr: 0.0220
+step: 100, CrossEntropy loss: 1.2521 (1.4565), train accuracy: 60.938(58.741), lr: 0.0220
+step: 200, CrossEntropy loss: 1.6254 (1.4852), train accuracy: 58.594(58.361), lr: 0.0220
+step: 300, CrossEntropy loss: 1.8501 (1.4906), train accuracy: 50.000(58.295), lr: 0.0220
+epoch: 170, CrossEntropy loss: 1.4936, accuracy: 58.186
+test accuracy: 51.270
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.6167 (1.6167), train accuracy: 53.906(53.906), lr: 0.0216
+step: 100, CrossEntropy loss: 1.4858 (1.4643), train accuracy: 55.469(58.872), lr: 0.0216
+step: 200, CrossEntropy loss: 1.5098 (1.4927), train accuracy: 60.938(58.322), lr: 0.0216
+step: 300, CrossEntropy loss: 1.5271 (1.4945), train accuracy: 57.812(58.129), lr: 0.0216
+epoch: 171, CrossEntropy loss: 1.4995, accuracy: 58.010
+test accuracy: 50.140
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.3975 (1.3975), train accuracy: 59.375(59.375), lr: 0.0213
+step: 100, CrossEntropy loss: 1.4741 (1.4743), train accuracy: 57.812(58.710), lr: 0.0213
+step: 200, CrossEntropy loss: 1.5583 (1.4931), train accuracy: 54.688(58.337), lr: 0.0213
+step: 300, CrossEntropy loss: 1.3761 (1.4858), train accuracy: 61.719(58.428), lr: 0.0213
+epoch: 172, CrossEntropy loss: 1.4905, accuracy: 58.302
+test accuracy: 51.390
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4058 (1.4058), train accuracy: 62.500(62.500), lr: 0.0209
+step: 100, CrossEntropy loss: 1.6892 (1.4553), train accuracy: 53.125(59.267), lr: 0.0209
+step: 200, CrossEntropy loss: 1.3691 (1.4633), train accuracy: 62.500(59.185), lr: 0.0209
+step: 300, CrossEntropy loss: 1.5493 (1.4729), train accuracy: 56.250(58.913), lr: 0.0209
+epoch: 173, CrossEntropy loss: 1.4804, accuracy: 58.654
+test accuracy: 50.030
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4251 (1.4251), train accuracy: 61.719(61.719), lr: 0.0205
+step: 100, CrossEntropy loss: 1.3351 (1.4815), train accuracy: 57.812(58.369), lr: 0.0205
+step: 200, CrossEntropy loss: 1.4598 (1.4768), train accuracy: 57.812(58.512), lr: 0.0205
+step: 300, CrossEntropy loss: 1.4890 (1.4846), train accuracy: 57.031(58.474), lr: 0.0205
+epoch: 174, CrossEntropy loss: 1.4870, accuracy: 58.428
+test accuracy: 50.820
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4356 (1.4356), train accuracy: 64.062(64.062), lr: 0.0201
+step: 100, CrossEntropy loss: 1.3772 (1.4761), train accuracy: 65.625(59.182), lr: 0.0201
+step: 200, CrossEntropy loss: 1.4896 (1.4694), train accuracy: 54.688(59.014), lr: 0.0201
+step: 300, CrossEntropy loss: 1.3795 (1.4684), train accuracy: 61.719(58.970), lr: 0.0201
+epoch: 175, CrossEntropy loss: 1.4740, accuracy: 58.684
+test accuracy: 50.550
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4248 (1.4248), train accuracy: 56.250(56.250), lr: 0.0196
+step: 100, CrossEntropy loss: 1.5727 (1.4374), train accuracy: 52.344(59.499), lr: 0.0196
+step: 200, CrossEntropy loss: 1.5041 (1.4505), train accuracy: 60.156(59.328), lr: 0.0196
+step: 300, CrossEntropy loss: 1.4515 (1.4620), train accuracy: 55.469(58.861), lr: 0.0196
+epoch: 176, CrossEntropy loss: 1.4642, accuracy: 58.744
+test accuracy: 51.420
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4818 (1.4818), train accuracy: 56.250(56.250), lr: 0.0192
+step: 100, CrossEntropy loss: 1.5214 (1.4271), train accuracy: 54.688(59.777), lr: 0.0192
+step: 200, CrossEntropy loss: 1.7434 (1.4491), train accuracy: 45.312(59.616), lr: 0.0192
+step: 300, CrossEntropy loss: 1.4555 (1.4523), train accuracy: 53.906(59.372), lr: 0.0192
+epoch: 177, CrossEntropy loss: 1.4589, accuracy: 59.070
+test accuracy: 49.850
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.6288 (1.6288), train accuracy: 57.812(57.812), lr: 0.0187
+step: 100, CrossEntropy loss: 1.4303 (1.4335), train accuracy: 60.938(59.406), lr: 0.0187
+step: 200, CrossEntropy loss: 1.4302 (1.4399), train accuracy: 60.938(59.394), lr: 0.0187
+step: 300, CrossEntropy loss: 1.5879 (1.4559), train accuracy: 52.344(58.996), lr: 0.0187
+epoch: 178, CrossEntropy loss: 1.4550, accuracy: 59.150
+test accuracy: 51.150
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4102 (1.4102), train accuracy: 63.281(63.281), lr: 0.0182
+step: 100, CrossEntropy loss: 1.4833 (1.4109), train accuracy: 57.031(60.373), lr: 0.0182
+step: 200, CrossEntropy loss: 1.4183 (1.4289), train accuracy: 60.156(59.779), lr: 0.0182
+step: 300, CrossEntropy loss: 1.7371 (1.4407), train accuracy: 50.781(59.554), lr: 0.0182
+epoch: 179, CrossEntropy loss: 1.4448, accuracy: 59.354
+test accuracy: 51.070
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4454 (1.4454), train accuracy: 57.812(57.812), lr: 0.0177
+step: 100, CrossEntropy loss: 1.2002 (1.4104), train accuracy: 61.719(60.172), lr: 0.0177
+step: 200, CrossEntropy loss: 1.5325 (1.4297), train accuracy: 53.125(60.044), lr: 0.0177
+step: 300, CrossEntropy loss: 1.4503 (1.4311), train accuracy: 53.125(59.858), lr: 0.0177
+epoch: 180, CrossEntropy loss: 1.4374, accuracy: 59.638
+test accuracy: 51.780
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.5011 (1.5011), train accuracy: 60.156(60.156), lr: 0.0171
+step: 100, CrossEntropy loss: 1.6075 (1.4059), train accuracy: 57.812(60.613), lr: 0.0171
+step: 200, CrossEntropy loss: 1.7707 (1.4175), train accuracy: 52.344(60.199), lr: 0.0171
+step: 300, CrossEntropy loss: 1.2980 (1.4267), train accuracy: 64.062(60.047), lr: 0.0171
+epoch: 181, CrossEntropy loss: 1.4306, accuracy: 59.874
+test accuracy: 51.740
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.5230 (1.5230), train accuracy: 56.250(56.250), lr: 0.0166
+step: 100, CrossEntropy loss: 1.3140 (1.3973), train accuracy: 65.625(60.404), lr: 0.0166
+step: 200, CrossEntropy loss: 1.3173 (1.4049), train accuracy: 60.938(60.646), lr: 0.0166
+step: 300, CrossEntropy loss: 1.3423 (1.4075), train accuracy: 60.156(60.385), lr: 0.0166
+epoch: 182, CrossEntropy loss: 1.4161, accuracy: 60.168
+test accuracy: 50.890
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4694 (1.4694), train accuracy: 60.156(60.156), lr: 0.0160
+step: 100, CrossEntropy loss: 1.2679 (1.3661), train accuracy: 66.406(61.440), lr: 0.0160
+step: 200, CrossEntropy loss: 1.6442 (1.3887), train accuracy: 52.344(60.716), lr: 0.0160
+step: 300, CrossEntropy loss: 1.3504 (1.4022), train accuracy: 61.719(60.507), lr: 0.0160
+epoch: 183, CrossEntropy loss: 1.4107, accuracy: 60.232
+test accuracy: 52.150
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2353 (1.2353), train accuracy: 68.750(68.750), lr: 0.0154
+step: 100, CrossEntropy loss: 1.1843 (1.3760), train accuracy: 62.500(61.340), lr: 0.0154
+step: 200, CrossEntropy loss: 1.2884 (1.3892), train accuracy: 64.062(60.860), lr: 0.0154
+step: 300, CrossEntropy loss: 1.4675 (1.3963), train accuracy: 57.031(60.714), lr: 0.0154
+epoch: 184, CrossEntropy loss: 1.3991, accuracy: 60.612
+test accuracy: 52.490
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.3613 (1.3613), train accuracy: 60.156(60.156), lr: 0.0148
+step: 100, CrossEntropy loss: 1.5304 (1.3996), train accuracy: 55.469(60.303), lr: 0.0148
+step: 200, CrossEntropy loss: 1.4563 (1.3819), train accuracy: 57.031(60.825), lr: 0.0148
+step: 300, CrossEntropy loss: 1.1967 (1.3808), train accuracy: 65.625(60.854), lr: 0.0148
+epoch: 185, CrossEntropy loss: 1.3902, accuracy: 60.720
+test accuracy: 53.070
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2126 (1.2126), train accuracy: 66.406(66.406), lr: 0.0142
+step: 100, CrossEntropy loss: 1.6649 (1.3607), train accuracy: 47.656(61.278), lr: 0.0142
+step: 200, CrossEntropy loss: 1.2423 (1.3665), train accuracy: 66.406(61.190), lr: 0.0142
+step: 300, CrossEntropy loss: 1.4522 (1.3712), train accuracy: 61.719(61.088), lr: 0.0142
+epoch: 186, CrossEntropy loss: 1.3780, accuracy: 60.960
+test accuracy: 52.660
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.3407 (1.3407), train accuracy: 63.281(63.281), lr: 0.0136
+step: 100, CrossEntropy loss: 1.1462 (1.3443), train accuracy: 66.406(61.835), lr: 0.0136
+step: 200, CrossEntropy loss: 1.2204 (1.3565), train accuracy: 60.938(61.563), lr: 0.0136
+step: 300, CrossEntropy loss: 1.2387 (1.3629), train accuracy: 67.188(61.366), lr: 0.0136
+epoch: 187, CrossEntropy loss: 1.3664, accuracy: 61.268
+test accuracy: 54.100
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.3187 (1.3187), train accuracy: 64.844(64.844), lr: 0.0130
+step: 100, CrossEntropy loss: 1.3746 (1.3562), train accuracy: 59.375(61.719), lr: 0.0130
+step: 200, CrossEntropy loss: 1.1074 (1.3400), train accuracy: 65.625(62.177), lr: 0.0130
+step: 300, CrossEntropy loss: 1.6010 (1.3478), train accuracy: 57.031(61.989), lr: 0.0130
+epoch: 188, CrossEntropy loss: 1.3531, accuracy: 61.826
+test accuracy: 54.480
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2227 (1.2227), train accuracy: 67.188(67.188), lr: 0.0124
+step: 100, CrossEntropy loss: 1.3196 (1.3381), train accuracy: 66.406(62.075), lr: 0.0124
+step: 200, CrossEntropy loss: 1.2316 (1.3359), train accuracy: 64.062(61.933), lr: 0.0124
+step: 300, CrossEntropy loss: 1.3309 (1.3360), train accuracy: 61.719(62.020), lr: 0.0124
+epoch: 189, CrossEntropy loss: 1.3388, accuracy: 62.116
+test accuracy: 53.310
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.4548 (1.4548), train accuracy: 59.375(59.375), lr: 0.0118
+step: 100, CrossEntropy loss: 1.3295 (1.2997), train accuracy: 60.156(63.320), lr: 0.0118
+step: 200, CrossEntropy loss: 1.4717 (1.3135), train accuracy: 63.281(62.784), lr: 0.0118
+step: 300, CrossEntropy loss: 1.3051 (1.3210), train accuracy: 64.844(62.601), lr: 0.0118
+epoch: 190, CrossEntropy loss: 1.3268, accuracy: 62.408
+test accuracy: 54.730
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.3198 (1.3198), train accuracy: 62.500(62.500), lr: 0.0112
+step: 100, CrossEntropy loss: 1.2661 (1.2962), train accuracy: 63.281(63.490), lr: 0.0112
+step: 200, CrossEntropy loss: 1.1755 (1.2993), train accuracy: 67.188(63.262), lr: 0.0112
+step: 300, CrossEntropy loss: 1.3451 (1.3167), train accuracy: 64.062(62.760), lr: 0.0112
+epoch: 191, CrossEntropy loss: 1.3157, accuracy: 62.776
+test accuracy: 53.890
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2347 (1.2347), train accuracy: 62.500(62.500), lr: 0.0105
+step: 100, CrossEntropy loss: 0.9819 (1.2886), train accuracy: 73.438(63.444), lr: 0.0105
+step: 200, CrossEntropy loss: 1.1626 (1.2941), train accuracy: 67.188(63.145), lr: 0.0105
+step: 300, CrossEntropy loss: 1.2849 (1.3021), train accuracy: 60.156(63.050), lr: 0.0105
+epoch: 192, CrossEntropy loss: 1.3055, accuracy: 62.948
+test accuracy: 54.280
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2581 (1.2581), train accuracy: 65.625(65.625), lr: 0.0099
+step: 100, CrossEntropy loss: 1.3584 (1.2806), train accuracy: 63.281(63.707), lr: 0.0099
+step: 200, CrossEntropy loss: 1.0294 (1.2911), train accuracy: 70.312(63.518), lr: 0.0099
+step: 300, CrossEntropy loss: 1.3300 (1.2858), train accuracy: 68.750(63.546), lr: 0.0099
+epoch: 193, CrossEntropy loss: 1.2918, accuracy: 63.414
+test accuracy: 55.150
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2547 (1.2547), train accuracy: 61.719(61.719), lr: 0.0093
+step: 100, CrossEntropy loss: 1.4085 (1.2639), train accuracy: 60.156(64.171), lr: 0.0093
+step: 200, CrossEntropy loss: 1.2766 (1.2675), train accuracy: 63.281(64.062), lr: 0.0093
+step: 300, CrossEntropy loss: 1.3964 (1.2766), train accuracy: 58.594(63.806), lr: 0.0093
+epoch: 194, CrossEntropy loss: 1.2768, accuracy: 63.744
+test accuracy: 54.160
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2968 (1.2968), train accuracy: 60.156(60.156), lr: 0.0087
+step: 100, CrossEntropy loss: 1.1447 (1.2152), train accuracy: 62.500(65.586), lr: 0.0087
+step: 200, CrossEntropy loss: 1.4720 (1.2481), train accuracy: 57.031(64.731), lr: 0.0087
+step: 300, CrossEntropy loss: 1.2819 (1.2501), train accuracy: 67.188(64.802), lr: 0.0087
+epoch: 195, CrossEntropy loss: 1.2600, accuracy: 64.360
+test accuracy: 54.760
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.3320 (1.3320), train accuracy: 64.844(64.844), lr: 0.0081
+step: 100, CrossEntropy loss: 1.1785 (1.2213), train accuracy: 66.406(65.215), lr: 0.0081
+step: 200, CrossEntropy loss: 1.2720 (1.2312), train accuracy: 60.938(64.972), lr: 0.0081
+step: 300, CrossEntropy loss: 1.2328 (1.2386), train accuracy: 62.500(64.680), lr: 0.0081
+epoch: 196, CrossEntropy loss: 1.2450, accuracy: 64.576
+test accuracy: 54.490
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2238 (1.2238), train accuracy: 64.062(64.062), lr: 0.0076
+step: 100, CrossEntropy loss: 1.2736 (1.2294), train accuracy: 67.969(64.998), lr: 0.0076
+step: 200, CrossEntropy loss: 1.3939 (1.2174), train accuracy: 57.031(65.318), lr: 0.0076
+step: 300, CrossEntropy loss: 1.3569 (1.2294), train accuracy: 61.719(64.994), lr: 0.0076
+epoch: 197, CrossEntropy loss: 1.2337, accuracy: 64.934
+test accuracy: 55.830
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2733 (1.2733), train accuracy: 63.281(63.281), lr: 0.0070
+step: 100, CrossEntropy loss: 1.3016 (1.2068), train accuracy: 63.281(65.965), lr: 0.0070
+step: 200, CrossEntropy loss: 1.2615 (1.2191), train accuracy: 67.188(65.742), lr: 0.0070
+step: 300, CrossEntropy loss: 1.2062 (1.2190), train accuracy: 65.625(65.469), lr: 0.0070
+epoch: 198, CrossEntropy loss: 1.2214, accuracy: 65.240
+test accuracy: 54.820
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.1205 (1.1205), train accuracy: 68.750(68.750), lr: 0.0064
+step: 100, CrossEntropy loss: 1.0751 (1.1640), train accuracy: 70.312(66.986), lr: 0.0064
+step: 200, CrossEntropy loss: 1.2258 (1.1857), train accuracy: 60.938(66.371), lr: 0.0064
+step: 300, CrossEntropy loss: 1.4490 (1.1984), train accuracy: 60.938(65.970), lr: 0.0064
+epoch: 199, CrossEntropy loss: 1.2004, accuracy: 65.780
+test accuracy: 55.460
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2064 (1.2064), train accuracy: 65.625(65.625), lr: 0.0059
+step: 100, CrossEntropy loss: 1.3877 (1.1718), train accuracy: 58.594(66.081), lr: 0.0059
+step: 200, CrossEntropy loss: 1.1019 (1.1785), train accuracy: 65.625(66.313), lr: 0.0059
+step: 300, CrossEntropy loss: 1.2495 (1.1807), train accuracy: 65.625(66.129), lr: 0.0059
+epoch: 200, CrossEntropy loss: 1.1897, accuracy: 65.904
+test accuracy: 55.570
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 0.8840 (0.8840), train accuracy: 77.344(77.344), lr: 0.0054
+step: 100, CrossEntropy loss: 1.2332 (1.1489), train accuracy: 63.281(67.458), lr: 0.0054
+step: 200, CrossEntropy loss: 1.1192 (1.1641), train accuracy: 64.062(66.993), lr: 0.0054
+step: 300, CrossEntropy loss: 1.0488 (1.1698), train accuracy: 67.969(66.720), lr: 0.0054
+epoch: 201, CrossEntropy loss: 1.1719, accuracy: 66.658
+test accuracy: 56.270
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.1596 (1.1596), train accuracy: 64.844(64.844), lr: 0.0049
+step: 100, CrossEntropy loss: 1.1019 (1.1488), train accuracy: 71.094(67.435), lr: 0.0049
+step: 200, CrossEntropy loss: 1.2587 (1.1569), train accuracy: 62.500(66.950), lr: 0.0049
+step: 300, CrossEntropy loss: 1.2401 (1.1598), train accuracy: 60.938(66.912), lr: 0.0049
+epoch: 202, CrossEntropy loss: 1.1652, accuracy: 66.746
+test accuracy: 56.690
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.0930 (1.0930), train accuracy: 67.969(67.969), lr: 0.0044
+step: 100, CrossEntropy loss: 1.2277 (1.1301), train accuracy: 64.062(67.528), lr: 0.0044
+step: 200, CrossEntropy loss: 1.2771 (1.1353), train accuracy: 65.625(67.491), lr: 0.0044
+step: 300, CrossEntropy loss: 1.2768 (1.1394), train accuracy: 64.062(67.390), lr: 0.0044
+epoch: 203, CrossEntropy loss: 1.1450, accuracy: 67.258
+test accuracy: 55.990
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 0.9471 (0.9471), train accuracy: 72.656(72.656), lr: 0.0039
+step: 100, CrossEntropy loss: 1.1616 (1.0994), train accuracy: 64.844(68.232), lr: 0.0039
+step: 200, CrossEntropy loss: 1.1317 (1.1178), train accuracy: 67.969(67.837), lr: 0.0039
+step: 300, CrossEntropy loss: 1.0194 (1.1300), train accuracy: 71.094(67.826), lr: 0.0039
+epoch: 204, CrossEntropy loss: 1.1329, accuracy: 67.740
+test accuracy: 57.460
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.1129 (1.1129), train accuracy: 68.750(68.750), lr: 0.0034
+step: 100, CrossEntropy loss: 1.0962 (1.1045), train accuracy: 63.281(68.479), lr: 0.0034
+step: 200, CrossEntropy loss: 0.9487 (1.1037), train accuracy: 72.656(68.377), lr: 0.0034
+step: 300, CrossEntropy loss: 1.3082 (1.1066), train accuracy: 60.938(68.332), lr: 0.0034
+epoch: 205, CrossEntropy loss: 1.1140, accuracy: 68.052
+test accuracy: 57.200
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.0455 (1.0455), train accuracy: 71.094(71.094), lr: 0.0030
+step: 100, CrossEntropy loss: 0.8499 (1.0812), train accuracy: 74.219(69.098), lr: 0.0030
+step: 200, CrossEntropy loss: 1.1914 (1.0964), train accuracy: 60.938(68.777), lr: 0.0030
+step: 300, CrossEntropy loss: 1.4240 (1.1016), train accuracy: 57.031(68.716), lr: 0.0030
+epoch: 206, CrossEntropy loss: 1.1080, accuracy: 68.472
+test accuracy: 57.150
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.0554 (1.0554), train accuracy: 69.531(69.531), lr: 0.0026
+step: 100, CrossEntropy loss: 1.0833 (1.0670), train accuracy: 70.312(69.423), lr: 0.0026
+step: 200, CrossEntropy loss: 1.1724 (1.0838), train accuracy: 69.531(68.991), lr: 0.0026
+step: 300, CrossEntropy loss: 1.1391 (1.0879), train accuracy: 65.625(68.856), lr: 0.0026
+epoch: 207, CrossEntropy loss: 1.0902, accuracy: 68.804
+test accuracy: 57.000
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 0.8726 (0.8726), train accuracy: 75.781(75.781), lr: 0.0022
+step: 100, CrossEntropy loss: 1.1454 (1.0624), train accuracy: 68.750(69.957), lr: 0.0022
+step: 200, CrossEntropy loss: 0.9691 (1.0690), train accuracy: 71.094(69.337), lr: 0.0022
+step: 300, CrossEntropy loss: 1.3064 (1.0729), train accuracy: 59.375(69.282), lr: 0.0022
+epoch: 208, CrossEntropy loss: 1.0761, accuracy: 69.190
+test accuracy: 57.780
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2133 (1.2133), train accuracy: 64.844(64.844), lr: 0.0019
+step: 100, CrossEntropy loss: 1.0111 (1.0586), train accuracy: 67.969(69.988), lr: 0.0019
+step: 200, CrossEntropy loss: 1.0555 (1.0622), train accuracy: 71.094(69.803), lr: 0.0019
+step: 300, CrossEntropy loss: 1.1327 (1.0626), train accuracy: 68.750(69.799), lr: 0.0019
+epoch: 209, CrossEntropy loss: 1.0618, accuracy: 69.788
+test accuracy: 58.020
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.0691 (1.0691), train accuracy: 67.188(67.188), lr: 0.0016
+step: 100, CrossEntropy loss: 0.9751 (1.0345), train accuracy: 69.531(70.444), lr: 0.0016
+step: 200, CrossEntropy loss: 0.9119 (1.0410), train accuracy: 71.094(70.200), lr: 0.0016
+step: 300, CrossEntropy loss: 0.9234 (1.0481), train accuracy: 76.562(70.118), lr: 0.0016
+epoch: 210, CrossEntropy loss: 1.0529, accuracy: 69.888
+test accuracy: 58.250
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.0359 (1.0359), train accuracy: 70.312(70.312), lr: 0.0013
+step: 100, CrossEntropy loss: 1.0676 (1.0289), train accuracy: 68.750(70.467), lr: 0.0013
+step: 200, CrossEntropy loss: 1.1123 (1.0312), train accuracy: 71.094(70.600), lr: 0.0013
+step: 300, CrossEntropy loss: 1.0727 (1.0418), train accuracy: 71.875(70.325), lr: 0.0013
+epoch: 211, CrossEntropy loss: 1.0427, accuracy: 70.344
+test accuracy: 58.690
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.2120 (1.2120), train accuracy: 66.406(66.406), lr: 0.0010
+step: 100, CrossEntropy loss: 1.1011 (1.0389), train accuracy: 63.281(70.289), lr: 0.0010
+step: 200, CrossEntropy loss: 1.3035 (1.0344), train accuracy: 61.719(70.394), lr: 0.0010
+step: 300, CrossEntropy loss: 0.9221 (1.0393), train accuracy: 71.094(70.253), lr: 0.0010
+epoch: 212, CrossEntropy loss: 1.0396, accuracy: 70.256
+test accuracy: 58.600
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 0.9918 (0.9918), train accuracy: 71.875(71.875), lr: 0.0008
+step: 100, CrossEntropy loss: 0.8698 (1.0147), train accuracy: 75.000(70.630), lr: 0.0008
+step: 200, CrossEntropy loss: 1.0057 (1.0173), train accuracy: 71.094(70.810), lr: 0.0008
+step: 300, CrossEntropy loss: 0.8477 (1.0228), train accuracy: 77.344(70.720), lr: 0.0008
+epoch: 213, CrossEntropy loss: 1.0256, accuracy: 70.712
+test accuracy: 58.610
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.1417 (1.1417), train accuracy: 67.188(67.188), lr: 0.0006
+step: 100, CrossEntropy loss: 0.9937 (1.0178), train accuracy: 72.656(70.529), lr: 0.0006
+step: 200, CrossEntropy loss: 1.2176 (1.0173), train accuracy: 66.406(70.864), lr: 0.0006
+step: 300, CrossEntropy loss: 1.0071 (1.0206), train accuracy: 67.969(70.717), lr: 0.0006
+epoch: 214, CrossEntropy loss: 1.0223, accuracy: 70.634
+test accuracy: 58.800
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 0.9632 (0.9632), train accuracy: 76.562(76.562), lr: 0.0004
+step: 100, CrossEntropy loss: 1.0934 (1.0086), train accuracy: 68.750(71.550), lr: 0.0004
+step: 200, CrossEntropy loss: 1.0590 (1.0152), train accuracy: 70.312(70.907), lr: 0.0004
+step: 300, CrossEntropy loss: 0.9561 (1.0165), train accuracy: 67.969(70.772), lr: 0.0004
+epoch: 215, CrossEntropy loss: 1.0140, accuracy: 70.998
+test accuracy: 58.890
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 0.8545 (0.8545), train accuracy: 69.531(69.531), lr: 0.0003
+step: 100, CrossEntropy loss: 1.1469 (0.9918), train accuracy: 73.438(71.829), lr: 0.0003
+step: 200, CrossEntropy loss: 1.0568 (1.0058), train accuracy: 73.438(71.343), lr: 0.0003
+step: 300, CrossEntropy loss: 0.9974 (1.0041), train accuracy: 75.781(71.452), lr: 0.0003
+epoch: 216, CrossEntropy loss: 1.0065, accuracy: 71.286
+test accuracy: 58.840
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 0.8819 (0.8819), train accuracy: 71.875(71.875), lr: 0.0001
+step: 100, CrossEntropy loss: 0.9542 (1.0132), train accuracy: 72.656(71.148), lr: 0.0001
+step: 200, CrossEntropy loss: 1.1051 (1.0134), train accuracy: 65.625(71.051), lr: 0.0001
+step: 300, CrossEntropy loss: 1.0395 (1.0108), train accuracy: 70.312(71.083), lr: 0.0001
+epoch: 217, CrossEntropy loss: 1.0037, accuracy: 71.402
+test accuracy: 58.480
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 1.0273 (1.0273), train accuracy: 67.188(67.188), lr: 0.0001
+step: 100, CrossEntropy loss: 1.0110 (0.9944), train accuracy: 71.875(71.581), lr: 0.0001
+step: 200, CrossEntropy loss: 1.0392 (1.0045), train accuracy: 67.188(71.618), lr: 0.0001
+step: 300, CrossEntropy loss: 1.1412 (1.0058), train accuracy: 67.188(71.371), lr: 0.0001
+epoch: 218, CrossEntropy loss: 1.0019, accuracy: 71.444
+test accuracy: 58.780
+Global sparsity: 50.30%
+step: 0, CrossEntropy loss: 0.8313 (0.8313), train accuracy: 74.219(74.219), lr: 0.0000
+step: 100, CrossEntropy loss: 1.2338 (0.9869), train accuracy: 64.062(71.945), lr: 0.0000
+step: 200, CrossEntropy loss: 0.9092 (0.9917), train accuracy: 70.312(71.723), lr: 0.0000
+step: 300, CrossEntropy loss: 0.9296 (0.9992), train accuracy: 75.000(71.597), lr: 0.0000
+epoch: 219, CrossEntropy loss: 1.0003, accuracy: 71.526
+test accuracy: 58.770
+Global sparsity: 50.30%
+start testing final pruned model>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+final pruned model test accuracy: 58.770, saved at: 220, sparsity: 0.5029709486425212, structured: True
+start testing best pruned model>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+best pruned model test accuracy: 58.890, saved at: 216, sparsity: 0.5029709486425212, structured: True
